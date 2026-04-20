@@ -446,3 +446,200 @@ IMPORT SUMMARY: 54 files imported, 1976 edges, 0 failures
 [2026-04-20T12:30:31Z] FETCH_ERROR https://wiki.siminnovations.com/index.php?title=Fs2024_connected: SSLError: HTTPSConnectionPool(host='wiki.siminnovations.com', port=443): Max retries exceeded with url: /index.php?title=Fs2024_connected (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
 [2026-04-20T12:30:31Z] Crawl ended: wall-clock limit (0.02h)
 [2026-04-20T12:30:31Z] Completion report written to assets/air_manager_api\crawl_complete.md
+[2026-04-20T13:05:25Z] TLS: using project CA bundle at assets\air_manager_api\wiki-cert-chain.pem
+[2026-04-20T13:05:25Z] Crawler started
+[2026-04-20T13:05:25Z] New crawl run: run_id=7
+[2026-04-20T13:05:25Z] Seeds imported: 384 URLs processed
+[2026-04-20T13:05:26Z] robots.txt: not found — no restrictions apply
+[2026-04-20T13:05:26Z] FETCH https://wiki.siminnovations.com/index.php?title=Xpl_dataref_subscribe
+[2026-04-20T13:05:27Z] FETCHED https://wiki.siminnovations.com/index.php?title=Xpl_dataref_subscribe (18281 bytes, 2 new links)
+[2026-04-20T13:05:27Z] FETCH https://wiki.siminnovations.com/index.php?title=Xpl_dataref_write
+[2026-04-20T13:05:28Z] FETCHED https://wiki.siminnovations.com/index.php?title=Xpl_dataref_write (16673 bytes, 1 new links)
+[2026-04-20T13:05:28Z] FETCH https://wiki.siminnovations.com/index.php?title=Xpl_command
+[2026-04-20T13:05:29Z] FETCHED https://wiki.siminnovations.com/index.php?title=Xpl_command (15943 bytes, 2 new links)
+[2026-04-20T13:05:29Z] FETCH https://wiki.siminnovations.com/index.php?title=Xpl_command_subscribe
+[2026-04-20T13:05:30Z] FETCHED https://wiki.siminnovations.com/index.php?title=Xpl_command_subscribe (15670 bytes, 2 new links)
+[2026-04-20T13:05:30Z] FETCH https://wiki.siminnovations.com/index.php?title=Xpl_connected
+[2026-04-20T13:05:32Z] FETCHED https://wiki.siminnovations.com/index.php?title=Xpl_connected (14995 bytes, 1 new links)
+[2026-04-20T13:05:32Z] FETCH https://wiki.siminnovations.com/index.php?title=Variable_subscribe
+[2026-04-20T13:05:33Z] FETCHED https://wiki.siminnovations.com/index.php?title=Variable_subscribe (16639 bytes, 1 new links)
+[2026-04-20T13:05:33Z] FETCH https://wiki.siminnovations.com/index.php?title=Request_callback
+[2026-04-20T13:05:34Z] FETCHED https://wiki.siminnovations.com/index.php?title=Request_callback (16266 bytes, 1 new links)
+[2026-04-20T13:05:34Z] FETCH https://wiki.siminnovations.com/index.php?title=Fsx_variable_subscribe
+[2026-04-20T13:05:35Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fsx_variable_subscribe (22730 bytes, 5 new links)
+[2026-04-20T13:05:35Z] FETCH https://wiki.siminnovations.com/index.php?title=Fsx_variable_write
+[2026-04-20T13:05:37Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fsx_variable_write (16998 bytes, 1 new links)
+[2026-04-20T13:05:37Z] FETCH https://wiki.siminnovations.com/index.php?title=Fsx_event
+[2026-04-20T13:05:38Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fsx_event (16739 bytes, 4 new links)
+[2026-04-20T13:05:38Z] FETCH https://wiki.siminnovations.com/index.php?title=Fsx_connected
+[2026-04-20T13:05:39Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fsx_connected (14986 bytes, 1 new links)
+[2026-04-20T13:05:39Z] FETCH https://wiki.siminnovations.com/index.php?title=P3d_connected
+[2026-04-20T13:05:40Z] FETCHED https://wiki.siminnovations.com/index.php?title=P3d_connected (14999 bytes, 1 new links)
+[2026-04-20T13:05:40Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_variable_subscribe
+[2026-04-20T13:05:42Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_variable_subscribe (22185 bytes, 3 new links)
+[2026-04-20T13:05:42Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_variable_write
+[2026-04-20T13:05:43Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_variable_write (17719 bytes, 1 new links)
+[2026-04-20T13:05:43Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_event
+[2026-04-20T13:05:44Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_event (16950 bytes, 2 new links)
+[2026-04-20T13:05:44Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_event_subscribe
+[2026-04-20T13:05:45Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_event_subscribe (15958 bytes, 1 new links)
+[2026-04-20T13:05:45Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_rpn
+[2026-04-20T13:05:47Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_rpn (15678 bytes, 2 new links)
+[2026-04-20T13:05:47Z] FETCH https://wiki.siminnovations.com/index.php?title=Msfs_connected
+[2026-04-20T13:05:48Z] FETCHED https://wiki.siminnovations.com/index.php?title=Msfs_connected (15038 bytes, 1 new links)
+[2026-04-20T13:05:48Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_variable_subscribe
+[2026-04-20T13:05:49Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_variable_subscribe (21270 bytes, 1 new links)
+[2026-04-20T13:05:49Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_variable_write
+[2026-04-20T13:05:50Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_variable_write (17424 bytes, 1 new links)
+[2026-04-20T13:05:50Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_event
+[2026-04-20T13:05:51Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_event (17014 bytes, 1 new links)
+[2026-04-20T13:05:51Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_event_subscribe
+[2026-04-20T13:05:53Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_event_subscribe (15420 bytes, 1 new links)
+[2026-04-20T13:05:53Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_rpn
+[2026-04-20T13:05:54Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_rpn (15708 bytes, 1 new links)
+[2026-04-20T13:05:54Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2020_connected
+[2026-04-20T13:05:55Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2020_connected (15064 bytes, 1 new links)
+[2026-04-20T13:05:55Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_variable_subscribe
+[2026-04-20T13:05:56Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_variable_subscribe (21915 bytes, 1 new links)
+[2026-04-20T13:05:56Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_variable_write
+[2026-04-20T13:05:58Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_variable_write (17434 bytes, 1 new links)
+[2026-04-20T13:05:58Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_event
+[2026-04-20T13:05:59Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_event (17748 bytes, 2 new links)
+[2026-04-20T13:05:59Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_event_subscribe
+[2026-04-20T13:06:00Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_event_subscribe (15470 bytes, 1 new links)
+[2026-04-20T13:06:00Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_rpn
+[2026-04-20T13:06:01Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_rpn (16452 bytes, 1 new links)
+[2026-04-20T13:06:01Z] Crawl ended: wall-clock limit (0.01h)
+[2026-04-20T13:06:01Z] Completion report written to assets/air_manager_api\crawl_complete.md
+[2026-04-20T13:06:08Z] TLS: using CA bundle from assets\air_manager_api\wiki-cert-chain.pem
+[2026-04-20T13:06:08Z] Crawler started
+[2026-04-20T13:06:08Z] New crawl run: run_id=8
+[2026-04-20T13:06:08Z] Seeds imported: 384 URLs processed
+[2026-04-20T13:06:09Z] robots.txt: not found — no restrictions apply
+[2026-04-20T13:06:09Z] FETCH https://wiki.siminnovations.com/index.php?title=Fs2024_connected
+[2026-04-20T13:06:09Z] FETCHED https://wiki.siminnovations.com/index.php?title=Fs2024_connected (15059 bytes, 1 new links)
+[2026-04-20T13:06:09Z] FETCH https://wiki.siminnovations.com/index.php?title=Si_variable_create
+[2026-04-20T13:06:10Z] FETCHED https://wiki.siminnovations.com/index.php?title=Si_variable_create (16504 bytes, 1 new links)
+[2026-04-20T13:06:10Z] FETCH https://wiki.siminnovations.com/index.php?title=Si_variable_subscribe
+[2026-04-20T13:06:12Z] FETCHED https://wiki.siminnovations.com/index.php?title=Si_variable_subscribe (17983 bytes, 1 new links)
+[2026-04-20T13:06:12Z] FETCH https://wiki.siminnovations.com/index.php?title=Si_variable_write
+[2026-04-20T13:06:13Z] FETCHED https://wiki.siminnovations.com/index.php?title=Si_variable_write (15653 bytes, 1 new links)
+[2026-04-20T13:06:13Z] FETCH https://wiki.siminnovations.com/index.php?title=Si_command_subscribe
+[2026-04-20T13:06:14Z] FETCHED https://wiki.siminnovations.com/index.php?title=Si_command_subscribe (15601 bytes, 1 new links)
+[2026-04-20T13:06:14Z] FETCH https://wiki.siminnovations.com/index.php?title=Si_command
+[2026-04-20T13:06:15Z] FETCHED https://wiki.siminnovations.com/index.php?title=Si_command (15279 bytes, 1 new links)
+[2026-04-20T13:06:15Z] FETCH https://wiki.siminnovations.com/index.php?title=Ext_variable_subscribe
+[2026-04-20T13:06:17Z] FETCHED https://wiki.siminnovations.com/index.php?title=Ext_variable_subscribe (18357 bytes, 1 new links)
+[2026-04-20T13:06:17Z] FETCH https://wiki.siminnovations.com/index.php?title=Ext_variable_write
+[2026-04-20T13:06:18Z] FETCHED https://wiki.siminnovations.com/index.php?title=Ext_variable_write (15846 bytes, 1 new links)
+[2026-04-20T13:06:18Z] FETCH https://wiki.siminnovations.com/index.php?title=Ext_command_subscribe
+[2026-04-20T13:06:19Z] FETCHED https://wiki.siminnovations.com/index.php?title=Ext_command_subscribe (15497 bytes, 1 new links)
+[2026-04-20T13:06:19Z] FETCH https://wiki.siminnovations.com/index.php?title=Ext_command
+[2026-04-20T13:06:20Z] FETCHED https://wiki.siminnovations.com/index.php?title=Ext_command (15608 bytes, 1 new links)
+[2026-04-20T13:06:20Z] FETCH https://wiki.siminnovations.com/index.php?title=Ext_connected
+[2026-04-20T13:06:22Z] FETCHED https://wiki.siminnovations.com/index.php?title=Ext_connected (15273 bytes, 1 new links)
+[2026-04-20T13:06:22Z] FETCH https://wiki.siminnovations.com/index.php?title=Z_order
+[2026-04-20T13:06:23Z] FETCHED https://wiki.siminnovations.com/index.php?title=Z_order (15441 bytes, 1 new links)
+[2026-04-20T13:06:23Z] FETCH https://wiki.siminnovations.com/index.php?title=Move
+[2026-04-20T13:06:24Z] FETCHED https://wiki.siminnovations.com/index.php?title=Move (17065 bytes, 1 new links)
+[2026-04-20T13:06:24Z] FETCH https://wiki.siminnovations.com/index.php?title=Visible
+[2026-04-20T13:06:25Z] FETCHED https://wiki.siminnovations.com/index.php?title=Visible (15845 bytes, 1 new links)
+[2026-04-20T13:06:25Z] FETCH https://wiki.siminnovations.com/index.php?title=Opacity
+[2026-04-20T13:06:27Z] FETCHED https://wiki.siminnovations.com/index.php?title=Opacity (16587 bytes, 1 new links)
+[2026-04-20T13:06:27Z] FETCH https://wiki.siminnovations.com/index.php?title=Viewport_rect
+[2026-04-20T13:06:28Z] FETCHED https://wiki.siminnovations.com/index.php?title=Viewport_rect (15784 bytes, 1 new links)
+[2026-04-20T13:06:28Z] FETCH https://wiki.siminnovations.com/index.php?title=Viewport_shape
+[2026-04-20T13:06:29Z] FETCHED https://wiki.siminnovations.com/index.php?title=Viewport_shape (18748 bytes, 2 new links)
+[2026-04-20T13:06:29Z] FETCH https://wiki.siminnovations.com/index.php?title=Img_add
+[2026-04-20T13:06:30Z] FETCHED https://wiki.siminnovations.com/index.php?title=Img_add (20572 bytes, 1 new links)
+[2026-04-20T13:06:30Z] FETCH https://wiki.siminnovations.com/index.php?title=Img_add_fullscreen
+[2026-04-20T13:06:32Z] FETCHED https://wiki.siminnovations.com/index.php?title=Img_add_fullscreen (16090 bytes, 1 new links)
+[2026-04-20T13:06:32Z] FETCH https://wiki.siminnovations.com/index.php?title=Rotate
+[2026-04-20T13:06:33Z] FETCHED https://wiki.siminnovations.com/index.php?title=Rotate (18244 bytes, 1 new links)
+[2026-04-20T13:06:33Z] FETCH https://wiki.siminnovations.com/index.php?title=Txt_add
+[2026-04-20T13:06:34Z] FETCHED https://wiki.siminnovations.com/index.php?title=Txt_add (21744 bytes, 5 new links)
+[2026-04-20T13:06:34Z] FETCH https://wiki.siminnovations.com/index.php?title=Txt_set
+[2026-04-20T13:06:35Z] FETCHED https://wiki.siminnovations.com/index.php?title=Txt_set (15030 bytes, 1 new links)
+[2026-04-20T13:06:35Z] FETCH https://wiki.siminnovations.com/index.php?title=Txt_style
+[2026-04-20T13:06:37Z] FETCHED https://wiki.siminnovations.com/index.php?title=Txt_style (15274 bytes, 1 new links)
+[2026-04-20T13:06:37Z] FETCH https://wiki.siminnovations.com/index.php?title=Mouse_setting
+[2026-04-20T13:06:38Z] FETCHED https://wiki.siminnovations.com/index.php?title=Mouse_setting (17765 bytes, 1 new links)
+[2026-04-20T13:06:38Z] FETCH https://wiki.siminnovations.com/index.php?title=Switch_add
+[2026-04-20T13:06:39Z] FETCHED https://wiki.siminnovations.com/index.php?title=Switch_add (21589 bytes, 1 new links)
+[2026-04-20T13:06:39Z] FETCH https://wiki.siminnovations.com/index.php?title=Switch_set_position
+[2026-04-20T13:06:40Z] FETCHED https://wiki.siminnovations.com/index.php?title=Switch_set_position (15735 bytes, 1 new links)
+[2026-04-20T13:06:40Z] FETCH https://wiki.siminnovations.com/index.php?title=Switch_get_position
+[2026-04-20T13:06:41Z] FETCHED https://wiki.siminnovations.com/index.php?title=Switch_get_position (15712 bytes, 1 new links)
+[2026-04-20T13:06:41Z] FETCH https://wiki.siminnovations.com/index.php?title=Touch_setting
+[2026-04-20T13:06:43Z] FETCHED https://wiki.siminnovations.com/index.php?title=Touch_setting (17184 bytes, 1 new links)
+[2026-04-20T13:06:43Z] FETCH https://wiki.siminnovations.com/index.php?title=Slider_add_hor
+[2026-04-20T13:06:44Z] FETCHED https://wiki.siminnovations.com/index.php?title=Slider_add_hor (18113 bytes, 1 new links)
+[2026-04-20T13:06:44Z] FETCH https://wiki.siminnovations.com/index.php?title=Slider_add_ver
+[2026-04-20T13:06:45Z] FETCHED https://wiki.siminnovations.com/index.php?title=Slider_add_ver (18061 bytes, 1 new links)
+[2026-04-20T13:06:45Z] Crawl ended: wall-clock limit (0.01h)
+[2026-04-20T13:06:45Z] Completion report written to assets/air_manager_api\crawl_complete.md
+[2026-04-20T13:06:50Z] WARNING: TLS certificate verification DISABLED via --insecure flag
+[2026-04-20T13:06:50Z] Crawler started
+[2026-04-20T13:06:50Z] New crawl run: run_id=9
+[2026-04-20T13:06:50Z] Seeds imported: 384 URLs processed
+[2026-04-20T13:06:51Z] robots.txt: not found — no restrictions apply
+[2026-04-20T13:06:51Z] FETCH https://wiki.siminnovations.com/index.php?title=Slider_add_cir
+[2026-04-20T13:06:52Z] FETCHED https://wiki.siminnovations.com/index.php?title=Slider_add_cir (19420 bytes, 1 new links)
+[2026-04-20T13:06:52Z] FETCH https://wiki.siminnovations.com/index.php?title=Slider_set_position
+[2026-04-20T13:06:53Z] FETCHED https://wiki.siminnovations.com/index.php?title=Slider_set_position (15615 bytes, 1 new links)
+[2026-04-20T13:06:53Z] FETCH https://wiki.siminnovations.com/index.php?title=Scrollwheel_add_hor
+[2026-04-20T13:06:54Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scrollwheel_add_hor (17928 bytes, 1 new links)
+[2026-04-20T13:06:54Z] FETCH https://wiki.siminnovations.com/index.php?title=Scrollwheel_add_ver
+[2026-04-20T13:06:55Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scrollwheel_add_ver (17917 bytes, 1 new links)
+[2026-04-20T13:06:55Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_add
+[2026-04-20T13:06:57Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_add (18529 bytes, 5 new links)
+[2026-04-20T13:06:57Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_goto
+[2026-04-20T13:06:58Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_goto (15658 bytes, 2 new links)
+[2026-04-20T13:06:58Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_zoom
+[2026-04-20T13:06:59Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_zoom (15332 bytes, 1 new links)
+[2026-04-20T13:06:59Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_baselayer
+[2026-04-20T13:07:00Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_baselayer (15444 bytes, 1 new links)
+[2026-04-20T13:07:00Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_add_nav_img_layer
+[2026-04-20T13:07:01Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_add_nav_img_layer (17056 bytes, 2 new links)
+[2026-04-20T13:07:01Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_add_nav_txt_layer
+[2026-04-20T13:07:03Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_add_nav_txt_layer (17230 bytes, 1 new links)
+[2026-04-20T13:07:03Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_add_nav_canvas_layer
+[2026-04-20T13:07:04Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_add_nav_canvas_layer (17264 bytes, 1 new links)
+[2026-04-20T13:07:04Z] FETCH https://wiki.siminnovations.com/index.php?title=Map_nav_canvas_layer_draw
+[2026-04-20T13:07:05Z] FETCHED https://wiki.siminnovations.com/index.php?title=Map_nav_canvas_layer_draw (16253 bytes, 1 new links)
+[2026-04-20T13:07:05Z] FETCH https://wiki.siminnovations.com/index.php?title=Video_stream_add
+[2026-04-20T13:07:06Z] FETCHED https://wiki.siminnovations.com/index.php?title=Video_stream_add (20012 bytes, 1 new links)
+[2026-04-20T13:07:06Z] FETCH https://wiki.siminnovations.com/index.php?title=Video_stream_ext_add
+[2026-04-20T13:07:08Z] FETCHED https://wiki.siminnovations.com/index.php?title=Video_stream_ext_add (17599 bytes, 1 new links)
+[2026-04-20T13:07:08Z] FETCH https://wiki.siminnovations.com/index.php?title=Video_stream_set
+[2026-04-20T13:07:09Z] FETCHED https://wiki.siminnovations.com/index.php?title=Video_stream_set (15935 bytes, 1 new links)
+[2026-04-20T13:07:09Z] FETCH https://wiki.siminnovations.com/index.php?title=Canvas_add
+[2026-04-20T13:07:10Z] FETCHED https://wiki.siminnovations.com/index.php?title=Canvas_add (18708 bytes, 3 new links)
+[2026-04-20T13:07:10Z] FETCH https://wiki.siminnovations.com/index.php?title=Canvas_draw
+[2026-04-20T13:07:11Z] FETCHED https://wiki.siminnovations.com/index.php?title=Canvas_draw (16239 bytes, 2 new links)
+[2026-04-20T13:07:11Z] FETCH https://wiki.siminnovations.com/index.php?title=Move_to
+[2026-04-20T13:07:13Z] FETCHED https://wiki.siminnovations.com/index.php?title=Move_to (16208 bytes, 1 new links)
+[2026-04-20T13:07:13Z] FETCH https://wiki.siminnovations.com/index.php?title=Txt
+[2026-04-20T13:07:14Z] FETCHED https://wiki.siminnovations.com/index.php?title=Txt (19911 bytes, 1 new links)
+[2026-04-20T13:07:14Z] FETCH https://wiki.siminnovations.com/index.php?title=Canvas_rotate
+[2026-04-20T13:07:15Z] FETCHED https://wiki.siminnovations.com/index.php?title=Canvas_rotate (16752 bytes, 2 new links)
+[2026-04-20T13:07:15Z] FETCH https://wiki.siminnovations.com/index.php?title=Canvas_translate
+[2026-04-20T13:07:17Z] FETCHED https://wiki.siminnovations.com/index.php?title=Canvas_translate (16079 bytes, 1 new links)
+[2026-04-20T13:07:17Z] FETCH https://wiki.siminnovations.com/index.php?title=Canvas_scale
+[2026-04-20T13:07:18Z] FETCHED https://wiki.siminnovations.com/index.php?title=Canvas_scale (16012 bytes, 1 new links)
+[2026-04-20T13:07:18Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_add
+[2026-04-20T13:07:19Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_add (16470 bytes, 1 new links)
+[2026-04-20T13:07:19Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_camera_add
+[2026-04-20T13:07:20Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_camera_add (16306 bytes, 1 new links)
+[2026-04-20T13:07:20Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_light_add
+[2026-04-20T13:07:22Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_light_add (16282 bytes, 1 new links)
+[2026-04-20T13:07:22Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_mesh_add
+[2026-04-20T13:07:23Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_mesh_add (16949 bytes, 1 new links)
+[2026-04-20T13:07:23Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_mesh_set_material
+[2026-04-20T13:07:24Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_mesh_set_material (16525 bytes, 1 new links)
+[2026-04-20T13:07:24Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_material_add
+[2026-04-20T13:07:25Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_material_add (20959 bytes, 1 new links)
+[2026-04-20T13:07:25Z] FETCH https://wiki.siminnovations.com/index.php?title=Scene_node_add
+[2026-04-20T13:07:27Z] FETCHED https://wiki.siminnovations.com/index.php?title=Scene_node_add (16572 bytes, 1 new links)
+[2026-04-20T13:07:27Z] Crawl ended: wall-clock limit (0.01h)
+[2026-04-20T13:07:27Z] Completion report written to assets/air_manager_api\crawl_complete.md
