@@ -7,7 +7,10 @@
 
 | ID | Severity | Type | Title | Source | Notes |
 |----|----------|------|-------|--------|-------|
-| ITM-01 | Low | Process / housekeeping | File movement reminder — after Streams A and B complete | Purple Turn 37 | CD raises this when A4 and B4 are both done; see details below |
+| ITM-01 | Low | Process / housekeeping | File movement reminder — after Streams A and B complete | Purple Turn 37 | Triggered. With B3 PASS WITH NOTES discharged, ITM-01 fires after B4 readiness review. |
+| ITM-02 | Low | Cleanup / docs | AMAPI patterns: add Tier 2 columns to function_usage_matrix | Purple Turn 3 (B3 compliance) | Phase C step 3 of AMAPI-PATTERNS-01 was missed. Matrix is `_crp_work/` scratch — discharge per D-07. See details below. |
+| ITM-03 | Low | Cleanup / docs | AMAPI patterns: convert plain-text `hw_dial_add` to markdown links in Patterns 20/21 | Purple Turn 3 (B3 compliance) | Completion report claimed `Hw_dial_add.md` was missing; file actually exists. See details below. |
+| ITM-04 | Low | Process / template | CC task prompt template: add "verify completion-report claims" step | Purple Turn 3 (D-08) | Per D-08, completion reports must re-verify numerical/existence claims at submission time. Update `docs/templates/CC_Task_Prompt_Template.md`. See details below. |
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
 
 ---
@@ -49,6 +52,88 @@ At that point CD should produce a consolidated file-movement CC task covering al
 - The completed-task files are harmless where they are — this is cleanup, not a correctness issue
 - Once triggered, the file-movement CC task should also produce a final commit in the D-04 trailer format
 - MANUAL_gnc355_eyeball_low_confidence_pages.md stays in `docs/tasks/` by design — it's Steve's active work list; moves only after Steve saves the results file
+
+---
+
+## ITM-02: AMAPI patterns — add Tier 2 columns to function_usage_matrix
+
+**Created:** 2026-04-20T18:41:01-04:00
+**Source:** Purple Turn 3 — AMAPI-PATTERNS-01 compliance check, finding V3
+**Status:** Open
+**Severity:** Low (cleanup; affects scratch artifact only)
+**Owner:** CC when batched (CD drafts the task prompt)
+
+### Description
+
+AMAPI-PATTERNS-01 Phase C step 3 explicitly required: "Update the function-usage matrix to include Tier 2 columns." CC executed Phase C's pattern-confirmation work but did not update the matrix. Current state at `_crp_work/amapi_patterns_01/function_usage_matrix.md` has 6 columns (Tier 1 only). Expected: 14 columns (6 T1 + 8 T2).
+
+### Discharge rationale
+
+Per D-07, the matrix is a `_crp_work/` scratch artifact, not a published deliverable. The pattern catalog (the actual deliverable) correctly cites Tier 2 sample counts and exemplars — Phase C's analysis succeeded; only the matrix update was skipped. Tracking as ITM rather than blocking on bug-fix task.
+
+### Fix
+
+A small CC task: re-run a function-call grep across the 8 Tier 2 logic.lua files, append 8 new columns to the matrix table. Estimated 10–15 min CC work. Could be batched with ITM-03.
+
+### Related
+
+- AMAPI-PATTERNS-01 compliance report (`docs/tasks/completed/amapi_patterns_compliance.md` §V3)
+- D-07 (compliance triage rubric for `_crp_work/` failures)
+
+---
+
+## ITM-03: AMAPI patterns — convert plain-text `hw_dial_add` to markdown links in Patterns 20 and 21
+
+**Created:** 2026-04-20T18:41:01-04:00
+**Source:** Purple Turn 3 — AMAPI-PATTERNS-01 compliance check, finding VIII1/VIII2
+**Status:** Open
+**Severity:** Low (cosmetic; affects 2 link references)
+**Owner:** CC when batched (CD drafts the task prompt)
+
+### Description
+
+Pattern 20 and Pattern 21 in `docs/knowledge/amapi_patterns.md` reference `hw_dial_add` as plain-text backticks rather than markdown links to `../reference/amapi/by_function/Hw_dial_add.md`. CC chose this defensive form because the completion report (incorrectly) believed the reference file was missing. Compliance check confirmed `Hw_dial_add.md` exists (2007 bytes, present before AMAPI-PATTERNS-01 ran).
+
+### Fix
+
+In `docs/knowledge/amapi_patterns.md`:
+
+- Pattern 20 "Functions used" entry (~line 623): `` `hw_dial_add` — registers a hardware rotary encoder binding (see Pattern 21)`` → `` [hw_dial_add](../reference/amapi/by_function/Hw_dial_add.md) — registers a hardware rotary encoder binding (see Pattern 21)``
+- Pattern 21 "Functions used" entry (~line 663): `` `hw_dial_add` — binds a named hardware encoder to a callback; args: name, detent type, step, callback`` → `` [hw_dial_add](../reference/amapi/by_function/Hw_dial_add.md) — binds a named hardware encoder to a callback; args: name, detent type, step, callback``
+
+Estimated 5 min CC work. Naturally batched with ITM-02.
+
+### Related
+
+- AMAPI-PATTERNS-01 compliance report (`docs/tasks/completed/amapi_patterns_compliance.md` §VIII)
+- D-08 (completion report verification — root cause for the false-positive gap claim)
+
+---
+
+## ITM-04: CC task prompt template — add "verify completion-report claims" step
+
+**Created:** 2026-04-20T18:41:01-04:00
+**Source:** Purple Turn 3 — D-08 implementation followup
+**Status:** Open
+**Severity:** Low (process / template change; benefits all future tasks)
+**Owner:** CD (template is CD-maintained; small enough to do inline rather than CC task)
+
+### Description
+
+Per D-08, CC completion reports must verify numerical and existence claims against current file state before submission rather than relying on in-progress estimates from earlier phases. The CC task prompt template at `docs/templates/CC_Task_Prompt_Template.md` should be updated to include this requirement explicitly in its Completion Protocol section.
+
+### Fix
+
+Add to `docs/templates/CC_Task_Prompt_Template.md` Completion Protocol section, before "Write completion report":
+
+> **Verify report claims against actual state.** Before writing the completion report, re-derive every numerical and existence claim from a fresh grep / ls / wc command. Quote the commands and their output inline in the report. Do NOT carry numerical estimates from intermediate phase markers (`_phase_X_complete.md`) verbatim — those are often estimated mid-flight and drift from final state.
+
+Also strengthen the "Deviations from prompt" section instructions: cross-check the report body against every numbered step in the prompt's Completion Protocol section. If any step lacks an inline confirmation, list it as a deviation OR add the inline confirmation.
+
+### Related
+
+- D-08 (completion report claim verification — the decision this implements)
+- AMAPI-PATTERNS-01 completion report (the case study showing why this is needed)
 
 ---
 
