@@ -137,7 +137,11 @@ The canonical function page (example: `Xpl_dataref_subscribe`) has this structur
 1. **Table of Contents** — `<div id="toc">`. Skip.
 2. **Section headers** — `<h2><span class="mw-headline" id="Section_Name">Section Name</span></h2>`. Canonical sections include: `Description`, `Return_value`, `Arguments`, `Example`, `Example_(single_...)`, `Example_(multi_...)`, `See_also`.
 3. **Signature block** — First `<pre><b>`*`signature()`*`</b></pre>` typically appears right after the `Description` header. Contains the function signature in bold.
-4. **Description text** — `<p>` elements following the signature, before next `<h2>`.
+4. **Description HTML → Description plaintext with inline links.** The `description` field in the JSON must preserve inline wiki-internal links as markdown-style link syntax so the markdown renderer can pass them through. Specifically:
+   - Extract plaintext from `<p>` elements following the Description section header
+   - For each `<a>` inside the plaintext, replace with `[display_text](page_name)` (internal) or keep as `[display_text](external_url)` (external)
+   - Collapse whitespace; decode HTML entities
+   - `description_html` preserves the original `<p>` innerHTML for renderers that want full fidelity
 5. **Return value text** — `<p>` elements under the `Return_value` section.
 6. **Arguments table** — `<table class="wikitable">` under the `Arguments` section. Columns: `#`, `Argument`, `Type`, `Description`. Rows contain parameter entries.
 7. **Code examples** — `<pre><code class="lua todo">...</code></pre>` under `Example_*` sections. One code block per example section.
@@ -263,6 +267,12 @@ Content end marker: `<!-- NewPP limit report -->` HTML comment (anything after i
 - `examples`: ordered list; each entry has section label (from the heading text in parens), language (from `<code class="...">`), code (HTML-decoded).
 - `see_also` vs `cross_references`: `see_also` comes specifically from a `See_also` / `See also` section. `cross_references` is any other wiki-internal link found in the body (Description, Arguments, Examples).
 - `external_references`: non-wiki URLs found in the body.
+- **Link target resolution (critical):** When building `see_also` and `cross_references`, extract the target `page_name` from the `href`. Examples:
+  - `/index.php?title=Xpl_command` → `page_name: "Xpl_command"`
+  - `/index.php/Xpl_command` → `page_name: "Xpl_command"`
+  - `href` contains `redlink=1` → target page does not exist; set `page_name` but also set a flag `is_redlink: true` on the reference
+  - External `http(s)://` URL → goes into `external_references`, not cross_references
+  Each reference entry (in `see_also`, `cross_references`) includes `page_name`, `display_text`, and optionally `is_redlink: true`.
 - `parse_status`: `"complete"` (all expected sections found), `"partial"` (some sections missing but function identity clear), `"skipped-wrong-shape"` (page doesn't match function structure).
 - `parse_warnings`: list of warning strings (e.g., "no arguments table found", "signature parse fallback used").
 - `parse_notes`: freeform note from parser; usually empty.
@@ -393,8 +403,20 @@ Content end marker: `<!-- NewPP limit report -->` HTML comment (anything after i
 ### Phase E: Markdown renderer + per-function docs
 
 1. Create `scripts/amapi_parser_lib/markdown_renderer.py`:
-   - Function: `render_function_markdown(record: dict) -> str` — takes a parsed function dict; returns markdown.
+   - Function: `render_function_markdown(record: dict, known_pages: set) -> str` — takes a parsed function dict; returns markdown. `known_pages` is the set of all `page_name` strings the parser produced (used for link-target resolution — see below).
    - Function: `render_index_markdown(index: dict) -> str` — takes `_index.json`; returns the catalog index markdown.
+
+**Live cross-reference link rules (critical):**
+
+Every reference to another AMAPI function in the rendered markdown must be a LIVE local link. Rendering rules:
+
+1. **Internal link, target exists in `known_pages`:** render as `[display_text](./{page_name}.md)`. This resolves in any markdown viewer (Typora, VS Code, GitHub) as a click-through to the other function's doc.
+2. **Internal link, target NOT in `known_pages` (missing page or redlink):** render as `[display_text](./{page_name}.md)` STILL — with a trailing `⚠` emoji or `[missing]` tag for human visibility. The link will render as broken in viewers, which is the correct signal.
+3. **External link:** render as `[display_text](url)` — regular markdown link, no modification.
+4. **Description plaintext:** already contains markdown-style `[display_text](page_name)` from Phase B. Transform each internal link to `[display_text](./{page_name}.md)` and external links stay as-is.
+5. **`see_also` section:** render each as a list item with live link `[display_text](./{page_name}.md)`.
+6. **`cross_references` (body-level links not in see_also):** NOT rendered as a separate section by default — they're already embedded in the Description/Examples text via rule 4. If the parser records them separately, the markdown renderer can add a "Related" section at the end with bullets, but default is to omit and rely on inline embedding.
+7. **External references:** rendered under "## External references" as a list with live links.
 
 **Per-function markdown structure:**
 
@@ -419,7 +441,7 @@ xpl_dataref_subscribe(dataref,type,...,callback_function)
 ## Description
 
 xpl_dataref_subscribe is used to subscribe to one or more X-Plane datarefs.
-You can find the available datarefs at X-Plane DataRefs.
+You can find the available datarefs at [X-Plane DataRefs](https://developer.x-plane.com/datarefs/).
 
 ## Return value
 
@@ -449,8 +471,8 @@ xpl_dataref_subscribe("sim/cockpit2/gauges/indicators/altitude_ft_pilot", "FLOAT
 
 ## See also
 
-- [Xpl_command](Xpl_command.md)
-- [Msfs_variable_subscribe](Msfs_variable_subscribe.md)
+- [Xpl_command](./Xpl_command.md)
+- [Msfs_variable_subscribe](./Msfs_variable_subscribe.md)
 
 ## External references
 
