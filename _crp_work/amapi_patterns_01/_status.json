@@ -1,0 +1,12 @@
+{
+  "task_id": "AMAPI-PATTERNS-01",
+  "phases": {
+    "A": {"status": "in-progress", "started": "2026-04-20T00:00:00Z", "completed": null, "artifacts": []},
+    "B": {"status": "pending", "started": null, "completed": null, "artifacts": []},
+    "C": {"status": "pending", "started": null, "completed": null, "artifacts": []},
+    "D": {"status": "pending", "started": null, "completed": null, "artifacts": []},
+    "E": {"status": "pending", "started": null, "completed": null, "artifacts": []}
+  },
+  "current_phase": "A",
+  "last_updated": "2026-04-20T00:00:00Z"
+}

@@ -2,7 +2,7 @@
 
 **Canonical source:** `docs/templates/memory_bootstrap.md` (initial 22 slots); `docs/decisions/D-04-*.md`, `docs/decisions/D-05-*.md` (slots 23–25)
 **Generated:** 2026-04-19T00:00:00-04:00 (initial draft)
-**Last synced:** 2026-04-20T09:10:00-04:00 (Purple Turn 40 — 25 slots live; file mirrors live memory exactly)
+**Last synced:** 2026-04-20T09:30:00-04:00 (Purple Turn 41 — 25 slots live; slot #24 tightened to point at claude-conventions.md instead of inlining mechanics)
 **Purpose:** Exact flat mirror of the 30-slot Claude.ai memory system. Git-tracked backup and bootstrap source. Contains exactly what is in Claude.ai memory — no more.
 
 ---
@@ -53,6 +53,6 @@
 
 23. D-04 commit trailer policy: all commits include trailers. Mandatory: Task-Id, Authored-By-Instance (cc, cd-green, cd-yellow, cd-purple, cd, steve). Conditional: Refs, Fixes, Supersedes, Decision. CC+CD commits also include Co-Authored-By: Claude Code or Claude Desktop <noreply@anthropic.com>. CC does not push. CD does not push. Only Steve pushes.
 
-24. CD commit mechanics (D-04): CD drafts command, Steve executes. CD has no git tool. Use git commit -F <file> (NOT multiple -m flags — PowerShell swallows empty -m ""). Write message via [System.IO.File]::WriteAllText (NOT Out-File — writes BOM). Temp file at .git/COMMIT_EDITMSG_cd using Join-Path $PWD for absolute path. Blank line between subject and trailer block.
+24. CD commit mechanics: CD drafts command, Steve executes. Full mechanics (git -F <file> pattern, BOM-free write, Join-Path $PWD for absolute path) in claude-conventions.md §Git Commit Trailers §CD commit execution mechanics.
 
 25. D-05 "assess" shorthand: when Steve says "assess" (or "review") and references a review-artifact file, trigger the protocol matching the filename. *_completion.md → check completions. *_compliance.md → check compliance. *_validation.md → check validation. *_review.md → spec review triage. The literal trigger phrase without a filename means process ALL unprocessed files of that type.
