@@ -318,6 +318,37 @@ CD commits its own direct file writes at natural turn seams:
 
 CD commits use `Authored-By-Instance: cd-{color}` where color matches the active CD instance. Standard CD sessions (no color) use `cd`. **CD does NOT push.**
 
+### CD commit execution mechanics
+
+CD has no direct git tool. CD-authored commits follow a two-actor pattern: **CD drafts the command; Steve executes it**. CD must emit two code blocks per commit request: a `git add` line and a commit-via-file block.
+
+**Canonical pattern (BOM-free, PowerShell-safe):**
+
+````powershell
+# Step 1: stage files
+git add <file1> <file2> ...
+
+# Step 2: write commit message (BOM-free) and commit
+$msg = @"
+{SUBJECT LINE}
+
+Task-Id: {TASK-ID}
+Authored-By-Instance: cd-{color}
+Decision: D-{n}                       # if applicable
+Refs: {spec, decision, plan}          # if applicable
+Co-Authored-By: Claude Desktop <noreply@anthropic.com>
+"@
+[System.IO.File]::WriteAllText(".git/COMMIT_EDITMSG_cd", $msg)
+git commit -F .git/COMMIT_EDITMSG_cd
+Remove-Item .git/COMMIT_EDITMSG_cd
+````
+
+**Why `[System.IO.File]::WriteAllText` and not `Out-File`:** PowerShell 5.x's `Out-File -Encoding utf8` writes UTF-8 **with BOM**. The BOM (U+FEFF) leaks into the commit subject as a leading invisible character, visible when viewing with `git log --format=fuller`. `[System.IO.File]::WriteAllText` writes BOM-free UTF-8 by default.
+
+**Why `-F <file>` and not multiple `-m`:** PowerShell drops empty-string `-m ""` arguments. Chains like `git commit -m "{subject}" -m "" -m "{trailer}"` are unreliable — the empty line intended to separate subject from trailer disappears, and git may interpret trailer text as a pathspec. The `-F <file>` path has predictable newline semantics.
+
+**CC commit mechanics** are the same but CC writes the file directly via its shell. Multi-`-m` is discouraged for CC too.
+
 Full decision record: `docs/decisions/D-04-commit-trailer-policy.md`.
 
 ---

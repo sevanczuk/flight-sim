@@ -40,6 +40,9 @@ docs/specs/lifecycle/*.bak
 assets/air_manager_api/crawl.sqlite3
 assets/air_manager_api/crawl.sqlite3.bak
 
+# GNC 355 PDF extraction output — regenerable from source PDF + scripts/gnc355_pdf_extract.py (D-06)
+assets/gnc355_pdf_extracted/
+
 # Claude.ai project refresh flags
 *.needs_refresh
 

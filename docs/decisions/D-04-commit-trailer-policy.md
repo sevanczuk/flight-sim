@@ -1,7 +1,8 @@
 # D-04: Git commit trailer policy
 
-**Created:** 2026-04-20T08:19:17-04:00
-**Source:** Purple Turns 25–27 — discovered inconsistency in CC commit trailers across AMAPI-CRAWLER-01, SAMPLES-RENAME-01, GNC355-EXTRACT-01; policy defined
+**Created:** 2026-04-20T08:19:17-04:00  
+**Amended:** 2026-04-20T09:10:00-04:00 (Purple Turn 37 — executing-mechanics clarifications: `-F` + file pattern, BOM-free writes, CD-drafts / Steve-executes)  
+**Source:** Purple Turns 25–27 (original), 29, 31–32 (mechanics lessons), 37 (amendment)  
 **Decision type:** convention / workflow
 
 ## Decision
@@ -127,18 +128,72 @@ Authored-By-Instance: steve
 
 Previously, CD wrote files via Filesystem MCP but did not commit them — commits were left to CC or to Steve. This created dangling uncommitted changes when CD wrote decision records or plan updates outside the context of a CC task.
 
-**New convention:** CD commits its own direct file writes at natural turn seams. A "natural seam" is:
+**New convention:** CD is responsible for its own direct file writes being committed at natural turn seams. A "natural seam" is:
 - End of a substantive turn where files were written
 - On explicit Steve request ("commit that")
 - Before authoring a task prompt that will cite the files just written (so CC sees a consistent tree)
 
-CD commits use `Authored-By-Instance: cd-{color}` where color matches the active CD instance. Standard CD sessions (no color) use `cd` (no suffix).
+### CD-authored commit mechanics (amended Turn 37)
 
-**CD still does NOT push.** Only Steve pushes.
+CD has no git tool — it writes files via the Filesystem MCP but cannot execute `git` on Steve's machine. Therefore CD-authored commits are produced via this two-actor pattern:
 
-## Migration — Existing Commits
+1. **CD drafts the commit command** with trailers populated correctly, including `Authored-By-Instance: cd-{color}`
+2. **Steve executes the command** in PowerShell
 
-The four existing non-migration commits (`d2297bc`, `97456c9`, `4ea1685`, `5f88e9c`) do not follow this policy. They are **not retroactively rewritten** — the history reflects the pre-policy state. New commits from this point forward follow D-04.
+The `Authored-By-Instance` trailer is honest: CD authored the file contents; Steve's role is mechanical command execution. No content decisions are delegated.
+
+Steve remains the only actor who performs `git push`.
+
+### Recommended commit-message delivery: `-F <file>`, NOT multi-`-m`
+
+Early experience (Turn 29) showed that PowerShell's handling of multiple `-m` flags with empty-string arguments is unreliable. PowerShell swallows empty `-m ""` arguments, which corrupts the message body structure and can make git interpret trailer lines as pathspecs.
+
+**Canonical CD commit pattern (works reliably on PowerShell):**
+
+1. CD emits two blocks to Steve: the `git add` command, then a commit-via-file block.
+2. The commit-via-file block uses a PowerShell here-string to write the message to a temp file, then `git commit -F <file>`, then deletes the temp file.
+3. The temp file lives under `.git/` (never committed, never pushed) with a distinctive name like `.git/COMMIT_EDITMSG_cd`.
+4. File encoding MUST be BOM-free to avoid U+FEFF leaking into the commit subject. PowerShell 5.x's `Out-File -Encoding utf8` writes WITH BOM; use `-Encoding utf8NoBOM` (PowerShell 6+) OR `-Encoding ascii` OR write via `[System.IO.File]::WriteAllText($path, $content)` which defaults to BOM-free UTF-8.
+5. Message file structure: subject on line 1, **blank line** on line 2, then trailer block. The blank line is aesthetic but recommended — git parses the trailers either way (confirmed Turn 32 via `git log --pretty="%(trailers)"`), but visual readability improves with the separator.
+
+**Reference pattern CD emits to Steve (fill in the specifics per commit):**
+
+````powershell
+# Step 1: stage files
+git add <file1> <file2> ...
+
+# Step 2: write commit message (BOM-free) and commit
+$msg = @"
+{SUBJECT LINE}
+
+Task-Id: {TASK-ID}
+Authored-By-Instance: cd-{color}
+Decision: D-{n}                       # if applicable
+Refs: {spec, decision, plan}          # if applicable
+Co-Authored-By: Claude Desktop <noreply@anthropic.com>
+"@
+[System.IO.File]::WriteAllText(".git/COMMIT_EDITMSG_cd", $msg)
+git commit -F .git/COMMIT_EDITMSG_cd
+Remove-Item .git/COMMIT_EDITMSG_cd
+````
+
+The blank line between subject and the first trailer line is required for visual readability and improves some git tools' trailer parsing. The `@"` ... `"@` here-string accepts multi-line content without escape gymnastics.
+
+**CC-authored commits** follow the same `-F <file>` pattern — CC has shell access so it writes the file directly and runs `git commit -F`. Multi-`-m` is discouraged for CC commits too; uniformity reduces failure modes.
+
+**What NOT to do (anti-patterns discovered):**
+- `git commit -m "{subject}" -m "" -m "{trailer1}" -m "{trailer2}" ...` — PowerShell drops empty-string `-m`, breaking the message
+- `Out-File -Encoding utf8 ...` in PowerShell 5.x — writes UTF-8 with BOM, which leaks U+FEFF into the commit subject
+- Inline `git commit -m $("...")` with embedded newlines — PowerShell quoting rules eat the newlines
+
+### Related Turn-specific lessons
+
+- **Turn 29:** Multi-`-m` failure on PowerShell; empty `-m ""` swallowed.
+- **Turn 32:** BOM detected in `git log --format=fuller` output as `﻿` before the subject line. Verified that `git log --pretty="%(trailers)"` still returned the four trailer lines cleanly, so tooling was unaffected but visual display was marred.
+
+Full decision record: this document.
+
+---
 
 ## Consequences
 
