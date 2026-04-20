@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Aspen EFD1000 - Sim Innovations Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"aaec10b54cf61fa7a7132cf2","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Aspen_EFD1000","wgTitle":"Aspen EFD1000","wgCurRevisionId":4487,"wgRevisionId":4487,"wgArticleId":290,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Aspen_EFD1000","wgRelevantArticleId":290,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":
+"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.highlightjs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<link rel="stylesheet" href="/extensions/HighlightJS/highlight.css"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Sim Innovations Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.siminnovations.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Sim Innovations Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Aspen_EFD1000 rootpage-Aspen_EFD1000 skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Aspen EFD1000</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Sim Innovations Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div style="background: rgba(255, 0, 0, 0.1); border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Warning.png" class="image" title="Info"><img alt="Info" src="/images/thumb/c/cb/Warning.png/18px-Warning.png" decoding="async" width="18" height="18" srcset="/images/thumb/c/cb/Warning.png/27px-Warning.png 1.5x, /images/thumb/c/cb/Warning.png/36px-Warning.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;">The Sim Innovations Aspen EFD1000 is an interpretation of <a rel="nofollow" class="external text" href="https://aspenavionics.com/products/general-aviation/evolution-1000/">the real Aspen Evolution 1000</a> unit build by Aspen Avionics. It is in no way a training aid for the real Aspen Avionics Evolution 1000 flight instrument!</span></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/index.php?title=File:Buttons_and_feature_overview.jpg" class="image"><img alt="" src="/images/thumb/4/45/Buttons_and_feature_overview.jpg/300px-Buttons_and_feature_overview.jpg" decoding="async" width="300" height="302" class="thumbimage" srcset="/images/thumb/4/45/Buttons_and_feature_overview.jpg/450px-Buttons_and_feature_overview.jpg 1.5x, /images/thumb/4/45/Buttons_and_feature_overview.jpg/600px-Buttons_and_feature_overview.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:Buttons_and_feature_overview.jpg" class="internal" title="Enlarge"></a></div>Buttons and features overview</div></div></div>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_description"><span class="tocnumber">1</span> <span class="toctext">General description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Primary_Flight_Display"><span class="tocnumber">2</span> <span class="toctext">Primary Flight Display</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Airspeed"><span class="tocnumber">2.1</span> <span class="toctext">Airspeed</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Attitude"><span class="tocnumber">2.2</span> <span class="toctext">Attitude</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Altitude"><span class="tocnumber">2.3</span> <span class="toctext">Altitude</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Data_bar"><span class="tocnumber">2.4</span> <span class="toctext">Data bar</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Navigation_Display"><span class="tocnumber">3</span> <span class="toctext">Navigation Display</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#CDI_navigation_information"><span class="tocnumber">3.1</span> <span class="toctext">CDI navigation information</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Center_top"><span class="tocnumber">3.2</span> <span class="toctext">Center top</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Navigation_display_2"><span class="tocnumber">3.3</span> <span class="toctext">Navigation display</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Vertical_speed_indicator"><span class="tocnumber">3.4</span> <span class="toctext">Vertical speed indicator</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Hot_key_labels"><span class="tocnumber">3.5</span> <span class="toctext">Hot key labels</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Source_bar"><span class="tocnumber">3.6</span> <span class="toctext">Source bar</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Buttons_and_dials"><span class="tocnumber">4</span> <span class="toctext">Buttons and dials</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Hardware"><span class="tocnumber">6</span> <span class="toctext">Hardware</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Generic"><span class="tocnumber">6.1</span> <span class="toctext">Generic</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Ruscool_Aspen_EFD1000"><span class="tocnumber">6.2</span> <span class="toctext">Ruscool Aspen EFD1000</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_description">General description</span></h2>
+<p>The Aspen EFD1000 panel consist of three instruments, the primary flight display (PFD), the navigation display (ND) and the bezel. Together they form the EFD1000 in it's original aspect ratio (400x760 px). You can scale the panel as a whole to make it fit in your instrument panel, usually replacing the attitude indicator and gyro compass or HSI. The original panel size is 503x1007 px, representing the instrument screen in it's real pixel size. The instruments in the panel were made in twice the size, assuring the image quality stays to an optimum.
+</p>
+<h2><span class="mw-headline" id="Primary_Flight_Display">Primary Flight Display</span></h2>
+<p>The primary flight display consists of four parts: airspeed, attitude, altitude and data bar.
+</p>
+<h3><span class="mw-headline" id="Airspeed">Airspeed</span></h3>
+<p>The airspeed becomes visible at 20 knots up to a maximum of 450 knots. The airspeed tape has 4 different color markings, which can be set manually if you select the EFD1000 PFD in the panels list. The following settings can be made:
+</p>
+<ul><li>White lower: Vso, stall Speed with landing configuration, that is flaps out and landing gear down.</li>
+<li>White upper: Vfe, known as Maximum Flap Extended Speed. This is the speed in which you can fly with flaps extended.</li>
+<li>Green lower: Vs, stall speed with a “clean” aircraft configuration.</li>
+<li>Yellow lower: This is the Vno upper limit, this where the part between Vno and Vne begins. Normally it is only allowed to fly in this part when being in smooth air.</li>
+<li>Red lower: Vne, this is the 'Never Exceed Speed'.</li></ul>
+<p>The indicated airspeed turns red when exceeding Vne.
+On top of the airspeed tape is the IAS indicator value. This IAS value can be set with the left Mode/Sync button and is also represented by a bug along the airspeed tape. The IAS is for pilot reference only, and can be used to help you keeping your desired speed.
+</p>
+<h3><span class="mw-headline" id="Attitude">Attitude</span></h3>
+<p>The attitude indicator holds more than just the attitude, it contains:
+</p>
+<ul><li>Roll indicator: Indicates roll/bank with marks at 0, 10, 20, 30, 45 and 60 degrees roll.</li>
+<li>Slip indicator: Indicates side slip, one rectangle indicating the equivalent of a full ball deflection.</li>
+<li>Attitude indicator: Roll and pitch with red chevrons at 15º and more nose up, and 10º and more nose down.</li>
+<li>Flight director: Magenta colored flight director.</li>
+<li>Navigation source indicator: Indicates to which source the HSI is connected, either Nav1 or GPS1.</li>
+<li>CDI: Green triangle indicating course deflection in dots, turns hollow when deflection is greater than 2 dots. Becomes visible when there is a valid signal.</li>
+<li>GSI: Green triangle indicating glide slope deflection in dots, turns hollow when deflection is greater than 2 dots. Becomes visible when there is a valid signal.</li>
+<li>Minimums setting and warning: Shows the minimums altitude set and a minimums warning when descending below set minimums altitude. Minimums altitude can be set between 0 and 15.000 feet with 10 feet increments.</li></ul>
+<p>When the bus voltage drops below the minimum value, a battery warning indicator will be shown and the device will start to run on it's internal battery. The battery lasts for approximately 30 minutes, after this the device will turn off. Set your aircraft default bus voltage in the user properties, either 14 or 28 volt.
+</p>
+<h3><span class="mw-headline" id="Altitude">Altitude</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/index.php?title=File:Alttape.jpg" class="image"><img alt="" src="/images/thumb/6/6d/Alttape.jpg/300px-Alttape.jpg" decoding="async" width="300" height="180" class="thumbimage" srcset="/images/thumb/6/6d/Alttape.jpg/450px-Alttape.jpg 1.5x, /images/6/6d/Alttape.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:Alttape.jpg" class="internal" title="Enlarge"></a></div>Minimums and trend vector</div></div></div>
+<p>The altitude tape shows the altitude from -500 feet up till 40.000 feet, and a couple things more:
+</p>
+<ul><li>Minimums indicators: Green triangle indicating 500 feet above minimums setting, yellow hollow triangle indicating between 100 and 200 feet above minimums, red and yellow triangle indicating set minimums altitude. Descending below set minimums altitude triggers a one second tone.</li>
+<li>Altitude bug: Indicates the altitude set on the autopilot. A tone sounds and the alerter settings window turns yellow 200 feet before reaching the set altitude, the yellow warning extinguishes after 15 seconds. The alerter becomes active when deviating more than 200 feet from your set altitude.</li>
+<li>Trend vector: This is the magenta bar along the altitude tape, showing the expected altitude within the next 6 seconds.</li></ul>
+<p>The window on top of the altitude tape shows your altitude alerter setting. In this instrument the alerter value is connected to your autopilot altitude setting, and can be set with the right Mode/Sync dial.
+</p>
+<h3><span class="mw-headline" id="Data_bar">Data bar</span></h3>
+<ul><li>TAS: True airspeed in knots, visible above 20 knots.</li>
+<li>GS: GPS ground speed in knots.</li>
+<li>OAT: Outside air temperature, either in Celsius or Fahrenheit. Can be set in the PFD user properties.</li>
+<li>Wind speed and angle: The speed and angle of the wind on the aircraft. Becomes visible when the wind speed is higher than 10 knots and the aircraft is in the air.</li>
+<li>Barometric pressure setting: Either in Pascal (mB) or Inches Hg (in). Can be set in the PFD user properties. The barometric pressure setting can be adjusted with the right Mode/Sync dial.</li></ul>
+<h2><span class="mw-headline" id="Navigation_Display">Navigation Display</span></h2>
+<h3><span class="mw-headline" id="CDI_navigation_information">CDI navigation information</span></h3>
+<p>On the left top corner of the instrument you will find the 'Selected CDI Navigation Source Information Block'. This displays the available data from either Nav1 or GPS1. For Nav1 either the frequency or if available the name of the source is displayed. Below this, if there is a valid signal, the bearing, and if there is a DME signal as well there is the (DME) distance to the station and below that the time in minutes to reach the station.
+</p>
+<h3><span class="mw-headline" id="Center_top">Center top</span></h3>
+<p>From left to right: Set course for the HSI (CRS), the magnetic direction in degrees, autopilot heading bug setting (HDG). Below this there is a rate of turn indicator, with a range of 0 to 6 degrees per second. The inner white tick represents a half standard rate turn, the outer white tick represents a standard rate turn. When exceeding 6 degrees per second a white triangle is displayed.
+</p>
+<h3><span class="mw-headline" id="Navigation_display_2">Navigation display</span></h3>
+<p>Either in 360 or ARC mode. Press the button on the right side of 360 or ARC to switch between the two. Holds a CDI, connected to either Nav1 or GPS1. The green arrow represents the OBS course setting, and will show a deviation bar when there is a valid signal. The deviation bar turns hollow when the deviation becomes more than 2 dots. A to / from indicator is present as well, either on the needle or besides the CDI indicator in ARC mode. The aircraft in the center can be either a fixed wing or helicopter, this can be set as a user property when selecting the ND in the panels tab. Along the compass runs a bug indicating the autopilot heading, and a blue diamond indicating the GPS ground track.
+</p>
+<h3><span class="mw-headline" id="Vertical_speed_indicator">Vertical speed indicator</span></h3>
+<p>The vertical speed is indicated as a number with 20 feet increments below +/- 1000 feet per minute, and 100 feet increments above +/- feet per minute. Vertical speed is displayed up to +/- 10.000 feet per minute. In 360 mode the vertical speed is displayed on a graph bar as well. The text and graph bar become visible above +/- feet per minute.
+</p>
+<h3><span class="mw-headline" id="Hot_key_labels">Hot key labels</span></h3>
+<p>To the right of the instrument there are 5 labels, corresponding to the 5 'hot keys' on the bezel.
+</p>
+<ul><li>Empty label, will be implemented in a later version.</li>
+<li>Min: Turn on and off Minimums alerter.</li>
+<li>360/ARC: Switch between 360 and ARC mode, the displayed label indicates the current mode.</li>
+<li>GPSS: Not available.</li>
+<li>Baro: Pressing this will make the Mode/Sync dial adjust the barometric pressure setting.</li></ul>
+<h3><span class="mw-headline" id="Source_bar">Source bar</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/index.php?title=File:Aspenbottomnumbers.jpg" class="image"><img alt="" src="/images/thumb/b/b5/Aspenbottomnumbers.jpg/300px-Aspenbottomnumbers.jpg" decoding="async" width="300" height="131" class="thumbimage" srcset="/images/thumb/b/b5/Aspenbottomnumbers.jpg/450px-Aspenbottomnumbers.jpg 1.5x, /images/b/b5/Aspenbottomnumbers.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:Aspenbottomnumbers.jpg" class="internal" title="Enlarge"></a></div>The 5 source bar labels</div></div></div>
+<p>The bottom source bar shows 5 different labels from left to right. We will number then 1 to 5 explaining all their different features.
+</p><p><b>1.</b>
+Press the left Mode/Sync dial-button to cycle through the options. The option will stay highlighted magenta for 10 seconds, indicating it is active. After 10 seconds of no input it turns back to it's default state, being CRS.
+</p>
+<ul><li>CRS: Either cyan or magenta colored. When colored cyan the CRS mode is inactive, when pressing the dial-button or rotating the dial the CRS label turns magenta and the OBS course for the HSI can be set by turning the dial. The course value above the HSI will also turn magenta to indicate it is active. Pressing and holding the Mode/Sync dial-button will trigger the synchronization. With a normal VOR or GPS it will set the bearing to the station or waypoint, when on an ILS/Localizer it will synchronize the course pointer with your current magnetic heading.</li>
+<li>IAS: Colored magenta when selected, the bug along the airspeed tape and the IAS text will color magenta as well. Turning the dial will move the IAS bug along the airspeed tape. Pressing and holding the Mode/Sync dial-button will sync the IAS speed with your current airspeed.</li></ul>
+<p><b>2.</b>
+Pressing the left source button will let you cycle through the RMI sources, the single line bearing pointer will show up, pointing in the direction of your selected source. When cycled passed all sources the bearing pointer will hide. When there is no signal from the selected station, the bearing pointer 'parks' in a 90 degrees direction.
+</p><p><b>3.</b>
+Pressing the middle source button let's you cycle between the different HSI sources. For now this is Nav1 and GPS1. In FSX and Prepar3D this is sometimes locked by the GPS and the only option to let you cycle between these two is by pressing the button on the GPS in the sim. A red slash through the source indicates there is no valid signal from the source.
+</p><p><b>4.</b>
+Pressing the right source button will let you cycle through the RMI sources, the double line bearing pointer will show up, pointing in the direction of your selected source. When cycled passed all sources the bearing pointer will hide. When there is no signal from the selected station, the bearing pointer 'parks' in a 90 degrees direction.
+</p><p><b>5.</b>
+Press the right Mode/Sync dial-button to cycle through the options. The option will stay highlighted magenta for 10 seconds, indicating it is active. After 10 seconds of no input it turns back to it's default state, being HDG.
+</p>
+<ul><li>HDG: Either cyan or magenta colored. When colored cyan the HDG mode is inactive, when pressing the dial-button or rotating the dial the HDG label turns magenta, as well as the heading value and the heading bug along the compass. Rotating this heading sets the heading for the autopilot or gives you an indication when the autopilot is turned off.</li>
+<li>ALT: Let's you set the autopilot altitude setting. The label turns magenta, as well as the text above the altitude tape and the bug along the altitude tape.</li>
+<li>BARO: Let's you set the barometric pressure setting. The label turns magenta, as well as the barometric pressure value in the data bar. As a shortcut to this setting you can also press the corresponding hotkey.</li>
+<li>MIN: Let's you set your minimums warning altitude, a value between 0 and 15.000 feet can be set. The label turns magenta, as well as the text in the minimums window. A shortcut to this setting is pressing the corresponding hotkey, this is also the way to turn the minimums warning on and off.</li></ul>
+<h2><span class="mw-headline" id="Buttons_and_dials">Buttons and dials</span></h2>
+<ul><li>PWR: No function at this moment.</li>
+<li>RNG: No function at this moment.</li>
+<li>MENU: No function at this moment.</li>
+<li>5 Hot keys: Described above.</li>
+<li>MODE/SYNC left: rotating the dial will adjust the selected function, either CRS or IAS. Pressing and holding the dial-button for more than 2 seconds synchronizes the selected function with the current value. For a GPS or VOR the course synchronizes with the station bearing, for an ILS/Localizer the source synchronizes with the current magnetic heading.</li>
+<li>MODE/SYNC right: rotating the dial will adjust the selected function, either HDG, ALT, BARO or MIN. Pressing and holding the dial-button for more than two seconds synchronizes the selected function with the current value. For HDG this means it synchronizes with your current magnetic heading, for BARO this means the barometric setting will go to either 1013 mB or 29.92 in.</li>
+<li>Source button left: Cycles trough RMI sources for the single line bearing pointer, off, GPS1, NAV1, NAV2, ADF1.</li>
+<li>Source button center: Cycles through HSI sources, GPS1 or NAV1.</li>
+<li>Source button right: Cycles trough RMI sources for the double line bearing pointer, off, GPS1, NAV1, NAV2, ADF1.</li></ul>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p><b>The screen is dimmed and a battery warning shows up</b>
+</p><p>This means that the bus voltage is below the minimum voltage for the instrument. You can set your bus voltage by clicking on the PFD instrument in the panels tab. You can choose between 14 and 28 volt. This will also show up when the aircraft is cold-and-dark.
+</p><p><b>The attitude indicator disappears and shows 'ATTITUDE FAIL CHECK PITOT HEAT'</b>
+</p><p>This means that pitot icing is detected and the attitude information is no longer reliable. Turn on the pitot heat, and get out of the icing conditions if possible.
+</p>
+<h2><span class="mw-headline" id="Hardware">Hardware</span></h2>
+<p>The following downloads are .siff files and can be imported from the Create/Edit tab in Air Manager.
+</p>
+<h3><span class="mw-headline" id="Generic">Generic</span></h3>
+<p>There is a hardware function available for the EFD1000 premium panel. In the Home tab click '+ Hardware' and search for <i>Aspen EFD1000 premium interface</i>. The hardware function lets you select the pins of your hardware device for each button and dial.
+</p>
+<h3><span class="mw-headline" id="Ruscool_Aspen_EFD1000">Ruscool Aspen EFD1000</span></h3>
+<p>When adding the EFD1000 panel, you will see a layout for the Ruscool bezel. Select the Ruscool display first (480x800), then select the Ruscool layout and click Add. In the panel you will see an instrument named Ruscool EFD1000 bezel. Here you can specify the channel number of your Arduino Nano and optionally the device number if you own more than one EFD1000.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20260416202848
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.029 seconds
+Real time usage: 0.041 seconds
+Preprocessor visited node count: 64/1000000
+Post‐expand include size: 514/2097152 bytes
+Template argument size: 280/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.287      1 Template:Warning
+100.00%    2.287      1 -total
+-->
+
+<!-- Saved in parser cache with key mdwk1:pcache:idhash:290-0!canonical and timestamp 20260416202848 and revision id 4487. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.siminnovations.com/index.php?title=Aspen_EFD1000&amp;oldid=4487">https://wiki.siminnovations.com/index.php?title=Aspen_EFD1000&amp;oldid=4487</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"> <span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=Aspen+EFD1000" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/index.php?title=Aspen_EFD1000" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:Aspen_EFD1000&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/index.php?title=Aspen_EFD1000">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=Aspen_EFD1000&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=Aspen_EFD1000&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Sim Innovations Wiki" autocapitalize="sentences" title="Search Sim Innovations Wiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/index.php?title=Special:WhatLinksHere/Aspen_EFD1000" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/index.php?title=Special:RecentChangesLinked/Aspen_EFD1000" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=Aspen_EFD1000&amp;oldid=4487" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=Aspen_EFD1000&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 29 December 2021, at 17:00.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="/index.php?title=Sim_Innovations_Wiki:Privacy_policy" title="Sim Innovations Wiki:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/index.php?title=Sim_Innovations_Wiki:About" title="Sim Innovations Wiki:About">About Sim Innovations Wiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/index.php?title=Sim_Innovations_Wiki:General_disclaimer" title="Sim Innovations Wiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.029","walltime":"0.041","ppvisitednodes":{"value":64,"limit":1000000},"postexpandincludesize":{"value":514,"limit":2097152},"templateargumentsize":{"value":280,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    2.287      1 Template:Warning","100.00%    2.287      1 -total"]},"cachereport":{"timestamp":"20260416202848","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":110});});</script>
+</body></html>

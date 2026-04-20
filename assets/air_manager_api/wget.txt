@@ -1,0 +1,2 @@
+wget --no-check-certificate https://wiki.siminnovations.com/ --recursive --input-file=air_manager_wiki_urls.txt --level=inf --no-remove-listing --page-requisites --convert-links --restrict-file-names=windows --domains siminnovations.com --no-parent https://www.siminnovations.com/ --wait=1 --random-wait --limit-rate=350k --no-clobber --continue --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0"
+

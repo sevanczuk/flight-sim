@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>IPad Manual - Sim Innovations Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2f5b4718ddd2173b44791297","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"IPad_Manual","wgTitle":"IPad Manual","wgCurRevisionId":3806,"wgRevisionId":3806,"wgArticleId":83,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"IPad_Manual","wgRelevantArticleId":83,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready",
+"user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.highlightjs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<link rel="stylesheet" href="/extensions/HighlightJS/highlight.css"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Sim Innovations Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.siminnovations.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Sim Innovations Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-IPad_Manual rootpage-IPad_Manual skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >IPad Manual</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Sim Innovations Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Installation"><span class="tocnumber">1.1</span> <span class="toctext">Installation</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Release_notes"><span class="tocnumber">1.2</span> <span class="toctext">Release notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Install_the_Flight_Simulator_plugin(s)"><span class="tocnumber">2</span> <span class="toctext">Install the Flight Simulator plugin(s)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#User_Manual"><span class="tocnumber">3</span> <span class="toctext">User Manual</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Showing_and_hiding_the_menu"><span class="tocnumber">3.1</span> <span class="toctext">Showing and hiding the menu</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Viewing_mode"><span class="tocnumber">3.1.1</span> <span class="toctext">Viewing mode</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Edit_mode"><span class="tocnumber">3.1.2</span> <span class="toctext">Edit mode</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Using_the_menu"><span class="tocnumber">3.2</span> <span class="toctext">Using the menu</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Showing_active_instruments"><span class="tocnumber">3.2.1</span> <span class="toctext">Showing active instruments</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Adding_an_instrument"><span class="tocnumber">3.2.2</span> <span class="toctext">Adding an instrument</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Removing_an_instrument"><span class="tocnumber">3.2.3</span> <span class="toctext">Removing an instrument</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Searching_instruments"><span class="tocnumber">3.2.4</span> <span class="toctext">Searching instruments</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Reposition_and_resize_instruments"><span class="tocnumber">3.2.5</span> <span class="toctext">Reposition and resize instruments</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Add_a_(pre-made)_panel"><span class="tocnumber">3.2.6</span> <span class="toctext">Add a (pre-made) panel</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Edit_panel_settings"><span class="tocnumber">3.2.7</span> <span class="toctext">Edit panel settings</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Settings"><span class="tocnumber">3.2.8</span> <span class="toctext">Settings</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<h3><span class="mw-headline" id="Installation">Installation</span></h3>
+<p>For information on how to install Air Manager for iPad, please go <a href="/index.php?title=IPad_Installation" title="IPad Installation">here</a>.
+</p>
+<h3><span class="mw-headline" id="Release_notes">Release notes</span></h3>
+<p>If you are looking for the release notes for both Air Manager and it's plugins, go <a href="/index.php?title=IPad_Release_notes" title="IPad Release notes">here</a>.
+</p>
+<h2><span id="Install_the_Flight_Simulator_plugin.28s.29"></span><span class="mw-headline" id="Install_the_Flight_Simulator_plugin(s)">Install the Flight Simulator plugin(s)</span></h2>
+<p>In order to connect Air Manager to your flight simulator, you have to install our plugin to your Flight Simulator.<br />
+Information on how to install the flight simulator plugins can be found <a href="/index.php?title=Flight_Simulator_Plugins_Installation" title="Flight Simulator Plugins Installation"> here</a>.
+</p>
+<h2><span class="mw-headline" id="User_Manual">User Manual</span></h2>
+<h3><span class="mw-headline" id="Showing_and_hiding_the_menu">Showing and hiding the menu</span></h3>
+<p>Air Manager can be active in two modes:
+</p>
+<ul><li><b>Viewing mode</b>&#160;: All instruments are showing full screen. No additional information is present on the screen.</li>
+<li><b>Edit mode</b>&#160;: You can configure the active instruments, by adding, removing, moving, scaling and searching the instruments.</li></ul>
+<p>It is possible to switch between these modes.
+</p>
+<ul><li>Viewing mode -&gt; Edit mode&#160;: Drag a single finger from the left side of the iPad inwards. It is best to start on the far edge of the iPad screen.</li>
+<li>Edit mode -&gt; Viewing mode&#160;: Press the button on the top left part of the screen, that says 'Hide menu'.</li></ul>
+<p><ins>When starting Air Manager for the first time, it will be in viewing mode and you will see a black screen (empty panel). Switch to edit mode to add instruments or panels.</ins>
+</p>
+<h4><span class="mw-headline" id="Viewing_mode">Viewing mode</span></h4>
+<p>The viewing mode is used in normal operation, where you want to only show the instruments you have selected. It is not possible to do stuff like adding, removing or reposition the instruments.
+Touch gestures and sent to manipulate the instruments buttons, switches and dials.
+</p>
+<h4><span class="mw-headline" id="Edit_mode">Edit mode</span></h4>
+<p>Within edit mode, you are able to add, remove, search and reposition individual instruments.
+</p>
+<ul><li>Add an instrument</li>
+<li>Remove an instrument</li>
+<li>Search for an instrument</li>
+<li>Reposition reposition an instrument</li>
+<li>Resize an instrument</li>
+<li>Make instrument fill up available space</li></ul>
+<h3><span class="mw-headline" id="Using_the_menu">Using the menu</span></h3>
+<h4><span class="mw-headline" id="Showing_active_instruments">Showing active instruments</span></h4>
+<h4><span class="mw-headline" id="Adding_an_instrument">Adding an instrument</span></h4>
+<p>Press the instrument on the menu to add the instrument. By default, new instruments will be shown on the top left part of the screen.
+</p>
+<h4><span class="mw-headline" id="Removing_an_instrument">Removing an instrument</span></h4>
+<p>To remove an instrument, tap the instrument within the menu (Note that you can press the 'active' tab bar button on the bottom left of the screen to show all currently active instruments.
+</p>
+<h4><span class="mw-headline" id="Searching_instruments">Searching instruments</span></h4>
+<p>To search an instrument, press the search bar on the top left part of the screen, and start typing in keywords for the instrument you are looking for. E.g. these can be keywords  like 'Boeing' or 'altimeter'. A space will separate the keywords.
+</p>
+<h4><span class="mw-headline" id="Reposition_and_resize_instruments">Reposition and resize instruments</span></h4>
+<p>To reposition an instrument, press the instrument with one finger, and slide your finger to the desired instrument location.
+To resize an instrument, make a pinching gesture on the instrument you want to scale.
+To make an instrument use all it's surrounding space, double tap on the instrument. It will go as wide and high as it can go, without overlapping other instruments, and by respecting the instrument aspect ratio.
+</p>
+<h4><span id="Add_a_.28pre-made.29_panel"></span><span class="mw-headline" id="Add_a_(pre-made)_panel">Add a (pre-made) panel</span></h4>
+<p>Above the canvas you see a big + sign, click this button to add a new panel. Either a blank panel, or one of the pre-made panels.
+</p>
+<h4><span class="mw-headline" id="Edit_panel_settings">Edit panel settings</span></h4>
+<p>Select the panel you want to edit, and click Edit below the panel name. This will bring up a window that lets you edit the panel name, the background color by using the color wheel or remove the panel.
+</p>
+<h4><span class="mw-headline" id="Settings">Settings</span></h4>
+<p>You can find the Air Manager settings within the iPad Settings app on your iPad. This is the regular place where you change all your iPad settings and preferences.
+Once in the iPad Settings app, scroll down until you see the Air Manager text and logo, and select it. On the right you will be presented with the Air Manager settings.
+</p>
+<ul><li>Show splash screen: The splash screen is presented to you when you start the app for the first time. Turn this on if you want to see it again.</li>
+<li>Show FPS: Let Air Manager show the current frames per second on the top left of the screen.</li>
+<li>High FPS (60 Hz): Normally the number of frames per second is limited to 30, this limits the frames per second to 60.</li>
+<li>Automatically connect to Flight Simulator: Automatically detects the Air Manager plugin from the sim you are running. You don't need to set the IP address and flight simulator. Turn this off if you want to set the IP address and flight simulator manually.</li>
+<li>Manual network address: Fill in the IP address or DNS name of the computer on which your flight simulator is running. This only works when <i>Automatically connect to Flight Simulator</i> is turned off.</li>
+<li>Manual flight simulator: Choose which flight simulator you want Air Manager to connect to. This only works when <i>Automatically connect to Flight Simulator</i> is turned off.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20260416230218
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.026 seconds
+Real time usage: 0.057 seconds
+Preprocessor visited node count: 53/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key mdwk1:pcache:idhash:83-0!canonical and timestamp 20260416230218 and revision id 3806. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.siminnovations.com/index.php?title=IPad_Manual&amp;oldid=3806">https://wiki.siminnovations.com/index.php?title=IPad_Manual&amp;oldid=3806</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"> <span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=IPad+Manual" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/index.php?title=IPad_Manual" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:IPad_Manual&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/index.php?title=IPad_Manual">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=IPad_Manual&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=IPad_Manual&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Sim Innovations Wiki" autocapitalize="sentences" title="Search Sim Innovations Wiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/index.php?title=Special:WhatLinksHere/IPad_Manual" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/index.php?title=Special:RecentChangesLinked/IPad_Manual" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=IPad_Manual&amp;oldid=3806" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=IPad_Manual&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 5 June 2020, at 13:02.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="/index.php?title=Sim_Innovations_Wiki:Privacy_policy" title="Sim Innovations Wiki:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/index.php?title=Sim_Innovations_Wiki:About" title="Sim Innovations Wiki:About">About Sim Innovations Wiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/index.php?title=Sim_Innovations_Wiki:General_disclaimer" title="Sim Innovations Wiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.026","walltime":"0.057","ppvisitednodes":{"value":53,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20260416230218","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":79});});</script>
+</body></html>

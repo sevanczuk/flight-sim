@@ -1,0 +1,49 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+
+# macOS Finder attributes
+.VolumeIcon.icns
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Node / esbuild
+node_modules/
+src/dist/
+config/photos/paper_labels/
+
+# Lifecycle tracker JSON — API-writable runtime state (D-15)
+docs/specs/lifecycle/*.json
+docs/specs/lifecycle/*.bak
+
+# AMAPI crawler tracking DB — regenerable from HTML mirror + seed URLs (D-03)
+assets/air_manager_api/crawl.sqlite3
+assets/air_manager_api/crawl.sqlite3.bak
+
+# Claude.ai project refresh flags
+*.needs_refresh
+
+# various
+config.sqlite3
+
+

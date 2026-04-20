@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>API - Sim Innovations Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b96f023924cf5091a5949577","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"API","wgTitle":"API","wgCurRevisionId":5906,"wgRevisionId":5906,"wgArticleId":56,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"API","wgRelevantArticleId":56,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading",
+"skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.highlightjs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<link rel="stylesheet" href="/extensions/HighlightJS/highlight.css"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Sim Innovations Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.siminnovations.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Sim Innovations Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-API rootpage-API skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >API</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Sim Innovations Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#X-Plane"><span class="tocnumber">1</span> <span class="toctext">X-Plane</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Flight_Simulator_X_or_Prepar3D"><span class="tocnumber">2</span> <span class="toctext">Flight Simulator X or Prepar3D</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Microsoft_Flight_Simulator"><span class="tocnumber">3</span> <span class="toctext">Microsoft Flight Simulator</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Microsoft_Flight_Simulator_2020"><span class="tocnumber">4</span> <span class="toctext">Microsoft Flight Simulator 2020</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Microsoft_Flight_Simulator_2024"><span class="tocnumber">5</span> <span class="toctext">Microsoft Flight Simulator 2024</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Inter-instrument_communication"><span class="tocnumber">6</span> <span class="toctext">Inter-instrument communication</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_data"><span class="tocnumber">7</span> <span class="toctext">External data</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Layer"><span class="tocnumber">8</span> <span class="toctext">Layer</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Node"><span class="tocnumber">9</span> <span class="toctext">Node</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Image"><span class="tocnumber">9.1</span> <span class="toctext">Image</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Text"><span class="tocnumber">9.2</span> <span class="toctext">Text</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Button"><span class="tocnumber">9.3</span> <span class="toctext">Button</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Switch"><span class="tocnumber">9.4</span> <span class="toctext">Switch</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Dial"><span class="tocnumber">9.5</span> <span class="toctext">Dial</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Slider"><span class="tocnumber">9.6</span> <span class="toctext">Slider</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Scroll_wheel"><span class="tocnumber">9.7</span> <span class="toctext">Scroll wheel</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Map"><span class="tocnumber">9.8</span> <span class="toctext">Map</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Video_stream"><span class="tocnumber">9.9</span> <span class="toctext">Video stream</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Canvas"><span class="tocnumber">9.10</span> <span class="toctext">Canvas</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Draw_callback_functions"><span class="tocnumber">9.10.1</span> <span class="toctext">Draw callback functions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="#Scene"><span class="tocnumber">9.11</span> <span class="toctext">Scene</span></a>
+<ul>
+<li class="toclevel-3 tocsection-22"><a href="#Camera"><span class="tocnumber">9.11.1</span> <span class="toctext">Camera</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Light"><span class="tocnumber">9.11.2</span> <span class="toctext">Light</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Mesh"><span class="tocnumber">9.11.3</span> <span class="toctext">Mesh</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Material"><span class="tocnumber">9.11.4</span> <span class="toctext">Material</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Node_2"><span class="tocnumber">9.11.5</span> <span class="toctext">Node</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Viewport"><span class="tocnumber">9.11.6</span> <span class="toctext">Viewport</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="#Group"><span class="tocnumber">9.12</span> <span class="toctext">Group</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="#Instrument"><span class="tocnumber">10</span> <span class="toctext">Instrument</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Hardware"><span class="tocnumber">11</span> <span class="toctext">Hardware</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="#Hardware_node"><span class="tocnumber">11.1</span> <span class="toctext">Hardware node</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Button_2"><span class="tocnumber">11.2</span> <span class="toctext">Button</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#LED"><span class="tocnumber">11.3</span> <span class="toctext">LED</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Switch_2"><span class="tocnumber">11.4</span> <span class="toctext">Switch</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Rotary_encoder"><span class="tocnumber">11.5</span> <span class="toctext">Rotary encoder</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Digital_input"><span class="tocnumber">11.6</span> <span class="toctext">Digital input</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Digital_output"><span class="tocnumber">11.7</span> <span class="toctext">Digital output</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Analog_input"><span class="tocnumber">11.8</span> <span class="toctext">Analog input</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Analog_output"><span class="tocnumber">11.9</span> <span class="toctext">Analog output</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#PWM_output"><span class="tocnumber">11.10</span> <span class="toctext">PWM output</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#Character_display"><span class="tocnumber">11.11</span> <span class="toctext">Character display</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#Button_array"><span class="tocnumber">11.12</span> <span class="toctext">Button array</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#Stepper_motor"><span class="tocnumber">11.13</span> <span class="toctext">Stepper motor</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Message_port"><span class="tocnumber">11.14</span> <span class="toctext">Message port</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-45"><a href="#Timer"><span class="tocnumber">12</span> <span class="toctext">Timer</span></a></li>
+<li class="toclevel-1 tocsection-46"><a href="#Persistence"><span class="tocnumber">13</span> <span class="toctext">Persistence</span></a></li>
+<li class="toclevel-1 tocsection-47"><a href="#User_properties"><span class="tocnumber">14</span> <span class="toctext">User properties</span></a></li>
+<li class="toclevel-1 tocsection-48"><a href="#Static_data"><span class="tocnumber">15</span> <span class="toctext">Static data</span></a></li>
+<li class="toclevel-1 tocsection-49"><a href="#Sound"><span class="tocnumber">16</span> <span class="toctext">Sound</span></a></li>
+<li class="toclevel-1 tocsection-50"><a href="#Game_controller"><span class="tocnumber">17</span> <span class="toctext">Game controller</span></a></li>
+<li class="toclevel-1 tocsection-51"><a href="#Navigation_data"><span class="tocnumber">18</span> <span class="toctext">Navigation data</span></a></li>
+<li class="toclevel-1 tocsection-52"><a href="#Device"><span class="tocnumber">19</span> <span class="toctext">Device</span></a></li>
+<li class="toclevel-1 tocsection-53"><a href="#Flight_Illusion"><span class="tocnumber">20</span> <span class="toctext">Flight Illusion</span></a></li>
+<li class="toclevel-1 tocsection-54"><a href="#Helpers"><span class="tocnumber">21</span> <span class="toctext">Helpers</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="X-Plane">X-Plane</span></h2>
+<p>These functions are used to communicate with X-Plane. X-Plane knows two ways of communicating, datarefs and commands. Datarefs are used for most kind of data, such as airspeed, altitude etc. etc.
+The other way of communicating is done by sending commands to X-Plane. Commands are event driven, and are mostly used for simulating certain buttons on instruments.
+</p><p><b>Our YouTube contains videos about <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=eVVT-ULDUpo">subscribing to datarefs</a>, <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=SFKRIIGX6EQ">writing datarefs and variable_subscribe</a> and <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=3uDSck0vRy0">commands</a>.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Xpl_dataref_subscribe" title="Xpl dataref subscribe">xpl_dataref_subscribe</a></b>(dataref,type,callback_function)</td>
+<td>Subscribe to specified dataref(s)</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Xpl_dataref_write" title="Xpl dataref write">xpl_dataref_write</a></b>(dataref,type,value,offset,force)</td>
+<td>Write to a certain X-Plane dataref</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Xpl_command" title="Xpl command">xpl_command</a></b>(commandref)</td>
+<td>Send a certain command to X-Plane</td>
+<td><b>AM 1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Xpl_command_subscribe" title="Xpl command subscribe">xpl_command_subscribe</a></b>(commandref, callback_function)</td>
+<td>Subscribe to certain command in X-Plane</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Xpl_connected" title="Xpl connected">xpl_connected</a></b>()</td>
+<td>Check if we are connected to X-Plane</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Flight_Simulator_X_or_Prepar3D">Flight Simulator X or Prepar3D</span></h2>
+<p>These functions are used to communicate with Flight Simulator X or Prepar3D. Air Manager uses the SimConnect interface. There are two ways of communicating, variables and events. Variables are used for most kind of data, such as airspeed, altitude etc. etc.
+The other way of communicating is done by sending events to FSX or Prepar3D. Events are mostly used for simulating certain buttons on instruments.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=sF7Py2MJOeA">here</a> for a screencast video about FSX and Prepar3D functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Fsx_variable_subscribe" title="Fsx variable subscribe">fsx_variable_subscribe</a></b>(variable,unit,callback_function)</td>
+<td>Subscribe to specified variable(s)</td>
+<td><b>AM 2.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fsx_variable_write" title="Fsx variable write">fsx_variable_write</a></b>(variable,unit, value)</td>
+<td>Write data to a variable</td>
+<td><b>AM 2.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fsx_event" title="Fsx event">fsx_event</a></b>(event)</td>
+<td>Trigger a certain FSX or Prepar3D event</td>
+<td><b>AM 2.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Fsx_connected" title="Fsx connected">fsx_connected</a></b>()</td>
+<td>Check if we are connected to FSX</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=P3d_connected" title="P3d connected">p3d_connected</a></b>()</td>
+<td>Check if we are connected to Prepar3D</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Microsoft_Flight_Simulator">Microsoft Flight Simulator</span></h2>
+<p>These functions are used to communicate with Microsoft Flight Simulator 2020 and 2024. Air Manager uses the SimConnect interface. There are two ways of communicating, variables and events. Variables are used for most kind of data, such as airspeed, altitude etc. etc.
+The other way of communicating is done by sending events to the flight simulator. Events are mostly used for simulating certain buttons on instruments.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Msfs_variable_subscribe" title="Msfs variable subscribe">msfs_variable_subscribe</a></b>(variable,unit,callback_function)</td>
+<td>Subscribe to specified variable(s)</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Msfs_variable_write" title="Msfs variable write">msfs_variable_write</a></b>(variable,unit, value)</td>
+<td>Write data to a variable</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Msfs_event" title="Msfs event">msfs_event</a></b>(event)</td>
+<td>Trigger a certain event</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Msfs_event_subscribe" title="Msfs event subscribe">msfs_event_subscribe</a></b>(event, callback)</td>
+<td>Subscribe to a certain MSFS event</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Msfs_rpn" title="Msfs rpn">msfs_rpn</a></b>(rpn_script)</td>
+<td>Execute a RPN script</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Msfs_connected" title="Msfs connected">msfs_connected</a></b>()</td>
+<td>Check if we are connected to FS2020 or FS2024</td>
+<td><b>AM 4.2.12/AP 4.2.12</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Microsoft_Flight_Simulator_2020">Microsoft Flight Simulator 2020</span></h2>
+<p>These functions are used to communicate with Microsoft Flight Simulator 2020. Air Manager uses the SimConnect interface. There are two ways of communicating, variables and events. Variables are used for most kind of data, such as airspeed, altitude etc. etc.
+The other way of communicating is done by sending events to the flight simulator. Events are mostly used for simulating certain buttons on instruments.
+</p>
+<div style="background: lightyellow; border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Lightbulb.png" class="image" title="Info"><img alt="Info" src="/images/thumb/6/6f/Lightbulb.png/18px-Lightbulb.png" decoding="async" width="18" height="22" srcset="/images/thumb/6/6f/Lightbulb.png/27px-Lightbulb.png 1.5x, /images/thumb/6/6f/Lightbulb.png/36px-Lightbulb.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> Only use these functions if you want do something specifically for FS2020. Otherwise use msfs_ functions to create compatibility with both FS2020 and FS2024 </span></div>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2020_variable_subscribe" title="Fs2020 variable subscribe">fs2020_variable_subscribe</a></b>(variable,unit,callback_function)</td>
+<td>Subscribe to specified variable(s)</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2020_variable_write" title="Fs2020 variable write">fs2020_variable_write</a></b>(variable,unit, value)</td>
+<td>Write data to a variable</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2020_event" title="Fs2020 event">fs2020_event</a></b>(event)</td>
+<td>Trigger a certain FS2020 event</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2020_event_subscribe" title="Fs2020 event subscribe">fs2020_event_subscribe</a></b>(event, callback)</td>
+<td>Subscribe to a certain FS2020 event</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2020_rpn" title="Fs2020 rpn">fs2020_rpn</a></b>(rpn_script)</td>
+<td>Execute a FS2020 RPN script</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Fs2020_connected" title="Fs2020 connected">fs2020_connected</a></b>()</td>
+<td>Check if we are connected to FS2020</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Microsoft_Flight_Simulator_2024">Microsoft Flight Simulator 2024</span></h2>
+<p>These functions are used to communicate with Microsoft Flight Simulator 2024. Air Manager uses the SimConnect interface. There are two ways of communicating, variables and events. Variables are used for most kind of data, such as airspeed, altitude etc. etc.
+The other way of communicating is done by sending events to the flight simulator. Events are mostly used for simulating certain buttons on instruments.
+</p>
+<div style="background: lightyellow; border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Lightbulb.png" class="image" title="Info"><img alt="Info" src="/images/thumb/6/6f/Lightbulb.png/18px-Lightbulb.png" decoding="async" width="18" height="22" srcset="/images/thumb/6/6f/Lightbulb.png/27px-Lightbulb.png 1.5x, /images/thumb/6/6f/Lightbulb.png/36px-Lightbulb.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> Only use these functions if you want do something specifically for FS2024. Otherwise use msfs_ functions to create compatibility with both FS2020 and FS2024 </span></div>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2024_variable_subscribe" title="Fs2024 variable subscribe">fs2024_variable_subscribe</a></b>(variable,unit,callback_function)</td>
+<td>Subscribe to specified variable(s)</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2024_variable_write" title="Fs2024 variable write">fs2024_variable_write</a></b>(variable,unit, value)</td>
+<td>Write data to a variable</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2024_event" title="Fs2024 event">fs2024_event</a></b>(event)</td>
+<td>Trigger a certain FS2024 event</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2024_event_subscribe" title="Fs2024 event subscribe">fs2024_event_subscribe</a></b>(event, callback)</td>
+<td>Subscribe to a certain FS2024 event</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fs2024_rpn" title="Fs2024 rpn">fs2024_rpn</a></b>(rpn_script)</td>
+<td>Execute a FS2024 RPN script</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Fs2024_connected" title="Fs2024 connected">fs2024_connected</a></b>()</td>
+<td>Check if we are connected to FS2024</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Inter-instrument_communication">Inter-instrument communication</span></h2>
+<p>These functions are used to communicate between instruments. Communication all goes through the Air Manager flight simulator plugin (X-plane or FSX), so make sure that is running.
+There are two ways to communicate between instruments. Variables and commands. Variables are state full, there is always has a value behind it. Commands are event based, and won't hold any value.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=GCfPLxgwmfM">here</a> for a screencast video about inter-instrument communication.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>var_id = <b><a href="/index.php?title=Si_variable_create" title="Si variable create">si_variable_create</a></b>(variable,unit,initial_value)</td>
+<td>Create a new Air Manager variable</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Si_variable_subscribe" title="Si variable subscribe">si_variable_subscribe</a></b>(variable,unit,callback_function)</td>
+<td>Subscribe to specified Air Manager variable(s)</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Si_variable_write" title="Si variable write">si_variable_write</a></b>(var_id,value)</td>
+<td>Write to a Air Manager variable</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Variable_subscribe" title="Variable subscribe">variable_subscribe</a></b>(source,variable_name,type,callback_function)</td>
+<td>Subscribe to multiple sources (X-Plane, FSX, SI, etc.) using one subscription</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Si_command_subscribe" title="Si command subscribe">si_command_subscribe</a></b>(command,callback_function)</td>
+<td>Subscribe to specified Air Manager command(s)</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Si_command" title="Si command">si_command</a></b>(command)</td>
+<td>Send a Air Manager command</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="External_data">External data</span></h2>
+<p>The Professional version of Air Manager can connect to external data sources. These functions describe how to receive and send data from and to an external source.
+</p>
+<div style="background: lightyellow; border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Lightbulb.png" class="image" title="Info"><img alt="Info" src="/images/thumb/6/6f/Lightbulb.png/18px-Lightbulb.png" decoding="async" width="18" height="22" srcset="/images/thumb/6/6f/Lightbulb.png/27px-Lightbulb.png 1.5x, /images/thumb/6/6f/Lightbulb.png/36px-Lightbulb.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> These functions can only be used in the professional version of Air Manager or Air Player</span></div>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Ext_variable_subscribe" title="Ext variable subscribe">ext_variable_subscribe</a></b>(source_tag,variable,unit,callback_function)</td>
+<td>Subscribe to external source variable(s)</td>
+<td><b>AM 2.1.2/AP 3.0 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Ext_variable_write" title="Ext variable write">ext_variable_write</a></b>(source_tag,variable,unit, value)</td>
+<td>Write an external source variable</td>
+<td><b>AM 2.1.2/AP 3.0 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Ext_command_subscribe" title="Ext command subscribe">ext_command_subscribe</a></b>(source_tag,command,callback_function)</td>
+<td>Subscribe to specified external source command</td>
+<td><b>AM 5.0/AP 5.0 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Ext_command" title="Ext command">ext_command</a></b>(source_tag,command)</td>
+<td>Send a command to the external source</td>
+<td><b>AM 2.1.2/AP 3.0 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Ext_connected" title="Ext connected">ext_connected</a></b>(source_tag)</td>
+<td>Check if an external source is connected</td>
+<td><b>AM 5.0/AP 5.0 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Request_callback" title="Request callback">request_callback</a></b>(callback_function)</td>
+<td>Force an update on a subscription</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Layer">Layer</span></h2>
+<p>Set of functions to create and manipulate a layer.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b>layer_id = <a href="/index.php?title=Layer_add" title="Layer add">layer_add</a></b>(z_order, callback)</td>
+<td>Create a new layer</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Layer_mouse_cursor" title="Layer mouse cursor">layer_mouse_cursor</a></b>(layer_id, cursor)</td>
+<td>Set the mouse cursor when hovering over the layer</td>
+<td><b>AM 5.1/AP 5.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Z_order" title="Z order">z_order</a></b>(layout_id, order)</td>
+<td>Set the Z order of a layer</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Node">Node</span></h2>
+<p>Many objects (like images, text, buttons etc.) are considered nodes, and as such can be used with the functions below.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=bqm3MKSoxq4">here</a> for a screencast video about nodes.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>(node_id,x,y,width,height)</td>
+<td>Move the node to the specified bounds</td>
+<td><b>AM 1.3/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Visible" title="Visible">visible</a></b>(node_id,visible)</td>
+<td>Makes a node visible or invisible</td>
+<td><b>AM 1.3/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b>(node_id,opacity)</td>
+<td>Change the opacity</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b>(node_id,x,y,width,height)</td>
+<td>Only shows the node within a specified rectangle</td>
+<td><b>AM 1.3/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b>(node_id,draw_callback)</td>
+<td>Only shows the node within a specified shape</td>
+<td><b>AM 5.2/AP 5.2</b> and up
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Image">Image</span></h3>
+<p>These functions are used to add images to your instrument. The order in which you add the images determines the layering. The images you add first are at the back, and every next image is layed on top of the previous. PNG is used as the image format, since it supports transparency.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=SzBv6kLmGbI">here</a> for a screencast video about the image functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>image_id = <b><a href="/index.php?title=Img_add" title="Img add">img_add</a></b>(filename,x,y,width,height)</td>
+<td>Add an image to specified bounds</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>image_id = <b><a href="/index.php?title=Img_add_fullscreen" title="Img add fullscreen">img_add_fullscreen</a></b>(filename)</td>
+<td>Add an image fullscreen</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Rotate" title="Rotate">rotate</a></b>(image_id,degrees)</td>
+<td>Rotate an image to the specified degree</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Remove" title="Remove">remove</a></b>(image_id)</td>
+<td>Remove the image from the instrument</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr></tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>running_img_id = <b><a href="/index.php?title=Running_img_add_ver" title="Running img add ver">running_img_add_ver</a></b>(filename,x,y,nr_visible_items,item_width,item_height)</td>
+<td>Adds a vertical running image object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>running_img_id = <b><a href="/index.php?title=Running_img_add_hor" title="Running img add hor">running_img_add_hor</a></b>(filename,x,y,nr_visible_items,item_width,item_height)</td>
+<td>Adds a horizontal running image object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>running_img_id = <b><a href="/index.php?title=Running_img_add_cir" title="Running img add cir">running_img_add_cir</a></b>(filename,x,y,nr_visible_items,item_width,item_height,radius)</td>
+<td>Adds a circular running image object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Running_img_move_carot" title="Running img move carot">running_img_move_carot</a></b>(running_img_id, position)</td>
+<td>Set carrot position for a running image object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Text">Text</span></h3>
+<p>These functions are used to add text to your instrument.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=uu_pSxNAo04">here</a> for a screencast video about the text functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>txt_id = <b><a href="/index.php?title=Txt_add" title="Txt add">txt_add</a></b>(text,style,x,y,width,height)</td>
+<td>Add a text box to specified bounds</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Txt_set" title="Txt set">txt_set</a></b>(txt_id,text)</td>
+<td>Set a new text string</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Txt_style" title="Txt style">txt_style</a></b>(txt_id,style)</td>
+<td>Change the style of a text box</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Rotate" title="Rotate">rotate</a></b>(txt_id,degrees)</td>
+<td>Rotate text to the specified degree</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>running_txt_id = <b><a href="/index.php?title=Running_txt_add_ver" title="Running txt add ver">running_txt_add_ver</a></b>(x,y,nr_visible_items,item_width,item_height,value_callback,style)</td>
+<td>Adds a vertical running text object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>running_txt_id = <b><a href="/index.php?title=Running_txt_add_hor" title="Running txt add hor">running_txt_add_hor</a></b>(x,y,nr_visible_items,item_width,item_height,value_callback,style)</td>
+<td>Adds a horizontal running text object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>running_txt_id = <b><a href="/index.php?title=Running_txt_add_cir" title="Running txt add cir">running_txt_add_cir</a></b>(x,y,nr_visible_items,item_width,item_height,radius,value_callback,style)</td>
+<td>Adds a circular running text object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Running_txt_move_carot" title="Running txt move carot">running_txt_move_carot</a></b>(running_txt_id, position)</td>
+<td>Set carrot position for a running text object</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Button">Button</span></h3>
+<p>These functions let you add buttons to your instruments. Buttons don't have any state, they always pop back to the original position.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=iLA1ZvHHUn8">here</a> for a screencast video about button functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>button_id = <b><a href="/index.php?title=Button_add" title="Button add">button_add</a></b>(img_normal,img_pressed,x,y,width,height,press_callback,release_callback)</td>
+<td>Add a button to specified bounds</td>
+<td><b>AM 1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Mouse_setting" title="Mouse setting">mouse_setting</a></b>(button_id,property,value)</td>
+<td>Sets mouse settings for a button (such as custom cursor images)</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Switch">Switch</span></h3>
+<p>These functions let you add switches to your instrument. Switched are statefull, they can have 2 or more positions.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=NRUe2VKKmB8">here</a> for a screencast video about button functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>switch_id = <b><a href="/index.php?title=Switch_add" title="Switch add">switch_add</a></b>(img_pos_0, img_pos_1, img_pos_n,x,y,width,height,click_callback)</td>
+<td>Add a switch to specified bounds</td>
+<td><b>AM 1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Switch_set_position" title="Switch set position">switch_set_position</a></b>(switch_id,position)</td>
+<td>Set the switch to a certain position</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td>position = <b><a href="/index.php?title=Switch_get_position" title="Switch get position">switch_get_position</a></b>(switch_id)</td>
+<td>Get the current switch position</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Touch_setting" title="Touch setting">touch_setting</a></b>(switch_id,property,value)</td>
+<td>Sets touch settings for a switch</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Mouse_setting" title="Mouse setting">mouse_setting</a></b>(switch_id,property,value)</td>
+<td>Sets mouse settings for a switch (such as custom cursor images)</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Dial">Dial</span></h3>
+<p>These functions let you add a dial to your instrument. Dials can be rotated endlessly, and don't hold any state.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=PBbdhU0SOUw">here</a> for a screencast video about dial functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>dial_id = <b><a href="/index.php?title=Dial_add" title="Dial add">dial_add</a></b>(image,x,y,width,height,acceleration,click_callback)</td>
+<td>Add a dial to specified bounds</td>
+<td><b>AM 1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Touch_setting" title="Touch setting">touch_setting</a></b>(dial_id,property,value)</td>
+<td>Sets touch settings for a dial</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Mouse_setting" title="Mouse setting">mouse_setting</a></b>(dial_id,property,value)</td>
+<td>Sets mouse settings for a dial (such as custom cursor images)</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Dial_set_acceleration" title="Dial set acceleration">dial_set_acceleration</a></b>(dial_id,acceleration)</td>
+<td>Set acceleration</td>
+<td><b>AM 4.1/AP 4.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Slider">Slider</span></h3>
+<p>These functions let you add a slider to your instrument. You can add an horizontal, vertical or circular slider to your instrument.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=akET85duRqs">here</a> for a screencast video about slider functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>slider_id = <b><a href="/index.php?title=Slider_add_hor" title="Slider add hor">slider_add_hor</a></b>(image, x, y, width, height, thumb_image, thumb_width, thumb_height, callback)</td>
+<td>Add a horizontal slider to specified bounds</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>slider_id = <b><a href="/index.php?title=Slider_add_ver" title="Slider add ver">slider_add_ver</a></b>(image, x, y, width, height, thumb_image, thumb_width, thumb_height, callback)</td>
+<td>Add a vertical slider to specified bounds</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>slider_id = <b><a href="/index.php?title=Slider_add_cir" title="Slider add cir">slider_add_cir</a></b>(image, x, y, width, height, radius, start_angle, end_angle, thumb_image, thumb_width, thumb_height, callback)</td>
+<td>Add a circular slider to specified bounds</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Slider_set_position" title="Slider set position">slider_set_position</a></b>(slider_id, position)</td>
+<td>Set the slider to a certain position</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Scroll_wheel">Scroll wheel</span></h3>
+<p>These functions let you add a scroll wheel to your instrument. You can add a horizontal or vertical scroll wheel to your instrument.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=SrbFAPsyX2Q">here</a> for a screencast video about scrollwheel functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>scrollwheel_id = <b><a href="/index.php?title=Scrollwheel_add_hor" title="Scrollwheel add hor">scrollwheel_add_hor</a></b>(segment_image, x, y, width, height, segment_width, segment_height, callback)</td>
+<td>Add a horizontal scroll wheel to specified bounds</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>scrollwheel_id = <b><a href="/index.php?title=Scrollwheel_add_ver" title="Scrollwheel add ver">scrollwheel_add_ver</a></b>(segment_image, x, y, width, height, segment_width, segment_height, callback)</td>
+<td>Add a vertical scroll wheel to specified bounds</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Mouse_setting" title="Mouse setting">mouse_setting</a></b>(scrollwheel_id,property,value)</td>
+<td>Sets mouse settings for a button (such as custom cursor images)</td>
+<td><b>AM 3.1/AP 3.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Touch_setting" title="Touch setting">touch_setting</a></b>(scrollwheel_id,property,value)</td>
+<td>Sets touch settings for a scroll wheel</td>
+<td><b>AM 3.1/AP 3.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Map">Map</span></h3>
+<p>These functions let you open a moving map to your instrument. OpenStreetMap is used as the source for the map. You also have the ability to overlay NAV data (Airports, VOR, NDB) onto the map. 
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=PVB5Aul-nbg">here</a> for a screencast video about the map functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>map_id = <b><a href="/index.php?title=Map_add" title="Map add">map_add</a></b>(x,y,width,height,source,zoom)</td>
+<td>Add a map to the instrument.</td>
+<td><b>AM 1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Map_goto" title="Map goto">map_goto</a></b>(map_id,lat,lon)</td>
+<td>Go to a certain location on earth, defined by longitude and latitude.</td>
+<td><b>AM 1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Map_zoom" title="Map zoom">map_zoom</a></b>(map_id,zoom)</td>
+<td>Change the zoom level of a map</td>
+<td><b>AM 1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Map_baselayer" title="Map baselayer">map_baselayer</a></b>(map_id,source)</td>
+<td>Change the base layer of a map</td>
+<td><b>AM 1.1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Rotate" title="Rotate">rotate</a></b>(map_id,degrees)</td>
+<td>Rotate the map to the specified degree</td>
+<td><b>AM 4.1/AP 4.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>layer_id = <b><a href="/index.php?title=Map_add_nav_img_layer" title="Map add nav img layer">map_add_nav_img_layer</a></b>(map_id, nav_type, filename, x, y, width, height)</td>
+<td>Add an image layer to the map for a certain NAV source.</td>
+<td><b>AM 1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>layer_id = <b><a href="/index.php?title=Map_add_nav_txt_layer" title="Map add nav txt layer">map_add_nav_txt_layer</a></b>(map_id, nav_type, nav_param, style, x, y, width, height)</td>
+<td>Add a txt layer to the map for a certain NAV source.</td>
+<td><b>AM 1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>layer_id = <b><a href="/index.php?title=Map_add_nav_canvas_layer" title="Map add nav canvas layer">map_add_nav_canvas_layer</a></b>(map_id, nav_type, x, y, width, height, draw_callback)</td>
+<td>Add a canvas layer to the map for a certain NAV source.</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Map_nav_canvas_layer_draw" title="Map nav canvas layer draw">map_nav_canvas_layer_draw</a></b>(layer_id)</td>
+<td>Redraw the canvas</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Visible" title="Visible">visible</a></b>(layer_id,visible)</td>
+<td>Make a layer visible or invisible</td>
+<td><b>AM 1.3/AP 3.0</b> and up
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Video_stream">Video stream</span></h3>
+<p>These functions let you add video streams to your instrument.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>video_stream_id = <b><a href="/index.php?title=Video_stream_add" title="Video stream add">video_stream_add</a></b>(key, x, y, width, height)</td>
+<td>Add a video stream</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td>video_stream_id = <b><a href="/index.php?title=Video_stream_ext_add" title="Video stream ext add">video_stream_ext_add</a></b>(tag, key, x, y, width, height)</td>
+<td>Add a video stream</td>
+<td><b>AM 5.1/AP 5.1 Professional</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Video_stream_set" title="Video stream set">video_stream_set</a></b>(video_stream_id, key, tex_x, tex_y, text_width, text_height)</td>
+<td>Change texture or texture size</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Canvas">Canvas</span></h3>
+<p>The canvas allows to draw shapes like lines, rectangles, circles etc. in your instrument.
+</p><p><b>The canvas screencast video is divided into <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=SzBv6kLmGbI">part one</a>, <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=xuO-6WBwLFs">part two</a> and <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=6HPX3K9Q__k">part three</a>.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>canvas_id = <b><a href="/index.php?title=Canvas_add" title="Canvas add">canvas_add</a></b>(x, y, width, height, draw_callback)</td>
+<td>Create a new canvas to draw in.</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Canvas_draw" title="Canvas draw">canvas_draw</a></b>(canvas_id, draw_callback)</td>
+<td>Redraw the canvas</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Rotate" title="Rotate">rotate</a></b>(canvas_id,degrees)</td>
+<td>Rotate canvas to the specified degree</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Draw_callback_functions">Draw callback functions</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Move_to" title="Move to">_move_to</a></b>(x, y)</td>
+<td>Move pen to new location</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Line_to" title="Line to">_line_to</a></b>(x, y)</td>
+<td>Queue line to new location</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Bezier_to" title="Bezier to">_bezier_to</a></b>(cp1x, cp1y, cp2x, cp2y, x, y)</td>
+<td>Queue bezier line to new location</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Quad_to" title="Quad to">_quad_to</a></b>(cpx, cpy, x, y)</td>
+<td>Queue quad line to new location</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Arc_to" title="Arc to">_arc_to</a></b>(cpx, cpy, x, y, radius)</td>
+<td>Queue arc line to new location</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Arc" title="Arc">_arc</a></b>(cx, cy, start_angle, end_angle, radius, direction)</td>
+<td>Queue arc</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Rect" title="Rect">_rect</a></b>(x, y, width, height, corner)</td>
+<td>Queue a rectangle for drawing</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Circle" title="Circle">_circle</a></b>(cx, cy, radius)</td>
+<td>Queue a circle for drawing</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Ellipse" title="Ellipse">_ellipse</a></b>(cx, cy, radius_x, radius_y)</td>
+<td>Queue a ellipse for drawing</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Triangle" title="Triangle">_triangle</a></b>(x1, y1, x2, y2, x3, y3)</td>
+<td>Queue a triangle for drawing</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Solid" title="Solid">_solid</a></b>()</td>
+<td>Mark that we are going to define a solid shape</td>
+<td><b>AM 5.2/AP 5.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hole" title="Hole">_hole</a></b>()</td>
+<td>Mark that we are going to define a hole shape</td>
+<td><b>AM 5.2/AP 5.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Stroke" title="Stroke">_stroke</a></b>(color, stroke_width)</td>
+<td>Stroke enqueued objects</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fill" title="Fill">_fill</a></b>(color)</td>
+<td>Fill enqueued objects</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fill_img" title="Fill img">_fill_img</a></b>(file_name, x, y, width, height, opacity)</td>
+<td>Fill enqueued objects with an image</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fill_gradient_linear" title="Fill gradient linear">_fill_gradient_linear</a></b>(x1, y1, x2, y2, color_1, color_2)</td>
+<td>Fill enqueued objects with a linear gradient</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fill_gradient_box" title="Fill gradient box">_fill_gradient_box</a></b>(x, y, width, height, corner, feather, color_inner, color_outer)</td>
+<td>Fill enqueued objects with a boxed gradient</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fill_gradient_radial" title="Fill gradient radial">_fill_gradient_radial</a></b>(x, y, radial_inner, radial_outer, color_inner, color_outer)</td>
+<td>Fill enqueued objects with a radial gradient</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Txt" title="Txt">_txt</a></b>(text, style, x, y)</td>
+<td>Draw text</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Canvas_rotate" title="Canvas rotate">_rotate</a></b>(angle, x, y)</td>
+<td>Rotate around a certain position</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Canvas_translate" title="Canvas translate">_translate</a></b>(x, y)</td>
+<td>Move content in X and/or Y direction</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Canvas_scale" title="Canvas scale">_scale</a></b>(x, y)</td>
+<td>Scale content</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Scene">Scene</span></h3>
+<p>The scene is used to add a 3D scene to your instrument. It is possible to add 3d objects in .stl and .obj file formats, and apply materials from PNG images or from a canvas draw callback.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>scene_id = <b><a href="/index.php?title=Scene_add" title="Scene add">scene_add</a></b>(x, y, width, height)</td>
+<td>Create a new scene</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Camera">Camera</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>camera_id = <b><a href="/index.php?title=Scene_camera_add" title="Scene camera add">scene_camera_add</a></b>(scene_id)</td>
+<td>Create a new camera</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Light">Light</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>light_id = <b><a href="/index.php?title=Scene_light_add" title="Scene light add">scene_light_add</a></b>(scene_id)</td>
+<td>Create a new light source</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Mesh">Mesh</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>mesh_id = <b><a href="/index.php?title=Scene_mesh_add" title="Scene mesh add">scene_mesh_add</a></b>(scene_id, resource)</td>
+<td>Create a new mesh from .stl or .obj file</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_mesh_set_material" title="Scene mesh set material">scene_mesh_set_material</a></b>(scene_id, material_id)</td>
+<td>Apply a material to a mesh</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Material">Material</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>material_id = <b><a href="/index.php?title=Scene_material_add" title="Scene material add">scene_material_add</a></b>(scene_id, resource)</td>
+<td>Create a new material from PNG file or canvas</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Node_2">Node</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>scene_node_id = <b><a href="/index.php?title=Scene_node_add" title="Scene node add">scene_node_add</a></b>(scene_id, scene_object_id)</td>
+<td>Create a node</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_node_move" title="Scene node move">scene_node_move</a></b>(scene_node_id, x, y, z)</td>
+<td>Move a node</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_node_scale" title="Scene node scale">scene_node_scale</a></b>(scene_node_id, x, y, z)</td>
+<td>Scale a node</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_node_rotate" title="Scene node rotate">scene_node_rotate</a></b>(scene_node_id, x, y, z)</td>
+<td>Rotate a node</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_node_attach" title="Scene node attach">scene_node_attach</a></b>(scene_node_id, scene_object_id)</td>
+<td>Attach a light or mesh to the node</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h4><span class="mw-headline" id="Viewport">Viewport</span></h4>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Scene_viewport_add" title="Scene viewport add">scene_viewport_add</a></b>(scene_node_id, camera_id)</td>
+<td>Create a viewport</td>
+<td><b>AM 5.0/AP 5.0</b> and up
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Group">Group</span></h3>
+<div style="background: rgba(255, 0, 0, 0.1); border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Warning.png" class="image" title="Info"><img alt="Info" src="/images/thumb/c/cb/Warning.png/18px-Warning.png" decoding="async" width="18" height="18" srcset="/images/thumb/c/cb/Warning.png/27px-Warning.png 1.5x, /images/thumb/c/cb/Warning.png/36px-Warning.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> The group API is deprecated. Please use the <a href="/index.php?title=API#Layer" title="API">layer</a> API instead</span></div>
+<p>Groups give you the ability to group together multiple nodes (switch, button, image, text, etc etc). This way you can make the whole group visible of invisible with one function call.
+</p><p><b>Click <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=d0N_pHKrEs8">here</a> for a screencast video about the group functions.</b>
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><del><b>group_id = <a href="/index.php?title=Group_add" title="Group add">group_add</a></b>(node_id, ...)</del></td>
+<td>Create a new group</td>
+<td><b>AM 1.2/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><del><b><a href="/index.php?title=Group_obj_add" title="Group obj add">group_obj_add</a></b>(group_id, node_id, ...)</del></td>
+<td>Add additional nodes to the group</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><del><b><a href="/index.php?title=Group_obj_remove" title="Group obj remove">group_obj_remove</a></b>(group_id, node_id, ...)</del></td>
+<td>Remove nodes from the group</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><del><b><a href="/index.php?title=Rotate" title="Rotate">rotate</a></b>(group_id, degrees)</del></td>
+<td>Rotate the group</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><del><b><a href="/index.php?title=Move" title="Move">move</a></b></del>, <del><b><a href="/index.php?title=Visible" title="Visible">visible</a></b></del>, <del><b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b></del> and <del><b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b></del></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Instrument">Instrument</span></h2>
+<div style="background: lightyellow; border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Lightbulb.png" class="image" title="Info"><img alt="Info" src="/images/thumb/6/6f/Lightbulb.png/18px-Lightbulb.png" decoding="async" width="18" height="22" srcset="/images/thumb/6/6f/Lightbulb.png/27px-Lightbulb.png 1.5x, /images/thumb/6/6f/Lightbulb.png/36px-Lightbulb.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> These functions can only be used within a panel script</span></div>
+<p>Set of functions to interact with instruments that are part of a panel.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b>instrument_id = <a href="/index.php?title=Instrument_get" title="Instrument get">instrument_get</a></b>(uuid, offset)</td>
+<td>Get an instrument from the running panel</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Z_order" title="Z order">z_order</a></b>(instrument_id, order)</td>
+<td>Set the Z order of an instrument</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Move" title="Move">move</a></b>, <b><a href="/index.php?title=Visible" title="Visible">visible</a></b>, <b><a href="/index.php?title=Opacity" title="Opacity">opacity</a></b> and <b><a href="/index.php?title=Viewport_rect" title="Viewport rect">viewport_rect</a></b> and <b><a href="/index.php?title=Viewport_shape" title="Viewport shape">viewport_shape</a></b></td>
+<td>Inherited from <a href="#Node">Node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Hardware">Hardware</span></h2>
+<p>Hardware functions. All sorts of functions aimed to do interact with hardware buttons, dials, LED's etc. 
+</p><p>Check the list below for compatible hardware (such as Raspberry Pi and Arduino):<br />
+<a href="/index.php?title=Hardware_id_list" title="Hardware id list"> Hardware ID list</a>
+</p>
+<h3><span class="mw-headline" id="Hardware_node">Hardware node</span></h3>
+<p>All hardware objects (like buttons, switches, character displays etc.) are considered hardware nodes, and as such can be used with the functions below.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b>(hw_node_id)</td>
+<td>Determines if the hardware node is connected to the actual hardware</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Button_2">Button</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_button_id = <b><a href="/index.php?title=Hw_button_add" title="Hw button add">hw_button_add</a></b>(hw_id, pressed_callback, released_callback)</td>
+<td>Add a hardware button</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="LED">LED</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_led_id = <b><a href="/index.php?title=Hw_led_add" title="Hw led add">hw_led_add</a></b>(hw_id, initial_brightness)</td>
+<td>Add a LED output</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_led_set" title="Hw led set">hw_led_set</a></b>(hw_led_id, brightness)</td>
+<td>Set the brightness of the LED</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Switch_2">Switch</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_switch_id = <b><a href="/index.php?title=Hw_switch_add" title="Hw switch add">hw_switch_add</a></b>(hw_id_0, hw_id_1, hw_id_n, callback)</td>
+<td>Add a hardware switch</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>position = <b><a href="/index.php?title=Hw_switch_get_position" title="Hw switch get position">hw_switch_get_position</a></b>(hw_switch_id)</td>
+<td>Get the current switch position</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Rotary_encoder">Rotary encoder</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_dial_id = <b><a href="/index.php?title=Hw_dial_add" title="Hw dial add">hw_dial_add</a></b>(hw_id_a, hw_id_b, callback)</td>
+<td>Add a rotary encoder</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_dial_set_acceleration" title="Hw dial set acceleration">hw_dial_set_acceleration</a></b>(hw_dial_id, acceleration)</td>
+<td>Change the acceleration of a rotary encoder</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Digital_input">Digital input</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_input_id = <b><a href="/index.php?title=Hw_input_add" title="Hw input add">hw_input_add</a></b>(hw_id, callback)</td>
+<td>Add a hardware  input</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>state = <b><a href="/index.php?title=Hw_input_read" title="Hw input read">hw_input_read</a></b>(hw_input_id)</td>
+<td>Reads the current state of the input</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Digital_output">Digital output</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_output_id = <b><a href="/index.php?title=Hw_output_add" title="Hw output add">hw_output_add</a></b>(hw_id, initial_state)</td>
+<td>Add a hardware  output</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_output_set" title="Hw output set">hw_output_set</a></b>(hw_output_id, state)</td>
+<td>Set the state of a output</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Analog_input">Analog input</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_adc_input_id = <b><a href="/index.php?title=Hw_adc_input_add" title="Hw adc input add">hw_adc_input_add</a></b>(hw_id, callback)</td>
+<td>Add a hardware ADC input</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>state = <b><a href="/index.php?title=Hw_adc_input_read" title="Hw adc input read">hw_adc_input_read</a></b>(hw_adc_input_id)</td>
+<td>Read the current ADC input value</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Analog_output">Analog output</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_dac_output_id = <b><a href="/index.php?title=Hw_dac_output_add" title="Hw dac output add">hw_dac_output_add</a></b>(hw_id, initial_value)</td>
+<td>Add a DAC output (analog voltage)</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_dac_output_set" title="Hw dac output set">hw_dac_output_set</a></b>(hw_dac_output_id, value)</td>
+<td>Set the state of a DAC output</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="PWM_output">PWM output</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_output_pwm_id = <b><a href="/index.php?title=Hw_output_pwm_add" title="Hw output pwm add">hw_output_pwm_add</a></b>(hw_id, frequency_hz, initial_duty_cycle)</td>
+<td>Add a PWM hardware output</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_output_pwm_duty_cycle" title="Hw output pwm duty cycle">hw_output_pwm_duty_cycle</a></b>(hw_output_pwm_id, duty_cycle)</td>
+<td>Set the duty cycle of a PWM output</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Character_display">Character display</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_chr_display_id = <b><a href="/index.php?title=Hw_chr_display_add" title="Hw chr display add">hw_chr_display_add</a></b>(type, nr_displays, hw_id_0, hw_id_1 ...)</td>
+<td>Add a character display</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_chr_display_set_text" title="Hw chr display set text">hw_chr_display_set_text</a></b>(hw_chr_display_id, display, line, text)</td>
+<td>Write text to a character display</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_chr_display_set_brightness" title="Hw chr display set brightness">hw_chr_display_set_brightness</a></b>(hw_chr_display_id, display, brightness)</td>
+<td>Set brightness for a character display</td>
+<td><b>AM 3.4/AP 3.4</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Button_array">Button array</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_button_array_id = <b><a href="/index.php?title=Hw_button_array_add" title="Hw button array add">hw_button_array_add</a></b>(nr_rows, nr_columns, hw_id_0, hw_id_1, ..., pressed_callback, released_callback)</td>
+<td>Add a hardware button array</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Stepper_motor">Stepper motor</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_stepper_motor_id = <b><a href="/index.php?title=Hw_stepper_motor_add" title="Hw stepper motor add">hw_stepper_motor_add</a></b>(type, nr_steps, speed_rpm, hw_id_0, hw_id_1, ...)</td>
+<td>Add a stepper motor</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_stepper_motor_calibrate" title="Hw stepper motor calibrate">hw_stepper_motor_calibrate</a></b>(hw_stepper_motor_id, position)</td>
+<td>Calibrate to the current stepper motor position</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_stepper_motor_speed" title="Hw stepper motor speed">hw_stepper_motor_speed</a></b>(hw_stepper_motor_id, speed_rpm)</td>
+<td>Set the speed of the stepper motor</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_stepper_motor_position" title="Hw stepper motor position">hw_stepper_motor_position</a></b>(hw_stepper_motor_id, position, direction)</td>
+<td>Set the desired position of the stepper motor</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Message_port">Message port</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>hw_message_port_id = <b><a href="/index.php?title=Hw_message_port_add" title="Hw message port add">hw_message_port_add</a></b>(hw_id, message_callback)</td>
+<td>Add a message port</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_message_port_send" title="Hw message port send">hw_message_port_send</a></b>(hw_message_port_id , message_id, payload_type, payload)</td>
+<td>Send a message to the message port</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Hw_connected" title="Hw connected">hw_connected</a></b></td>
+<td>Inherited from <a href="#Hardware_node">Hardware node</a></td>
+<td>
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Timer">Timer</span></h2>
+<p>These functions let you add a timer to your instrument. The timer can call a specific function with a configurable interval, and delay.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>timer_id = <b><a href="/index.php?title=Timer_start" title="Timer start">timer_start</a></b>(delay,period,callback_function)</td>
+<td>Start a timer which will call a function at a given interval</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Timer_stop" title="Timer stop">timer_stop</a></b>(timer_id)</td>
+<td>Stop a timer</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>running = <b><a href="/index.php?title=Timer_running" title="Timer running">timer_running</a></b>(timer_id)</td>
+<td>Check if a timer is still running</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Persistence">Persistence</span></h2>
+<p>Persistence functions let you save data to the hard drive. This makes it possible to let your instrument 'remember' certain settings or values.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>persist_id = <b><a href="/index.php?title=Persist_add" title="Persist add">persist_add</a></b>(key, type, initial_value)</td>
+<td>Open up a new persistence object</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Persist_put" title="Persist put">persist_put</a></b>(persist_id, value)</td>
+<td>Put a new value in the persistence object</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Persist_get" title="Persist get">persist_get</a></b>(persist_id)</td>
+<td>Get the value from a persistence object</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="User_properties">User properties</span></h2>
+<p>User properties can be used to let the user of the instrument change certain aspects of your instrument. User properties are visible to the instrument user and requires no need knowledge of the lua system.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_integer" title="User prop add integer">user_prop_add_integer</a></b>(name, min, max, default_value, description)</td>
+<td>Create a new integer user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_real" title="User prop add real">user_prop_add_real</a></b>(name, min, max, default_value, description)</td>
+<td>Create a new floating point user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_boolean" title="User prop add boolean">user_prop_add_boolean</a></b>(name, default_value, description)</td>
+<td>Create a new boolean user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_string" title="User prop add string">user_prop_add_string</a></b>(name, default_value, description)</td>
+<td>Create a new string user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_enum" title="User prop add enum">user_prop_add_enum</a></b>(name, possible_values, default_value, description)</td>
+<td>Create a new enumeration (list) user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_percentage" title="User prop add percentage">user_prop_add_percentage</a></b>(name, min, max, default_value, description)</td>
+<td>Create a new percentage user property</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_table" title="User prop add table">user_prop_add_table</a></b>(name, column_name, column_type, ..., description)</td>
+<td>Create a new table user property</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td>user_prop_id = <b><a href="/index.php?title=User_prop_add_hardware_id" title="User prop add hardware id">user_prop_add_hardware_id</a></b>(name, default_value, description)</td>
+<td>Create a new hardware ID user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=User_prop_get" title="User prop get">user_prop_get</a></b>(user_prop_id)</td>
+<td>Get the value of a user property</td>
+<td><b>AM 3.0/AP 3.0</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Static_data">Static data</span></h2>
+<p>Add own data (CSV, JSON or text) to your instrument.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Static_data_load" title="Static data load">static_data_load</a></b>(path, callback)</td>
+<td>Load data from CSV, JSON or txt file</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Sound">Sound</span></h2>
+<p>These functions let you add sound clips to your instrument. Only WAV file format is supported.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>sound_id = <b><a href="/index.php?title=Sound_add" title="Sound add">sound_add</a></b>(filename, volume)</td>
+<td>Loads a new sound</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Sound_play" title="Sound play">sound_play</a></b>(sound_id)</td>
+<td>Play a sound once</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Sound_loop" title="Sound loop">sound_loop</a></b>(sound_id)</td>
+<td>Play a sound forever and ever</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Sound_volume" title="Sound volume">sound_volume</a></b>(sound_id)</td>
+<td>Change volume of a sound</td>
+<td><b>AM 4.1/AP 4.1</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Sound_stop" title="Sound stop">sound_stop</a></b>(sound_id)</td>
+<td>Stop playing a sound</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Game_controller">Game controller</span></h2>
+<p>These functions let you get events from HID game controller (joystick) devices. Only works on the Windows and Linux platform.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>game_controller_list = <b><a href="/index.php?title=Game_controller_list" title="Game controller list">game_controller_list</a></b>()</td>
+<td>List all attached game controllers</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+<tr>
+<td>game_controller_id = <b><a href="/index.php?title=Game_controller_add" title="Game controller add">game_controller_add</a></b>(game_controller_name, callback)</td>
+<td>Create a new game controller</td>
+<td><b>AM 4.0/AP 4.0</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Navigation_data">Navigation data</span></h2>
+<p>These functions help you get navigation data from Air Manager.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Nav_get" title="Nav get">nav_get</a></b>(nav_type, nav_property, value)</td>
+<td>Get details of a NAV item</td>
+<td><b>AM 2.1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Nav_get_nearest" title="Nav get nearest">nav_get_nearest</a></b>(nav_type, lat, lon, max_entries)</td>
+<td>Get the nearest NAV items from a certain latitude and longitude</td>
+<td><b>AM 2.1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Nav_get_radius" title="Nav get radius">nav_get_radius</a></b>(nav_type, lat, lon, distance, max_entries)</td>
+<td>Get the NAV items within a radius around a certain latitude and longitude</td>
+<td><b>AM 2.1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>distance = <b><a href="/index.php?title=Nav_calc_distance" title="Nav calc distance">nav_calc_distance</a></b>(distance_type, lat1, lon1, lat2, lon2)</td>
+<td>Get the distance between two coordinates</td>
+<td><b>AM 4.1/AP 4.1</b> and up
+</td></tr>
+<tr>
+<td>bearing = <b><a href="/index.php?title=Nav_calc_bearing" title="Nav calc bearing">nav_calc_bearing</a></b>(bearing_type, lat1, lon1, lat2, lon2)</td>
+<td>Get the bearing from the first coordinate to the second coordinate</td>
+<td><b>AM 4.1/AP 4.1</b> and up
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Device">Device</span></h2>
+<p>With these functions, you can connect to various devices from your instrument code.
+</p><p>See the <a href="/index.php?title=Device_list" title="Device list">Device list</a> for all supported devices like RealSimGear and Vortex Simulation.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td><b><a href="/index.php?title=Device_add" title="Device add">device_add</a></b>(type, offset)</td>
+<td>Get a device reference</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Device_prop_set" title="Device prop set">device_prop_set</a></b>(prop_name, value)</td>
+<td>Set a device property. E.g. display brightness.</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Device_prop_subscribe" title="Device prop subscribe">device_prop_subscribe</a></b>(prop_name, callback)</td>
+<td>Subscribe to a device property. E.g. dial position or switch position.</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Device_command" title="Device command">device_command</a></b>(command_name)</td>
+<td>Send a command to the device. E.g. to turn the screen on.</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Device_command_subscribe" title="Device command subscribe">device_command_subscribe</a></b>(command_name, value)</td>
+<td>Subscribe to a device command. E.g. when a button is pressed.</td>
+<td><b>AM 4.2/AP 4.2</b> and up
+</td></tr>
+<tr>
+<td>connected = <b><a href="/index.php?title=Device_connected" title="Device connected">device_connected</a></b>()</td>
+<td>Check if associated device is connected.</td>
+<td><b>AM 5.1/AP 5.1</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Flight_Illusion">Flight Illusion</span></h2>
+<p>With these functions, you can connect to a Flight Illusion gauge or engine cluster from your instrument code.
+</p><p>See the <a href="/index.php?title=Flight_Illusion_Gauges" title="Flight Illusion Gauges">Flight Illusion Gauges</a> for all supported gauges and engine clusters.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>fi_gauge_id = <b><a href="/index.php?title=Fi_gauge_add" title="Fi gauge add">fi_gauge_add</a></b>(address, type)</td>
+<td>Add a Flight Illusion gauge.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fi_gauge_prop_set" title="Fi gauge prop set">fi_gauge_prop_set</a></b>(fi_gauge_id, prop_name, value)</td>
+<td>Set a gauge property. E.g. needle position or display text.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fi_gauge_prop_subscribe" title="Fi gauge prop subscribe">fi_gauge_prop_subscribe</a></b>(fi_gauge_id, prop_name, callback)</td>
+<td>Subscribe to a gauge property. E.g. needle position or display text.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fi_gauge_command" title="Fi gauge command">fi_gauge_command</a></b>(fi_gauge_id, command_name)</td>
+<td>Send a command to the gauge. E.g. to turn the autopilot off.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fi_gauge_command_subscribe" title="Fi gauge command subscribe">fi_gauge_command_subscribe</a></b>(fi_gauge_id, command_name, value)</td>
+<td>Subscribe to a gauge command. E.g. when a button is pressed.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td>fi_engine_cluster_id = <b><a href="/index.php?title=Fi_engine_cluster_add" title="Fi engine cluster add">fi_engine_cluster_add</a></b>(type)</td>
+<td>Add a Flight Illusion engine cluster.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Fi_engine_cluster_prop_set" title="Fi engine cluster prop set">fi_engine_cluster_prop_set</a></b>(fi_engine_cluster_id, prop_name, value)</td>
+<td>Set a engine cluster property. E.g. needle position or display text.</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Helpers">Helpers</span></h2>
+<p>Helper functions. All sorts of functions aimed to do common instruments tasks.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Function</th>
+<th>Description</th>
+<th>Version
+</th></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Instrument_prop" title="Instrument prop">instrument_prop</a></b>(property)</td>
+<td>Get different settings from the current instrument like aircraft, type, version, height, width, development, etc etc...</td>
+<td><b>AM 2.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Panel_prop" title="Panel prop">panel_prop</a></b>(property)</td>
+<td>Get different settings from the current panel like author, name, layout uuid, height, width, etc etc...</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td>meta_data = <b><a href="/index.php?title=Resource_info" title="Resource info">resource_info</a></b>(filename)</td>
+<td>Get information of a resource file. This can also be used to check if a resource exists.</td>
+<td><b>AM 2.1.1/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Var_cap" title="Var cap">var_cap</a></b>(value,min,max)</td>
+<td>Limits a value to a minimum and maximum value.</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Var_round" title="Var round">var_round</a></b>(value,decimals)</td>
+<td>Rounds the value to the given number of decimals.</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Var_format" title="Var format">var_format</a></b>(value,decimals)</td>
+<td>Rounds the value to the given number of decimals and always shows that selected amount of decimals.</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>x, y = <b><a href="/index.php?title=Geo_rotate_coordinates" title="Geo rotate coordinates">geo_rotate_coordinates</a></b>(degrees, radius_x, radius_y)</td>
+<td>Used to get the x and y coordinates from a circle with a certain radius and angle.</td>
+<td><b>AM 1.0/AP 3.0</b> and up
+</td></tr>
+<tr>
+<td>settings = <b><a href="/index.php?title=Interpolate_settings_from_user_prop" title="Interpolate settings from user prop">interpolate_settings_from_user_prop</a></b>(user_prop_table_value)</td>
+<td>Creates interpolate settings from table user property</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td>value = <b><a href="/index.php?title=Interpolate_linear" title="Interpolate linear">interpolate_linear</a></b>(settings, value)</td>
+<td>Interpolate a value with given settings</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+<tr>
+<td>feature_available = <b><a href="/index.php?title=Has_feature" title="Has feature">has_feature</a></b>(name)</td>
+<td>Check if the current version of Air Manager or Air Panel support a certain feature.</td>
+<td><b>AM 3.5/AP 3.5</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Event_subscribe" title="Event subscribe">event_subscribe</a></b>(callback)</td>
+<td>Subscribe to global events. E.g., when the instrument or panel is starting, showing or closing.</td>
+<td><b>AM 3.6/AP 3.6</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Shut_down" title="Shut down">shut_down</a></b>(type)</td>
+<td>Shut down application or computer</td>
+<td><b>AM 3.3/AP 3.3</b> and up
+</td></tr>
+<tr>
+<td><b><a href="/index.php?title=Log" title="Log">log</a></b>(type, message, ...)</td>
+<td>Write a message to the Air Manager or Air Player log file</td>
+<td><b>AM 3.7/AP 3.7</b> and up
+</td></tr>
+</tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20260416181019
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.157 seconds
+Real time usage: 0.171 seconds
+Preprocessor visited node count: 545/1000000
+Post‐expand include size: 1679/2097152 bytes
+Template argument size: 537/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.248      1 -total
+ 55.15%    4.549      4 Template:Tip
+ 36.60%    3.019      1 Template:Warning
+-->
+
+<!-- Saved in parser cache with key mdwk1:pcache:idhash:56-0!canonical and timestamp 20260416181019 and revision id 5906. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.siminnovations.com/index.php?title=API&amp;oldid=5906">https://wiki.siminnovations.com/index.php?title=API&amp;oldid=5906</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"> <span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=API" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/index.php?title=API" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:API&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/index.php?title=API">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=API&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=API&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Sim Innovations Wiki" autocapitalize="sentences" title="Search Sim Innovations Wiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/index.php?title=Special:WhatLinksHere/API" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/index.php?title=Special:RecentChangesLinked/API" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=API&amp;oldid=5906" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=API&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 20 January 2026, at 14:08.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="/index.php?title=Sim_Innovations_Wiki:Privacy_policy" title="Sim Innovations Wiki:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/index.php?title=Sim_Innovations_Wiki:About" title="Sim Innovations Wiki:About">About Sim Innovations Wiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/index.php?title=Sim_Innovations_Wiki:General_disclaimer" title="Sim Innovations Wiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.157","walltime":"0.171","ppvisitednodes":{"value":545,"limit":1000000},"postexpandincludesize":{"value":1679,"limit":2097152},"templateargumentsize":{"value":537,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    8.248      1 -total"," 55.15%    4.549      4 Template:Tip"," 36.60%    3.019      1 Template:Warning"]},"cachereport":{"timestamp":"20260416181019","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":135});});</script>
+</body></html>

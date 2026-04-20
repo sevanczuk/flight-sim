@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>KnobXP - Sim Innovations Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"da3eecce731f11229470e2ba","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"KnobXP","wgTitle":"KnobXP","wgCurRevisionId":5771,"wgRevisionId":5771,"wgArticleId":426,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"KnobXP","wgRelevantArticleId":426,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":
+"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.highlightjs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<link rel="stylesheet" href="/extensions/HighlightJS/highlight.css"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Sim Innovations Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.siminnovations.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Sim Innovations Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-KnobXP rootpage-KnobXP skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >KnobXP</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Sim Innovations Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#KnobXP"><span class="tocnumber">1</span> <span class="toctext">KnobXP</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Download"><span class="tocnumber">2</span> <span class="toctext">Download</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Installation"><span class="tocnumber">3</span> <span class="toctext">Installation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#User_manual"><span class="tocnumber">4</span> <span class="toctext">User manual</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Control_modes"><span class="tocnumber">4.1</span> <span class="toctext">Control modes</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Active_mode"><span class="tocnumber">4.2</span> <span class="toctext">Active mode</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Selecting_a_mode"><span class="tocnumber">4.3</span> <span class="toctext">Selecting a mode</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Advanced_usage"><span class="tocnumber">5</span> <span class="toctext">Advanced usage</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="KnobXP">KnobXP</span></h2>
+<p>KnobXP lets you use the Knobster within X-Plane 11 and 12, both in normal mode and VR mode.
+</p>
+<div style="background: rgba(255, 0, 0, 0.1); border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Warning.png" class="image" title="Info"><img alt="Info" src="/images/thumb/c/cb/Warning.png/18px-Warning.png" decoding="async" width="18" height="18" srcset="/images/thumb/c/cb/Warning.png/27px-Warning.png 1.5x, /images/thumb/c/cb/Warning.png/36px-Warning.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;">KnobXP is only compatible with the <a rel="nofollow" class="external text" href="https://www.siminnovations.com/shop/knobster/">Knobster V2</a> in X-Plane 11 and 12. This means that it is <u>not</u> compatible with the old and the DIY Knobster.<br />
+Do <u>not</u> install KnobXP if you want to use the Knobster with Air Manager or Air Player!</span></div>
+<p><br />
+<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/z-8QK6eWLTo" frameborder="0" allowfullscreen=""></iframe>
+</p>
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<pre><ul id="si_download_list" style="list-style: none; margin: 0; padding: 0;"></ul>
+<script>
+	const applicationMap = { "AIR_MANAGER" : "Air Manager", "AIR_PLAYER" : "Air Player" };
+	
+	const platformNameMap = {"LINUX": "Linux", "MAC": "Mac", "WINDOWS" : "Windows", "RASPBERRY_PI" : "Raspberry Pi", "ARDUINO" : "Arduino"};
+	const platormOrderMap = [ "WINDOWS", "MAC", "LINUX", "RASPBERRY_PI", "ARDUINO" ];
+	
+	const architectureMap = {"X86_64" : "64-bit", "X86" : "32-bit", "ARM" : "ARM", "ARM64" : "ARM 64-bit", "ANY" : "" };
+	const architectureOrderMap = [ "X86_64", "X86", "ARM", "ARM64", "ANY" ];
+
+	const programCompilationMap = { "HOME_USE" : "Home Use", "PROFESSIONAL" : "Professional" };
+
+	var api_version = "api6";
+	var application_group_type = "KNOBXP";
+	var program_compilation = "HOME_USE";
+	var beta = false;
+	
+	if ( (api_version == null) || (api_version == "") ) {
+		api_version = "api5";
+	}
+	
+	const Http = new XMLHttpRequest();
+	const url = 'https://' + api_version + '.siminnovations.com/application/all';
+	Http.open("GET", url);
+	Http.send();
+
+	Http.onreadystatechange = (e) => {
+		if (Http.readyState == 4) {
+			const json = JSON.parse(Http.responseText);
+			
+			json.sort((a, b) => {
+				var index_a = platormOrderMap.indexOf(a.platform);
+				var index_b = platormOrderMap.indexOf(b.platform);
+			
+				if (index_a == index_b) {
+					index_a = architectureOrderMap.indexOf(a.architecture);
+					index_b = architectureOrderMap.indexOf(b.architecture);
+				}
+			
+				return index_a - index_b;
+			} );
+			
+			json.forEach(function(application) {
+				if ( (application_group_type == "") || (application.application_group == application_group_type) ) {
+					 if (application.program_compilation == program_compilation) {
+						if (application.beta == beta) {
+							if (application.platform != "RASPBERRY_PI") {
+								var text = document.createElement('div');
+								
+								var innerHTML = application.name;
+								
+								if (application.beta) {
+									innerHTML += " " + application.major + "." + application.minor + " " + programCompilationMap[program_compilation] + " (BETA " + application.build  + ")";
+								}
+								else {
+									innerHTML += " " + application.major + "." + application.minor + "." + application.build + " " + programCompilationMap[program_compilation];
+								}
+								
+								if (application.architecture) {
+									innerHTML += " (" + (platformNameMap[application.platform] || application.platform) + " " + ( (architectureMap[application.architecture] || application.architecture) || ")") + ")";
+								}
+								
+								text.innerHTML = innerHTML;
+								text.style.flex = "1 0 0";
+								text.style.padding = "14px";
+								text.style.fontFamily = "sans-serif";
+								text.style.fontSize = "14px";
+								
+								var button = document.createElement('BUTTON');
+								button.style.flex = "0 0 auto";
+								button.style.padding = "10px";
+								button.style.margin = "4px";
+								button.style.backgroundColor = "lightgray";					
+								button.style.cursor = "pointer";
+								button.style.fontFamily = "sans-serif";
+								button.style.fontSize = "14px";
+								button.onclick = function() {
+									const ampersand = String.fromCharCode(38);
+								
+									const download_url = "https://" + api_version + ".siminnovations.com/application/download/" + application.uuid;
+								
+									const link = document.createElement("a");
+									link.href = download_url;
+									document.body.appendChild(link);
+									link.click();
+									document.body.removeChild(link);
+								};
+								button.appendChild(document.createTextNode("Download"));
+								
+								const parentDiv = document.createElement("div");
+								parentDiv.style.display = "flex";
+								parentDiv.style.backgroundColor = "#038fe828";
+								parentDiv.appendChild(text);
+								parentDiv.appendChild(button);
+								
+								var listNode = document.createElement('li');
+								listNode.style = "border-style: solid; border-width: 1px;";
+								listNode.appendChild(parentDiv);
+								
+								document.getElementById('si_download_list').appendChild(listNode);
+							}
+						}
+					}
+				}
+			});
+		}
+	}
+</script></pre>
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/index.php?title=File:Knobster_in_XP.jpg" class="image"><img alt="" src="/images/thumb/1/13/Knobster_in_XP.jpg/200px-Knobster_in_XP.jpg" decoding="async" width="200" height="158" class="thumbimage" srcset="/images/thumb/1/13/Knobster_in_XP.jpg/300px-Knobster_in_XP.jpg 1.5x, /images/thumb/1/13/Knobster_in_XP.jpg/400px-Knobster_in_XP.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:Knobster_in_XP.jpg" class="internal" title="Enlarge"></a></div>The KnobXP menu within X-Plane</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/index.php?title=File:Knobxp_settings_menu.jpg" class="image"><img alt="" src="/images/thumb/2/28/Knobxp_settings_menu.jpg/200px-Knobxp_settings_menu.jpg" decoding="async" width="200" height="278" class="thumbimage" srcset="/images/thumb/2/28/Knobxp_settings_menu.jpg/300px-Knobxp_settings_menu.jpg 1.5x, /images/thumb/2/28/Knobxp_settings_menu.jpg/400px-Knobxp_settings_menu.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:Knobxp_settings_menu.jpg" class="internal" title="Enlarge"></a></div>KnobXP settings window</div></div></div>
+<p>1. When running KnobXP on Linux, please read the readme.txt file for installing required libraries<br />
+2. Unzip the KnobXP folder into <i>\X-Plane 1x\Resources\plugins\</i><br />
+3. Start X-Plane and once the aircraft is loaded you will see the KnobXP window with the default modes loaded.<br />
+4. When in VR mode, you can position the KnobXP window to a convenient place in your cockpit with your VR controller.
+</p>
+<h2><span class="mw-headline" id="User_manual">User manual</span></h2>
+<h3><span class="mw-headline" id="Control_modes">Control modes</span></h3>
+<p>KnobXP comes with a list of pre-defined modes. These modes can be turned on and off from the KnobXP settings window.<br />
+In X-Plane go to <i>Plugins -&gt; KnobXP -&gt; Settings</i> and a settings window will turn up, which allows you to turn modes on and off. These settings are stored uniquely for each different aircraft you fly.
+</p><p>Each mode triggers different X-Plane commands.
+Two examples:
+</p>
+<pre><b>Autopilot heading</b>
+Outer dial: Autopilot heading up / down
+Inner dial: Autopilot heading up / down
+Button: Sync autopilot heading
+</pre>
+<pre><b>COM1 frequency 8.33KHz</b>
+Outer dial: COM1 frequency coarse up / down
+Inner dial: COM1 frequency fine up / down
+Button: COM1 standby flip
+</pre>
+<h3><span class="mw-headline" id="Active_mode">Active mode</span></h3>
+<p>The active mode is visible within the blue box.
+</p>
+<h3><span class="mw-headline" id="Selecting_a_mode">Selecting a mode</span></h3>
+<p>Selecting a mode can either be done by pointing and clicking with your mouse or VR controller, or by pressing and holding the Knobster button for half a second.
+When pressing and holding the Knobster button for half a second, KnobXP will go into selection mode, indicated by a green box. When in selection mode, both the inner and outer dial can be used to scroll through the list. Pressing the Knobster button again will select the mode in the green box.
+</p><p>Alternatively you can assign a next and previous command to a joystick button. These commands can be found in the X-Plane joystick settings when searching for Knobster.
+</p>
+<pre>Command:                       Description:
+si/knobster/mode/next          Select next Knobster mode
+si/knobster/mode/prev          Select previous Knobster mode
+</pre>
+<h2><span class="mw-headline" id="Advanced_usage">Advanced usage</span></h2>
+<p>You can create your own mode with a little JSON script. This allows for commands for custom add-on aircraft for example.
+</p><p>Navigate to <i>c:\users\your username\KnobXP\modes\</i>
+There you will see all the available modes within a JSON file. These JSON files can be opened with a code editor like <a rel="nofollow" class="external text" href="https://notepad-plus-plus.org/">Notepad++</a>.<br />
+The best tool to find X-Plane commands is called 'datareftool', made by Lee Baker. It is available for download from <a rel="nofollow" class="external text" href="https://datareftool.com/">his datareftool website</a>.
+</p>
+<pre><code class="json todo">{
+    &quot;name&quot;: &quot;COM1 frequency 8.33KHz&quot;,
+    &quot;minor_cw_cmd&quot;: &quot;sim/radios/stby_com1_fine_up_833&quot;,
+    &quot;minor_ccw_cmd&quot;: &quot;sim/radios/stby_com1_fine_down_833&quot;,
+    &quot;major_cw_cmd&quot;: &quot;sim/radios/stby_com1_coarse_up_833&quot;,
+    &quot;major_ccw_cmd&quot;: &quot;sim/radios/stby_com1_coarse_down_833&quot;,
+    &quot;button_released_cmd&quot;: &quot;sim/radios/com1_standy_flip&quot;,
+    &quot;order&quot;: 301500
+}</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<p>Optionally the command appointed to the Knobster button can be forced for a defined number of seconds. This can be useful for a starter engine command for example. In the example below, the starter command is forced for 2 seconds.
+</p>
+<pre><code class="json todo">{
+    &quot;name&quot;: &quot;LR C172 Ignition key&quot;,
+    &quot;minor_cw_cmd&quot;: &quot;laminar/c172/ignition_up&quot;,
+    &quot;minor_ccw_cmd&quot;: &quot;laminar/c172/ignition_down&quot;,
+    &quot;major_cw_cmd&quot;: &quot;laminar/c172/ignition_up&quot;,
+    &quot;major_ccw_cmd&quot;: &quot;laminar/c172/ignition_down&quot;,
+    &quot;button_released_cmd&quot;: &quot;sim/starters/engage_starter_1&quot;,
+    &quot;button_released_cmd_force_sec&quot;: 2,
+    &quot;order&quot;: 608120
+}</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<p>Create a new JSON file based on the same structure to create your own mode, and fill in your desired X-Plane commands.
+</p>
+<pre><i>name</i>                           The mode name that will show up within X-Plane
+<i>minor_cw_cmd</i>                   Inner dial clockwise command
+<i>minor_ccw_cmd</i>                  Inner dial counter clockwise command
+<i>major_cw_cmd</i>                   Outer dial clockwise command
+<i>major_ccw_cmd</i>                  Outer dial counter clockwise command
+<i>order</i>                          This number determines in which position the mode will show up in the list, the lower the number the higher in the list
+<i>button_released_cmd</i>            Button command
+<i>button_released_cmd_force_sec</i>  Number of seconds the button command is forced (optional)
+<i>minor_acceleration</i>             Inner dial acceleration, 1 is no acceleration (optional)
+<i>major_acceleration</i>             Outer dial acceleration, 1 is no acceleration (optional)
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20260417044837
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.030 seconds
+Real time usage: 0.116 seconds
+Preprocessor visited node count: 49/1000000
+Post‐expand include size: 527/2097152 bytes
+Template argument size: 293/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5605/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.822      1 Template:Warning
+100.00%    8.822      1 -total
+-->
+
+<!-- Saved in parser cache with key mdwk1:pcache:idhash:426-0!canonical and timestamp 20260417044837 and revision id 5771. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.siminnovations.com/index.php?title=KnobXP&amp;oldid=5771">https://wiki.siminnovations.com/index.php?title=KnobXP&amp;oldid=5771</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"> <span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=KnobXP" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/index.php?title=KnobXP" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:KnobXP&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/index.php?title=KnobXP">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=KnobXP&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=KnobXP&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Sim Innovations Wiki" autocapitalize="sentences" title="Search Sim Innovations Wiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/index.php?title=Special:WhatLinksHere/KnobXP" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/index.php?title=Special:RecentChangesLinked/KnobXP" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=KnobXP&amp;oldid=5771" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=KnobXP&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 4 July 2025, at 08:52.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="/index.php?title=Sim_Innovations_Wiki:Privacy_policy" title="Sim Innovations Wiki:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/index.php?title=Sim_Innovations_Wiki:About" title="Sim Innovations Wiki:About">About Sim Innovations Wiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/index.php?title=Sim_Innovations_Wiki:General_disclaimer" title="Sim Innovations Wiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.030","walltime":"0.116","ppvisitednodes":{"value":49,"limit":1000000},"postexpandincludesize":{"value":527,"limit":2097152},"templateargumentsize":{"value":293,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5605,"limit":5000000},"timingprofile":["100.00%    8.822      1 Template:Warning","100.00%    8.822      1 -total"]},"cachereport":{"timestamp":"20260417044837","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":80});});</script>
+</body></html>

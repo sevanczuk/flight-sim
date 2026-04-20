@@ -1,0 +1,67 @@
+[2026-04-20T12:04:44Z] Crawler started
+[2026-04-20T12:04:44Z] Running pre-existing mirror import...
+IMPORT: https://wiki.siminnovations.com/ (25859 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=API (107645 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_3.x_Documentation (13803 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_4.x_Documentation (13804 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_5.x_Installation (21504 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_5.x_System_requirements (15537 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_5.x_User_Manual (40380 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_FAQ (36330 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_Release_Notes (44394 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Manager_desktop_BETA (19059 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_3.x_Desktop_Documentation (14270 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_4.x_Desktop_Documentation (13989 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_5.x_Desktop_Installation (21697 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_5.x_Desktop_System_requirements (16073 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_5.x_Desktop_User_Manual (20748 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Air_Player_Desktop_Release_Notes (26673 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Android_BETA (13196 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Android_Installation (14104 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Android_Manual (24341 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Android_Release_notes (14770 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Android_System_requirements (13964 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Arduino (33472 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Aspen_EFD1000 (34026 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Cessna_Skyhawk_G1000 (18708 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Connection_problems (25468 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Device_list (192850 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Flight_Illusion (16606 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Flight_Simulator_Plugins_BETA (18067 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Flight_Simulator_Plugins_Installation (19669 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Flight_Simulator_Plugins_Release_Notes (18634 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Flight_Simulator_Plugins_System_Requirements (16033 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Garmin_G5 (25336 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Hardware_id_list (384182 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=I%2FO_Connection_examples (20303 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=IPad_BETA (13388 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=IPad_Installation (14122 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=IPad_Manual (22764 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=IPad_Release_notes (16391 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=IPad_System_requirements (13851 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Instrument_Creation_Tutorial (15579 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=KnobFS (30686 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=KnobXP (27001 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Knobster (22251 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Knobster_DIY (16682 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Knobster_mount (15831 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=License_reset (17164 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Main_Page (17371 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Pop_outs (17764 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Premium_Panel_Manual (14236 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Professional_4.x_downloads (17901 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Professional_5.x_downloads (17901 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Professional_BETA_5.x_downloads (18195 bytes)
+IMPORT: https://wiki.siminnovations.com/index.php?title=Raspberry_Pi_Pico (15467 bytes)
+SKIP (out-of-scope): index.php@title=Special%3ARandom
+SKIP (out-of-scope): index.php@title=Special%3ARecentChanges&feed=atom
+SKIP (out-of-scope): index.php@title=Special%3ASpecialPages
+SKIP (out-of-scope): index.php@title=Special%3AUserLogin&returnto=Main+Page
+IMPORT: https://wiki.siminnovations.com/index.php?title=VEMD_H120 (23302 bytes)
+IMPORT SUMMARY: 54 files imported, 1976 edges, 0 failures
+[2026-04-20T12:04:45Z] New crawl run: run_id=2
+[2026-04-20T12:04:45Z] Seeds imported: 384 URLs processed
+[2026-04-20T12:04:45Z] --import-only: exiting without fetching
+[2026-04-20T12:06:09Z] Crawler started
+[2026-04-20T12:06:09Z] New crawl run: run_id=3
+[2026-04-20T12:06:09Z] Seeds imported: 384 URLs processed
