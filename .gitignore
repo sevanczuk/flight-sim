@@ -40,6 +40,9 @@ docs/specs/lifecycle/*.bak
 assets/air_manager_api/crawl.sqlite3
 assets/air_manager_api/crawl.sqlite3.bak
 
+# AMAPI parser JSON output — regenerable from HTML mirror + scripts/amapi_parser.py (D-06 pattern)
+assets/air_manager_api/parsed/
+
 # GNC 355 PDF extraction output — regenerable from source PDF + scripts/gnc355_pdf_extract.py (D-06)
 assets/gnc355_pdf_extracted/
 

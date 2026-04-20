@@ -1,0 +1,15 @@
+{
+  "task_id": "AMAPI-PARSER-01",
+  "crp_version": "1.0",
+  "created": "2026-04-20T00:00:00-04:00",
+  "phases": {
+    "A": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": ["scripts/amapi_parser_lib/__init__.py", "scripts/amapi_parser_lib/page_classifier.py"]},
+    "B": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": ["scripts/amapi_parser_lib/function_page_parser.py"]},
+    "C": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": ["scripts/amapi_parser_lib/catalog_page_parser.py"]},
+    "D": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": ["scripts/amapi_parser.py", "assets/air_manager_api/parsed/_index.json", "assets/air_manager_api/parsed/by_function/*.json (214 files)"]},
+    "E": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": ["scripts/amapi_parser_lib/markdown_renderer.py", "docs/reference/amapi/by_function/*.md (214 files)", "docs/reference/amapi/_index.md"]},
+    "F": {"status": "complete", "started": "2026-04-20T00:00:00-04:00", "completed": "2026-04-20T00:00:00-04:00", "artifacts": [".gitignore (updated)", "docs/reference/amapi/_parser_report.md"]}
+  },
+  "current_phase": "complete",
+  "last_updated": "2026-04-20T00:00:00-04:00"
+}
