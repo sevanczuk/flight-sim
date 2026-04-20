@@ -101,12 +101,12 @@ def _collect_stats(conn, run_id: int, start_time: float, stop_reason: str,
     }
 
 
-def _load_robots_parser(user_agent: str, log_path: str):
+def _load_robots_parser(user_agent: str, log_path: str, verify: bool | str = True):
     """Fetch robots.txt and return a RobotFileParser, or None if not found / unreachable."""
     import requests
     robots_url = 'https://wiki.siminnovations.com/robots.txt'
     try:
-        resp = requests.get(robots_url, headers={'User-Agent': user_agent}, timeout=10)
+        resp = requests.get(robots_url, headers={'User-Agent': user_agent}, timeout=10, verify=verify)
         if resp.status_code == 404 or not resp.content.strip():
             _log('robots.txt: not found — no restrictions apply', log_path)
             return None
@@ -116,7 +116,7 @@ def _load_robots_parser(user_agent: str, log_path: str):
         _log(f'robots.txt: loaded; {num_entries} rules applied', log_path)
         return rfp
     except Exception as e:
-        _log(f'robots.txt: fetch warning ({e}) — proceeding without restrictions', log_path)
+        _log(f'robots.txt: fetch warning ({type(e).__name__}) — proceeding without restrictions', log_path)
         return None
 
 
@@ -164,6 +164,40 @@ def _build_progress_line(conn, run_id: int, start_time: float, fetched_this_run:
     )
 
 
+def resolve_verify(args, log_path: str) -> bool | str:
+    """Determine the effective TLS verify value from CLI flags.
+
+    Priority: --insecure > --ca-bundle > project PEM > certifi default.
+    Returns False (skip verification), a path string (CA bundle), or True (certifi).
+    """
+    import sys as _sys
+    project_pem = Path('assets/air_manager_api/wiki-cert-chain.pem')
+
+    if args.insecure and args.ca_bundle:
+        _log('WARNING: both --insecure and --ca-bundle specified; --insecure wins', log_path)
+
+    if args.insecure:
+        _log('WARNING: TLS certificate verification DISABLED via --insecure flag', log_path)
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        _sys.stderr.write('WARNING: running with --insecure; TLS verification is OFF\n')
+        return False
+
+    if args.ca_bundle:
+        bundle_path = Path(args.ca_bundle)
+        if not bundle_path.exists():
+            raise SystemExit(f'ERROR: --ca-bundle path does not exist: {bundle_path}')
+        _log(f'TLS: using CA bundle from {bundle_path}', log_path)
+        return str(bundle_path)
+
+    if project_pem.exists():
+        _log(f'TLS: using project CA bundle at {project_pem}', log_path)
+        return str(project_pem)
+
+    _log('TLS: using certifi default CA bundle', log_path)
+    return True
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description='AMAPI wiki crawler')
     parser.add_argument('--db', default='assets/air_manager_api/crawl.sqlite3')
@@ -179,10 +213,16 @@ def main() -> None:
                         help='Show pending URL counts without fetching')
     parser.add_argument('--progress-refresh-seconds', type=float, default=60.0,
                         help='Seconds between stderr progress-line refreshes (0 to disable)')
+    parser.add_argument('--ca-bundle', type=str, default=None,
+                        help='Path to a CA bundle PEM file for TLS verification')
+    parser.add_argument('--insecure', action='store_true', default=False,
+                        help='Disable TLS certificate verification (last-resort escape hatch)')
     args = parser.parse_args()
 
     log_path = args.log
     os.makedirs(os.path.dirname(log_path), exist_ok=True)
+
+    verify = resolve_verify(args, log_path)
 
     with open(args.user_agent_file, 'r', encoding='utf-8') as f:
         user_agent = f.read().strip()
@@ -262,7 +302,7 @@ def main() -> None:
     progress_interval = args.progress_refresh_seconds
     last_progress_time = start_time
 
-    robots_parser = _load_robots_parser(user_agent, log_path)
+    robots_parser = _load_robots_parser(user_agent, log_path, verify=verify)
 
     try:
         while True:
@@ -285,7 +325,7 @@ def main() -> None:
             _log(f'FETCH {url}', log_path)
 
             try:
-                status_code, body = fetch_page(url, user_agent, args.min_delay_seconds)
+                status_code, body = fetch_page(url, user_agent, args.min_delay_seconds, verify=verify)
             except Exception as e:
                 error_str = f'{type(e).__name__}: {e}'
                 _log(f'FETCH_ERROR {url}: {error_str}', log_path)

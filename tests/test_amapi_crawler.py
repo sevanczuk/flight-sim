@@ -1,9 +1,11 @@
 """Unit tests for pure-function components of the AMAPI crawler (AMAPI-CRAWLER-01)."""
+import argparse
 import os
 import sqlite3
 import sys
 import tempfile
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 from unittest.mock import patch, MagicMock
 
 import pytest
@@ -514,3 +516,109 @@ class TestRobotsCheck:
                                              'https://wiki.siminnovations.com/index.php?title=Xpl',
                                              999, tmp_db, None)
         assert result is True
+
+
+# ---------------------------------------------------------------------------
+# resolve_verify tests (AMAPI-CRAWLER-BUGFIX-02)
+# ---------------------------------------------------------------------------
+
+def _make_args(**kwargs):
+    defaults = {'insecure': False, 'ca_bundle': None}
+    defaults.update(kwargs)
+    ns = argparse.Namespace(**defaults)
+    return ns
+
+
+class TestResolveVerify:
+    def setup_method(self):
+        import amapi_crawler
+        self.resolve = amapi_crawler.resolve_verify
+
+    def _log_path(self, tmp_path):
+        p = tmp_path / 'crawl_log.txt'
+        return str(p)
+
+    def test_insecure_flag_returns_false(self, tmp_path):
+        args = _make_args(insecure=True)
+        result = self.resolve(args, self._log_path(tmp_path))
+        assert result is False
+
+    def test_insecure_wins_over_ca_bundle(self, tmp_path, capsys):
+        pem = tmp_path / 'bundle.pem'
+        pem.write_text('fake')
+        args = _make_args(insecure=True, ca_bundle=str(pem))
+        result = self.resolve(args, self._log_path(tmp_path))
+        assert result is False
+        log_text = (tmp_path / 'crawl_log.txt').read_text()
+        assert 'both --insecure and --ca-bundle' in log_text
+
+    def test_ca_bundle_flag_returns_path(self, tmp_path):
+        pem = tmp_path / 'bundle.pem'
+        pem.write_text('fake')
+        args = _make_args(ca_bundle=str(pem))
+        result = self.resolve(args, self._log_path(tmp_path))
+        assert result == str(pem)
+
+    def test_ca_bundle_missing_file_exits(self, tmp_path):
+        args = _make_args(ca_bundle='/does/not/exist.pem')
+        with pytest.raises(SystemExit):
+            self.resolve(args, self._log_path(tmp_path))
+
+    def test_project_pem_fallback(self, tmp_path, monkeypatch):
+        project_pem = tmp_path / 'assets' / 'air_manager_api' / 'wiki-cert-chain.pem'
+        project_pem.parent.mkdir(parents=True)
+        project_pem.write_text('fake')
+        monkeypatch.chdir(tmp_path)
+        args = _make_args()
+        result = self.resolve(args, self._log_path(tmp_path))
+        assert result == str(Path('assets/air_manager_api/wiki-cert-chain.pem'))
+
+    def test_certifi_default_fallback(self, tmp_path, monkeypatch):
+        monkeypatch.chdir(tmp_path)
+        args = _make_args()
+        result = self.resolve(args, self._log_path(tmp_path))
+        assert result is True
+
+
+# ---------------------------------------------------------------------------
+# fetch_page verify parameter tests (AMAPI-CRAWLER-BUGFIX-02)
+# ---------------------------------------------------------------------------
+
+class TestFetchVerifyParameter:
+    def setup_method(self):
+        import amapi_crawler_lib.fetch as fetch_mod
+        fetch_mod._session = None
+        fetch_mod._last_fetch_at = 0.0
+
+    def test_verify_true_passed_through(self):
+        from amapi_crawler_lib.fetch import fetch_page
+        with patch('requests.Session.get') as mock_get:
+            mock_resp = MagicMock()
+            mock_resp.status_code = 200
+            mock_resp.content = b'body'
+            mock_get.return_value = mock_resp
+            fetch_page('https://example.com/', 'TestAgent/1.0', verify=True)
+            _, kwargs = mock_get.call_args
+            assert kwargs.get('verify') is True
+
+    def test_verify_path_passed_through(self):
+        from amapi_crawler_lib.fetch import fetch_page
+        with patch('requests.Session.get') as mock_get:
+            mock_resp = MagicMock()
+            mock_resp.status_code = 200
+            mock_resp.content = b'body'
+            mock_get.return_value = mock_resp
+            fetch_page('https://example.com/', 'TestAgent/1.0', verify='/path/to/bundle.pem')
+            _, kwargs = mock_get.call_args
+            assert kwargs.get('verify') == '/path/to/bundle.pem'
+
+    def test_verify_false_passed_through(self):
+        from amapi_crawler_lib.fetch import fetch_page
+        with patch('requests.Session.get') as mock_get:
+            mock_resp = MagicMock()
+            mock_resp.status_code = 200
+            mock_resp.content = b'body'
+            mock_get.return_value = mock_resp
+            fetch_page('https://example.com/', 'TestAgent/1.0', verify=False)
+            _, kwargs = mock_get.call_args
+            assert kwargs.get('verify') is False
