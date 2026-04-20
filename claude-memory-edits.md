@@ -1,9 +1,9 @@
 # Claude.ai Memory — flight-sim
 
-**Canonical source:** `docs/templates/memory_bootstrap.md`
-**Generated:** 2026-04-19T00:00:00-04:00 (initial draft — Claude.ai project not yet created)
-**Last synced:** Not yet synced — apply slots to Claude.ai Memory panel when the Claude.ai project is created (use V6 §9.2 canonical prompt or feed per-layer sections manually).
-**Purpose:** Exact flat mirror of the 30-slot Claude.ai memory system. Git-tracked backup and bootstrap source. Contains exactly what is (or will be) in Claude.ai memory — no more.
+**Canonical source:** `docs/templates/memory_bootstrap.md` (initial 22 slots); `docs/decisions/D-04-*.md`, `docs/decisions/D-05-*.md` (slots 23–25)
+**Generated:** 2026-04-19T00:00:00-04:00 (initial draft)
+**Last synced:** 2026-04-20T09:10:00-04:00 (Purple Turn 40 — 25 slots live; file mirrors live memory exactly)
+**Purpose:** Exact flat mirror of the 30-slot Claude.ai memory system. Git-tracked backup and bootstrap source. Contains exactly what is in Claude.ai memory — no more.
 
 ---
 
@@ -23,7 +23,7 @@
 
 8. Issue tracking: ITM- (general), G- (spec review gaps), O- (spec review opportunities), FE- (future enhancements). Paired files: issue_index.md (open) + issue_index_resolved.md (closed).
 
-9. Decision logging: write a decision log entry on the turn where a decision is made, in `docs/decisions/`. Log broadly — over-logging is cheap, losing concepts is not. Counts as a decision: (a) scope/design/architecture; (b) convention or process refinements; (c) revisions of prior decisions; (d) workflow/tooling changes. Tripwire: prescriptive language (should/must/lesson/pattern) or revising any convention requires a log entry. End substantive turns with "📋 Decision log: wrote D-{seq}…" or "📋 no decisions this turn" — real check, not habit. Never defer — compaction risk.
+9. Decision logging: write entry on the turn a decision is made, in docs/decisions/. Log broadly. Decision = (a) scope/design/architecture; (b) convention/process refinements; (c) revisions of prior decisions; (d) workflow/tooling changes. Tripwire: prescriptive language (should/must/lesson/pattern) or revising any convention requires a log entry. End substantive turns with "-> Decision log: wrote D-{seq}…" or "-> no decisions this turn". Never defer — compaction risk.
 
 10. Spec review pipeline: /spec-review command runs multi-agent review. Three tiers: quick (5 agents), standard (8 agents, default), full (12 agents). Four execution batches. Grades A–F per agent. Findings auto-assigned G-n/O-n IDs.
 
@@ -37,9 +37,9 @@
 
 15. Spec lifecycle tracker: per-spec JSON at docs/specs/lifecycle/{DOC-ID}_lifecycle.json. CD creates; CC updates via PUT /api/lifecycle/{spec_id}. Gitignored (runtime state).
 
-16. CC launch: two-step sequence in separate code blocks. Tab title: `$env:CLAUDE_CODE_DISABLE_TERMINAL_TITLE = "1"; $host.UI.RawUI.WindowTitle = "{label}"; claude --dangerously-skip-permissions --model opusplan`
+16. CC launch: two-step sequence in separate code blocks. Tab title: $env:CLAUDE_CODE_DISABLE_TERMINAL_TITLE = "1"; $host.UI.RawUI.WindowTitle = "{label}"; claude --dangerously-skip-permissions --model opusplan
 
-17. ntfy notification after every git commit: `Invoke-RestMethod -Uri "https://ntfy.sh/1668651d-48ae-4104-b09e-f742b559e205" -Method Post -Body "{message}"`
+17. ntfy notification after every git commit: Invoke-RestMethod -Uri "https://ntfy.sh/1668651d-48ae-4104-b09e-f742b559e205" -Method Post -Body "{message}"
 
 18. Python code always in .py files — never inline python -c commands. PowerShell's quoting makes inline commands fragile.
 
@@ -47,6 +47,12 @@
 
 20. Project: flight-sim. Root: C:/Users/artroom/projects/flight-sim-project/flight-sim
 
-21. Test command: `TBD`
+21. Test command (flight-sim): TBD
 
 22. ntfy channel: 1668651d-48ae-4104-b09e-f742b559e205
+
+23. D-04 commit trailer policy: all commits include trailers. Mandatory: Task-Id, Authored-By-Instance (cc, cd-green, cd-yellow, cd-purple, cd, steve). Conditional: Refs, Fixes, Supersedes, Decision. CC+CD commits also include Co-Authored-By: Claude Code or Claude Desktop <noreply@anthropic.com>. CC does not push. CD does not push. Only Steve pushes.
+
+24. CD commit mechanics (D-04): CD drafts command, Steve executes. CD has no git tool. Use git commit -F <file> (NOT multiple -m flags — PowerShell swallows empty -m ""). Write message via [System.IO.File]::WriteAllText (NOT Out-File — writes BOM). Temp file at .git/COMMIT_EDITMSG_cd using Join-Path $PWD for absolute path. Blank line between subject and trailer block.
+
+25. D-05 "assess" shorthand: when Steve says "assess" (or "review") and references a review-artifact file, trigger the protocol matching the filename. *_completion.md → check completions. *_compliance.md → check compliance. *_validation.md → check validation. *_review.md → spec review triage. The literal trigger phrase without a filename means process ALL unprocessed files of that type.
