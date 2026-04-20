@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><pluginstrument><aircraft>Cessna 172</aircraft><type>Airspeed</type><uuid>05542d69-a055-45a6-915a-f0aa81c195f7</uuid><author>Jason Tatum</author><description>Modification by Brian McMullan
+Property for background off/on (default ON)
+Property for dimming overlay (default OFF)
+ 
+Uses A2A indicated airspeed if available, with a temperature of 15 degrees C at a pressure altitude of 0 ft(sea level) with a pressure set at 1013hpa (or 29.92 inHg).</description><compatibleFSX>true</compatibleFSX><compatibleP3D>true</compatibleP3D><compatibleXPL>true</compatibleXPL><compatibleFS2>false</compatibleFS2><compatibleFS2020>true</compatibleFS2020><compatibleFS2024>true</compatibleFS2024><version>110</version><configVersion>1</configVersion><pluginInterfaceVersion>100</pluginInterfaceVersion><prefWidth>512</prefWidth><prefHeight>512</prefHeight><source>ONLINE</source><platforms><platform>WINDOWS</platform><platform>MAC</platform><platform>LINUX</platform><platform>RASPBERRY_PI</platform><platform>ANDROID</platform><platform>IPAD</platform><platform>ESP32</platform></platforms><tiers><tier>HOME_USE_STANDARD</tier></tiers></pluginstrument>

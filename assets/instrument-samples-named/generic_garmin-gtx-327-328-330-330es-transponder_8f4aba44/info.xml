@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><pluginstrument><aircraft>Generic</aircraft><type>Garmin GTX 327 328 330 330ES Transponder</type><uuid>8f4aba44-f55b-4ce7-be09-05016bbf75ae</uuid><author>David Chambers</author><description>Replicates any of the popular Garmin 327-330 series transponders which all share the same user interface. Includes flight, count-up, count-down timers and altitude monitor. Will always display flight level/altitude based on standard pressure altitude rather than what is displayed on the altimeter.
+
+Power up by pressing and holding any of ON/STANDBY/ALT buttons
+Power down by pressing and holding the OFF button
+Both battery (or alternator with engine running) and avionics master must be on.
+
+Configurable for model number, default VFR code, FL/Feet display, rounded or rectangular backplate and optional dimming.
+</description><compatibleFSX>true</compatibleFSX><compatibleP3D>true</compatibleP3D><compatibleXPL>true</compatibleXPL><compatibleFS2>false</compatibleFS2><compatibleFS2020>true</compatibleFS2020><compatibleFS2024>true</compatibleFS2024><version>101</version><configVersion>1</configVersion><pluginInterfaceVersion>100</pluginInterfaceVersion><prefWidth>700</prefWidth><prefHeight>180</prefHeight><source>ONLINE</source><platforms><platform>WINDOWS</platform><platform>MAC</platform><platform>LINUX</platform><platform>RASPBERRY_PI</platform><platform>ANDROID</platform><platform>IPAD</platform><platform>ESP32</platform></platforms><tiers><tier>HOME_USE_STANDARD</tier></tiers></pluginstrument>

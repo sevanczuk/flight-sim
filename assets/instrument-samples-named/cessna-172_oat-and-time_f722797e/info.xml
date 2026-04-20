@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><pluginstrument><aircraft>Cessna 172</aircraft><type>OAT and Time</type><uuid>f722797e-4899-4cff-abef-b6ca2230b528</uuid><author>Russ Barlow</author><description>Modification of Russ Barlow's original 'OAT and Time' gauge
+Modified by Brian McMullan
+
+Property for background off/on (default ON)
+Property for dimming overlay (default OFF)
+
+When in elapsed mode, press CONTROL once to start the timer, again to pause, and hold for 2 seconds to reset.</description><compatibleFSX>true</compatibleFSX><compatibleP3D>true</compatibleP3D><compatibleXPL>true</compatibleXPL><compatibleFS2>false</compatibleFS2><compatibleFS2020>true</compatibleFS2020><compatibleFS2024>true</compatibleFS2024><version>116</version><configVersion>1</configVersion><pluginInterfaceVersion>100</pluginInterfaceVersion><prefWidth>400</prefWidth><prefHeight>400</prefHeight><source>ONLINE</source><platforms><platform>WINDOWS</platform><platform>MAC</platform><platform>LINUX</platform><platform>RASPBERRY_PI</platform><platform>ANDROID</platform><platform>IPAD</platform></platforms><tiers><tier>HOME_USE_STANDARD</tier><tier>PROFESSIONAL_STANDARD</tier></tiers></pluginstrument>
