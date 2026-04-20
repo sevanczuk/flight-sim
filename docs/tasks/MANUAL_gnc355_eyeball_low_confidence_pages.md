@@ -3,10 +3,28 @@
 **Task type:** MANUAL — for Steve to perform. Not a CC task.
 **Location:** `docs/tasks/MANUAL_gnc355_eyeball_low_confidence_pages.md`
 **Created:** 2026-04-20T09:10:00-04:00
+**Completed:** 2026-04-20T09:50:02-04:00 (Purple Turn 54 acknowledgment — Steve saved results as disposition column in the context table, a deviation from the originally-spec'd separate results file; deviation approved)
+**Status:** COMPLETE. Results captured inline in the context table. 1 of 13 pages (page 125) yielded a curated reference asset saved at `assets/gnc355_reference/land-data-symbols.png`. 12 of 13 pages verified as blank / structural / cover-page content with no substantive GNC 355 functional content missed. No OCR work required.
 **Source:** Purple Turn 37 — follow-up from GNC355-EXTRACT-01 completion
 **Parent task:** GNC355-EXTRACT-01 (completed 2026-04-20)
 **Priority:** Low — does not block Wave-2 tasks. Can happen any time before Stream C2 drafts the GNC 355 functional spec.
 **Estimated effort:** 15–30 minutes with the PDF open
+
+---
+
+## Summary of findings (filled by Steve)
+
+**1 of 13 pages — KEEP:**
+- **Page 125** — "Land Data Symbols" reference diagram. Saved to `assets/gnc355_reference/land-data-symbols.png` (tracked; see directory README).
+
+**12 of 13 pages — IGNORE (no substantive content missed):**
+- Page 1 (cover), 36, 110, 208, 222, 270, 271, 292, 298, 308, 309, 310 — all blank, structural dividers, subsection headers, or closing page with document revision info.
+
+**Impact on Stream C2:**
+- 297 cleanly-extracted pages are usable as-is
+- Appendix C of the C2 spec can note the 12 blank/structural pages briefly
+- `assets/gnc355_reference/land-data-symbols.png` is the authoritative legend for map-symbol content in the spec
+- No OCR work required (no NEEDS-OCR verdicts)
 
 ---
 
