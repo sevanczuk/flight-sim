@@ -1,0 +1,262 @@
+========================================================================
+1. ROW COUNTS BY (category, status)
+========================================================================
+  Arc                            fetched              2
+  Bezier                         fetched              1
+  Button                         fetched              2
+  Canvas                         fetched              5
+  Device                         fetched              6
+  Dial                           fetched              3
+  Event                          fetched              1
+  Ext                            fetched              5
+  Fi                             fetched              7
+  Fill                           fetched              5
+  Fs2020                         fetched              6
+  Fs2024                         fetched              6
+  Fsx                            fetched              4
+  Game                           fetched              2
+  Geo                            fetched              1
+  Group                          fetched              3
+  Has                            fetched              1
+  Hw                             fetched             28
+  Img                            fetched              2
+  Instrument                     fetched              2
+  Interpolate                    fetched              2
+  Layer                          fetched              2
+  Line                           fetched              1
+  Map                            fetched              8
+  Mouse                          fetched              1
+  Move                           fetched              2
+  Msfs                           fetched              6
+  Nav                            fetched              5
+  Opacity                        fetched              1
+  P3d                            fetched              1
+  Panel                          fetched              1
+  Persist                        fetched              3
+  Quad                           fetched              1
+  Request                        fetched              1
+  Resource                       fetched              1
+  Rotate                         fetched              1
+  Running                        fetched              8
+  Scene                          fetched             12
+  Scrollwheel                    fetched              2
+  Shut                           fetched              1
+  Si                             fetched              5
+  Slider                         fetched              4
+  Sound                          fetched              5
+  Static                         fetched              1
+  Switch                         fetched              4
+  Timer                          fetched              3
+  Touch                          fetched              1
+  Txt                            fetched              4
+  User                           fetched             11
+  Var                            fetched              3
+  Variable                       fetched              1
+  Video                          fetched              3
+  Viewport                       fetched              3
+  Visible                        fetched              1
+  Xpl                            fetched              5
+  Z                              fetched              1
+  external                       out-of-scope        50
+  file                           out-of-scope       101
+  non-api-useful                 fetched              5
+  redlink                        out-of-scope         5
+  unprefixed-api                 fetched              9
+  wiki-other                     fetched             49
+  wiki-other                     out-of-scope       370
+  youtube                        out-of-scope        19
+
+========================================================================
+2. SAMPLE OF wiki-other URLs (first 60 by title)
+========================================================================
+  (no title)
+  Air_Manager_3.x_Documentation
+  Air_Manager_3.x_Installation
+  Air_Manager_3.x_User_Manual
+  Air_Manager_4.x_Documentation
+  Air_Manager_4.x_Installation
+  Air_Manager_4.x_User_Manual
+  Air_Manager_5.x_Installation
+  Air_Manager_5.x_System_requirements
+  Air_Manager_5.x_User_Manual
+  Air_Manager_FAQ
+  Air_Manager_Instrument_Logic_API
+  Air_Manager_Release_Notes
+  Air_Manager_desktop_BETA
+  Air_Player_3.x_Desktop_Documentation
+  Air_Player_3.x_Desktop_Installation
+  Air_Player_3.x_Desktop_User_Manual
+  Air_Player_3.x_Raspberry_Pi_Documentation
+  Air_Player_4.x_Desktop_Documentation
+  Air_Player_4.x_Desktop_Installation
+  Air_Player_4.x_Desktop_User_Manual
+  Air_Player_5.x_Desktop_Installation
+  Air_Player_5.x_Desktop_System_requirements
+  Air_Player_5.x_Desktop_User_Manual
+  Air_Player_Desktop_Release_Notes
+  Android_BETA
+  Android_Installation
+  Android_Manual
+  Android_Release_notes
+  Android_System_requirements
+  Arduino
+  Aspen_EFD1000
+  Cessna_Skyhawk_G1000
+  Character_display_connection_tutorial
+  Connection_problems
+  Create_/_edit
+  Data_bus
+  Flight_Illusion
+  Flight_Illusion_Engine_Clusters
+  Flight_Illusion_Gauges
+  Flight_Simulator_Plugins_BETA
+  Flight_Simulator_Plugins_Installation
+  Flight_Simulator_Plugins_Release_Notes
+  Flight_Simulator_Plugins_System_Requirements
+  Fs2_connected
+  Garmin_G5
+  General_Arduino_I/O_pin_explanation
+  General_Raspberry_Pi_I/O_pin_explanation
+  Graphic_design
+  IPad_BETA
+  IPad_Installation
+  IPad_Manual
+  IPad_Release_notes
+  IPad_System_requirements
+  Image_rotate
+  Images
+  KnobFS
+  KnobXP
+  Knobster
+  Knobster_DIY
+
+========================================================================
+3. FAILED URLs (status = 'failed' OR http_status >= 400)
+   [redlink=1 flagged — MediaWiki redlinks always 404 by design]
+========================================================================
+  (none)
+
+========================================================================
+3b. REDLINK URLs across entire DB (query contains 'redlink=1')
+========================================================================
+  Total redlink URLs: 232
+
+  Breakdown by status/http_status:
+    fetched/200                       1
+    out-of-scope/None               231
+
+  First 20 redlink URLs:
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Button_set_cursor&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Dial_set_cursor&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Fs2_connected&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Sim_Innovations_Wiki%3AAdministrators&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Switch_set_cursor&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Switch_set_state&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAPI&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_3.x_Documentation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_4.x_Documentation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_5.x_Installation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_5.x_System_requirements&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_5.x_User_Manual&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_FAQ&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_Release_Notes&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Manager_desktop_BETA&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Player_3.x_Desktop_Documentation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Player_4.x_Desktop_Documentation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Player_5.x_Desktop_Installation&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Player_5.x_Desktop_System_requirements&redlink=1
+    [out-of-scope     None] https://wiki.siminnovations.com/index.php?title=Talk%3AAir_Player_5.x_Desktop_User_Manual&redlink=1
+    ... and 212 more
+
+========================================================================
+3c. NORMALIZATION IMPACT: do redlink URLs have non-redlink twins?
+    (if yes, we're wasting frontier slots on duplicates)
+========================================================================
+  Redlink URLs with a non-redlink twin in the DB: 1
+
+========================================================================
+4. FIRST-TOKEN PREFIX DISTRIBUTION of wiki-other titles
+   (useful for spotting API prefixes we missed)
+========================================================================
+  Main                                         61
+  Talk:Hw                                      28
+  Air                                          24
+  Talk:Air                                     14
+  Talk:Scene                                   12
+  Talk:User                                     9
+  Talk:Map                                      8
+  Talk:Running                                  8
+  Flight                                        7
+  Talk:Device                                   7
+  Talk:Fi                                       7
+  Talk:Msfs                                     6
+  Talk:Fs2020                                   6
+  Talk:Fs2024                                   6
+  Android                                       5
+  IPad                                          5
+  Talk:Android                                  5
+  Talk:Flight                                   5
+  Talk:IPad                                     5
+  Talk:Xpl                                      5
+  Talk:Si                                       5
+  Talk:Ext                                      5
+  Talk:Canvas                                   5
+  Talk:Sound                                    5
+  Talk:Nav                                      5
+  Talk:Fill                                     5
+  Sim                                           4
+  Talk:Fsx                                      4
+  Talk:Txt                                      4
+  Talk:Switch                                   4
+  Talk:Slider                                   4
+  Knobster                                      3
+  Professional                                  3
+  Talk:Instrument                               3
+  Talk:Knobster                                 3
+  Talk:Professional                             3
+  Talk:Viewport                                 3
+  Talk:Video                                    3
+  Talk:Group                                    3
+  Talk:Timer                                    3
+
+========================================================================
+5. SEED URL ACCOUNTING
+========================================================================
+  Seed file: 384 non-blank lines, 238 unique
+
+========================================================================
+6. BYTE SIZES of 20 randomly-sampled successfully-fetched pages
+   (tiny values would suggest redirect/login pages, not content)
+========================================================================
+     15952 bytes  Hw_dial_set_acceleration
+     17420 bytes  Button_add
+     21270 bytes  Fs2020_variable_subscribe
+     17968 bytes  Instrument_prop
+     17719 bytes  Msfs_variable_write
+     17056 bytes  Map_add_nav_img_layer
+     16658 bytes  Arc_to
+     16949 bytes  Scene_mesh_add
+     16040 bytes  Device_prop_subscribe
+     16420 bytes  Fill_img
+     16681 bytes  Fi_engine_cluster_prop_set
+     15653 bytes  Si_variable_write
+     18113 bytes  Slider_add_hor
+     16012 bytes  Canvas_scale
+     15273 bytes  Ext_connected
+     29018 bytes  Hw_stepper_motor_add
+     16208 bytes  Move_to
+     19911 bytes  Txt
+     16239 bytes  Canvas_draw
+     22185 bytes  Msfs_variable_subscribe
+
+========================================================================
+7. CONTENT BYTE SIZE DISTRIBUTION (all fetched)
+========================================================================
+  Count: 270
+  Min:      11898
+  p25:      15689
+  p50:      16572
+  p75:      18067
+  Max:     384182
+
+Report saved to: assets\air_manager_api\crawl_diagnostic_turn43.txt

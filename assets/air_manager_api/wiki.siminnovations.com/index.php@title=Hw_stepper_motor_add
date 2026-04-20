@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Hw stepper motor add - Sim Innovations Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"63db33f3c809c56963a88c80","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Hw_stepper_motor_add","wgTitle":"Hw stepper motor add","wgCurRevisionId":3294,"wgRevisionId":3294,"wgArticleId":335,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Hw_stepper_motor_add","wgRelevantArticleId":335,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready",
+"user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.highlightjs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<link rel="stylesheet" href="/extensions/HighlightJS/highlight.css"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Sim Innovations Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.siminnovations.com/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="Sim Innovations Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Hw_stepper_motor_add rootpage-Hw_stepper_motor_add skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Hw stepper motor add</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Sim Innovations Wiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Named"><span class="tocnumber">2</span> <span class="toctext">Named</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Arguments"><span class="tocnumber">2.1</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Direct_4-Wire_stepper_motor_(4,_6_or_8_step)"><span class="tocnumber">3</span> <span class="toctext">Direct 4-Wire stepper motor (4, 6 or 8 step)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Arguments_2"><span class="tocnumber">3.1</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Return_value"><span class="tocnumber">3.2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Example"><span class="tocnumber">3.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#VID66-06"><span class="tocnumber">4</span> <span class="toctext">VID66-06</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Arguments_3"><span class="tocnumber">4.1</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Return_value_2"><span class="tocnumber">4.2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Example_2"><span class="tocnumber">4.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Hardware_Id&#39;s"><span class="tocnumber">5</span> <span class="toctext">Hardware Id's</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Arguments_4"><span class="tocnumber">5.1</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Direct_4-Wire_stepper_motor_(4,_6_or_8_step)_2"><span class="tocnumber">6</span> <span class="toctext">Direct 4-Wire stepper motor (4, 6 or 8 step)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Arguments_5"><span class="tocnumber">6.1</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Return_value_3"><span class="tocnumber">6.2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Example_3"><span class="tocnumber">6.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#VID66-06_2"><span class="tocnumber">7</span> <span class="toctext">VID66-06</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Arguments_6"><span class="tocnumber">7.1</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Return_value_4"><span class="tocnumber">7.2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Example_4"><span class="tocnumber">7.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<pre><b>hw_stepper_motor_id = hw_stepper_motor_add(name, type, nr_steps, speed_rpm)</b> (from AM/AP 3.5)
+<b>hw_stepper_motor_id = hw_stepper_motor_add(name, type, nr_steps, speed_rpm, circular)</b> (from AM/AP 3.6)
+<b>hw_stepper_motor_id = hw_stepper_motor_add(type, nr_steps, speed_rpm, hw_id_1, hw_id_2, ...)</b> (AM/AP 3.5)
+<b>hw_stepper_motor_id = hw_stepper_motor_add(type, nr_steps, speed_rpm, circular, hw_id_1, hw_id_2, ...)</b> (from AM/AP 3.6)
+</pre>
+<p><b>hw_stepper_motor_add</b> is used to add a Hardware stepper motor.
+</p>
+<h2><span class="mw-headline" id="Named">Named</span></h2>
+<div style="background: lightyellow; border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Lightbulb.png" class="image" title="Info"><img alt="Info" src="/images/thumb/6/6f/Lightbulb.png/18px-Lightbulb.png" decoding="async" width="18" height="22" srcset="/images/thumb/6/6f/Lightbulb.png/27px-Lightbulb.png 1.5x, /images/thumb/6/6f/Lightbulb.png/36px-Lightbulb.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> Available from AM/AP 3.5.</span></div>
+<p>Give your hardware objects a name (.e.g. 'Compass' or 'Engine RPM indicator').<br />
+Air Manager will present the user with a view where the assignment of pins can be done.
+</p>
+<h3><span class="mw-headline" id="Arguments">Arguments</span></h3>
+<pre><b>hw_stepper_motor_id = hw_stepper_motor_add(name, type, nr_steps, speed_rpm)</b>
+<b>hw_stepper_motor_id = hw_stepper_motor_add(name, type, nr_steps, speed_rpm, circular)</b>
+</pre>
+<table class="wikitable">
+
+<tbody><tr>
+<th>#</th>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td>1</td>
+<td><b>name</b></td>
+<td><i>String</i></td>
+<td>A functional name to define the stepper motor.
+</td></tr>
+<tr>
+<td>2</td>
+<td><b>type</b></td>
+<td><i>String</i></td>
+<td>Type of stepper motor. Can be "4WIRE_4STEP", "4WIRE_6STEP" or "4WIRE_8STEP".
+</td></tr>
+<tr>
+<td>3</td>
+<td><b>nr_steps</b></td>
+<td><i>Number</i></td>
+<td>Number of steps for one full rotation.
+</td></tr>
+<tr>
+<td>4</td>
+<td><b>speed_rpm</b></td>
+<td><i>Number</i></td>
+<td>Speed of the stepper motor, in rounds per minute.
+</td></tr>
+<tr>
+<td>5</td>
+<td><b>circular</b></td>
+<td><i>Boolean</i></td>
+<td>(Optional) Determines if the stepper motor rotate endlessly. Defaults to true.
+</td></tr></tbody></table>
+<h2><span id="Direct_4-Wire_stepper_motor_.284.2C_6_or_8_step.29"></span><span class="mw-headline" id="Direct_4-Wire_stepper_motor_(4,_6_or_8_step)">Direct 4-Wire stepper motor (4, 6 or 8 step)</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/index.php?title=File:ULN2003_stepper_motor.jpg" class="image"><img alt="" src="/images/thumb/4/49/ULN2003_stepper_motor.jpg/300px-ULN2003_stepper_motor.jpg" decoding="async" width="300" height="300" class="thumbimage" srcset="/images/thumb/4/49/ULN2003_stepper_motor.jpg/450px-ULN2003_stepper_motor.jpg 1.5x, /images/thumb/4/49/ULN2003_stepper_motor.jpg/600px-ULN2003_stepper_motor.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:ULN2003_stepper_motor.jpg" class="internal" title="Enlarge"></a></div>ULN2003 based stepper motor interface board</div></div></div>
+<p>Connect a 4 wire stepper motor. Also 4 wire interface boards are supported, like the one shown.
+You can choose between 4 (4WIRE_4STEP), 6 (4WIRE_6STEP) or 8 (4WIRE_8STEP) step operation.
+</p>
+<h3><span class="mw-headline" id="Arguments_2">Arguments</span></h3>
+<p>No additional arguments needed.
+</p>
+<h3><span class="mw-headline" id="Return_value">Return value</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td><b>hw_stepper_motor_id</b></td>
+<td><i>ID</i></td>
+<td>This value can be used for further reference.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
+<pre><code class="lua todo">-- Initiate stepper motor with:
+-- 2048 steps
+-- 10 rpm speed
+id = hw_stepper_motor_add(&quot;My stepper motor&quot;, &quot;4WIRE_4STEP&quot;, 2048, 10)
+
+-- Set position
+hw_stepper_motor_position(id, 0.5)</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<h2><span class="mw-headline" id="VID66-06">VID66-06</span></h2>
+<p>Connect your stepper motor using a VID66-06 chip.
+</p>
+<h3><span class="mw-headline" id="Arguments_3">Arguments</span></h3>
+<p>No additional arguments needed.
+</p>
+<h3><span class="mw-headline" id="Return_value_2">Return value</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td><b>hw_stepper_motor_id</b></td>
+<td><i>ID</i></td>
+<td>This value can be used for further reference.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Example_2">Example</span></h3>
+<pre><code class="lua todo">-- Initiate stepper motor with:
+-- 2048 steps
+-- 10 rpm speed
+id = hw_stepper_motor_add(&quot;My stepper motor&quot;, &quot;VID66-06&quot;, 2048, 10)
+
+-- Set position
+hw_stepper_motor_position(id, 0.5)</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<h2><span id="Hardware_Id.27s"></span><span class="mw-headline" id="Hardware_Id&#39;s">Hardware Id's</span></h2>
+<div style="background: rgba(255, 0, 0, 0.1); border: solid thin grey; padding: 10px; display: flex; align-items: center;&#125;&#125;"><a href="/index.php?title=File:Warning.png" class="image" title="Info"><img alt="Info" src="/images/thumb/c/cb/Warning.png/18px-Warning.png" decoding="async" width="18" height="18" srcset="/images/thumb/c/cb/Warning.png/27px-Warning.png 1.5x, /images/thumb/c/cb/Warning.png/36px-Warning.png 2x" /></a> <span style="margin-top:-0px; padding-left:16px; display:block;"> Hardware Id's are not preferred, try to use named hardware instead. </span></div>
+<p>Define the used pin(s) right away.
+This is not preferred, since changing of pin assignment can only be done by changing the instrument/panel lua script.
+</p>
+<h3><span class="mw-headline" id="Arguments_4">Arguments</span></h3>
+<pre><b>hw_stepper_motor_id = hw_stepper_motor_add(type, nr_steps, speed_rpm, circular, ...)</b>
+</pre>
+<table class="wikitable">
+
+<tbody><tr>
+<th>#</th>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td>1</td>
+<td><b>type</b></td>
+<td><i>String</i></td>
+<td>Type of stepper motor. Can only be "DIRECT_4WIRE".
+</td></tr>
+<tr>
+<td>2</td>
+<td><b>nr_steps</b></td>
+<td><i>Number</i></td>
+<td>Number of steps for one full rotation.
+</td></tr>
+<tr>
+<td>3</td>
+<td><b>speed_rpm</b></td>
+<td><i>Number</i></td>
+<td>Speed of the stepper motor, in rounds per minute.
+</td></tr>
+<tr>
+<td>4</td>
+<td><b>circular</b></td>
+<td><i>Boolean</i></td>
+<td>Determines if the stepper motor rotate endlessly.
+</td></tr>
+<tr>
+<td>...</td>
+<td><b>...</b></td>
+<td><i>...</i></td>
+<td>Depends on type of stepper motor chosen. See below for possible modes.
+</td></tr>
+</tbody></table>
+<h2><span id="Direct_4-Wire_stepper_motor_.284.2C_6_or_8_step.29_2"></span><span class="mw-headline" id="Direct_4-Wire_stepper_motor_(4,_6_or_8_step)_2">Direct 4-Wire stepper motor (4, 6 or 8 step)</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/index.php?title=File:ULN2003_stepper_motor.jpg" class="image"><img alt="" src="/images/thumb/4/49/ULN2003_stepper_motor.jpg/300px-ULN2003_stepper_motor.jpg" decoding="async" width="300" height="300" class="thumbimage" srcset="/images/thumb/4/49/ULN2003_stepper_motor.jpg/450px-ULN2003_stepper_motor.jpg 1.5x, /images/thumb/4/49/ULN2003_stepper_motor.jpg/600px-ULN2003_stepper_motor.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/index.php?title=File:ULN2003_stepper_motor.jpg" class="internal" title="Enlarge"></a></div>ULN2003 based stepper motor interface board</div></div></div>
+<p>Connect a 4 wire stepper motor. Also 4 wire interface boards are supported, like the one shown.
+You can choose between 4 (4WIRE_4STEP), 6 (4WIRE_6STEP) or 8 (4WIRE_8STEP) step operation.
+</p>
+<h3><span class="mw-headline" id="Arguments_5">Arguments</span></h3>
+<pre><b>hw_stepper_motor_id = hw_stepper_motor_add(type, nr_steps, speed_rpm, circular, hw_id_a1, hw_id_a2, hw_id_b1, hw_id_b2)</b>
+</pre>
+<table class="wikitable">
+
+<tbody><tr>
+<th>#</th>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td>5</td>
+<td><b>hw_id_a1</b></td>
+<td><i>String</i></td>
+<td>Pin 1 of first coil. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+<tr>
+<td>6</td>
+<td><b>hw_id_a2</b></td>
+<td><i>String</i></td>
+<td>Pin 2 of first coil. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+<tr>
+<td>7</td>
+<td><b>hw_id_b1</b></td>
+<td><i>String</i></td>
+<td>Pin 1 of second coil. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+<tr>
+<td>8</td>
+<td><b>hw_id_b2</b></td>
+<td><i>String</i></td>
+<td>Pin 2 of second coil. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Return_value_3">Return value</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td><b>hw_stepper_motor_id</b></td>
+<td><i>ID</i></td>
+<td>This value can be used for further reference.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Example_3">Example</span></h3>
+<pre><code class="lua todo">-- Initiate stepper motor with:
+-- 2048 steps
+-- 10 rpm speed
+-- On pins A2, A3, A4 and A5 of an Arduino Nano
+id = hw_stepper_motor_add(&quot;4WIRE_4STEP&quot;, 2048, 10, true, &quot;ARDUINO_NANO_A_D2&quot;, &quot;ARDUINO_NANO_A_D3&quot;, &quot;ARDUINO_NANO_A_D4&quot;, &quot;ARDUINO_NANO_A_D5&quot;)
+
+-- Set position
+hw_stepper_motor_position(id, 0.5)</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<h2><span class="mw-headline" id="VID66-06_2">VID66-06</span></h2>
+<p>Connect your stepper motor using a VID66-06 chip.
+</p>
+<h3><span class="mw-headline" id="Arguments_6">Arguments</span></h3>
+<pre><b>hw_stepper_motor_id = hw_stepper_motor_add(type, nr_steps, speed_rpm, circular, hw_id_dir, hw_id_step)</b>
+</pre>
+<table class="wikitable">
+
+<tbody><tr>
+<th>#</th>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td>5</td>
+<td><b>hw_id_dir</b></td>
+<td><i>String</i></td>
+<td>Direction pin. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+<tr>
+<td>6</td>
+<td><b>hw_id_step</b></td>
+<td><i>String</i></td>
+<td>Step pin. You can choose to bind to an existing Hardware ID (<a href="/index.php?title=Hardware_id_list" title="Hardware id list">Hardware_id_list</a>).
+</td></tr>
+</tbody></table>
+<h3><span class="mw-headline" id="Return_value_4">Return value</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description
+</th></tr>
+<tr>
+<td><b>hw_stepper_motor_id</b></td>
+<td><i>ID</i></td>
+<td>This value can be used for further reference.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Example_4">Example</span></h3>
+<pre><code class="lua todo">-- Initiate stepper motor with:
+-- 2048 steps
+-- 10 rpm speed
+-- On pins A2, A3 of an Arduino Nano
+id = hw_stepper_motor_add(&quot;VID66-06&quot;, 2048, 10, true, &quot;ARDUINO_NANO_A_D2&quot;, &quot;ARDUINO_NANO_A_D3&quot;)
+
+-- Set position
+hw_stepper_motor_position(id, 0.5)</code></pre><script type="">if('hljsGo' in window) window.hljsGo();</script>
+<!-- 
+NewPP limit report
+Cached time: 20260420085738
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.040 seconds
+Real time usage: 0.051 seconds
+Preprocessor visited node count: 104/1000000
+Post‐expand include size: 556/2097152 bytes
+Template argument size: 95/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1453/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    6.080      1 -total
+ 48.55%    2.952      1 Template:Tip
+ 45.92%    2.792      1 Template:Warning
+-->
+
+<!-- Saved in parser cache with key mdwk1:pcache:idhash:335-0!canonical and timestamp 20260420085738 and revision id 3294. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.siminnovations.com/index.php?title=Hw_stepper_motor_add&amp;oldid=3294">https://wiki.siminnovations.com/index.php?title=Hw_stepper_motor_add&amp;oldid=3294</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" class="vector-menu-heading"> <span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-login" class="mw-list-item"><a href="/index.php?title=Special:UserLogin&amp;returnto=Hw+stepper+motor+add" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/index.php?title=Talk:Hw_stepper_motor_add&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class="vector-search-box">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Sim Innovations Wiki" autocapitalize="sentences" title="Search Sim Innovations Wiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/index.php?title=Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/index.php?title=Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/index.php?title=Special:WhatLinksHere/Hw_stepper_motor_add" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/index.php?title=Special:RecentChangesLinked/Hw_stepper_motor_add" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add&amp;oldid=3294" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=Hw_stepper_motor_add&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 24 May 2019, at 10:19.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="/index.php?title=Sim_Innovations_Wiki:Privacy_policy" title="Sim Innovations Wiki:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/index.php?title=Sim_Innovations_Wiki:About" title="Sim Innovations Wiki:About">About Sim Innovations Wiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/index.php?title=Sim_Innovations_Wiki:General_disclaimer" title="Sim Innovations Wiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.040","walltime":"0.051","ppvisitednodes":{"value":104,"limit":1000000},"postexpandincludesize":{"value":556,"limit":2097152},"templateargumentsize":{"value":95,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1453,"limit":5000000},"timingprofile":["100.00%    6.080      1 -total"," 48.55%    2.952      1 Template:Tip"," 45.92%    2.792      1 Template:Warning"]},"cachereport":{"timestamp":"20260420085738","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":136});});</script>
+</body></html>

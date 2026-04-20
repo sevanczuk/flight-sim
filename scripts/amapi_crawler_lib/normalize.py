@@ -34,9 +34,10 @@ def normalize(url: str) -> str | None:
     # Parse query parameters
     qs = parse_qs(query, keep_blank_values=True)
 
-    # Rule 2: strip action= and oldid= parameters
+    # Rule 2: strip action=, oldid=, redlink= parameters
     qs.pop('action', None)
     qs.pop('oldid', None)
+    qs.pop('redlink', None)
 
     # Rule 4: URL-decode the title parameter once; preserve case
     title = None

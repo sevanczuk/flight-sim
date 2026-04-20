@@ -14,7 +14,9 @@ import pytest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from amapi_crawler_lib.normalize import normalize, is_wiki_url, title_from_url
-from amapi_crawler_lib.categorize import categorize, should_queue, API_PREFIXES, NON_API_TITLES
+from amapi_crawler_lib.categorize import (
+    categorize, should_queue, API_PREFIXES, NON_API_TITLES, UNPREFIXED_API_FUNCTIONS,
+)
 from amapi_crawler_lib.filename import url_to_filename, filename_to_url
 from amapi_crawler_lib.db import (
     connect, ensure_schema, start_crawl_run, end_crawl_run,
@@ -622,3 +624,110 @@ class TestFetchVerifyParameter:
             fetch_page('https://example.com/', 'TestAgent/1.0', verify=False)
             _, kwargs = mock_get.call_args
             assert kwargs.get('verify') is False
+
+
+# ---------------------------------------------------------------------------
+# AMAPI-CRAWLER-BUGFIX-03: redlink normalization + expanded whitelist tests
+# ---------------------------------------------------------------------------
+
+class TestRedlinkNormalization:
+    """C.1: redlink=1 must be stripped during normalization."""
+
+    def test_redlink_stripped(self):
+        url = 'https://wiki.siminnovations.com/index.php?title=Foo&redlink=1'
+        result = normalize(url)
+        assert result == 'https://wiki.siminnovations.com/index.php?title=Foo'
+        assert 'redlink' not in result
+
+    def test_redlink_with_other_params(self):
+        url = 'https://wiki.siminnovations.com/index.php?title=Foo&redlink=1&action=view'
+        result = normalize(url)
+        assert 'redlink' not in result
+        assert 'action' not in result
+        assert 'title=Foo' in result
+
+    def test_redlink_alone_with_title(self):
+        url = 'https://wiki.siminnovations.com/index.php?title=Bar&redlink=1'
+        result = normalize(url)
+        assert result == 'https://wiki.siminnovations.com/index.php?title=Bar'
+
+    def test_non_redlink_url_unchanged(self):
+        url = 'https://wiki.siminnovations.com/index.php?title=Xpl_command'
+        assert normalize(url) == url
+
+
+BUGFIX03_NEW_PREFIXES = [
+    'Arc', 'Bezier', 'Button', 'Dial', 'Event',
+    'Fill', 'Game', 'Geo', 'Has', 'Interpolate',
+    'Layer', 'Line', 'Panel', 'Quad', 'Resource',
+    'Running', 'Shut', 'Static',
+]
+
+
+class TestNewPrefixCategorization:
+    """C.2: Each new prefix in API_PREFIXES is correctly categorized and queued."""
+
+    @pytest.mark.parametrize('prefix', BUGFIX03_NEW_PREFIXES)
+    def test_new_prefix_in_api_prefixes(self, prefix):
+        assert prefix in API_PREFIXES, f'{prefix} missing from API_PREFIXES'
+
+    @pytest.mark.parametrize('prefix', BUGFIX03_NEW_PREFIXES)
+    def test_new_prefix_categorized(self, prefix):
+        title = f'{prefix}_something'
+        url = f'https://wiki.siminnovations.com/index.php?title={title}'
+        assert categorize(title, url) == prefix
+
+    @pytest.mark.parametrize('prefix', BUGFIX03_NEW_PREFIXES)
+    def test_new_prefix_should_queue(self, prefix):
+        assert should_queue(prefix)
+
+    def test_button_add(self):
+        assert categorize('Button_add', 'https://wiki.siminnovations.com/index.php?title=Button_add') == 'Button'
+
+    def test_dial_add(self):
+        assert categorize('Dial_add', 'https://wiki.siminnovations.com/index.php?title=Dial_add') == 'Dial'
+
+    def test_layer_add(self):
+        assert categorize('Layer_add', 'https://wiki.siminnovations.com/index.php?title=Layer_add') == 'Layer'
+
+    def test_running_img(self):
+        assert categorize('Running_img_add_ver', 'https://wiki.siminnovations.com/index.php?title=Running_img_add_ver') == 'Running'
+
+    def test_fill_gradient(self):
+        assert categorize('Fill_gradient_linear', 'https://wiki.siminnovations.com/index.php?title=Fill_gradient_linear') == 'Fill'
+
+    def test_arc_to(self):
+        assert categorize('Arc_to', 'https://wiki.siminnovations.com/index.php?title=Arc_to') == 'Arc'
+
+
+class TestUnprefixedApiFunctions:
+    """C.2: UNPREFIXED_API_FUNCTIONS titles return 'unprefixed-api' and are queued."""
+
+    @pytest.mark.parametrize('title', list(UNPREFIXED_API_FUNCTIONS))
+    def test_unprefixed_api_category(self, title):
+        url = f'https://wiki.siminnovations.com/index.php?title={title}'
+        assert categorize(title, url) == 'unprefixed-api'
+
+    @pytest.mark.parametrize('title', list(UNPREFIXED_API_FUNCTIONS))
+    def test_unprefixed_api_should_queue(self, title):
+        assert should_queue('unprefixed-api')
+
+    def test_circle_categorized(self):
+        assert categorize('Circle', 'https://wiki.siminnovations.com/index.php?title=Circle') == 'unprefixed-api'
+
+    def test_ellipse_categorized(self):
+        assert categorize('Ellipse', 'https://wiki.siminnovations.com/index.php?title=Ellipse') == 'unprefixed-api'
+
+    def test_stroke_categorized(self):
+        assert categorize('Stroke', 'https://wiki.siminnovations.com/index.php?title=Stroke') == 'unprefixed-api'
+
+    def test_unknown_single_word_still_wiki_other(self):
+        # A single-word title NOT in UNPREFIXED_API_FUNCTIONS stays wiki-other
+        assert categorize('Foobar', 'https://wiki.siminnovations.com/index.php?title=Foobar') == 'wiki-other'
+
+    def test_unknown_prefixed_still_wiki_other(self):
+        # A prefixed title with no matching prefix stays wiki-other
+        assert categorize('Unknown_function', 'https://wiki.siminnovations.com/index.php?title=Unknown_function') == 'wiki-other'
+
+    def test_unprefixed_api_queued(self):
+        assert should_queue('unprefixed-api') is True

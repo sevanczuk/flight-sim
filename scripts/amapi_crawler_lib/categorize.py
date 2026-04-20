@@ -9,6 +9,18 @@ API_PREFIXES = {
     'Rotate', 'Move', 'Visible', 'Opacity', 'Z',
     'Variable', 'Var', 'Request', 'Persist', 'Timer', 'Switch', 'Group',
     'Sound', 'Nav', 'Map', 'Instrument', 'Device', 'User',
+    # Added AMAPI-CRAWLER-BUGFIX-03: new prefixes from API catalog page
+    'Arc', 'Bezier', 'Button', 'Dial', 'Event',
+    'Fill', 'Game', 'Geo', 'Has', 'Interpolate',
+    'Layer', 'Line', 'Panel', 'Quad', 'Resource',
+    'Running', 'Shut', 'Static',
+}
+
+# Single-word API function titles with no underscore prefix.
+# These are primarily canvas draw-callback functions.
+UNPREFIXED_API_FUNCTIONS = {
+    'Circle', 'Ellipse', 'Hole', 'Log',
+    'Rect', 'Remove', 'Solid', 'Stroke', 'Triangle',
 }
 
 NON_API_TITLES = {
@@ -35,6 +47,9 @@ def categorize(title: str | None, url: str) -> str:
     if title.startswith('Special:'):
         return 'special'
 
+    if title in UNPREFIXED_API_FUNCTIONS:
+        return 'unprefixed-api'
+
     if title in NON_API_TITLES:
         return 'non-api-useful'
 
@@ -51,4 +66,4 @@ def categorize(title: str | None, url: str) -> str:
 
 def should_queue(category: str) -> bool:
     """True if this URL should be fetched (queued as pending)."""
-    return category in API_PREFIXES or category == 'non-api-useful'
+    return category in API_PREFIXES or category in ('non-api-useful', 'unprefixed-api')
