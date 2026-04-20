@@ -141,6 +141,8 @@ TBD
 
 - Python code always in `.py` files — never inline `python -c` commands
 - CC commits with descriptive message referencing task ID and issue numbers. **CC does NOT push** — operator pushes manually.
+- **Commit message format (D-04):** all commits include structured trailers. Mandatory: `Task-Id:`, `Authored-By-Instance:` (values: `cc`, `cd-green`, `cd-yellow`, `cd-purple`, `cd`, `steve`). Conditional: `Refs:`, `Fixes:`, `Supersedes:`, `Decision:`. CC and CD commits also include `Co-Authored-By: Claude Code <noreply@anthropic.com>` or `Co-Authored-By: Claude Desktop <noreply@anthropic.com>` respectively. Full spec: `docs/decisions/D-04-commit-trailer-policy.md`.
+- CD commits its own direct file writes (decision records, plan updates, refresh flags) at natural turn seams. **CD does NOT push.** Only the operator pushes.
 - After git commit, CC sends a push notification (notifies operator's device via ntfy):
 
 ```powershell
@@ -198,6 +200,8 @@ All files created under `docs/` include a provenance header block:
 
 ### Git
 - CC commits with task ID + issue refs in message. **CC does NOT push.**
+- CD commits its own direct file writes at natural turn seams (per D-04). **CD does NOT push.**
+- All commits use the D-04 trailer format. See `docs/decisions/D-04-commit-trailer-policy.md` for the full spec and examples.
 - After git commit, CC sends push notification via ntfy (see Conventions above for command). Applies to ALL CC-executed prompts (task, compliance, inline, housekeeping). Use TASK-ID, tab slug, or `"completed"` as message body.
 
 ## spec-review Hybrid Mode

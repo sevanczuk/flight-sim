@@ -243,6 +243,85 @@ When recommending tasks or batches for parallel CC execution, **explicitly list 
 
 ---
 
+## Git Commit Trailers (per D-04)
+
+All commits use a structured trailer block at the end of the commit message. Trailers are searchable via `git log --grep` and machine-parseable by tools.
+
+### Commit message format
+
+```
+{TASK-ID or verb-led description}: {brief description}
+
+{optional body}
+
+Task-Id: {TASK-ID | MANUAL | D-{n}}
+Authored-By-Instance: {cc | cd-green | cd-yellow | cd-purple | cd | steve}
+{optional: Decision: D-{n}}
+{optional: Refs: {spec, decision, plan}, comma-separated}
+{optional: Fixes: {ITM-{n} or similar}}
+{optional: Supersedes: {commit short-sha}}
+{optional: Co-Authored-By: Claude Code <noreply@anthropic.com> OR Claude Desktop <noreply@anthropic.com>}
+```
+
+### Trailer order
+
+1. `Task-Id:`
+2. `Authored-By-Instance:`
+3. `Decision:` (if applicable)
+4. `Refs:` (if applicable)
+5. `Fixes:` (if applicable)
+6. `Supersedes:` (if applicable)
+7. `Co-Authored-By:` (if applicable)
+
+### Examples
+
+**CC task commit:**
+```
+SAMPLES-RENAME-01: copy instrument samples with safe names and generate manifest
+
+Task-Id: SAMPLES-RENAME-01
+Authored-By-Instance: cc
+Refs: D-02, GNC355_Prep_Implementation_Plan_V1
+Co-Authored-By: Claude Code <noreply@anthropic.com>
+```
+
+**CD decision commit:**
+```
+D-04: add commit trailer policy
+
+Task-Id: D-04-AUTHORING
+Authored-By-Instance: cd-purple
+Decision: D-04
+Co-Authored-By: Claude Desktop <noreply@anthropic.com>
+```
+
+**Steve manual commit:**
+```
+Remove stale refresh flag
+
+Task-Id: MANUAL
+Authored-By-Instance: steve
+```
+
+### Rejected trailers (do not add)
+
+- `Signed-off-by:` — DCO sign-off. Not operating under a DCO.
+- `Reviewed-by:` — Gerrit-style code review. Not our workflow.
+- `Tested-by:` — CC always tests before commit; redundant.
+
+### CD commit scope
+
+CD commits its own direct file writes at natural turn seams:
+- End of a substantive turn where files were written
+- On explicit Steve request ("commit that")
+- Before authoring a task prompt that will cite the files just written
+
+CD commits use `Authored-By-Instance: cd-{color}` where color matches the active CD instance. Standard CD sessions (no color) use `cd`. **CD does NOT push.**
+
+Full decision record: `docs/decisions/D-04-commit-trailer-policy.md`.
+
+---
+
 ## Artifact Conventions
 
 Changebar versions use bracketed prefixes indicating the nature of each change:

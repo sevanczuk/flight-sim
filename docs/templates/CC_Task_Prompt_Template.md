@@ -154,7 +154,16 @@ Run tests after each phase and do not proceed if tests fail.
 2. Record final test count
 3. Write completion report to `docs/tasks/{name}_completion.md`
 4. `git add -A`
-5. `git commit -m "{TASK-ID}: {brief description} [refs: {spec name}]"`
+5. `git commit` with the D-04 trailer format:
+   ```
+   {TASK-ID}: {brief description}
+
+   Task-Id: {TASK-ID}
+   Authored-By-Instance: cc
+   Refs: {spec name, decision IDs, plan name — comma-separated}
+   Co-Authored-By: Claude Code <noreply@anthropic.com>
+   ```
+   See `docs/decisions/D-04-commit-trailer-policy.md` for the full policy and additional trailer examples.
 6. **Flag refresh if CLAUDE.md modified:** If this task modified the project's `CLAUDE.md`, create a flag file:
    ```
    echo "Modified by CC task {TASK-ID} on {timestamp}. Re-upload CLAUDE.md to Claude.ai project files." > CLAUDE.md.needs_refresh
@@ -165,7 +174,7 @@ Run tests after each phase and do not proceed if tests fail.
 {Task type = docs-only:}
 1. Write completion report to `docs/tasks/{name}_completion.md`
 2. `git add -A`
-3. `git commit -m "{TASK-ID}: {brief description} [refs: {spec name}]"`
+3. `git commit` with the D-04 trailer format (see above under code/mixed; same format)
 4. **Flag refresh if CLAUDE.md modified:** If this task modified the project's `CLAUDE.md`, create a flag file:
    ```
    echo "Modified by CC task {TASK-ID} on {timestamp}. Re-upload CLAUDE.md to Claude.ai project files." > CLAUDE.md.needs_refresh
