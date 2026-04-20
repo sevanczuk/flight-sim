@@ -13,6 +13,23 @@ _SKIP_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.webp', '.
                     '.txt', '.log', '.md', '.sqlite3', '.bak'}
 
 
+def _load_seed_set(seeds_path: str) -> set:
+    """Return a set of normalized seed URLs from the seeds file."""
+    seed_set: set = set()
+    try:
+        with open(seeds_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                raw = line.strip()
+                if not raw or raw.startswith('#'):
+                    continue
+                canonical = normalize(raw)
+                if canonical:
+                    seed_set.add(canonical)
+    except OSError:
+        pass
+    return seed_set
+
+
 def _file_mtime_iso(path: str) -> str:
     mtime = os.path.getmtime(path)
     return datetime.fromtimestamp(mtime, tz=timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -22,12 +39,14 @@ def _sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def import_mirror(conn, mirror_dir: str, run_id: int, log_path: str | None = None) -> dict:
+def import_mirror(conn, mirror_dir: str, run_id: int, log_path: str | None = None,
+                  seeds_path: str | None = None) -> dict:
     """Import all pre-existing mirror HTML files into the DB.
 
     Returns counts: {imported, edges_created, parse_failures}
     """
     counts = {'imported': 0, 'edges_created': 0, 'parse_failures': 0}
+    seed_set = _load_seed_set(seeds_path) if seeds_path else set()
 
     def _log(msg: str) -> None:
         print(msg)
@@ -129,6 +148,7 @@ def import_mirror(conn, mirror_dir: str, run_id: int, log_path: str | None = Non
             title_link = title_from_url(canonical_link)
             cat_link = categorize(title_link, canonical_link)
             status_link = 'pending' if should_queue(cat_link) else 'out-of-scope'
+            discovered_source = 'seed' if canonical_link in seed_set else 'discovered'
 
             to_id, _ = upsert_url(
                 conn,
@@ -136,7 +156,7 @@ def import_mirror(conn, mirror_dir: str, run_id: int, log_path: str | None = Non
                 url_raw=raw_link,
                 title=title_link,
                 category=cat_link,
-                source='pre-existing',
+                source=discovered_source,
                 status=status_link,
                 run_id=run_id,
             )

@@ -57,9 +57,11 @@ Post-import DB state:
 
 ## Deviations from Prompt
 
+**Post-remediation: items 1, 3 (labeling + robots.txt) addressed by AMAPI-CRAWLER-BUGFIX-01 on 2026-04-20. See docs/tasks/amapi_crawler_bugfix_01_completion.md.**
+
 1. **Robots.txt not implemented.** The Implementation Plan §4 A1 Safety section mentions "Respect robots.txt if present." This is not implemented in the current crawler. wiki.siminnovations.com likely has no restrictive robots.txt, but this can be added if needed before the full fetch. Low risk.
 
-2. **Edge count discrepancy in import log.** The importer reports 1,976 edges created but the DB has 1,130 unique edges. This is correct behavior — the `edges` table has `UNIQUE (from_url_id, to_url_id)` so duplicate edges from multiple HTML files linking to the same target are silently ignored. The reported count in the importer is pre-dedup.
+2. **Edge count discrepancy in import log.** 1,130 unique edges stored (deduped from 1,976 link references via UNIQUE (from_url_id, to_url_id) constraint — the 1,976 number reflects raw parse output before dedup).
 
 3. **Seed URLs show no new rows.** All 384 seed URLs were already discovered via the pre-existing mirror's link graph. No new `source='seed'` rows were added (the seed URLs exist as `source='pre-existing'`). This is correct behavior per the upsert logic (no source demotion).
 

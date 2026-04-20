@@ -4,7 +4,7 @@ import sqlite3
 import sys
 import tempfile
 from datetime import datetime, timezone, timedelta
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
 
 import pytest
 
@@ -383,3 +383,134 @@ class TestBackoffSchedule:
         row = tmp_db.execute('SELECT attempts, status FROM urls WHERE url_id = ?', (url_id,)).fetchone()
         assert row['attempts'] == 3
         assert row['status'] == 'failed'
+
+
+# ---------------------------------------------------------------------------
+# Importer source-labeling tests (AMAPI-CRAWLER-BUGFIX-01 item 1)
+# ---------------------------------------------------------------------------
+
+class TestImporterSourceLabeling:
+    """Verify import_mirror labels link-discovered URLs as 'seed' or 'discovered', not 'pre-existing'."""
+
+    def _make_html(self, links: list) -> bytes:
+        hrefs = ''.join(f'<a href="{h}">{h}</a>' for h in links)
+        return f'<html><body>{hrefs}</body></html>'.encode()
+
+    def test_discovered_links_not_labeled_pre_existing(self, tmp_db):
+        from amapi_crawler_lib.importer import import_mirror
+        with tempfile.TemporaryDirectory() as mirror_dir, \
+             tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as sf:
+            seeds_path = sf.name
+            sf.write('https://wiki.siminnovations.com/index.php?title=Seed_Page\n')
+            sf.flush()
+            # Write the mirror HTML file inside the context while mirror_dir still exists
+            html = self._make_html([
+                '/index.php?title=Seed_Page',
+                '/index.php?title=Discovered_Page',
+            ])
+            fname = 'index.php@title=TestPage'
+            with open(os.path.join(mirror_dir, fname), 'wb') as f:
+                f.write(html)
+
+            run_id = start_crawl_run(tmp_db, notes='test')
+            import_mirror(tmp_db, mirror_dir, run_id, seeds_path=seeds_path)
+
+            rows = {r['url']: r['source'] for r in tmp_db.execute(
+                'SELECT url, source FROM urls'
+            ).fetchall()}
+
+        os.unlink(seeds_path)
+
+        # The mirror file itself → pre-existing
+        pre_url = 'https://wiki.siminnovations.com/index.php?title=TestPage'
+        assert rows.get(pre_url) == 'pre-existing', f'expected pre-existing, got {rows.get(pre_url)!r}'
+
+        # Link that is in seed file → seed
+        seed_url = 'https://wiki.siminnovations.com/index.php?title=Seed_Page'
+        assert rows.get(seed_url) == 'seed', f'expected seed, got {rows.get(seed_url)!r}'
+
+        # Link that is NOT in seed file → discovered
+        disc_url = 'https://wiki.siminnovations.com/index.php?title=Discovered_Page'
+        assert rows.get(disc_url) == 'discovered', f'expected discovered, got {rows.get(disc_url)!r}'
+
+        # Confirm no link-discovered row is labeled pre-existing
+        bad = [url for url, src in rows.items() if src == 'pre-existing' and url != pre_url]
+        assert bad == [], f'unexpected pre-existing rows: {bad}'
+
+    def test_pre_existing_fetched_not_demoted_by_link_discovery(self, tmp_db):
+        """A URL already in DB as pre-existing/fetched must not be demoted when encountered as a link."""
+        from amapi_crawler_lib.importer import import_mirror
+        with tempfile.TemporaryDirectory() as mirror_dir, \
+             tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as sf:
+            seeds_path = sf.name
+            sf.write('')
+
+            run_id = start_crawl_run(tmp_db, notes='test')
+            pre_url = 'https://wiki.siminnovations.com/index.php?title=TestPage'
+            url_id, _ = upsert_url(tmp_db, url=pre_url, url_raw=pre_url, title='TestPage',
+                                    category='non-api-useful', source='pre-existing',
+                                    status='fetched', run_id=run_id)
+            record_fetch_success(tmp_db, url_id=url_id, fetched_at='2026-01-01T00:00:00Z',
+                                 http_status=200, content_bytes=100, content_sha256='abc',
+                                 local_path='wiki.siminnovations.com/index.php@title=TestPage',
+                                 run_id=run_id)
+
+            # OtherPage links to TestPage; TestPage also has a mirror file
+            html_other = self._make_html(['/index.php?title=TestPage'])
+            with open(os.path.join(mirror_dir, 'index.php@title=OtherPage'), 'wb') as f:
+                f.write(html_other)
+            with open(os.path.join(mirror_dir, 'index.php@title=TestPage'), 'wb') as f:
+                f.write(b'<html><body></body></html>')
+
+            import_mirror(tmp_db, mirror_dir, run_id, seeds_path=seeds_path)
+
+            row = tmp_db.execute('SELECT source, status FROM urls WHERE url=?', (pre_url,)).fetchone()
+
+        os.unlink(seeds_path)
+        assert row['source'] == 'pre-existing'
+        assert row['status'] == 'fetched'
+
+
+# ---------------------------------------------------------------------------
+# Robots.txt check tests (AMAPI-CRAWLER-BUGFIX-01 item 2)
+# ---------------------------------------------------------------------------
+
+class TestRobotsCheck:
+    def test_disallowed_url_marked_out_of_scope(self, tmp_db):
+        import amapi_crawler
+        run_id = start_crawl_run(tmp_db, notes='test')
+        url = 'https://wiki.siminnovations.com/index.php?title=Xpl_command'
+        url_id, _ = upsert_url(tmp_db, url=url, url_raw=url, title='Xpl_command',
+                                category='Xpl', source='seed', status='pending', run_id=run_id)
+
+        mock_parser = MagicMock()
+        mock_parser.can_fetch.return_value = False
+
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as lf:
+            log_path = lf.name
+        try:
+            result = amapi_crawler._check_robots(mock_parser, 'TestAgent/1.0', url, url_id,
+                                                 tmp_db, log_path)
+            assert result is False
+            row = tmp_db.execute('SELECT status, last_error FROM urls WHERE url_id=?',
+                                 (url_id,)).fetchone()
+            assert row['status'] == 'out-of-scope'
+            assert 'robots.txt' in row['last_error']
+        finally:
+            os.unlink(log_path)
+
+    def test_allowed_url_returns_true(self, tmp_db):
+        import amapi_crawler
+        mock_parser = MagicMock()
+        mock_parser.can_fetch.return_value = True
+        result = amapi_crawler._check_robots(mock_parser, 'TestAgent/1.0',
+                                             'https://wiki.siminnovations.com/index.php?title=Xpl',
+                                             999, tmp_db, None)
+        assert result is True
+
+    def test_none_parser_always_allows(self, tmp_db):
+        import amapi_crawler
+        result = amapi_crawler._check_robots(None, 'TestAgent/1.0',
+                                             'https://wiki.siminnovations.com/index.php?title=Xpl',
+                                             999, tmp_db, None)
+        assert result is True
