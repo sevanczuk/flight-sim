@@ -19,7 +19,7 @@
 | 355-only (omit from 375) | 2 | 11% |
 | 375-needs-new-content (add) | ~6 feature areas + 1 major new section | — |
 
-**Estimated 375 outline length:** roughly comparable to 355's 2,800 lines. Net effect: –295 lines (removing §4.11 + §11 + COM-related bits in §§12–15) offset by +240–310 lines (new XPDR section from pp. 75–85, ADS-B In/Out treatment upgrade, procedural fidelity augmentations in §7, 375-only features). Net ≈ 2,750–2,850 lines.
+**Estimated 375 outline length:** roughly comparable to 355's 2,800 lines but slightly larger given the Turn 19 procedural-fidelity additions. Net effect: –295 lines (removing §4.11 + §11 + COM-related bits in §§12–15) offset by +400–500 lines (new XPDR section from pp. 75–85, ADS-B In/Out treatment upgrade, procedural fidelity augmentations in §7 expanded per Turn 19 audit — items 11–25 cover VDI, CDI, vertical guidance modes, turn anticipation, ARINC 424 legs, altitude constraints, approach arming/activation, autopilot coupling). Net ≈ 2,900–3,000 lines.
 
 **Key structural changes:**
 
@@ -359,9 +359,36 @@ Consolidated list of content the 375 outline must originate (not derive from the
 
 ### Procedural fidelity augmentations (§7)
 
+Per D-12 Q3c, full procedural fidelity for instrument approaches is an explicit target. The 355 outline's §7 is structurally sound but thin on several procedural-fidelity concerns that directly support the LPV-approach-flying use case. The 375 outline must expand on these. Flagged here so C2.1-375 authoring doesn't miss them.
+
+#### (A) XPDR + ADS-B interactions during approach
+
 8. **XPDR altitude reporting during approach** — WOW-based mode transitions, ALT mode during approach phase. Likely new §7.9 or interleaved in §7.5 (Approaches).
 9. **ADS-B traffic display during approach** — TSAA behavior during approach flight phase, alert suppression considerations.
 10. **ADS-B Out transmission during approach** — Target State and Status report behavior.
+
+#### (B) Vertical guidance fidelity
+
+The 355 outline lists the vertical-capable flight phases (LNAV+V, LP+V, LPV, LNAV/VNAV) but does not detail the pilot-facing vertical guidance experience. These are essential for sim-based approach flying:
+
+11. **Vertical Deviation Indicator (VDI) display** — where on the 375's screen the VDI needle appears (dedicated indicator area? overlaid on CDI? Map page corner?), how it activates when a vertical-capable approach is active, how it deactivates after MAP or on downgrade. Scale semantics (full-scale deflection in feet, typically ±150 ft for LPV at FAF transitioning to ±50 ft near DA). Needs Pilot's Guide pages covering VDI display identified during authoring.
+12. **Glidepath vs. glideslope nomenclature** — Garmin usage: *glideslope* = ILS radio vertical (from NAV receiver, not GPS); *glidepath* = GPS-derived vertical (LPV/LP+V/LNAV+V/LNAV/VNAV). The spec should use Garmin's terminology consistently and document the distinction for pilots who use both interchangeably.
+13. **Advisory vs. primary vertical distinction** — +V suffix modes (LNAV+V, LP+V) provide advisory vertical only; pilot still flies to published MDA. LPV provides primary vertical to DA. Display must communicate this distinction (color, annunciation, alert behavior). LNAV/VNAV uses baro-VNAV for vertical — different source, same advisory status as +V suffixes.
+14. **ILS approach display behavior (GPS monitoring only)** — the 375 cannot fly ILS. But the pilot will load ILS approaches in the sim and the 375 should display *something* (typically a GPS-overlay course and the active leg sequencing, with CDI source tied to external NAV receiver for actual guidance). Spec needs to define: does VDI hide or show a GPS-derived proxy? Does the CDI source annunciation flip to VLOC? How does the display indicate "monitoring only"?
+15. **Approach mode transitions** — LPV → LNAV downgrade on integrity loss (HAL/VAL exceedance), LP → LNAV+V downgrade, LNAV/VNAV → LNAV on baro-VNAV loss. Each transition has a pilot-visible annunciation, possibly a message queue entry, a VDI behavior change. Spec needs these transitions enumerated.
+16. **CDI scale auto-switching by flight phase** — enroute 1.0 nm, terminal 0.3 nm, approach-active 0.3 nm down to 0.0875 nm at FAF. The pilot-visible effect is the CDI needle becoming more sensitive as the aircraft approaches the runway. Spec needs the scale table and the flight-phase triggers for each transition.
+
+#### (C) Full procedural features (waypoint sequencing, course guidance)
+
+17. **Turn anticipation / waypoint sequencing alert** — as aircraft approaches a turn waypoint, the 375 alerts the pilot (visual, and via aural on GNX 375 via TSAA) that a turn is imminent. Typically 10 seconds before the turn, with fly-by waypoints starting the turn early to capture the outbound course. Spec needs: alert timing, visual manifestation (annunciation? countdown timer?), interaction with fly-by vs. fly-over waypoints.
+18. **Fly-by vs. fly-over waypoint turn behavior** — the 355 outline §4.3 mentions the Fly-over Waypoint Symbol [p. 157]. Spec needs the behavioral distinction: fly-by = anticipate the turn and cut the corner to capture the outbound course smoothly; fly-over = overfly the waypoint before turning. Affects how the system computes and displays the turn.
+19. **Active leg transition visual feedback** — when the aircraft crosses from one leg to the next, the magenta "active leg" indicator advances. Timing, visual transition (snap? fade?), CDI scale behavior during transition. Spec needs the UX detail.
+20. **ARINC 424 leg type handling** — published procedures use TF (track-to-fix), CF (course-to-fix), DF (direct-to-fix), RF (radius-to-fix), VA (heading-to-altitude), CA (course-to-altitude), HA/HF/HM (holding), etc. The 355 outline §7.5 mentions RF legs but doesn't enumerate the set. Spec needs a list of supported leg types and the display/guidance behavior per type.
+21. **Altitude constraints on flight plan legs** — published procedures include altitude restrictions (cross at/above/below/between specified altitudes). The 355 outline doesn't cover whether the 375 displays these restrictions, whether VCALC uses them, or whether they trigger alerts. Spec needs this coverage.
+22. **Approach arming vs. active states** — when an approach is loaded, the system is in "approach armed" state (terminal CDI scale, GPS lateral only). Crossing the FAF triggers "approach active" (approach-mode CDI scale, vertical guidance engaged if applicable). The arming/activation state transition is a significant pilot-visible event with annunciation, scale change, and possibly autopilot mode change. Spec needs this state machine.
+23. **CDI deviation display (pilot-visible rendering)** — the 355 outline treats CDI as a dataref (§15 I/O: "XTK", "CDI source"). The 375 adds "CDI On Screen" [p. 89] as a display feature. Spec needs: where the CDI appears on the 375's screen, what the deflection scale is (dots? nm?), how it interacts with the active leg, how it changes with approach phase, how the VDI integrates with the CDI visually.
+24. **"To/From" flag rendering** — listed in §15 as a dataref but not called out as a display element. Spec needs: where it appears, when it flips, interaction with OBS mode.
+25. **Autopilot coupling during approach** — the 355 outline §7.8 mentions roll steering terminates when approach mode selected. For full procedural fidelity, spec needs the autopilot-mode interaction during approach: GPSS roll steering through terminal, heading mode for vectors-to-final, approach-mode coupling for LPV glidepath. Likely dataref-heavy, research-required during design.
 
 ### Framing flips (no new sub-sections; framing/feature-requirement language changes)
 
