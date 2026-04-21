@@ -13,51 +13,11 @@
 
 | ID | Severity | Type | Title | Source | Notes |
 |----|----------|------|-------|--------|-------|
-| ITM-01 | Low | Process / housekeeping | File movement reminder — after Streams A and B complete | Purple Turn 37 | Triggered. With B3 PASS WITH NOTES discharged, ITM-01 fires after B4 readiness review. |
 | ITM-02 | Low | Cleanup / docs | AMAPI patterns: add Tier 2 columns to function_usage_matrix | Purple Turn 3 (B3 compliance) | Phase C step 3 of AMAPI-PATTERNS-01 was missed. Matrix is `_crp_work/` scratch — discharge per D-07. See details below. |
 | ITM-03 | Low | Cleanup / docs | AMAPI patterns: convert plain-text `hw_dial_add` to markdown links in Patterns 20/21 | Purple Turn 3 (B3 compliance) | Completion report claimed `Hw_dial_add.md` was missing; file actually exists. See details below. |
 | ITM-04 | Low | Process / template | CC task prompt template: add "verify completion-report claims" step | Purple Turn 3 (D-08) | Per D-08, completion reports must re-verify numerical/existence claims at submission time. Update `docs/templates/CC_Task_Prompt_Template.md`. See details below. |
+| ITM-05 | Low | Process / template | Compliance Verification Guide: reference D-10 skip criteria | Purple Turn 8 (D-10) | Per D-10, mechanical/self-verifying tasks may skip compliance. Update `docs/templates/Compliance_Verification_Guide.md` to reference D-10. See details below. |
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
-
----
-
-## ITM-01: File movement reminder — after Streams A and B complete
-
-**Created:** 2026-04-20T09:10:00-04:00
-**Source:** Purple Turn 37 — Steve asked to be reminded when Streams A and B are complete so we can batch the file-movement step
-**Status:** Open
-**Severity:** Low (process / housekeeping)
-**Owner:** CD (Purple is primary; any CD instance can action)
-
-### Description
-
-Per the check-completions protocol, after a task's compliance passes, CC moves task-related files (prompt, completion report, compliance prompt, compliance report) to `docs/tasks/completed/`. During the flurry of Wave-1 execution (AMAPI-CRAWLER-01, SAMPLES-RENAME-01, GNC355-EXTRACT-01, BUGFIX-01, BUGFIX-02), this movement has been deferred.
-
-Steve's preference (Turn 37): defer file movement until Streams A and B are both complete, then do a single batch move.
-
-### Triggers
-
-CD should raise this reminder when:
-
-- Stream A reaches "ready for design phase" (A4 complete, AMAPI reference docs produced)
-- AND Stream B reaches "ready for design phase" (B4 complete, pattern catalog drafted)
-
-At that point CD should produce a consolidated file-movement CC task covering all completed-but-not-yet-moved task file sets:
-
-- AMAPI-CRAWLER-01 (prompt + completion)
-- AMAPI-CRAWLER-BUGFIX-01 (prompt + completion + compliance prompt + compliance report — when generated)
-- AMAPI-CRAWLER-BUGFIX-02 (prompt + completion + compliance prompt + compliance report — when generated)
-- A2, A3 (when their tasks complete)
-- SAMPLES-RENAME-01 (prompt + completion)
-- B2 outputs (CD work, no files to move — selection doc stays in `docs/knowledge/`)
-- B3, B4 (when their tasks complete)
-
-### Notes
-
-- Stream C (GNC 355) is tracked separately from this reminder; its file movement is independent and can happen whenever C's own cadence allows
-- The completed-task files are harmless where they are — this is cleanup, not a correctness issue
-- Once triggered, the file-movement CC task should also produce a final commit in the D-04 trailer format
-- MANUAL_gnc355_eyeball_low_confidence_pages.md stays in `docs/tasks/` by design — it's Steve's active work list; moves only after Steve saves the results file
 
 ---
 
@@ -140,6 +100,31 @@ Also strengthen the "Deviations from prompt" section instructions: cross-check t
 
 - D-08 (completion report claim verification — the decision this implements)
 - AMAPI-PATTERNS-01 completion report (the case study showing why this is needed)
+
+---
+
+## ITM-05: Compliance Verification Guide — reference D-10 skip criteria
+
+**Created:** 2026-04-21T06:41:13-04:00
+**Source:** Purple Turn 8 — D-10 implementation followup
+**Status:** Open
+**Severity:** Low (process / template change)
+**Owner:** CD (template is CD-maintained; small enough to do inline rather than CC task)
+
+### Description
+
+Per D-10, CD may skip the formal compliance step for CC tasks meeting all five criteria (mechanical, self-verifying, fully reversible, completion report meets D-08, no code or content changes to other deliverables). The Compliance Verification Guide at `docs/templates/Compliance_Verification_Guide.md` should be updated to reference D-10 in its "When to Use" section so future CD sessions discover the skip-criteria when reading the guide.
+
+### Fix
+
+Add to `docs/templates/Compliance_Verification_Guide.md` "When to Use" section, after the existing "After every 'check completions' review" line:
+
+> **Exception:** Per D-10, CD may skip the formal compliance step for tasks meeting the mechanical/self-verifying criteria. See `docs/decisions/D-10-skip-compliance-for-mechanical-self-verifying-tasks.md` for the five required criteria and the lightweight CD-side checks that replace formal compliance for skip-eligible tasks.
+
+### Related
+
+- D-10 (skip-compliance criteria — the decision this implements)
+- ITM-04 (companion: same kind of template-update followup, for CC task prompt template per D-08)
 
 ---
 
