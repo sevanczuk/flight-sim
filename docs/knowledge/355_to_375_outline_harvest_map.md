@@ -227,44 +227,57 @@
 
 ---
 
-### §11 (NEW for 375) Transponder + ADS-B Operation [pp. 75–85 + ADS-B content throughout] — **[NEW]**
+### §11 (NEW for 375) Transponder + ADS-B Operation [pp. 75–82 + cross-cutting ADS-B content] — **[NEW]**
 
-**Full authoring required.** The 355 outline did not cover XPDR because the 355 has no transponder. This is the single largest new-content area for the 375 outline. Estimated ~200 lines of outline content (which will expand to ~300–400 lines of spec body in C2.2).
+**Full authoring required.** The 355 outline did not cover XPDR because the 355 has no transponder. Structure finalized in Turn 21 research (see `docs/knowledge/gnx375_xpdr_adsb_research.md`). Estimated ~180 lines of outline content (revised down from Turn 18's ~200 after Turn 21 research surfaced that several anticipated sub-sections don't exist on the 375).
 
-**Anticipated sub-sections (to be refined during C2.1-375 authoring):**
+**Corrections from Turn 18 anticipated structure (per Turn 21 research):**
+- Ground and Test modes: **DO NOT EXIST** on the GNX 375. Only Standby, On, Altitude Reporting (p. 78). Drop from anticipated structure.
+- Anonymous mode: **DOES NOT APPLY** to GNX 375 (p. 84: GPS 175 / GNC 355 + GDL 88 only). Drop.
+- TSO correction: **C112e** (Level 2els, Class 1), not C112d (p. 18).
+- IDENT duration: **18 seconds** (p. 80), was unspecified in Turn 18.
+- Altitude source: external dependency (ADC/ADAHRS per p. 34); not on-375.
+- Flight ID: typically NOT editable; only if configured to be so (pp. 77, 85).
+- TSAA: NOT a separate XPDR sub-section; lives in §4.9 Traffic Awareness with §11 cross-reference.
+- Pp. 83–85 of Pilot's Guide are **GPS 175 / GNC 355 + GDL 88** content — NOT GNX 375. Scope for §11 is pp. 75–82 only (plus cross-cutting ADS-B content from pp. 18, 225, 244, 282–284, 290).
 
-- 11.1 XPDR Overview [pp. 75–76]: Mode S transponder capability, ADS-B Out via Extended Squitter at 1090 MHz, Mode C altitude reporting. TSO-C112d (Mode S Level 2els) + TSO-C166b (1090 ES).
-- 11.2 XPDR Modes: Standby (SBY), On, Altitude Reporting (ALT), Ground (GND), Test (TEST). Mode transitions, WOW-based auto-transitions, pilot-initiated selection.
-- 11.3 Squawk Code Entry: keypad entry, 4-digit octal range, invalid code handling, VFR squawk (1200) shortcut, emergency codes (7500/7600/7700) treatment.
-- 11.4 IDENT Function: IDENT button press, duration, ATC flash indication, Extended Squitter Flight ID broadcast during IDENT.
-- 11.5 Flight ID: assignment during configuration, callsign broadcast via Extended Squitter, relationship to tail number.
-- 11.6 Extended Squitter (ADS-B Out): 1090 MHz transmission format, Target State and Status report, Aircraft Operational Status report, TIS-B uplink reception (separate from FIS-B).
-- 11.7 Built-in ADS-B In Receiver: dual-link (978 MHz UAT + 1090 MHz ES), FIS-B reception, TIS-B reception, traffic computation.
-- 11.8 TSAA Traffic Application: prediction algorithm, advisory/alert thresholds, aural alerts, interaction with approach flight phase.
-- 11.9 XPDR Remote Control: G3X Touch remote panel integration (if applicable), airplane-specific configuration.
-- 11.10 XPDR Status Indications: active code display, mode indication, reply indicator, IDENT active indicator, failure annunciations.
-- 11.11 XPDR Alerts and Status: transponder temperature warning, failure conditions, 1090 ES receiver fault, UAT receiver fault, ADS-B Out fault conditions.
-- 11.12 XPDR Configuration: Flight ID setting, VFR code setting, mode defaults, ADS-B Out enable/disable.
-- 11.13 XPDR Persistent State: squawk code retained across power cycles, mode setting retained, Flight ID retained.
+**Finalized sub-sections (14 total, revised from Turn 18's 13):**
+
+- 11.1 XPDR Overview and Capabilities [pp. 18, 19, 75]
+- 11.2 XPDR Control Panel [p. 75] — 5 UI regions: Squawk Code Entry Field, VFR Key, XPDR Mode Key, Squawk Code Entry Keys (0–7), Data Field
+- 11.3 XPDR Setup Menu [p. 76] — Data Field toggle, ADS-B Out enable, Flight ID assignment
+- 11.4 XPDR Modes [p. 78] — Standby / On / Altitude Reporting (three modes only); mode characteristics table; air/ground automatic in Altitude Reporting
+- 11.5 Squawk Code Entry [p. 79] — keys 0–7, backspace, outer knob cursor, Enter/Cancel, special codes reference
+- 11.6 VFR Key and IDENT [p. 80] — VFR code (1200 default), IDENT 18-second duration
+- 11.7 Transponder Status Indications [p. 81] — 4 visual states + tap behaviors
+- 11.8 Extended Squitter (ADS-B Out) [p. 77] — 1090 MHz ES, toggle, transmission content
+- 11.9 Flight ID [pp. 76, 77, 82] — assignment rules, configuration-dependent editability
+- 11.10 Remote Control via G3X Touch [p. 82] — **flag as "out of scope for v1 instrument"**
+- 11.11 ADS-B In (Built-in Dual-link Receiver) [pp. 18, 225, cross-ref §4.9] — 1090 ES + 978 UAT; drives Weather and Traffic pages
+- 11.12 XPDR Failure / Alert [p. 82] — red "X" over IDENT, page unavailable, auto-return behavior
+- 11.13 XPDR Advisory Messages [pp. 283–284, 290] — 9 distinct 375-applicable advisory conditions (full list in research doc)
+- 11.14 XPDR Persistent State [§14 cross-ref] — squawk, mode, Flight ID (if configurable), ADS-B Out enable, data field preference
 
 **AMAPI cross-refs for new §11:**
 - `docs/knowledge/amapi_by_use_case.md` §1 (dataref subscriptions for XPDR state, ADS-B status)
 - `docs/knowledge/amapi_by_use_case.md` §2 (command dispatch for squawk entry, mode change, IDENT)
-- `docs/knowledge/amapi_by_use_case.md` §3 (touchscreen for keypad entry — same patterns as COM frequency keypad in 355 outline §11.4; B4 Gap 2 considerations similar)
-- `docs/knowledge/amapi_by_use_case.md` §7 (Txt_add/Txt_set for squawk code display, active mode label)
-- `docs/knowledge/amapi_by_use_case.md` §11 (Persist_add for squawk, mode, Flight ID retention)
-- `docs/knowledge/amapi_patterns.md` Pattern 1 (triple-dispatch for XPDR actions: XPL command + MSFS event — parallel to COM patterns but for XPDR)
+- `docs/knowledge/amapi_by_use_case.md` §3 (touchscreen for keypad entry)
+- `docs/knowledge/amapi_by_use_case.md` §7 (Txt_add/Txt_set for squawk code, active mode label, data field)
+- `docs/knowledge/amapi_by_use_case.md` §11 (Persist_add for XPDR state retention)
+- `docs/knowledge/amapi_patterns.md` Pattern 1 (triple-dispatch for XPDR actions: XPL + MSFS)
 - `docs/knowledge/amapi_patterns.md` Pattern 2 (multi-variable bus for XPDR + ADS-B state)
-- `docs/knowledge/amapi_patterns.md` Pattern 14 (parallel XPL + MSFS: XPDR datarefs differ substantially between sims)
-- `docs/knowledge/amapi_patterns.md` Pattern 17 (annunciator visibility for XPDR mode, IDENT, failure)
-- B4 Gap 3: squawk code digit display may warrant Running_txt_add_hor consultation, similar to COM frequency display.
+- `docs/knowledge/amapi_patterns.md` Pattern 14 (parallel XPL + MSFS — XPDR datarefs differ substantially between sims)
+- `docs/knowledge/amapi_patterns.md` Pattern 17 (annunciator visible for XPDR mode, Reply (R) indicator, IDENT state, failure "X")
+- B4 Gap 3: squawk code digit display may warrant `Running_txt_add_hor` consultation.
 
 **Open questions / flags:**
-- Exact XPL XPDR dataref names (e.g., `sim/cockpit2/radios/actuators/transponder_code`, `transponder_mode`, `transponder_id`) require verification against current XPL datareftool output.
-- MSFS XPDR SimConnect variables (`TRANSPONDER CODE:1`, `TRANSPONDER IDENT`) + XPDR mode representation differ across FS2020 and FS2024; B: event bus may expose additional controls per Pattern 23.
-- Remote XPDR control via G3X Touch: hardware-integration scope may be out of scope for v1 software-only instrument (same treatment as 355's remote frequency selection in §11.8).
-- TSAA aural alert delivery mechanism in Air Manager: does the instrument emit audio via `sound_play` directly, or does it depend on an external audio panel instrument? This is a spec-body design decision.
-- ADS-B In data availability in simulators: X-Plane has partial ADS-B dataref exposure; MSFS has limited ADS-B traffic data beyond the AI traffic stream. Spec must define behavior when data is absent vs. degraded.
+- Exact XPL XPDR dataref names (e.g., `sim/cockpit2/radios/actuators/transponder_code`, `transponder_mode`) require verification against current XPL datareftool output.
+- MSFS XPDR SimConnect variables (`TRANSPONDER CODE:1`, `TRANSPONDER IDENT`, `TRANSPONDER STATE`) differ across FS2020/FS2024; Pattern 23 (FS2024 B: event dispatch) may apply.
+- Remote XPDR control via G3X Touch: **out of scope for v1 instrument** per Turn 21 recommendation.
+- TSAA aural alert delivery mechanism in Air Manager: spec-body design decision (direct `sound_play` vs. external audio panel dependency).
+- ADS-B In data availability in simulators: XPL has partial ADS-B dataref exposure; MSFS has limited ADS-B traffic data. Spec must define behavior when data is absent vs. degraded.
+
+**Authoritative research reference:** `docs/knowledge/gnx375_xpdr_adsb_research.md`
 
 ---
 
