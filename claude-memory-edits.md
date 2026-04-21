@@ -2,7 +2,7 @@
 
 **Canonical source:** `docs/templates/memory_bootstrap.md` (initial 22 slots); `docs/decisions/D-04-*.md`, `docs/decisions/D-05-*.md` (slots 23–25)
 **Generated:** 2026-04-19T00:00:00-04:00 (initial draft)
-**Last synced:** 2026-04-20T09:30:00-04:00 (Purple Turn 41 — 25 slots live; slot #24 tightened to point at claude-conventions.md instead of inlining mechanics)
+**Last synced:** 2026-04-21T12:00:00-04:00 (Purple Turn 26 — slot #6 updated to include Task_flow_plan_with_current_status.md as fourth CD-maintained status doc; live memory synced same-turn)
 **Purpose:** Exact flat mirror of the 30-slot Claude.ai memory system. Git-tracked backup and bootstrap source. Contains exactly what is in Claude.ai memory — no more.
 
 ---
@@ -17,7 +17,7 @@
 
 5. CC task prompts must be fully self-contained. CC starts each session fresh. Never reference content in other prompt files by proxy.
 
-6. Status document maintenance: Spec_Tracker.md, CC_Task_Prompts_Status.md, and priority_task_list.md are CD-maintained. CC does not update them. "check updates" refreshes all three.
+6. Status document maintenance: Spec_Tracker.md, CC_Task_Prompts_Status.md, priority_task_list.md, and Task_flow_plan_with_current_status.md are CD-maintained. CC does not update them. "check updates" refreshes all four. Task_flow_plan_with_current_status.md is updated same-turn whenever a task status changes (completion, pivot, new task inserted).
 
 7. File provenance: all files under docs/ include Created: and Source: header fields. Does not apply to src/, tests/, config/, scripts/.
 

@@ -86,6 +86,7 @@ In all modes: do NOT pre-read docs — reference them on demand.
 | Issue index | `docs/todos/issue_index.md` | Master cross-reference for all tracked items |
 | Issue index (resolved) | `docs/todos/issue_index_resolved.md` | Resolved/rejected items with verification summaries |
 | CC task status | `docs/tasks/CC_Task_Prompts_Status.md` | Running status of all CC task prompts |
+| Task flow plan | `docs/tasks/Task_flow_plan_with_current_status.md` | Flat view of all prep/design/implementation tasks with completion status |
 | Spec tracker | `docs/specs/Spec_Tracker.md` | Spec lifecycle, review rounds, dispositions, CC task links |
 <!-- PROJECT: Add project-specific data sources below -->
 | {source_name} | C:/Users/artroom/projects/flight-sim-project/flight-sim/{path} | {description} |
