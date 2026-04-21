@@ -17,7 +17,6 @@
 | ITM-03 | Low | Cleanup / docs | AMAPI patterns: convert plain-text `hw_dial_add` to markdown links in Patterns 20/21 | Purple Turn 3 (B3 compliance) | Completion report claimed `Hw_dial_add.md` was missing; file actually exists. See details below. |
 | ITM-04 | Low | Process / template | CC task prompt template: add "verify completion-report claims" step | Purple Turn 3 (D-08) | Per D-08, completion reports must re-verify numerical/existence claims at submission time. Update `docs/templates/CC_Task_Prompt_Template.md`. See details below. |
 | ITM-05 | Low | Process / template | Compliance Verification Guide: reference D-10 skip criteria | Purple Turn 8 (D-10) | Per D-10, mechanical/self-verifying tasks may skip compliance. Update `docs/templates/Compliance_Verification_Guide.md` to reference D-10. See details below. |
-| ITM-07 | Low | Spec metadata | GNX 375 outline: §4 length estimates inconsistent (nav-aids ~800, §4 header ~740, sub-section sum ~1,090) | Purple Turn 29 (C2.1-375 compliance) | §4 sub-section estimates sum to ~1,090, ~350 lines above the §4 top-level estimate. Informative for C2.2 format decision (D-17-NEXT) — §4 is likely larger than planned, which affects C2.2-B and C2.2-C partitioning. Discharge inline during format decision. See details below. |
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
 
 ---
@@ -168,50 +167,4 @@ Deferred because (a) impact is cosmetic only, (b) downstream consumers (GNC 355 
 
 ## ITM-07: GNX 375 outline — §4 length estimates inconsistent
 
-**Created:** 2026-04-21T13:00:00-04:00
-**Source:** Purple Turn 29 — GNX375-SPEC-OUTLINE-01 compliance report, item 12
-**Status:** Open
-**Severity:** Low (spec-body length metadata only; does not affect outline content correctness)
-**Owner:** CD (resolves inline during D-17-NEXT format decision turn)
-
-### Description
-
-The GNX 375 outline (`docs/specs/GNX375_Functional_Spec_V1_outline.md`) has three inconsistent estimates for §4 Display Pages length:
-
-| Location | Estimate |
-|----------|----------|
-| Outline nav-aids header (line 26) | ~800 lines |
-| §4 top-level `**Estimated length**` field | ~740 lines |
-| Sum of §4.1–§4.10 sub-section estimates | ~1,090 lines |
-
-The ~350-line gap between the sub-section sum and the §4 top-level estimate is the primary discrepancy. The sub-section estimates (set from careful per-page analysis) are likely closer to the true length than the inherited ~740 figure (which carried over from the GNC 355 outline).
-
-### Impact
-
-- The C2.1-375 completion report's format recommendation is piecewise + manifest with 6-task grouping (C2.2-A through F, ~350–560 lines each).
-- Tasks C2.2-B and C2.2-C collectively cover §4. If the true §4 length is ~1,090 lines, the current split (~500 lines each) may allocate more content per task than estimated.
-- Still within a single CC context window per task (a ~650-line task is not unreasonable), but reduces margin and may argue for a finer split.
-
-### Discharge rationale
-
-Per D-07, estimates-only metadata issues do not require bug-fix rework. The sub-section estimates are informative inputs to the format decision — they tell CD that §4 is larger than the original plan assumed. The discrepancy does not invalidate the piecewise + manifest format choice but may refine the within-format partitioning.
-
-### Resolution plan
-
-Address in the D-17-NEXT format decision turn (CD-authored, no CC round-trip needed):
-
-1. Adopt the sub-section sum (~1,090) as the authoritative §4 estimate.
-2. Revise the top-level total from ~2,860 to ~3,200 lines (adding the ~350-line delta).
-3. Review C2.2 sub-task partitioning: either
-   - (a) keep 6 tasks but rebalance (C2.2-B and C2.2-C each grow to ~650 lines), or
-   - (b) split §4 across 3 tasks instead of 2 (e.g., Map, Hazard Awareness, and everything-else-in-§4), yielding 7 total C2.2 tasks.
-4. Update the outline's estimate metadata fields to consistent values as part of any edits CD makes during the format decision (or leave as-is if no other edits are warranted; the authoritative numbers live in the D-17-NEXT decision doc).
-
-Resolved inline when D-17-NEXT is authored; no separate CC task.
-
-### Related
-
-- `docs/tasks/completed/c2_1_375_outline_compliance.md` §"Item 12" (discrepancy origin)
-- D-13 (C2.2 format decision deferred)
-- D-17-NEXT (upcoming format decision — will resolve this)
-- D-07 (compliance triage rubric)
+**Resolved 2026-04-21T13:30:00-04:00 by D-18 — moved to `issue_index_resolved.md`.**

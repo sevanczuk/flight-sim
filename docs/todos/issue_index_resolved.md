@@ -15,6 +15,7 @@
 |----|----------|------------|-------|-------------|
 | ITM-01 | 2026-04-21 | Done | File movement reminder — after Streams A and B complete | ITM-01-FILE-MOVEMENT task (CC, Turn 8) |
 | ITM-06 | 2026-04-21 | Done (same-turn) | Implementation plan update after D-12 pivot | Purple Turn 17 (CD inline) |
+| ITM-07 | 2026-04-21 | Adopted in D-18 | GNX 375 outline: §4 length estimates inconsistent (nav-aids ~800, §4 header ~740, sub-section sum ~1,090) | Purple Turn 30 (CD — D-18 adopts sub-section sum) |
 
 ---
 
@@ -68,3 +69,27 @@ Items not independently verified by CD: commit trailer correctness (no git acces
 - `docs/specs/pivot_355_to_375_rationale.md` (full option analysis)
 - `docs/specs/GNX375_Prep_Implementation_Plan_V2.md` (the new plan)
 - `docs/specs/GNC355_Prep_Implementation_Plan_V1.md` (historical)
+
+---
+
+## ITM-07: GNX 375 outline — §4 length estimates inconsistent (RESOLVED)
+
+**Created:** 2026-04-21T13:00:00-04:00 (Purple Turn 29)
+**Resolved:** 2026-04-21T13:30:00-04:00 (Purple Turn 30)
+**Resolution:** Adopted by D-18. The sub-section sum (~1,090 lines) is authoritative going forward. The outline's §4 top-level estimate field (~740) and nav-aids header estimate (~800) remain unchanged in the outline file — the outline is archival and reflects state at C2.1-375 archive. D-18 is the authoritative source for §4 length and all C2.2 planning.
+
+### Impact on C2.2
+
+The ~350-line increase in §4 pushed total estimated spec length from ~2,860 to ~3,180 and motivated splitting C2.2 into 7 tasks instead of the completion report's original 6. Details in D-18.
+
+### Verification
+
+- D-18 written at `docs/decisions/D-18-c22-format-decision-piecewise-manifest.md`
+- ITM-07 entry moved from `issue_index.md` to this file
+- `Task_flow_plan_with_current_status.md` updated to reflect D-18 complete and C2.2-A task prompt drafting as NEXT UP
+
+### Related
+
+- D-18 (C2.2 format decision — adopts sub-section sum; splits C2.2 into 7 tasks)
+- `docs/tasks/completed/c2_1_375_outline_compliance.md` §"Item 12" (discrepancy origin)
+- Previous location: `issue_index.md` §ITM-07 (now removed from open index)
