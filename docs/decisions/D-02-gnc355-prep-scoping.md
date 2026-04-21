@@ -1,8 +1,31 @@
 # D-02: GNC 355 prep-work scoping decisions
 
 **Created:** 2026-04-19T17:45:10-04:00
+**Amended:** 2026-04-21T08:57:03-04:00 (Purple Turn 16 — nomenclature correction + pivot to GNX 375; see D-12)
 **Source:** Purple Turns 8–10 — scoping dialogue for GNC 355 Air Manager plugin prep work
 **Decision type:** scope / architecture / process
+
+## 2026-04-21 Amendment — Nomenclature correction + pivot to GNX 375 (per D-12)
+
+Two corrections and a scope pivot, logged as an addendum rather than a rewrite so D-02's historical record stays intact:
+
+**Nomenclature error corrected.** §9 of this decision (see below) references "GNC 375" as a fourth sibling unit in the Pilot's Guide family. This was a typo or transcription error. The correct designation is **GNX 375** (no "C"; "X" for the transponder/ADS-B extensions). The Pilot's Guide (190-02488-01_c) covers exactly three units: GPS 175, GNC 355 (with 355A variant), and GNX 375. There is no Garmin product called "GNC 375." All references in this document to "GNC 375" should be read as "GNX 375."
+
+**Primary instrument pivot.** Per D-12, the primary instrument target has shifted from GNC 355 to **GNX 375**. The real-world motivation was always to replicate the avionics in the two C172s Steve flies; the more-frequently-flown aircraft has the GNX 375, and the original "GNC 355 focus" was a scoping error rooted in the same GNC/GNX nomenclature confusion. The 355 work is deferred (not abandoned); the 355 outline produced by C2.1 is shelved for future implementation.
+
+**Scope expansion.** Per D-12, the 375 spec scope adds:
+- Mode S transponder operation (pp. 75–85 of the Pilot's Guide) — not in original D-02 scope
+- Built-in dual-link ADS-B In/Out treatment as primary concern (the 355's external-ADS-B secondary treatment is no longer the right frame)
+- Full procedural fidelity for instrument approaches as an explicit target (LPV/LNAV mode transitions, flight phase annunciations, autopilot coupling, ADS-B traffic during approach, transponder altitude reporting)
+
+**What this amendment does NOT change:**
+- Stream structure (A = AMAPI documentation, B = instrument sample analysis, C = functional spec) remains valid. Only the unit that C targets has shifted.
+- Streams A and B are unit-agnostic and have already completed; their output (AMAPI reference + pattern catalog) serves the 375 spec as well as it served the 355 spec.
+- All decisions in §§1–8 below remain valid. §9 (family delta) pivots from "355 baseline with siblings documented" to "375 baseline with siblings documented;" §10 remains valid.
+
+**See D-12** (`docs/decisions/D-12-pivot-gnc355-to-gnx375-primary-instrument.md`) for the full pivot decision, option analysis, and rationale. See `docs/specs/pivot_355_to_375_rationale.md` for extended option comparison.
+
+---
 
 ## Decisions
 
