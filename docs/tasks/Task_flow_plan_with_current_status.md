@@ -40,11 +40,11 @@ Related docs: `docs/specs/GNX375_Prep_Implementation_Plan_V2.md` (narrative plan
 | **[Turn 21 research]**                     | D-16: XPDR + ADS-B research (`gnx375_xpdr_adsb_research.md`); §11 finalized to 14 sub-sections | ✅ Done                                      |
 | **[Turn 22]**                              | C2.1-375 task prompt drafted (`docs/tasks/c2_1_375_outline_prompt.md`) | ✅ Done                                      |
 | **[Turn 23/24]**                           | Prompt Unicode fix + launch to CC                            | ✅ Done (per your message: "cc has started") |
-| **C2.1-375**                               | **CC produces `docs/specs/GNX375_Functional_Spec_V1_outline.md` + completion report** | **🔵 RUNNING NOW**                           |
-| C2.1-375 check-completions (Phase 1)       | CD reads prompt + completion report → generates compliance prompt | ⚪ Pending                                   |
-| C2.1-375 compliance verification (Phase 2) | CC runs compliance prompt → `_compliance.md`                 | ⚪ Pending                                   |
+| **C2.1-375**                               | CC produces `docs/specs/GNX375_Functional_Spec_V1_outline.md` + completion report (1,477 lines, 18 divisions, piecewise+manifest recommendation) | ✅ Done (Turn 27 Phase 1 review passed)     |
+| C2.1-375 check-completions (Phase 1)       | CD reads prompt + completion report → generates compliance prompt | ✅ Done (Turn 27: `c2_1_375_outline_compliance_prompt.md`) |
+| **C2.1-375 compliance verification (Phase 2)** | **CC runs compliance prompt → `_compliance.md` (17 items across 8 categories)** | **🔵 READY TO LAUNCH**                        |
 | C2.1-375 compliance review + archive       | CD reviews compliance → PASS: archive to `completed/`; FAIL: bug-fix task | ⚪ Pending                                   |
-| D-17 (format decision)                     | CD decides C2.2 format: monolithic CRP / piecewise+manifest / per-section (deferred per D-13) | ⚪ Pending — after C2.1-375 archived         |
+| D-17 (format decision)                     | CD decides C2.2 format: monolithic CRP / piecewise+manifest / per-section (deferred per D-13) | ⚪ Pending — after C2.1-375 archived (completion report recommends piecewise+manifest with 6-task grouping) |
 | C2.2 task prompt drafting                  | CD drafts 1 or more CC task prompts per chosen format        | ⚪ Pending                                   |
 | C2.2 execution                             | CC authors the full 375 functional spec V1 body (~2,800–2,900 lines) | ⚪ Pending (4–8 hours CC wall-clock)         |
 | C2.2 check-completions + compliance        | Standard lifecycle                                           | ⚪ Pending                                   |
@@ -76,8 +76,10 @@ Back-port 375 insights to shelved 355 outline → C2.2-355 body → design → i
 
 ### Where we are right now
 
-**Active CC task:** GNX375-SPEC-OUTLINE-01 — running in CC. Expected duration 45–90 min per the task prompt scope estimate. Will produce `docs/specs/GNX375_Functional_Spec_V1_outline.md` and `docs/tasks/c2_1_375_outline_completion.md`, then send an ntfy notification on completion.
+**Next CC task:** GNX375-SPEC-OUTLINE-01 **compliance verification** — compliance prompt drafted at `docs/tasks/c2_1_375_outline_compliance_prompt.md` (Turn 27). Ready to launch. 17 verification items across 8 categories: file integrity (encoding, line count, provenance); spot-check re-verification; harvest-map fidelity extension ([FULL] and [355] checks beyond what the completion report self-verified); open-question flag verification; cross-reference validity; numeric consistency; prompt directive negative checks (no on-screen VDI, no Ground/Test/Anonymous modes); appendix fidelity. Expected duration: 15–30 min.
 
-**Next CD action after CC finishes:** "check completions" — CD reads the completion report, cross-references against the prompt, and generates a compliance verification prompt for CC to run.
+**Turn 27 Phase 1 findings:** Completion report reads clean — all structural claims (TSO-C112e, 18-sec IDENT, 3 XPDR modes only, no internal VDI, GNX 375 as baseline, 6 open questions flagged) verified in the outline file. 1,477 lines as reported; 18 divisions structured per harvest map. Format recommendation: piecewise + manifest, 6-task grouping (C2.2-A through F, ~350–560 lines each). Phase 2 compliance checks the remaining items CD could not efficiently verify directly.
 
-**Critical path from here to implementation-ready spec:** roughly 10 more sequential steps (compliance cycle → format decision → C2.2 drafting → C2.2 execution → compliance → C3 review → C4 iterate), each gating the next. Estimated 10–20 more hours of CC wall-clock plus CD coordination turns.
+**Next CD action after CC compliance finishes:** "check compliance" — CD reviews the compliance report, triages discrepancies per D-07 (discharge minor items as ITM-n; escalate blocking items to bug-fix task). PASS → archive all four files to `completed/` and proceed to D-17-NEXT (C2.2 format decision). FAIL → create bug-fix CC task.
+
+**Critical path from here to implementation-ready spec:** roughly 9 more sequential steps (compliance review → format decision → C2.2 drafting → C2.2 execution → C2.2 compliance → C3 review → C4 iterate), each gating the next. Estimated 10–20 more hours of CC wall-clock plus CD coordination turns.
