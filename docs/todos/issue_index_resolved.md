@@ -14,6 +14,7 @@
 | ID | Resolved | Resolution | Title | Resolved by |
 |----|----------|------------|-------|-------------|
 | ITM-01 | 2026-04-21 | Done | File movement reminder — after Streams A and B complete | ITM-01-FILE-MOVEMENT task (CC, Turn 8) |
+| ITM-06 | 2026-04-21 | Done (same-turn) | Implementation plan update after D-12 pivot | Purple Turn 17 (CD inline) |
 
 ---
 
@@ -46,3 +47,24 @@ Items not independently verified by CD: commit trailer correctness (no git acces
 - Task prompt: `docs/tasks/completed/itm_01_file_movement_prompt.md`
 - Completion report: `docs/tasks/completed/itm_01_file_movement_completion.md`
 - D-10 (skip-compliance criteria) — the decision authorizing the disposition
+
+---
+
+## ITM-06: Implementation plan update after D-12 pivot (RESOLVED same-turn)
+
+**Created:** 2026-04-21T08:57:03-04:00 (logged in D-12 Consequences)
+**Resolved:** 2026-04-21T09:11:33-04:00 (Purple Turn 17)
+**Resolution:** Plan updated inline during Turn 17 rather than entering the open-issue queue. The V1 plan at `docs/specs/GNC355_Prep_Implementation_Plan_V1.md` was marked SUPERSEDED (top-of-file banner) and a V2 plan written at `docs/specs/GNX375_Prep_Implementation_Plan_V2.md` reflecting the D-12 pivot (unit, scope, Stream C sub-structuring).
+
+### Verification
+
+- V1 file: banner added at top pointing to V2; original content preserved for historical reference
+- V2 file: 356 lines; covers amendment summary, stream completion status (A, B, C1), Stream C sub-structuring per D-11 + D-12, updated dependency graph, updated risks + wall-clock, and revision history linking V1
+- Both files in git via the Turn 17 commit
+
+### Related
+
+- D-12 (the pivot decision that created this ITM)
+- `docs/specs/pivot_355_to_375_rationale.md` (full option analysis)
+- `docs/specs/GNX375_Prep_Implementation_Plan_V2.md` (the new plan)
+- `docs/specs/GNC355_Prep_Implementation_Plan_V1.md` (historical)
