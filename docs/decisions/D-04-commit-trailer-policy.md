@@ -2,7 +2,8 @@
 
 **Created:** 2026-04-20T08:19:17-04:00  
 **Amended:** 2026-04-20T09:10:00-04:00 (Purple Turn 37 — executing-mechanics clarifications: `-F` + file pattern, BOM-free writes, CD-drafts / Steve-executes)  
-**Source:** Purple Turns 25–27 (original), 29, 31–32 (mechanics lessons), 37 (amendment)  
+**Amended:** 2026-04-20T18:52:56-04:00 (Purple Turn 4 — see D-09: CD writes message file directly via Filesystem MCP; PowerShell here-string demoted to fallback)  
+**Source:** Purple Turns 25–27 (original), 29, 31–32 (mechanics lessons), 37 (amendment), 4-of-new-session (D-09 amendment)  
 **Decision type:** convention / workflow
 
 ## Decision
@@ -133,7 +134,20 @@ Previously, CD wrote files via Filesystem MCP but did not commit them — commit
 - On explicit Steve request ("commit that")
 - Before authoring a task prompt that will cite the files just written (so CC sees a consistent tree)
 
-### CD-authored commit mechanics (amended Turn 37)
+### CD-authored commit mechanics (amended Turn 37; further amended Turn 4 — see D-09)
+
+**As of D-09 (2026-04-20T18:52:56-04:00), the preferred CD commit mechanic is:**
+
+1. CD writes the commit message text directly to `.git\COMMIT_EDITMSG_cd` via Filesystem MCP `write_file` tool, in the same turn as the file edits being committed.
+2. Steve runs ONE command: `git add -A docs/; git commit -F .git\COMMIT_EDITMSG_cd; Remove-Item .git\COMMIT_EDITMSG_cd` (or equivalent for the actual stage scope).
+
+This eliminates the multi-line PowerShell here-string copy-paste. See D-09 for full rationale, BOM-safety analysis, and edge cases.
+
+The PowerShell here-string pattern documented below remains as a **fallback** for when Filesystem MCP write is unavailable.
+
+---
+
+**Fallback pattern (PowerShell here-string — use only if Filesystem MCP write is unavailable):**
 
 CD has no git tool — it writes files via the Filesystem MCP but cannot execute `git` on Steve's machine. Therefore CD-authored commits are produced via this two-actor pattern:
 

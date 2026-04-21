@@ -5,6 +5,12 @@
 **Purpose:** Master cross-reference of all open tracked items (ITM-, G-, O-, FE-). Paired with `issue_index_resolved.md` which holds closed items.
 **Maintained by:** CD
 
+**Prefix glossary:**
+- **ITM-** — Item (general housekeeping, cleanup, process followup; default catchall)
+- **G-** — Gap (spec review finding: missing requirement, unaddressed scenario, etc.)
+- **O-** — Opportunity (spec review finding: improvement that's nice-to-have, not required)
+- **FE-** — Future Enhancement (deferred work item; not blocking; revisit when prioritized)
+
 | ID | Severity | Type | Title | Source | Notes |
 |----|----------|------|-------|--------|-------|
 | ITM-01 | Low | Process / housekeeping | File movement reminder — after Streams A and B complete | Purple Turn 37 | Triggered. With B3 PASS WITH NOTES discharged, ITM-01 fires after B4 readiness review. |
