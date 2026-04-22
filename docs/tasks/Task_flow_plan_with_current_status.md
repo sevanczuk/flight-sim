@@ -46,10 +46,14 @@ Related docs: `docs/specs/GNX375_Prep_Implementation_Plan_V2.md` (narrative plan
 | C2.1-375 compliance review + archive       | CD reviews compliance → PASS WITH NOTES; ITM-07 logged; all 4 files archived to `completed/` | ✅ Done (Turn 29)                       |
 | **D-18 (format decision)**                 | CD decides C2.2 format: piecewise + manifest, 7 tasks; resolves ITM-07 inline by adopting §4 sub-section sum | ✅ Done (Turn 30; `D-18-c22-format-decision-piecewise-manifest.md`) |
 | C2.2-A task prompt drafted                 | CD drafts `docs/tasks/c22_a_prompt.md` (covers §§1–3 + Appendices B, C; ~445 lines target) | ✅ Done (Turn 31)                             |
-| **C2.2-A execution**                       | **CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_A.md`** | **🔵 READY TO LAUNCH**                        |
-| C2.2-A check-completions + compliance      | Standard two-phase lifecycle                                 | ⚪ Pending                                   |
-| C2.2-B–G task prompt drafting              | CD drafts prompts for remaining 6 sub-tasks (~1 CD turn each, interleaved with CC execution) | ⚪ Pending                                   |
-| C2.2 execution                             | CC authors remaining 6 fragments sequentially (B through G) | ⚪ Pending (6 tasks remaining)                |
+| C2.2-A execution                           | CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_A.md` (545 lines, +22% over target — CC flagged as deviation) | ✅ Done (Turn 32) |
+| C2.2-A check-completions (Phase 1)         | CD reads prompt + completion report → generates compliance prompt | ✅ Done (Turn 33: 17 items, 7 categories)    |
+| C2.2-A compliance verification (Phase 2)   | CC runs compliance prompt → `c22_a_compliance.md` (17/17 PASS or CONFIRMED; 2 minor terminology notes) | ✅ Done (Turn 34)                       |
+| C2.2-A compliance review + archive         | CD reviews compliance → PASS WITH NOTES; line-count overage accepted as PDF-sourced; all 4 files archived | ✅ Done (Turn 35)                       |
+| Manifest authoring                         | CD creates `docs/specs/GNX375_Functional_Spec_V1.md` per D-18 — 7-row table, Fragment A archived | ✅ Done (Turn 35)                       |
+| **C2.2-B task prompt drafting**            | **CD drafts prompt for C2.2-B (§§4.1–4.6 — Home, Map, FPL, Direct-to, Waypoint Info, Nearest pages; ~610 lines target)** | **🔶 NEXT UP**                              |
+| C2.2-B execution                           | CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_B.md` | ⚪ Pending                                   |
+| C2.2-C through C2.2-G                      | Remaining 5 fragments + check-completions + compliance cycles | ⚪ Pending                                   |
 | C2.2 check-completions + compliance        | Standard lifecycle                                           | ⚪ Pending                                   |
 | C3                                         | `/spec-review` V1 — tiered review pipeline                   | ⚪ Pending                                   |
 | C3 triage                                  | CD triages review findings → gaps/opportunities → issue index | ⚪ Pending                                   |
@@ -79,22 +83,15 @@ Back-port 375 insights to shelved 355 outline → C2.2-355 body → design → i
 
 ### Where we are right now
 
-**C2.2-A task prompt drafted and ready to launch (Turn 31).** Prompt at `docs/tasks/c22_a_prompt.md`. CC authors fragment A covering §§1 Overview, §2 Physical Layout & Controls, §3 Power-On/Startup, Appendix B Glossary, and Appendix C Extraction Gaps. Target: ~445 lines at `docs/specs/fragments/GNX375_Functional_Spec_V1_part_A.md` (new directory `docs/specs/fragments/` to be created by CC).
+**C2.2-A is COMPLETE and archived (Turn 35).** Compliance verdict: PASS WITH NOTES (17/17 items PASS or CONFIRMED). Two minor terminology notes (Power/Home key composite naming, screenshot "inner" qualifier) both verified PDF-consistent and accepted as-is. Line-count overage (545 vs. 445; +22%) classified by compliance as ~80 lines PDF-sourced (B.1 aviation abbreviations) + ~115 lines prompt-mandated (B.1 additions, B.2, B.3, C.1, Coupling Summary) + ~45 lines PDF-sourced (§3.5 database management detail). No content invention detected; CD accepted overage as-is. All 4 task files archived to `docs/tasks/completed/`.
 
-**Key framing commitments CC must honor** (hard constraints per the prompt):
-1. TSO-C112e (not C112d) per D-16
-2. GNX 375 = baseline; GPS 175 + GNC 355/355A are comparison units
-3. No internal VDI (per D-15) — briefly noted in §1 scope
-4. Inner knob push = Direct-to on GNX 375 (not COM standby tuning)
-5. No COM radio on GNX 375 — only referenced as a sibling-unit comparison
-6. Appendix B includes 15 XPDR/ADS-B-related glossary entries (enables later fragments to reference without forward-refs)
-7. Disambiguation gap dropped per D-12
-8. XPDR pages pp. 75–82 noted CLEAN in Appendix C
+**Manifest created at `docs/specs/GNX375_Functional_Spec_V1.md`** (Turn 35). 7-row fragment table with Fragment A marked Archived; remaining 6 marked ⚪ Not yet drafted. Status journal initialized. Assembly instructions documented per D-18.
 
-Expected CC wall-clock: 45–75 min.
+**Lesson learned for C2.2-B onward:** the ~1.15× outline-to-fragment expansion ratio I assumed in C2.2-A's prompt is too tight when the fragment includes structured tables (glossary, sparse-page list). ~1.35× is more realistic. The C2.2-B prompt should:
+1. Set line-count target at ~700 (vs. ~610 from D-18) to accommodate Map page tables, AMAPI cross-ref blocks, and forward-ref placeholders
+2. NOT change D-18's authoritative partition (D-18's per-task estimates remain the spec contract; the expansion-ratio adjustment is a delivery quality-of-life tweak)
+3. Apply same lesson to C2.2-C through C2.2-G prompts as they're drafted
 
-**Next CD action after CC finishes:** "check completions" on `docs/tasks/c22_a_completion.md`. CD generates a compliance prompt modeled on the C2.1-375 17-item approach, scaled to fragment-level concerns (self-check re-verification + outline-to-fragment fidelity + AMAPI cross-ref validity). Then standard PASS/FAIL flow.
+**Next CD action: Turn 36 — draft C2.2-B task prompt.** Scope: §§4.1–4.6 (Home, Map, FPL, Direct-to, Waypoint Info, Nearest pages). Heaviest of the display-pages tasks because §4.2 Map (~200 lines) has B4 Gap 1 (Map rendering architecture: canvas vs. Map_add vs. video streaming) as a major design open question. Prompt must explicitly direct CC NOT to resolve B4 Gap 1 in the spec body — it's a design-phase decision; the spec body documents the page structure and behavior contract, not the implementation choice.
 
-**After C2.2-A archives:** CD creates the manifest at `docs/specs/GNX375_Functional_Spec_V1.md` (per D-18) and drafts C2.2-B prompt. Sequential flow continues.
-
-**Critical path:** ~18 more sequential steps (C2.2-A execution → compliance → archive → manifest → C2.2-B drafting → execution → compliance... through C2.2-G → aggregate → C3 `/spec-review` V1). Estimated 6–10 hours CC wall-clock + ~20 CD coordination turns.
+**Critical path:** ~16 more sequential steps (C2.2-B drafting → execution → compliance → archive ... through C2.2-G → aggregate → C3 `/spec-review` V1).
