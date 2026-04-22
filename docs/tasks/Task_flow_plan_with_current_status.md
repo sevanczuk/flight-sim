@@ -51,16 +51,16 @@ Streams A and B are unit-agnostic and serve both GNX 375 and the future GNC 355 
 | **D-18 (format decision)**                 | CD decides C2.2 format: piecewise + manifest, 7 tasks; resolves ITM-07 inline by adopting §4 sub-section sum | ✅ Done (Turn 30; `D-18-c22-format-decision-piecewise-manifest.md`) |
 | C2.2-A (full lifecycle)                    | Prompt drafted → executed (545 lines) → Phase 1 + Phase 2 compliance (17/17 PASS or CONFIRMED) → archived; manifest created | ✅ Done (Turns 31–35)                  |
 | **D-19 (line-count ratio)**                | CD logs fragment prompt line-count expansion ratio (~1.35× outline sum); per-fragment targets (B=720, C=575, D=750, E=455, F=540, G=300) | ✅ Done (Turn 35; `D-19-fragment-prompt-line-count-expansion-ratio.md`) |
-| **C2.2-B task prompt drafting**            | CD drafts `docs/tasks/c22_b_prompt.md` (covers §§4.1–4.6; ~720 lines target per D-19; preserves B4 Gap 1, B4 Gap 2, OPEN QUESTION 1 as unresolved design-phase items) | ✅ Done (Turn 1 post-resumption, 2026-04-22) |
-| C2.2-B execution                           | CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_B.md` (799 lines; initial draft 917 proactively trimmed; 17/17 Phase K self-checks PASS; 11/11 framing commitments self-reported honored) | ✅ Done (Turn 3, 2026-04-22T~15:45 ET; ~10 min wall-clock — surfaced D-20 calibration lesson) |
+| C2.2-B (full lifecycle)                    | Prompt drafted → executed (799 lines) → Phase 1 + Phase 2 compliance (**ALL PASS 23/23**; S13 outline-vs-PDF note) → archived; manifest updated | ✅ Done (Turns 1–7 post-resumption 2026-04-22) |
 | **D-20 (LLM-calibrated duration estimates)** | CD logs lesson: CC task duration estimates should use LLM-calibrated baselines (docs-only ~800-line fragment = 10–25 min); includes adjustment factors (×0.7 reuse, ×2 first-of-pattern) | ✅ Done (Turn 4, 2026-04-22; `D-20-cc-task-duration-estimates-llm-calibrated.md`) |
-| C2.2-B check-completions (Phase 1)         | CD reads prompt + completion report → generates `docs/tasks/c22_b_compliance_prompt.md` (23 checks across 5 categories) | ✅ Done (Turn 5, 2026-04-22)             |
-| C2.2-B compliance verification (Phase 2)   | CC runs compliance prompt → `c22_b_compliance.md` (**ALL PASS 23/23**; surfaced S13 outline-vs-PDF term discrepancy — fragment correct per PDF) | ✅ Done (Turn 6, 2026-04-22T~16:26 ET; ~7 min wall-clock) |
-| **C2.2-B compliance review + archive**     | CD reviews compliance → ALL PASS → all 4 files archived to `completed/`; manifest updated (Fragment B → ✅ Archived, 720 / 799) | ✅ Done (Turn 7, 2026-04-22)             |
-| **C2.2-C task prompt drafting**            | CD drafts `docs/tasks/c22_c_prompt.md` (covers §§4.7–4.10 — Procedures, Planning, Hazard Awareness, Settings display pages; ~575 lines target per D-19; §4.9 Hazard Awareness has ADS-B framing flip + TSAA aural alerts with forward-refs to §11, §12) | 🔶 **NEXT UP**                                |
-| C2.2-C execution                           | CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` | ⚪ Pending                                   |
-| C2.2-C check-completions + compliance      | Standard lifecycle                                           | ⚪ Pending                                   |
-| C2.2-D through C2.2-G                      | Remaining 4 fragments + check-completions + compliance cycles (targets per D-19: D=750, E=455, F=540, G=300) | ⚪ Pending                                   |
+| C2.2-C task prompt drafting                | CD drafts `docs/tasks/c22_c_prompt.md` (covers §§4.7–4.10; ~575 lines target per D-19; 13 hard framing commitments; 22 self-review items; OPEN QUESTION 6 TSAA aural delivery introduced) | ✅ Done (Turn 8, 2026-04-22T16:34 ET) |
+| **C2.2-C execution**                       | **CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` (~575 lines target)** | **🔵 IN FLIGHT** (launched Turn 9, 2026-04-22T17:02 ET) |
+| **D-21 (sequential drafting discipline)**  | CD logs principle: multi-fragment task prompts drafted only after predecessor archive; extends D-18's sequential execution to drafting; applies to any multi-fragment sequence where downstream tasks build on upstream archived outputs | ✅ Done (Turn 11, 2026-04-22T17:19 ET; `D-21-multi-fragment-sequential-drafting-discipline.md`) |
+| C2.2-C check-completions (Phase 1)         | CD reads prompt + completion report → generates compliance prompt | ⚪ Pending (gate for C2.2-D drafting per D-21) |
+| C2.2-C compliance verification (Phase 2)   | CC runs compliance prompt → `c22_c_compliance.md`            | ⚪ Pending                                   |
+| C2.2-C compliance review + archive         | CD reviews compliance → triages; archives all 4 files to `completed/`; updates manifest | ⚪ Pending (**PER D-21, MUST COMPLETE BEFORE C2.2-D DRAFTING**) |
+| C2.2-D task prompt drafting                | CD drafts `docs/tasks/c22_d_prompt.md` (covers §§5–7 — FPL editing, Direct-to operation, Procedures operational workflows; ~750 lines target per D-19 — right at 700-line soft ceiling; monitor for split need) | ⚪ Pending (gated on C2.2-C archive per D-21) |
+| C2.2-D through C2.2-G                      | Remaining 4 fragments + check-completions + compliance cycles (targets per D-19: D=750, E=455, F=540, G=300); drafted sequentially one-at-a-time per D-21 | ⚪ Pending                                   |
 | Aggregate spec                             | Assembly script (`scripts/assemble_gnx375_spec.py`) + single-file aggregate; CD authors at C2.2-G archive per D-18 | ⚪ Pending                                   |
 | C3                                         | `/spec-review` V1 — tiered review pipeline                   | ⚪ Pending                                   |
 | C3 triage                                  | CD triages review findings → gaps/opportunities → issue index | ⚪ Pending                                   |
@@ -103,23 +103,26 @@ The 355 workstream's design + implementation phases are independent of (and down
 
 ### Where we are right now
 
-**C2.2-B fully archived (Turn 7, 2026-04-22).** Fragment B at 799 lines (target 720, within acceptable 650–800 band); compliance ALL PASS (23/23). All 4 files moved to `docs/tasks/completed/`: `c22_b_prompt.md`, `c22_b_completion.md`, `c22_b_compliance_prompt.md`, `c22_b_compliance.md`. Manifest updated; Fragment B → ✅ Archived (720 / 799).
+**C2.2-C in flight (launched Turn 9, 2026-04-22T17:02 ET).** CC executing `docs/tasks/c22_c_prompt.md`. Expected wall-clock: ~10–20 min per D-20. Awaiting completion report.
 
-**Notable compliance outcome:** S13 surfaced an outline-vs-PDF term discrepancy — outline listed "Search by Facility Name" as a §4.5 search tab, but the Pilot's Guide pp. 169–171 uses "SEARCH BY CITY." Fragment B uses the correct PDF term. The spec body is correct; the outline's term is an archival artifact. No action required; noted in the manifest status journal.
+**D-21 (sequential drafting discipline) logged this turn (Turn 11).** All subsequent C2.2 prompts (D, E, F, G) will be drafted one at a time, gated on predecessor archive. This preserves the lesson-learning feedback loop that S13 (Fragment B → Fragment C) and D-20 (Fragment B compliance → Fragment C duration estimate) demonstrated. Pre-drafting multiple prompts was considered (Turn 10 analysis) and rejected in favor of sequential discipline.
 
-**Next CD action: draft C2.2-C task prompt.** Scope: §§4.7–4.10 (Procedures, Planning, Hazard Awareness, Settings display pages). Target: ~575 lines per D-19. Key framing considerations:
-1. §4.9 Hazard Awareness is the section where ADS-B framing flips (from external-source 355/175 framing to built-in-source 375 framing) and TSAA aural alerts surface. Forward-refs to §11 (Fragment F for ADS-B In source) and §12.4 (Fragment F for aural delivery).
-2. §4.10 Settings/System Pages includes CDI On Screen toggle — couples forward to §15.6 External CDI/VDI output contract (Fragment G).
-3. §4.7 Procedures Pages structurally overlaps with §7 Procedures (Fragment D); §4.7 documents page structure only, operational workflows live in §7.
-4. Structural template: clone `docs/tasks/completed/c22_b_prompt.md` (most recent), adjust scope/target/hard constraints, rebuild Coupling Summary template.
-5. Fragment C opens with `### 4.7 Procedures Pages` directly — NOT with `## 4. Display Pages` (Fragment B owns that parent scope). This must be an explicit hard constraint in the C2.2-C prompt.
+**Next CD action:** await C2.2-C completion report → run Phase 1 check-completions → generate `c22_c_compliance_prompt.md`.
 
-**Critical path:** ~12 more sequential CD steps to C3 kick-off.
+**Critical path:** ~11 more sequential CD steps to C3 kick-off. Per D-21, each successor prompt drafting waits for predecessor archive, so the critical path now includes explicit drafting gates:
+- C2.2-C archive → draft C2.2-D (gated by D-21)
+- C2.2-D archive → draft C2.2-E (gated by D-21)
+- C2.2-E archive → draft C2.2-F (gated by D-21)
+- C2.2-F archive → draft C2.2-G (gated by D-21)
+- C2.2-G archive → author assembly script + assemble aggregate spec
+- Aggregate spec → C3 `/spec-review` V1
 
 **Watchpoints carried forward:**
-1. C2.2-D will be the largest upcoming fragment (~750 lines, right at the 700-line soft ceiling per D-19); monitor during drafting.
+1. C2.2-D will be the largest upcoming fragment (~750 lines, right at the 700-line soft ceiling per D-19); monitor during drafting (which starts after C2.2-C archives).
 2. C2.2-F is most-coupled (§11 XPDR + §§12–13 Audio/Alerts/Messages); densest Coupling Summary.
 3. Assembly script (`scripts/assemble_gnx375_spec.py`) deferred until C2.2-G archives.
 4. Watchpoint from C2.2-B compliance (S13): outline may contain other PDF-term discrepancies; CC's PDF-direct reading catches these during authoring. Continue to trust the PDF as authoritative over the outline when in conflict.
+5. C2.2-C structural commitment #1 (no `## 4` header) is unprecedented — first fragment to explicitly inherit parent scope from a predecessor. If CC fails this check, the fix is trivial (delete the duplicate header) but the compliance prompt must verify it unambiguously. Self-review check #4 in the C2.2-C prompt specifically targets this.
+6. **D-21 gate overhead (new):** sequential drafting adds ~1 CD turn of wait between each fragment archive and the next fragment's prompt drafting. For D→G that's 4 gate waits. Offset against 4 × ~30 min of archive time is negligible; D-21's lesson-preservation benefit dominates.
 
 ---
