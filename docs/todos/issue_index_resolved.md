@@ -16,6 +16,7 @@
 | ITM-01 | 2026-04-21 | Done | File movement reminder — after Streams A and B complete | ITM-01-FILE-MOVEMENT task (CC, Turn 8) |
 | ITM-06 | 2026-04-21 | Done (same-turn) | Implementation plan update after D-12 pivot | Purple Turn 17 (CD inline) |
 | ITM-07 | 2026-04-21 | Adopted in D-18 | GNX 375 outline: §4 length estimates inconsistent (nav-aids ~800, §4 header ~740, sub-section sum ~1,090) | Purple Turn 30 (CD — D-18 adopts sub-section sum) |
+| ITM-09 | 2026-04-23 | Resolved by C2.2-D §7.9 authorship | Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs | Purple Turn 22 (C2.2-D compliance X23 PASS) |
 
 ---
 
@@ -93,3 +94,40 @@ The ~350-line increase in §4 pushed total estimated spec length from ~2,860 to 
 - D-18 (C2.2 format decision — adopts sub-section sum; splits C2.2 into 7 tasks)
 - `docs/tasks/completed/c2_1_375_outline_compliance.md` §"Item 12" (discrepancy origin)
 - Previous location: `issue_index.md` §ITM-07 (now removed from open index)
+
+---
+
+## ITM-09: Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs (RESOLVED)
+
+**Created:** 2026-04-22T20:32:25-04:00 (Purple Turn 14 — C2.2-C compliance X19 PARTIAL)
+**Resolved:** 2026-04-23T13:48:23-04:00 (Purple Turn 22 — C2.2-D compliance X23 PASS)
+**Resolution:** Fragment D authored `### 7.9 XPDR + ADS-B Approach Interactions [pp. 75–82, 245–256]` as a real sub-section (Fragment D line 556). Both Fragment C forward-refs now resolve to §7.9 content:
+
+1. Fragment C §4.7 line 226 ("interaction between WOW state, approach phase annunciation, and XPDR ALT mode behavior is documented in §7.9") → resolves to Fragment D §7.9 lines 564–570 (XPDR ALT mode during approach; WOW automatic handling; p. 78 citation; no pilot mode change required).
+2. Fragment C §4.7 line 232 ("interaction detail between TSAA state and GPS flight phase annunciations is in §7.9") → resolves to Fragment D §7.9 lines 577–589 (TSAA continues during all approach phases; GNX 375-only framing; flight phase + XPDR state concurrent display correlation).
+
+### Resolution path
+
+Adopted **Option A** from the original ITM-09 resolution options: C2.2-D prompt included a hard constraint directing CC to author §7.9 as a real numeric sub-section (not lettered augmentation, not outline retrofit). Option A was the least-disruptive path — Fragment C's forward-refs resolve naturally on assembly; §7 grew by one sub-section.
+
+### Verification
+
+- **Structural:** `grep -c '^### 7\.9' docs/specs/fragments/GNX375_Functional_Spec_V1_part_D.md` = 1 (C2.2-D compliance F1 + N27)
+- **Content coverage:** C2.2-D compliance F2 (XPDR ALT + WOW) and F4 (TSAA during approach) both PASS; X23 confirms both forward-refs semantically resolve to §7.9 content
+- **Framing discipline:** §7.9 honors D-16 three-modes-only framing (Standby/On/ALT; no Ground/Test/Anonymous) per C2.2-D compliance F6
+- **Cross-reference preservation:** §7.9 forward-refs to §11, §11.4, §11.11, §12.4, §4.9, §15 all present (C2.2-D compliance F7)
+- **Coupling Summary:** §7.9 authorship note present at Fragment D line 907 explaining the new sub-section creation (C2.2-D compliance C26)
+
+### Impact on spec assembly
+
+On C2.2 assembly (after C2.2-G archive), §7 will present §§7.1–7.9 numeric (in order) followed by §§7.A–7.M lettered augmentations. Fragment C's two forward-refs in §4.7 Open Questions will resolve to the assembled §7.9 section. No dangling cross-references.
+
+### Related
+
+- C2.2-C compliance report (`docs/tasks/completed/c22_c_compliance.md` §X19) — original PARTIAL finding
+- C2.2-D compliance report (`docs/tasks/c22_d_compliance.md` §F1, §F2, §F4, §F6, §F7, §X23, §N27, §C26) — multi-angle verification
+- C2.2-D prompt (`docs/tasks/c22_d_prompt.md` hard constraint #1) — authorship directive
+- D-21 (multi-fragment sequential drafting) — the discipline that surfaced ITM-09 at the right moment (during C2.2-C review, before C2.2-D drafting)
+- Fragment C `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` §4.7 open questions (lines 226, 232) — forward-refs now resolved
+- Fragment D `docs/specs/fragments/GNX375_Functional_Spec_V1_part_D.md` §7.9 (line 556) — resolution
+- Previous location: `issue_index.md` §ITM-09 (now removed from open index)
