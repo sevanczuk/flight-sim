@@ -18,6 +18,8 @@
 | ITM-04 | Low | Process / template | CC task prompt template: add "verify completion-report claims" step | Purple Turn 3 (D-08) | Per D-08, completion reports must re-verify numerical/existence claims at submission time. Update `docs/templates/CC_Task_Prompt_Template.md`. See details below. |
 | ITM-05 | Low | Process / template | Compliance Verification Guide: reference D-10 skip criteria | Purple Turn 8 (D-10) | Per D-10, mechanical/self-verifying tasks may skip compliance. Update `docs/templates/Compliance_Verification_Guide.md` to reference D-10. See details below. |
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
+| ITM-08 | Low | Cleanup / docs | Fragment C Coupling Summary — over-claims 4 glossary terms absent from Fragment A Appendix B | Purple Turn 14 (C2.2-C compliance X17) | Coupling Summary lists TSO-C151c, EPU, HFOM/VFOM, HDOP as Appendix B backward-refs; these terms are not in Appendix B. Coupling Summary is coordination metadata (stripped on assembly per D-18); zero downstream impact. Tracking to detect recurrence. See details below. |
+| ITM-09 | Medium | Content / forward-ref | Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs | Purple Turn 14 (C2.2-C compliance X19) | Fragment C authors 2 forward-refs to §7.9 (XPDR-interaction during approach + TSAA behavior during approach). Outline §7 uses §7.1–7.8 numeric + §7.A–7.N lettered sub-sections; no §7.9 heading exists. Must be resolved in C2.2-D. Three resolution paths available. See details below. |
 
 ---
 
@@ -168,3 +170,88 @@ Deferred because (a) impact is cosmetic only, (b) downstream consumers (GNC 355 
 ## ITM-07: GNX 375 outline — §4 length estimates inconsistent
 
 **Resolved 2026-04-21T13:30:00-04:00 by D-18 — moved to `issue_index_resolved.md`.**
+
+---
+
+## ITM-08: Fragment C Coupling Summary — over-claims 4 glossary terms absent from Fragment A Appendix B
+
+**Created:** 2026-04-22T20:32:25-04:00
+**Source:** Purple Turn 14 (C2.2-C compliance, finding X17 PARTIAL)
+**Status:** Open (observational; no fix required now)
+**Severity:** Low (coordination metadata only; stripped on assembly)
+**Owner:** CD (observation-level tracking)
+
+### Description
+
+Fragment C's Coupling Summary "Backward cross-references" section lists TSO-C151c, EPU, HFOM/VFOM, and HDOP as glossary entries in Fragment A's Appendix B. Compliance check X17 grep-confirmed that none of these four terms appear in Fragment A Appendix B.
+
+These terms appear in Fragment C spec body as:
+- **EPU, HFOM/VFOM, HDOP:** display field labels in §4.10 GPS Status page (line 619). They are GPS accuracy/integrity measurement abbreviations that are self-explanatory in the context of a "GPS Status" page field listing.
+- **TSO-C151c:** terrain database certification reference cited in §4.9 Terrain (line 500: "Not all-inclusive; not TSO-C151c certified. For situational awareness only...").
+
+### Impact
+
+**Zero functional impact on the assembled spec.** Per D-18, the Coupling Summary block is coordination metadata and is stripped during assembly. The assembled spec contains only spec-body content, which uses these terms accurately in context.
+
+**Non-zero tracking value.** The over-enumeration is a Coupling Summary accuracy issue. If similar over-claims recur in Fragments D, E, F, or G (especially G which will have the most coupling footprint), it could indicate a systemic pattern where CC over-generates Coupling Summary backward-refs without grep-verifying Appendix B content. That would be worth catching early via a C2.2-D prompt clarification.
+
+### No fix required
+
+No edit to Fragment C. The fragment is archivable as-is.
+
+### Watchpoint for C2.2-D / E / F / G
+
+When drafting subsequent fragment prompts, consider adding a Phase H self-review step: "For each Appendix B glossary term claimed in the Coupling Summary backward-refs, grep Fragment A's Appendix B to confirm the term is present. Remove any terms that are not present from the backward-refs list."
+
+### Related
+
+- C2.2-C compliance report (`docs/tasks/c22_c_compliance.md` §X17)
+- D-18 (Coupling Summary stripped-on-assembly convention)
+- D-21 (multi-fragment sequential drafting — lesson applies to C2.2-D drafting)
+
+---
+
+## ITM-09: Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs
+
+**Created:** 2026-04-22T20:32:25-04:00
+**Source:** Purple Turn 14 (C2.2-C compliance, finding X19 PARTIAL)
+**Status:** Open (must be resolved in C2.2-D drafting)
+**Severity:** Medium (affects forward-ref resolution in Fragment C; requires C2.2-D action)
+**Owner:** CD (must address in C2.2-D prompt drafting)
+
+### Description
+
+Fragment C authors two forward-references to §7.9:
+
+1. §4.7 Open Q #1 (line 226): "The interaction between WOW (weight-on-wheels) state, approach phase annunciation, and XPDR ALT mode behavior is documented in **§7.9 (Fragment D) and §11.4 (Fragment F)**."
+2. §4.7 Open Q #2 (line 232): "Interaction detail between TSAA state and GPS flight phase annunciations is in **§7.9 (Fragment D)**."
+
+The outline's §7 uses a mixed numbering scheme: §7.1 through §7.8 are the numeric sub-sections; §7.A through §7.N are lettered augmentation sub-sections added by D-14 for procedural fidelity. There is no `### 7.9` heading in the outline; the concept ("XPDR-interaction during approach") is established in the outline's prose at line 446 ("see §7.9 and §11.4 for operational detail") but not as a structural heading.
+
+### Why this matters
+
+When the aggregate spec is assembled, Fragment C's forward-refs to "§7.9" must resolve to real section headings in Fragment D's authored content. If Fragment D authors §§7.1–7.8 numerically and §§7.A–7.N lettered (matching the outline), there will be no §7.9 heading — Fragment C's forward-refs would dangle.
+
+### Resolution options (decide in C2.2-D drafting)
+
+**Option A — C2.2-D authors §7.9:** Instruct Fragment D to create a §7.9 "XPDR-interaction during approach" sub-section that covers both (a) XPDR altitude reporting during approach flight phases and (b) TSAA behavior during approach flight phases. This is the content Fragment C's two open questions point at. Path of least disruption: Fragment C's forward-refs resolve naturally; §7 grows by one sub-section.
+
+**Option B — C2.2-D authors §7.X (letter) and Fragment C forward-refs are updated at assembly:** If §7.9 naming conflicts with §7's existing lettered scheme, use §7.O or similar lettered augmentation. Requires an assembly-time edit to Fragment C (or a cross-fragment hotfix task).
+
+**Option C — Retrofit outline to add §7.9 heading:** Edit the outline to introduce §7.9 as a numeric sub-section. Cleanest long-term but requires an outline edit post-C2.1-375 archive. The outline is archival per the C2.1-375 lifecycle — editing it now would be an exception.
+
+**Recommended:** Option A. Fragment D's prompt explicitly directs CC to author a §7.9 "XPDR-interaction during approach" sub-section. The §7.9 content is real (XPDR modes during flight phases + TSAA interaction); the numbering just needs to exist.
+
+### Fix
+
+When drafting `docs/tasks/c22_d_prompt.md` (gated on C2.2-C archive per D-21):
+
+1. Add a hard constraint: "§7 must include a §7.9 sub-section titled 'XPDR-interaction during approach' (or similar). Fragment C forward-refs to §7.9 for XPDR altitude reporting during approach phases and TSAA behavior during approach phases."
+2. Scope §7.9 to cover: (a) XPDR ALT mode and altitude-reporting during approach (cross-refs §11.4), (b) TSAA state and aural-alert behavior during approach flight phases (cross-refs §11.11 and §12.4), (c) WOW state interaction with XPDR mode transitions and approach phase.
+3. Add a self-review check: "verify the fragment includes §7.9 heading as specified."
+
+### Related
+
+- C2.2-C compliance report (`docs/tasks/c22_c_compliance.md` §X19)
+- D-21 (sequential drafting — this ITM is a direct benefit of the discipline; if C2.2-D had been pre-drafted, the §7.9 gap would not have been caught before drafting)
+- Fragment C `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` §4.7 open questions (lines 226, 232)
