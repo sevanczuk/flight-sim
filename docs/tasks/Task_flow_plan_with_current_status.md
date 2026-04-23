@@ -56,13 +56,17 @@ Streams A and B are unit-agnostic and serve both GNX 375 and the future GNC 355 
 | **D-21 (sequential drafting discipline)**  | CD logs principle: multi-fragment task prompts drafted only after predecessor archive; extends D-18's sequential execution to drafting | ✅ Done (Turn 11, 2026-04-22T17:19 ET; `D-21-multi-fragment-sequential-drafting-discipline.md`) |
 | C2.2-C (full lifecycle)                    | Prompt drafted → executed (725 lines; +26% structural overage classified) → Phase 1 + Phase 2 compliance (**PASS WITH NOTES 22/25 PASS, 3/25 PARTIAL, 0 FAIL**) → archived; manifest + Task flow plan updated. S13-pattern confirmed (LNAV/VNAV + MAPR added beyond outline, PDF-confirmed). ITM-08 + ITM-09 logged. | ✅ Done (Turns 8–14 post-resumption 2026-04-22) |
 | **[ITM-08 logged]**                        | Fragment C Coupling Summary over-claims 4 glossary terms absent from Fragment A Appendix B. No-action observation (Coupling Summary stripped on assembly). Watchpoint: repeat-check for C2.2-D/E/F/G Coupling Summaries. | ✅ Logged (Turn 14; `docs/todos/issue_index.md` §ITM-08) |
-| **[ITM-09 logged]**                        | Outline §7 lacks §7.9 heading referenced by Fragment C forward-refs (XPDR-interaction during approach + TSAA during approach). Recommended resolution: C2.2-D authors §7.9 sub-section. | ✅ Logged (Turn 14; `docs/todos/issue_index.md` §ITM-09) |
-| **C2.2-D task prompt drafting**            | CD drafts `docs/tasks/c22_d_prompt.md` (covers §§5–7 — FPL editing, Direct-to operation, Procedures operational workflows; ~750 lines target per D-19 — largest upcoming fragment; 14 hard framing commitments; 24 self-review items; hard constraint: §7.9 must be authored as new sub-section per ITM-09; Phase G ITM-08 grep-verify step; Coupling Summary budget corrected to ~60 lines; soft ceiling 815; borderline CRP applicability) | ✅ Done (Turn 15, 2026-04-23T06:23 ET) |
-| **C2.2-D execution**                       | **CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_D.md` (~750 lines target, soft ceiling 815)** | **🔶 READY TO LAUNCH** |
-| C2.2-D check-completions (Phase 1)         | CD reads prompt + completion report → generates compliance prompt (~25 items; includes ITM-08 grep-verify confirmation + ITM-09 §7.9 authorship check) | ⚪ Pending                                   |
-| C2.2-D compliance verification (Phase 2)   | CC runs compliance prompt → `c22_d_compliance.md`            | ⚪ Pending                                   |
-| C2.2-D compliance review + archive         | CD reviews compliance → triages; archives all 4 files to `completed/`; updates manifest; **closes ITM-09** (moves to resolved index); Task flow plan updated | ⚪ Pending                                   |
-| C2.2-E through C2.2-G                      | Remaining 3 fragments + check-completions + compliance cycles (targets per D-19: E=455, F=540, G=300); drafted sequentially one-at-a-time per D-21 | ⚪ Pending                                   |
+| **[ITM-09 logged → resolved]**             | Outline §7 lacks §7.9 heading referenced by Fragment C forward-refs. Resolution: C2.2-D authored §7.9 as real sub-section; both Fragment C forward-refs semantically resolve (C2.2-D compliance X23 PASS). | ✅ Logged Turn 14; ✅ Resolved Turn 22, 2026-04-23 (`docs/todos/issue_index_resolved.md` §ITM-09) |
+| C2.2-D task prompt drafting                | CD drafts `docs/tasks/c22_d_prompt.md` (covers §§5–7; ~750 lines target per D-19; 14 hard framing commitments; 24 self-review items; hard constraint: §7.9 must be authored as new sub-section per ITM-09; Phase G ITM-08 grep-verify step; Coupling Summary budget corrected to ~60 lines; soft ceiling 815; borderline CRP applicability) | ✅ Done (Turn 15, 2026-04-23T06:23 ET) |
+| C2.2-D (full lifecycle)                    | Prompt drafted → executed (913 lines; +22% structural overage classified — 22 §7 sub-sections + PDF-sourced tables) → Phase 1 + Phase 2 compliance (**ALL PASS 30/30**) → archived; manifest + Task flow plan + issue_index updated. First zero-PARTIAL, zero-FAIL compliance in series. ITM-09 resolved. ITM-08 discipline validated (authoring-phase grep-verify prevented recurrence). S13-pattern third recurrence confirmed (§5.3 8-item Waypoint Options PDF-sourced). §7.D 4-row HAL table confirmed PDF-accurate. | ✅ Done (Turns 15–22 post-resumption; spans 2026-04-22 to 2026-04-23) |
+| **[ITM-08 watchpoint validated]**          | Fragment D authoring-phase grep-verify executed successfully: 25 Appendix B terms confirmed present; 4 excluded terms (EPU, HFOM/VFOM, HDOP, TSO-C151c) correctly omitted from backward-refs. C2.2-D compliance F11 independently re-grep'd and confirmed. Discipline working as intended. Carry-forward to C2.2-E/F/G prompts. | ✅ Validated (Turn 22, 2026-04-23)          |
+| **C2.2-E task prompt drafting**            | CD drafts `docs/tasks/c22_e_prompt.md` (covers §§8–10 — Nearest Functions, Waypoint Information pages, Settings/System operational pages; ~455 lines target per D-19; carry-forward hard constraints: Coupling Summary Phase G grep-verify per ITM-08 discipline; Coupling Summary ~60-line budget; S13 trust-PDF-over-outline watchpoint; consistency with Fragment C §4.10 Settings display and Fragment B §4.5 Waypoint Info and §4.6 Nearest) | 🔶 **NEXT UP** (gate unlocked per D-21) |
+| C2.2-E execution                           | CC authors `docs/specs/fragments/GNX375_Functional_Spec_V1_part_E.md` | ⚪ Pending                                   |
+| C2.2-E check-completions + compliance      | Standard lifecycle                                           | ⚪ Pending                                   |
+| C2.2-F task prompt drafting                | CD drafts `docs/tasks/c22_f_prompt.md` (covers §§11–13 — Transponder + ADS-B, Audio/Alerts, Messages; ~540 lines target per D-19; most-coupled fragment) | ⚪ Pending (gated on C2.2-E archive per D-21) |
+| C2.2-F (full lifecycle)                    | Remaining lifecycle steps                                    | ⚪ Pending                                   |
+| C2.2-G task prompt drafting                | CD drafts `docs/tasks/c22_g_prompt.md` (covers §§14–15 + Appendix A — Persistent State, External I/O, Family Delta; ~300 lines target per D-19; smallest fragment but highest coupling footprint in Coupling Summary) | ⚪ Pending (gated on C2.2-F archive per D-21) |
+| C2.2-G (full lifecycle)                    | Final fragment lifecycle                                     | ⚪ Pending                                   |
 | Aggregate spec                             | Assembly script (`scripts/assemble_gnx375_spec.py`) + single-file aggregate; CD authors at C2.2-G archive per D-18 | ⚪ Pending                                   |
 | C3                                         | `/spec-review` V1 — tiered review pipeline                   | ⚪ Pending                                   |
 | C3 triage                                  | CD triages review findings → gaps/opportunities → issue index | ⚪ Pending                                   |
@@ -105,29 +109,38 @@ The 355 workstream's design + implementation phases are independent of (and down
 
 ### Where we are right now
 
-**C2.2-D prompt drafted (Turn 15, 2026-04-23T06:23 ET).** `docs/tasks/c22_d_prompt.md` covers §§5–7 (Flight Plan Editing + Direct-to Operation + Procedures operational workflows). Target ~750 lines per D-19 — the largest fragment in the series. Prompt structurally cloned from archived `c22_c_prompt.md` with these refinements:
+**C2.2-D fully archived (Turn 22, 2026-04-23).** Fragment D at 913 lines (target 750, +22% structural overage — consistent with series baseline ~20% over). Compliance **ALL PASS 30/30** — first zero-PARTIAL, zero-FAIL compliance in the series. All 4 files moved to `docs/tasks/completed/`. Manifest updated; Fragment D → ✅ Archived (750 / 913). ITM-09 resolved and moved to `issue_index_resolved.md`.
 
-1. **ITM-09 resolution (hard constraint #1):** §7.9 "XPDR + ADS-B Approach Interactions" must be authored as a real sub-section. Single most important structural commitment for Fragment D. Resolves Fragment C's two forward-refs.
-2. **ITM-08 watchpoint executed at Phase G (hard constraint #12):** Phase G Coupling Summary authoring includes a mandatory grep-verify step against Fragment A Appendix B. Specifically excludes EPU, HFOM/VFOM, HDOP, TSO-C151c from backward-ref claims. Completion report documents which terms were verified-present.
-3. **Coupling Summary budget corrected:** allocated ~60 lines (not ~15). Matches actual observed size from Fragments B and C.
-4. **14 hard framing commitments** include: §7.9 new sub-section; §7 sub-section ordering (7.1–7.9 numeric then 7.A–7.M lettered, 22 total); no-internal-VDI consistency with Fragments A+C; §7.5 approach-types table match with Fragment C §4.7; §7.2 GPS Flight Phase Annunciations 11-row match (S13-pattern continued); three XPDR modes only per D-16 for §7.9; TSAA = GNX 375 only; OPEN QUESTION 6 cross-ref (not re-preserved verbatim); no COM present-tense; no §4 re-authoring; no §§8–15 header-authoring.
-5. **24 self-review items** covering line count, encoding, ordering, table consistency, VDI framing, TSAA framing, OPEN QUESTION preservation (6 items), page-citation preservation, file conventions, Coupling Summary structure, and ITM-08 + ITM-09 verification.
-6. **Open question preservations:** §5 flight-plan persistence schema, §5 wireless import (may be v1 out-of-scope), §7.5/7.M ARINC 424 legs (OPEN QUESTION 2), §7.8 autopilot dataref, §7.J fly-by/fly-over turn geometry (OPEN QUESTION 3), §7.L altitude constraints (OPEN QUESTION 1).
-7. **Soft ceiling 815 lines** (750 target + 65 buffer for Coupling Summary template). CC may proactively trim to approach 750 if possible.
-8. **Borderline CRP applicability:** largest fragment in series; no CRP by default; CC may opt-in if mid-authoring suggests compaction risk.
+**Notable compliance outcomes:**
+1. **ITM-09 fully resolved.** §7.9 authored as real sub-section; both Fragment C forward-refs semantically resolve (not just heading existence — X23 verified content coverage).
+2. **ITM-08 authoring-phase discipline validated.** Fragment D's Phase G grep-verify confirmed 25 Appendix B terms present; 4 excluded terms correctly omitted. F11 independent re-grep confirmed. The discipline is working — no recurrence of Fragment C's Coupling Summary over-claim pattern.
+3. **S13-pattern third recurrence** (§5.3 Waypoint Options 8 items PDF-sourced vs. outline's 6). Continue trusting PDF over outline.
+4. **§7.D HAL 4-row table confirmed PDF-accurate** — "2.00/2.00" was not a typo; En Route and Oceanic both show 2.00 nm per PDF p. 88. Fragment D strictly accurate.
 
-**Next CD action: provide CC launch sequence for C2.2-D.** Expected CC wall-clock per D-20: ~15–25 min (~750-line docs-only fragment with moderate reuse; §7.9 novel content + ITM-08 grep-verify adds a few minutes).
+**Next CD action: draft C2.2-E task prompt.** D-21 gate unlocked. Scope: §§8–10 (Nearest Functions + Waypoint Information + Settings/System operational workflows). Target: ~455 lines per D-19 — smallest remaining fragment. Key carry-forward constraints:
 
-**Critical path:** ~10 more sequential CD steps to C3 kick-off (unchanged from last turn; one step advancing when C2.2-D archives).
+1. **Coupling Summary Phase G grep-verify as hard constraint** (ITM-08 discipline validated; maintain).
+2. **Coupling Summary ~60-line budget** (corrected; maintain).
+3. **Consistency with Fragment C** — §10 operational workflows act on §4.10 display pages; §10.1 CDI Scale + CDI On Screen settings cross-ref §4.10 and §7.D/§7.G; §10.12 ADS-B Status built-in framing must match Fragment C §4.10 framing; §10.13 Logs GNX 375 traffic logging must match Fragment C §4.10.
+4. **Consistency with Fragment B** — §9 Waypoint Information operational workflows act on §4.5 Waypoint Info display pages; §8 Nearest Functions act on §4.6 Nearest display pages.
+5. **Consistency with Fragment D** — no §4 re-authoring; no COM present-tense; forward-refs §10 previously established.
+6. **S13 trust-PDF watchpoint** remains active.
+7. **No new hard constraints anticipated** for Fragment E — it's an unambiguous scope with established patterns.
+
+**Critical path:** ~8 more sequential CD steps to C3 kick-off:
+- C2.2-E full lifecycle (gated, ~3 turns CD + 1 CC + 1 CC = 5 turns total)
+- C2.2-F full lifecycle (gated; most-coupled fragment)
+- C2.2-G full lifecycle (gated)
+- Assembly script + aggregate spec
+- C3 `/spec-review` V1
 
 **Watchpoints carried forward:**
-1. **Line count trend:** Fragment A = 22% over target (445→545), Fragment B = 11% over (720→799), Fragment C = 26% over (575→725). Fragment D target 750 with 815 soft ceiling; if trend continues (~20% over), actual could be ~900. Watch for Phase H self-check #1 result.
+1. **Line-count trend:** Fragment A=+22%, B=+11%, C=+26%, D=+22%. Fragment E target 455; if ~20% over, actual ~550. Well below any problematic ceiling.
 2. C2.2-F is most-coupled (§11 XPDR + §§12–13 Audio/Alerts/Messages); densest Coupling Summary.
 3. Assembly script (`scripts/assemble_gnx375_spec.py`) deferred until C2.2-G archives.
-4. S13 watchpoint: PDF-vs-outline discrepancies continue to be caught by CC. C2.2-D will be watched for any new discrepancies in §§5–7 (large scope = more chances for outline drift).
-5. **D-21 gate overhead acknowledged:** 3 remaining sequential gates (D→E, E→F, F→G). Benefit (lesson preservation) continues to dominate; both ITMs logged during C2.2-C review and incorporated into C2.2-D prompt prove the discipline's value.
-6. **ITM-09 structural contract is the critical risk for C2.2-D.** If CC fails to author §7.9, bug-fix cycle required before archive. Prompt's hard constraint #1 plus self-check #4 plus completion-report requirement explicitly guard against this.
-7. **ITM-08 grep-verify at Phase G** is enforced at authoring time (not post-hoc compliance check). Should prevent recurrence of the Fragment C Coupling Summary over-claim pattern.
-8. **Fragment D is the most novel content in the series:** §7.A–§7.M are D-14 procedural-fidelity augmentations not in the shelved 355 outline and not fully fleshed out in Pilot's Guide examples. Several sub-sections flag limited-source content (OPEN QUESTIONS 1, 2, 3). Expect completion report to show several preservations; expect compliance to verify preservations rather than source-fidelity.
+4. S13 watchpoint: validated three times now (Fragment B Search-by-City, Fragment C LNAV/VNAV + MAPR, Fragment D §5.3 Waypoint Options). Continue trusting PDF over outline.
+5. **D-21 gate overhead acknowledged:** 3 remaining sequential gates (E→F, F→G, G→assembly). Discipline continues to justify overhead.
+6. **ITM-08 discipline embedded in all future prompts.** No additional issues expected from this pattern.
+7. **Fragment E is the smoothest-scope remaining fragment.** Unlike Fragment D's novel §7.9 creation and §7.A–§7.M procedural-fidelity work, Fragment E is straightforward operational workflows acting on established display pages. Lower risk profile; expect clean compliance.
 
 ---
