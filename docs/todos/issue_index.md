@@ -272,3 +272,87 @@ None of this is blocking for Fragment F or Fragment G drafting.
 - Fragment E §10.6 (`docs/specs/fragments/GNX375_Functional_Spec_V1_part_E.md` lines 488–511)
 - D-18 (Coupling Summary stripped-on-assembly convention — not directly relevant but contextual)
 - PDF source at `assets/gnc355_pdf_extracted/text_by_page.json` page 94 entry
+
+---
+
+## ITM-11: Page-number offset between new LlamaParse extraction and archived fragment citations
+
+**Opened:** 2026-04-24T10:41:03-04:00 (Purple Turn 19)
+**Severity:** Low (watchpoint for C3 review tooling)
+**Status:** Open
+**Related:** D-22 §(1) (source-of-truth policy); PDF re-extraction completion report (`docs/tasks/pdf_reextraction_llamaparse_completion.md`)
+
+### Summary
+
+The new LlamaParse extraction at `assets/gnc355_pdf_extracted/llamaparse_agentic_v1/pages/page_NNN.md` uses **physical PDF page numbering** (cover = page 1). The original `text_by_page.json` extraction and all archived fragment citations use **Garmin logical page numbering** (1-based from body; cover and front matter have non-numeric markers like "A", "i", etc., then body starts at p. 1).
+
+Concrete observed offsets:
+
+| Content | Garmin logical page | New extraction physical page | Offset |
+|---------|---------------------|------------------------------|--------|
+| XPDR Modes (§11.4 source) | p. 78 | `page_080.md` | +2 |
+| VFR Key + IDENT (§11.6 source) | p. 80 | `page_082.md` | +2 |
+| Unit Selections (§4.10 source) | p. 94 | `page_098.md` | +4 |
+| Land Data Symbols (§4.X source) | p. 125 | `page_129.md` | +4 |
+
+Offset varies by section because Garmin's logical page numbering resets at section boundaries (e.g., "Section 2 Get Started" starts at its own page 1 — rendered as "2-1" in footers). The new extraction uses monotonic physical page numbering throughout.
+
+### Impact
+
+- C3 spec review agents (spec-pdf-source-fidelity-reviewer in particular) must resolve citations like `[p. 78]` in archived fragments to the corresponding physical page in the new extraction. A naive match would fail.
+- Post-archive authoring work (C2.2-G, Design Spec D1/D2, future revisions) should cite the new extraction by physical page number in prose **or** by Garmin logical page number with explicit prefix (e.g., `[p. 2-42]` or `[p. 78 logical]`), and the chosen convention should be consistent within a given document.
+
+### Required follow-up (at or before C3 launches)
+
+Write `scripts/build_page_number_map.py` or similar that:
+1. Reads each `page_NNN.md` in the new extraction
+2. Parses the Garmin logical page footer (e.g., "2-42 Pilot's Guide 190-02488-01 Rev. C") to extract section-qualified logical page
+3. Builds a bidirectional mapping: physical ↔ logical
+4. Writes `assets/gnc355_pdf_extracted/llamaparse_agentic_v1/page_number_map.json`
+
+The `spec-pdf-source-fidelity-reviewer` agent (D-22 §(2) item 1) should consume this map when verifying citations.
+
+### Non-required but useful follow-up
+
+Consider whether post-archive authoring should switch to citing physical-page numbers, Garmin logical-page numbers, or both. The tradeoffs are:
+- **Physical page:** maps 1:1 to the new extraction file structure; easy for automated verification.
+- **Garmin logical page:** matches what a pilot reading the actual Pilot's Guide would see; matches all archived fragment citations for consistency.
+- **Both:** most informative but verbose.
+
+Recommendation: continue citing Garmin logical pages in prose (consistency with archived fragments), but require the page-number map in agent tooling.
+
+### Related
+
+- D-22 §(1) source-of-truth policy
+- `assets/gnc355_pdf_extracted/llamaparse_agentic_v1/` (new extraction)
+- `assets/gnc355_pdf_extracted/text_by_page.json` (original extraction with logical page numbering)
+- ITM-10 (Fragment C §4.10 vs. PDF p. 94 — the new extraction provides cleaner evidence that may partially resolve ITM-10 at C3 review time)
+
+---
+
+## ITM-12: Fragment F Coupling Summary line count under-budget (watchpoint for Fragment G)
+
+**Opened:** 2026-04-24T10:51:26-04:00 (Purple Turn 21 — C2.2-F Phase 2 compliance C2 PARTIAL)
+**Severity:** Low (watchpoint; no archive block)
+**Status:** Open
+**Related:** D-18 (Coupling Summary budget); D-19 (fragment line-count targets); C2.2-F compliance report `docs/tasks/completed/c22_f_compliance.md` §C2
+
+### Summary
+
+Fragment F's Coupling Summary section measured 39 lines vs. the ~80-line target (prompt's calibrated-up budget). Content completeness verified: 14 backward-refs, 5 forward-refs, 4 intra-fragment refs, 1 outline-coupling-footprint block — all required entries present and substantive. The shortfall is format: bullets are written as single dense lines with multi-clause compression rather than the expected multi-sentence prose-per-ref format.
+
+No fix required for Fragment F (content is complete; PARTIAL is cosmetic).
+
+### Watchpoint for Fragment G
+
+Fragment G's Coupling Summary will be the densest in the series because Fragment G is the closing fragment — every forward-ref authored in Fragments A–F lands there, plus Appendix A Family Delta cross-references to sibling units, plus the OPEN QUESTIONS 4/5/6 resolution hooks forwarded from Fragments C/F. The C2.2-G task prompt should:
+
+1. Explicitly call out the prose-per-ref format expectation (not compact bullets)
+2. Target Coupling Summary line count of 90–110 lines (higher than Fragment F's 80 given closing-fragment density)
+3. Include a Phase G self-check line: "Coupling Summary ≥ 90 lines of prose-per-ref format" to catch the format issue at authoring time rather than compliance time
+
+### Related
+
+- C2.2-F compliance report §C2 PARTIAL finding (`docs/tasks/completed/c22_f_compliance.md`)
+- D-18 Coupling Summary convention
+- D-19 fragment line-count targets
