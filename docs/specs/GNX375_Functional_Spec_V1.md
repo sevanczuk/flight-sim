@@ -1,11 +1,11 @@
 ---
 Created: 2026-04-22T10:00:00-04:00
-Source: D-18 C2.2 format decision (Purple Turn 30); Fragment A archived Turn 35; Fragment B archived Turn 7 post-resumption; Fragment C archived Turn 14 post-resumption; Fragment D archived Turn 22 post-resumption (2026-04-23)
+Source: D-18 C2.2 format decision (Purple Turn 30); Fragment A archived Turn 35; Fragment B archived Turn 7 post-resumption; Fragment C archived Turn 14 post-resumption; Fragment D archived Turn 22 post-resumption (2026-04-23); Fragment E archived Turn 3 (2026-04-23, post-session-reset)
 ---
 
 # GNX 375 Functional Spec V1
 
-**Status:** Draft (4 of 7 fragments authored)
+**Status:** Draft (5 of 7 fragments authored)
 **Source outline:** `docs/specs/GNX375_Functional_Spec_V1_outline.md` (1,477 lines)
 **Format decision:** D-18 (piecewise + manifest, 7 fragments)
 **Total estimated body length:** ~3,180 lines (per D-18, after ITM-07 resolution)
@@ -20,13 +20,13 @@ Source: D-18 C2.2 format decision (Purple Turn 30); Fragment A archived Turn 35;
 | 2 | C2.2-B | `fragments/GNX375_Functional_Spec_V1_part_B.md` | §§4.1–4.6 (Home, Map, FPL, Direct-to, Waypoint Info, Nearest pages) | ✅ Archived (Turn 7 post-resumption, 2026-04-22) | 720 / 799 |
 | 3 | C2.2-C | `fragments/GNX375_Functional_Spec_V1_part_C.md` | §§4.7–4.10 (Procedures, Planning, Hazard Awareness, Settings/System display) | ✅ Archived (Turn 14 post-resumption, 2026-04-22) | 575 / 725 |
 | 4 | C2.2-D | `fragments/GNX375_Functional_Spec_V1_part_D.md` | §§5–7 (Flight Plan Editing, Direct-to Operation, Procedures incl. §7.1–7.9 numeric + §7.A–7.M lettered) | ✅ Archived (Turn 22 post-resumption, 2026-04-23) | 750 / 913 |
-| 5 | C2.2-E | `fragments/GNX375_Functional_Spec_V1_part_E.md` | §§8–10 (Nearest Functions, Waypoint Information, Settings) | ⚪ Not yet drafted | 455 / — |
+| 5 | C2.2-E | `fragments/GNX375_Functional_Spec_V1_part_E.md` | §§8–10 (Nearest Functions, Waypoint Information, Settings) | ✅ Archived (Turn 3, 2026-04-23 post-session-reset) | 455 / 829 |
 | 6 | C2.2-F | `fragments/GNX375_Functional_Spec_V1_part_F.md` | §§11–13 (Transponder + ADS-B, Audio/Alerts, Messages) | ⚪ Not yet drafted | 540 / — |
 | 7 | C2.2-G | `fragments/GNX375_Functional_Spec_V1_part_G.md` | §§14–15 + Appendix A (Persistent State, External I/O, Family Delta) | ⚪ Not yet drafted | 300 / — |
 
 **Note on line targets:** C2.2-B through C2.2-G targets updated per D-19 (~1.35× outline expansion ratio). D-18's partition (7 fragments, scope per fragment) remains authoritative; D-19 adjusts prompt-target line counts for delivery quality-of-life only.
 
-**Overage trend (4 of 7 fragments archived):** A=+22%, B=+11%, C=+26%, D=+22%. Driven by required tables + D-18 Coupling Summary template + open-question blocks + §7 procedural-fidelity augmentations. All overage verified as structural content (no invented material) via per-fragment compliance source-fidelity spot checks. Running ~20% over target is the apparent baseline; C2.2-E/F/G prompts should acknowledge this as expected.
+**Overage trend (5 of 7 fragments archived):** A=+22%, B=+11%, C=+26%, D=+22%, E=+82%. Fragment E is the largest relative overshoot in the series, driven by §10's 13 sub-sections each requiring operational workflow prose + 1–4 tables (§10.11 alone has 4 PDF-sourced tables). Compliance N1 classified as structural (content-justified, PDF-accurate, non-duplicative) — Fragment E is scope-smallest so any absolute overage shows as a large relative percentage. All overage verified as structural content (no invented material) via per-fragment compliance source-fidelity spot checks. C2.2-F/G prompts should continue to acknowledge structural overage as expected.
 
 **§7.9 note:** Fragment D created `### 7.9 XPDR + ADS-B Approach Interactions` per ITM-09 resolution (see status journal). §7 now has 22 sub-sections: §§7.1–7.9 numeric + §§7.A–7.M lettered. On assembly, sub-sections present in numeric-first, lettered-second order.
 
@@ -69,6 +69,7 @@ An assembly script (`scripts/assemble_gnx375_spec.py`) will be provided at C2.2-
 | 2026-04-22 | D-21 logged: multi-fragment task prompts drafted sequentially after predecessor archive; extends D-18's sequential-execution discipline to drafting. |
 | 2026-04-22 | Fragment C drafted, executed (725 lines; +26% overage classified as structural), Phase 1 + Phase 2 compliance PASS WITH NOTES (22/25 PASS, 3/25 PARTIAL, 0 FAIL); archived. Compliance surfaced: (a) S13-pattern additions confirmed (LNAV/VNAV and MAPR added beyond outline, both PDF-confirmed); (b) Coupling Summary over-claims 4 glossary terms → ITM-08 (no-action observation); (c) outline §7 lacks §7.9 heading that Fragment C forward-refs → ITM-09 (must resolve in C2.2-D). |
 | 2026-04-23 | Fragment D drafted, executed (913 lines; +22% overage classified as structural — 22 §7 sub-sections + PDF-sourced tables), Phase 1 + Phase 2 compliance **ALL PASS (30/30)**; archived. First zero-PARTIAL, zero-FAIL compliance in the series. Notable outcomes: (a) ITM-09 resolved — §7.9 authored as real sub-section; both Fragment C forward-refs semantically resolve; (b) ITM-08 watchpoint discipline validated — authoring-phase grep-verify prevented Coupling Summary over-claim recurrence; (c) S13-pattern third recurrence confirmed in §5.3 Waypoint Options (8 items PDF-sourced vs. outline implied 6); (d) §7.D HAL 4-row table confirmed PDF-accurate (not typo). |
+| 2026-04-23 | Fragment E drafted, executed (829 lines; +82% overage classified as structural — §10 has 13 sub-sections, §10.11 has 4 PDF-sourced tables), Phase 1 + Phase 2 compliance **PASS WITH NOTES (33 PASS / 3 PASS WITH NOTES / 0 PARTIAL / 0 FAIL across 36 checks)**; archived. Notable outcomes: (a) ITM-08 authoring-phase grep-verify discipline continues to work — all 17 claimed Appendix B terms independently re-verified as formal glossary entries, all 5 exclusions confirmed absent; (b) §10.6 Unit Selections PDF/Fragment C/prompt reconciliation resolved in favor of Fragment C consistency (Fragment E matches Fragment C §4.10 → PASS per decision rule); (c) Fragment C §4.10 vs. PDF p. 94 Unit Selections divergence is a pre-existing condition in Fragment C — logged as ITM-10 watchpoint for future Fragment C review; (d) third undocumented S13 instance surfaced at §8.2 "approach type" (fragment body correct — PDF-accurate; completion report did not enumerate it — archive note only); (e) §9.2 Airport Information tabs 8-vs-7 vs. PDF p. 167: non-blocking minor (SafeTaxi documented in Appendix B.3 and task prompt). Session context: this session reset from a prior Purple session that was moved mid-flight from photoprinting → flight-sim; compliance work was unaffected because all file ops went to absolute Windows paths. |
 
 ---
 
