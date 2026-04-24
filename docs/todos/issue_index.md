@@ -19,6 +19,7 @@
 | ITM-05 | Low | Process / template | Compliance Verification Guide: reference D-10 skip criteria | Purple Turn 8 (D-10) | Per D-10, mechanical/self-verifying tasks may skip compliance. Update `docs/templates/Compliance_Verification_Guide.md` to reference D-10. See details below. |
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
 | ITM-08 | Low | Cleanup / docs | Fragment C Coupling Summary — over-claims 4 glossary terms absent from Fragment A Appendix B | Purple Turn 14 (C2.2-C compliance X17) | Coupling Summary lists TSO-C151c, EPU, HFOM/VFOM, HDOP as Appendix B backward-refs; these terms are not in Appendix B. Coupling Summary is coordination metadata (stripped on assembly per D-18); zero downstream impact. Tracking to detect recurrence. Fragment D's authoring-phase grep-verify prevented recurrence (confirmed Purple Turn 22 C2.2-D compliance F11 PASS). See details below. |
+| ITM-10 | Low | Cleanup / docs | Fragment C §4.10 Unit Selections vs. PDF p. 94 discrepancy — watchpoint | Purple Turn 3 post-session-reset, 2026-04-23 (C2.2-E compliance S6 + N2) | Fragment C §4.10 lists 7 unit-selection types (distance/speed, altitude, VSI, nav angle, wind, pressure, temperature); omits Fuel and Magnetic Variation (present on PDF p. 94). Pre-existing condition in archived Fragment C, not a Fragment E issue. Low severity; carry as watchpoint for any future Fragment C review or for the C3 full-spec `/spec-review` pass. See details below. |
 
 ---
 
@@ -208,3 +209,66 @@ No edit to Fragment C. The fragment is archivable as-is. ITM-08 remains open as 
 - C2.2-D compliance report (`docs/tasks/c22_d_compliance.md` §F11) — validates discipline
 - D-18 (Coupling Summary stripped-on-assembly convention)
 - D-21 (multi-fragment sequential drafting)
+
+
+---
+
+## ITM-10: Fragment C §4.10 Unit Selections vs. PDF p. 94 discrepancy — watchpoint
+
+**Created:** 2026-04-23T15:25:07-04:00
+**Source:** Purple Turn 3 post-session-reset (C2.2-E compliance S6 + N2)
+**Status:** Open (observational; no fix required). Low-severity watchpoint carried to C3 full-spec `/spec-review` or any future Fragment C revision.
+**Severity:** Low (pre-existing condition in archived Fragment C; does not block Fragment F/G)
+**Owner:** CD (observation-level tracking)
+
+### Description
+
+Fragment C §4.10 Settings/System display pages authors a 7-type list of quantities for Unit Selections:
+
+> distance, speed, altitude, VSI, nav angle, wind, pressure, temperature
+
+PDF p. 94 (the Unit Selections display page in the GNC 355 Pilot's Guide) shows a partially different list of categories:
+
+- Distance/Speed (Nautical Miles, Statute Miles)
+- Fuel (Gallons, Imperial Gallons, Kilograms, Liters, Pounds)
+- Temperature (Celsius, Fahrenheit)
+- NAV Angle (Magnetic, True, User)
+- Magnetic Variation (sub-option available only when NAV Angle = User)
+
+**Deltas:**
+- PDF has **Fuel** as an explicit category — Fragment C omits
+- PDF has **Magnetic Variation** as a distinct entry (as User-NAV-Angle sub-option) — Fragment C omits
+- Fragment C has **Altitude, VSI, Wind, Pressure** — PDF p. 94 does not show these on the page snapshot
+
+Fragment E §10.6 Unit Selections was authored to match Fragment C §4.10 (7 types, same list + KM/KPH expansion in Distance/Speed). Per C2.2-E compliance S6 decision rule — Fragment E matches Fragment C → PASS — the governing comparison. The Fragment C §4.10 vs. PDF p. 94 divergence is a **pre-existing condition in archived Fragment C**, not a Fragment E failure.
+
+### Likely explanation
+
+PDF p. 94 appears to be a single-page snapshot showing a partial subset of the Unit Selections settings page. Real Garmin GPS navigators have unit selections for Altitude, VSI, Wind, and Pressure — these are almost certainly present in the full PDF coverage (possibly on adjacent pages, in a settings overview table, or in the Appendix). The PDF extraction's page-by-page structure may have bounded the p. 94 content more narrowly than the authoritative settings inventory.
+
+Fragment C §4.10 likely pulled from a broader settings inventory or from the outline's composite enumeration, which was informed by the PDF's more comprehensive coverage.
+
+### Impact
+
+**Zero functional impact on current spec correctness.** Fragment C and Fragment E are consistent with each other. The spec's Unit Selections inventory is more complete than PDF p. 94's partial snapshot. No downstream fragment depends on the omitted Fuel or Magnetic Variation categories.
+
+### No fix required at Fragment E stage
+
+The C2.2-E compliance S6 decision rule correctly ruled that consistency with the established spec (Fragment C) governs over re-litigating a PDF partial-page snapshot. ITM-10 is logged as an observational watchpoint.
+
+### Potential future actions (do not execute now)
+
+At C3 full-spec `/spec-review` (or any future Fragment C revision), the reviewer may choose to:
+- Verify whether Fuel and Magnetic Variation should be added to Fragment C §4.10 (requires reading more PDF pages than p. 94)
+- Verify whether the Fragment C list (Altitude, VSI, Wind, Pressure) is supported by other PDF pages or is spec-authored beyond the PDF
+- Decide whether to update Fragment C's §4.10 inventory, update Fragment E's §10.6 sub-section to match, and re-archive both fragments
+
+None of this is blocking for Fragment F or Fragment G drafting.
+
+### Related
+
+- C2.2-E compliance report (`docs/tasks/completed/c22_e_compliance.md` §S6 + §N2)
+- Fragment C §4.10 (`docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` line 568)
+- Fragment E §10.6 (`docs/specs/fragments/GNX375_Functional_Spec_V1_part_E.md` lines 488–511)
+- D-18 (Coupling Summary stripped-on-assembly convention — not directly relevant but contextual)
+- PDF source at `assets/gnc355_pdf_extracted/text_by_page.json` page 94 entry
