@@ -17,6 +17,7 @@
 | ITM-06 | 2026-04-21 | Done (same-turn) | Implementation plan update after D-12 pivot | Purple Turn 17 (CD inline) |
 | ITM-07 | 2026-04-21 | Adopted in D-18 | GNX 375 outline: §4 length estimates inconsistent (nav-aids ~800, §4 header ~740, sub-section sum ~1,090) | Purple Turn 30 (CD — D-18 adopts sub-section sum) |
 | ITM-09 | 2026-04-23 | Resolved by C2.2-D §7.9 authorship | Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs | Purple Turn 22 (C2.2-D compliance X23 PASS) |
+| ITM-12 | 2026-04-25 | Resolved by C2.2-G Coupling Summary discipline | Fragment F Coupling Summary line count under-budget (watchpoint for Fragment G) | Purple Turn 6 (C2.2-G compliance: 105 lines in prose-per-ref format, within 95–110 target; X2 + X3 + S13 + C2 all PASS) |
 
 ---
 

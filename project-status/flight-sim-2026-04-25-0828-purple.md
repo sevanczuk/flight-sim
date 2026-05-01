@@ -124,9 +124,9 @@ recent_decisions:
   - "D-22 (Turn 7-19): C3 spec review customization with six levers; amended Turn 19 to designate new LlamaParse extraction as preferred reference for post-archive work"
   - "D-23 (Turn 16): Credential file access pattern for CC scripts (7-point pattern)"
   - "D-24 (Turn 20): Billable-API task prompts must enumerate outputs"
+  - "D-25 (Turn 54): CD must verify external-API claims (Rule 1) and trace tactical answers to active task design (Rule 2). Captures four overconfidence/context-disconnection instances from this session."
 
 pending_decisions:
-  - "D-25 candidate (Turns 35/40/46): CD convention for flagging unverified assumptions about external-API behavior + context-disconnection failure mode. Three overconfidence instances this session (Turns 15, 22, 24/26). Steve has not confirmed whether to log."
   - "AFMS V2 amendment scope: when to schedule the Supplemental AFM extraction + reconciliation task (recommendation: post-V1 closure)"
 
 open_questions:
@@ -143,6 +143,8 @@ artifacts_modified:
   - path: "docs/decisions/D-23-credential-file-access-pattern-for-cc-scripts.md"
     action: created
   - path: "docs/decisions/D-24-billable-api-task-prompts-enumerate-outputs.md"
+    action: created
+  - path: "docs/decisions/D-25-cd-verify-external-api-claims-and-trace-tactical-context.md"
     action: created
   - path: "docs/specs/GNX375_Functional_Spec_V1.md"
     action: updated (Fragment F archived in manifest)

@@ -20,8 +20,8 @@
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
 | ITM-08 | Low | Cleanup / docs | Fragment C Coupling Summary — over-claims 4 glossary terms absent from Fragment A Appendix B | Purple Turn 14 (C2.2-C compliance X17) | Coupling Summary lists TSO-C151c, EPU, HFOM/VFOM, HDOP as Appendix B backward-refs; these terms are not in Appendix B. Coupling Summary is coordination metadata (stripped on assembly per D-18); zero downstream impact. Tracking to detect recurrence. Fragment D's authoring-phase grep-verify prevented recurrence (confirmed Purple Turn 22 C2.2-D compliance F11 PASS). See details below. |
 | ITM-10 | Low | Cleanup / docs | Fragment C §4.10 Unit Selections vs. PDF p. 94 discrepancy — watchpoint | Purple Turn 3 post-session-reset, 2026-04-23 (C2.2-E compliance S6 + N2) | Fragment C §4.10 lists 7 unit-selection types (distance/speed, altitude, VSI, nav angle, wind, pressure, temperature); omits Fuel and Magnetic Variation (present on PDF p. 94). Pre-existing condition in archived Fragment C, not a Fragment E issue. Low severity; carry as watchpoint for any future Fragment C review or for the C3 full-spec `/spec-review` pass. See details below. |
-
----
+| ITM-13 | Low | Process / convention | CC commit subject contains UTF-8 BOM (U+FEFF) — `claude-conventions.md` BOM-free pattern not followed | Purple Turn 12, 2026-04-30 (C2.2-ASSEMBLE-COMPLIANCE P1 FAIL) | CC's commit `7ae84a9` for C2.2-ASSEMBLE has `0xEF 0xBB 0xBF` prefixed to the subject line. All required trailers present and correct; only the BOM is the deviation. Convention specified at `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics requires `[System.IO.File]::WriteAllText` (BOM-free) rather than `Out-File -Encoding utf8` (BOM-emitting). CC needs to internalize the BOM-free pattern for future commits. See details below. |
+| ITM-14 | Low | Feature gap | `assemble_gnx375_spec.py` `--partial` mode does not skip section-numbering continuity for missing-fragment ranges | Purple Turn 12, 2026-04-30 (C2.2-ASSEMBLE-COMPLIANCE S7 PARTIAL) | The C2.2-ASSEMBLE prompt specified three behaviors for `--partial`: (a) placeholder block insertion, (b) skip continuity check for missing-fragment section ranges, (c) warning print + non-failing exit. CC implemented (a) and (c); (b) was missed. Practical impact: zero today (all 7 fragments archived); only matters for hypothetical mid-authoring partial assemblies. Fix is ~20 lines: derive a missing-fragment coverage map and exclude those sections from `verify_section_numbering`. Defer until partial-assembly workflow is actually needed. See details below. |
 
 ## ITM-02: AMAPI patterns — add Tier 2 columns to function_usage_matrix
 
@@ -330,29 +330,94 @@ Recommendation: continue citing Garmin logical pages in prose (consistency with 
 
 ---
 
-## ITM-12: Fragment F Coupling Summary line count under-budget (watchpoint for Fragment G)
+## ITM-13: CC commit subject contains UTF-8 BOM — BOM-free pattern not followed
 
-**Opened:** 2026-04-24T10:51:26-04:00 (Purple Turn 21 — C2.2-F Phase 2 compliance C2 PARTIAL)
-**Severity:** Low (watchpoint; no archive block)
+**Opened:** 2026-04-30T09:53:25-04:00 (Purple Turn 14 — carrying forward C2.2-ASSEMBLE-COMPLIANCE P1 finding from Turn 12)
+**Severity:** Low (process/convention; cosmetic git history defect)
 **Status:** Open
-**Related:** D-18 (Coupling Summary budget); D-19 (fragment line-count targets); C2.2-F compliance report `docs/tasks/completed/c22_f_compliance.md` §C2
+**Related:** `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics; D-04; commit `7ae84a9`; `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §P1
 
 ### Summary
 
-Fragment F's Coupling Summary section measured 39 lines vs. the ~80-line target (prompt's calibrated-up budget). Content completeness verified: 14 backward-refs, 5 forward-refs, 4 intra-fragment refs, 1 outline-coupling-footprint block — all required entries present and substantive. The shortfall is format: bullets are written as single dense lines with multi-clause compression rather than the expected multi-sentence prose-per-ref format.
+CC's commit `7ae84a9` for C2.2-ASSEMBLE has the three-byte UTF-8 BOM (`0xEF 0xBB 0xBF`, U+FEFF) prefixed to the subject line. The compliance check P1 detected this via `git log -1 --format="%s" | xxd`. All required commit trailers (Task-Id, Authored-By-Instance, Refs, Co-Authored-By) are present and correctly formatted; only the BOM is the deviation.
 
-No fix required for Fragment F (content is complete; PARTIAL is cosmetic).
+### Root cause
 
-### Watchpoint for Fragment G
+PowerShell 5.x's `Out-File -Encoding utf8` writes UTF-8 **with** BOM by default. When CC writes a commit message file via this path and runs `git commit -F <file>`, git takes the leading three bytes as part of the commit subject. The convention at `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics specifies the BOM-free pattern:
 
-Fragment G's Coupling Summary will be the densest in the series because Fragment G is the closing fragment — every forward-ref authored in Fragments A–F lands there, plus Appendix A Family Delta cross-references to sibling units, plus the OPEN QUESTIONS 4/5/6 resolution hooks forwarded from Fragments C/F. The C2.2-G task prompt should:
+```powershell
+[System.IO.File]::WriteAllText(".git\COMMIT_EDITMSG_cd", $msg)
+```
 
-1. Explicitly call out the prose-per-ref format expectation (not compact bullets)
-2. Target Coupling Summary line count of 90–110 lines (higher than Fragment F's 80 given closing-fragment density)
-3. Include a Phase G self-check line: "Coupling Summary ≥ 90 lines of prose-per-ref format" to catch the format issue at authoring time rather than compliance time
+`[System.IO.File]::WriteAllText` writes UTF-8 without BOM by default — this is the canonical pattern. CC apparently used a BOM-emitting writer instead.
+
+### Practical impact
+
+Minimal. The BOM is invisible in `git log --oneline` and most everyday git tooling. It surfaces in `git log --format=fuller` viewer output and in any tool that does byte-level subject matching (e.g., regex matching against subject line for automation). Functionally git accepts the commit and applies it normally.
+
+### Resolution path
+
+**Option 1 — leave the commit as-is, fix going forward (RECOMMENDED).** The existing commit is already pushed-eligible; rewriting history with `git commit --amend` to strip the BOM has its own cost (force-push, history mismatch with already-fetched copies). Going forward, CC must use `[System.IO.File]::WriteAllText` per the documented pattern. Track via this ITM until the next CC commit demonstrates compliance.
+
+**Option 2 — amend.** `git commit --amend -F .git\COMMIT_EDITMSG_clean` with a BOM-free file would replace the subject. Force-push required. Disproportionate for an invisible-character fix.
+
+### Required follow-up
+
+1. Verify the next CC task's commit is BOM-free at the subject. Report PASS/FAIL in the next compliance review's P1 check.
+2. If a second BOM occurrence appears, escalate — CC's PowerShell convention is materially drifting and the task prompt template may need a reminder paragraph about the BOM-free writer.
+3. If two consecutive next-CC commits are BOM-free, close ITM-13 as resolved.
 
 ### Related
 
-- C2.2-F compliance report §C2 PARTIAL finding (`docs/tasks/completed/c22_f_compliance.md`)
-- D-18 Coupling Summary convention
-- D-19 fragment line-count targets
+- D-04 commit trailer policy
+- `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics (canonical BOM-free pattern reference)
+- `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §P1 (the finding that opened this ITM)
+
+---
+
+## ITM-14: `assemble_gnx375_spec.py` `--partial` mode does not skip continuity check
+
+**Opened:** 2026-04-30T09:53:25-04:00 (Purple Turn 14 — carrying forward C2.2-ASSEMBLE-COMPLIANCE S7 PARTIAL finding from Turn 12)
+**Severity:** Low (feature gap; zero impact on current workflow)
+**Status:** Open
+**Related:** `scripts/assemble_gnx375_spec.py`; D-18 §Assembly readiness; `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §S7
+
+### Summary
+
+The C2.2-ASSEMBLE prompt specified three behaviors for `--partial` mode:
+
+| (a) | Substitute a placeholder block where each missing fragment would go |
+| (b) | **Skip section-numbering continuity check for ranges within missing fragments** |
+| (c) | Print a warning listing missing fragments; exit code 0 unless other verification fails |
+
+CC implemented (a) and (c) correctly. **(b) was not implemented** — if `--partial` is run with one or more fragments genuinely missing, `verify_section_numbering` will detect the gap in §§ and report a continuity failure even though the missing range is expected.
+
+### Practical impact
+
+Zero, today. All 7 fragments are archived; full assembly is the only path exercised. The gap matters only for these hypothetical scenarios:
+
+- Mid-authoring preview assembly (e.g., A–E archived, F–G in flight, want to see what the partial spec looks like)
+- CI/automated continuity checks before all fragments land
+- Re-assembling if a fragment is temporarily withdrawn for revision (e.g., post-review patch in flight)
+
+None of these are active workflows. D-18 + D-22 lock in piecewise authoring with all-or-nothing assembly at the end.
+
+### Fix outline (if/when needed)
+
+~20 lines:
+
+1. Build a static map: `FRAGMENT_COVERAGE = {'A': [1, 2, 3, 'B', 'C'], 'B': [4], 'C': [4], 'D': [5, 6, 7], ...}` enumerating which sections each fragment is responsible for.
+2. In `--partial` runs, collect the set of missing sections from the missing fragments' coverage values: `missing_sections = set().union(*(FRAGMENT_COVERAGE[L] for L in missing_letters))`.
+3. Pass `missing_sections` to `verify_section_numbering` and have it subtract from the expected-section set before computing gap diffs.
+
+No other verification check needs partial-awareness logic; only section-numbering continuity is gap-sensitive.
+
+### Required follow-up
+
+None required until partial-assembly is needed. If/when a use case arises (e.g., a downstream Fragment H is added in V2 and pre-assembly preview is wanted before its archive), implement the fix at that time. Until then, document this ITM as the known limitation.
+
+### Related
+
+- `scripts/assemble_gnx375_spec.py` lines 471–491 (current `--partial` implementation)
+- D-18 §Assembly readiness (assembly contract)
+- `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §S7 (finding that opened this ITM)
