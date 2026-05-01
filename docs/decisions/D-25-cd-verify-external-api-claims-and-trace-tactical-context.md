@@ -21,6 +21,7 @@ contextually useless. The pattern is captured below to prevent recurrence.
 | 22 | "Approach B (LlamaParse re-parse with images_to_save) is free within the 48-hour cache window" | Asserted as fact without checking docs. Steve pushed back in Turn 23. Research showed the v1 cache documentation says cache considers "parameters that can have an impact on output (such as parsing_instructions, language, page_separators)" — a non-exhaustive list. Empirical test in Turns 24-25 confirmed the cache invalidates. Original assertion was wrong. |
 | 24/26 | Test script success-detection logic | Wrote a cache-test script whose try/except design assumed the v1 SDK would raise an exception on quota-exceeded API responses. The SDK actually prints to stderr and returns an empty list — no exception. Script reported "PASSED" when the API had rejected the request. Found and corrected after the fact. |
 | 43 | "Project_id is safe to /btw to CC" | Answered the literal security question correctly (project_id is not secret; URL-path identifier; safe to share). But did not check the answer against what the active V2 task prompt actually directs CC to do with the project_id — which is "create only a template with placeholder values." So /btw'ing the real value had no effect. Steve had to course-correct CC mid-session. |
+| 69 | Premature V3.2 prompt creation when asked for findings | Steve asked CD to "list any other gaps that cause failure" and "list any opportunities that could enhance usage." CD produced findings AND wrote the V3.2 task prompt in the same turn, locking in scope before Steve could weigh in on which items should be included. The expected response was prose for deliberation, not a build artifact. Result: Steve had to ask for SDK investigation on E11/E20 and request a batch-syntax change — work the prompt would have been written differently to accommodate had CD asked first. Wasted tokens on prompt rewrite. |
 
 ### Common root
 
@@ -68,6 +69,35 @@ If (b) reveals a disconnect — e.g., the answer is "yes, X is safe" but the act
 doesn't actually do anything with X — CD must surface the disconnect explicitly rather
 than letting the user act on a literal-but-useless answer.
 
+### Rule 3 — Deliberation requests get prose, not artifacts
+
+When the user asks for analysis, gap-finding, opportunity-listing, recommendations, or
+any other request whose primary output is material to think with, CD must produce ONLY
+that prose deliberation and stop. CD must NOT preemptively produce build artifacts
+(task prompts, decision records, code, status documents) in the same turn.
+
+The progression is: deliberation → user weighs in / directs scope → build artifact on
+explicit go-ahead.
+
+This is a specific application of Rule 2 (context-disconnection): the active step is
+"give the user material to consider," and producing a build artifact in that same turn
+jumps ahead of where the work actually is, locking in scope before the user has had a
+chance to shape it.
+
+**Trigger phrases that mean "deliberation only":**
+- "List any..." / "What are the..." / "Identify any..."
+- "Tell me about..." / "Analyze..." / "What do you think about..."
+- "Suggest..." / "Recommend..." / "What should we..."
+- "Find gaps" / "Find opportunities" / "What's missing"
+
+**Trigger phrases that mean "now produce the artifact":**
+- "Write the prompt" / "Draft the task" / "Create the X"
+- "Proceed" / "Go ahead" / "Build it"
+- "OK, do it" after a deliberation turn
+
+Ambiguous cases (e.g., "plan the V3.2 work") should default to deliberation-first — CD
+produces a plan in prose, asks if the user wants the prompt drafted now, and waits.
+
 ### Tripwires
 
 Sentinel phrases that should trigger a self-check before sending a response:
@@ -111,3 +141,7 @@ This rule is binding on CD going forward. Specifically:
 
 - 2026-04-25: Initial creation. Captures failure pattern observed across Purple session
   Turns 15, 22, 24/26, and 43.
+- 2026-04-26: Added Rule 3 (deliberation requests get prose, not artifacts) after
+  Turn 69 instance where CD produced V3.2 task prompt unsolicited when asked to
+  list gaps and opportunities. Added Turn 69 row to observed instances table. Added
+  trigger-phrase guidance for deliberation vs. artifact-production turns.

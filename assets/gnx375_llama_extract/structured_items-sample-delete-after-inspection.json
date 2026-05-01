@@ -1,0 +1,1833 @@
+
+              "h": 10.0,
+              "w": 278.99,
+              "x": 50.48,
+              "y": 72.85,
+              "confidence": 1.0,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 2
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Except as expressly provided herein, no part of this manual may be reproduced, copied, transmitted, disseminated, downloaded or stored in any storage medium, for any purpose without the express prior written consent of Garmin. Garmin hereby grants permission to download a single copy of this manual and of any revision to this manual onto a hard drive or other electronic storage medium to be viewed and to print one copy of this manual or of any revision hereto, provided that such electronic or printed copy of this manual or revision must contain the complete text of this copyright notice and provided further that any unauthorized commercial distribution of this manual or any revision hereto is strictly prohibited.",
+          "value": "Except as expressly provided herein, no part of this manual may be reproduced, copied, transmitted, disseminated, downloaded or stored in any storage medium, for any purpose without the express prior written consent of Garmin. Garmin hereby grants permission to download a single copy of this manual and of any revision to this manual onto a hard drive or other electronic storage medium to be viewed and to print one copy of this manual or of any revision hereto, provided that such electronic or printed copy of this manual or revision must contain the complete text of this copyright notice and provided further that any unauthorized commercial distribution of this manual or any revision hereto is strictly prohibited.",
+          "bbox": [
+            {
+              "h": 95.274760682641,
+              "w": 312.1837571455793,
+              "x": 41.12499237804878,
+              "y": 89.48913842177971,
+              "confidence": 0.93,
+              "end_index": 721,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Garmin®, flyGarmin.com®, GDL®, GNC®, and SafeTaxi® are registered trademarks of Garmin International or its subsidiaries. Connext™, Garmin Pilot™, Garmin Txi™, GDU™, GNS™, GNX™, GPS™, GTN™, GTX™, G3X Touch™, and Smart Airspace™ are trademarks of Garmin International or its subsidiaries. These trademarks may not be used without the express permission of Garmin.",
+          "value": "Garmin®, flyGarmin.com®, GDL®, GNC®, and SafeTaxi® are registered trademarks of Garmin International or its subsidiaries. Connext™, Garmin Pilot™, Garmin Txi™, GDU™, GNS™, GNX™, GPS™, GTN™, GTX™, G3X Touch™, and Smart Airspace™ are trademarks of Garmin International or its subsidiaries. These trademarks may not be used without the express permission of Garmin.",
+          "bbox": [
+            {
+              "h": 53.855999999999995,
+              "w": 311.2560000000001,
+              "x": 41.184,
+              "y": 189.72,
+              "confidence": 0.88,
+              "end_index": 361,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 20.75,
+              "w": 306.95,
+              "x": 41.76,
+              "y": 222.61,
+              "confidence": 1.0,
+              "end_index": 361,
+              "label": "text",
+              "start_index": 212
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Garmin is under license. Other trademarks and trade names are those of their respective owners.",
+          "value": "The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Garmin is under license. Other trademarks and trade names are those of their respective owners.",
+          "bbox": [
+            {
+              "h": 31.094596989329276,
+              "w": 311.9930770948456,
+              "x": 41.01396106254764,
+              "y": 249.49524580792684,
+              "confidence": 0.9,
+              "end_index": 213,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "© 2023 SD® is a registered trademark of SD-3C, LLC. All rights reserved.",
+          "value": "© 2023 SD® is a registered trademark of SD-3C, LLC. All rights reserved.",
+          "bbox": [
+            {
+              "h": 9.642217868711905,
+              "w": 270.47963870164824,
+              "x": 40.88533581245237,
+              "y": 286.56265172446643,
+              "confidence": 0.86,
+              "end_index": 71,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The term Wi-Fi® is a registered trademark of Wi-Fi Alliance®.",
+          "value": "The term Wi-Fi® is a registered trademark of Wi-Fi Alliance®.",
+          "bbox": [
+            {
+              "h": 10.473306259527435,
+              "w": 226.29932944693218,
+              "x": 40.6947382931593,
+              "y": 301.5621836890244,
+              "confidence": 0.85,
+              "end_index": 60,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "All other marks and logos are property of their respective owners. All rights reserved.",
+          "value": "All other marks and logos are property of their respective owners. All rights reserved.",
+          "bbox": [
+            {
+              "h": 9.0737702458079,
+              "w": 314.35595223775726,
+              "x": 40.61330628930069,
+              "y": 318.73576314786584,
+              "confidence": 0.87,
+              "end_index": 86,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# SOFTWARE VERSION",
+          "value": "SOFTWARE VERSION",
+          "bbox": [
+            {
+              "h": 8.360846512957306,
+              "w": 91.61738578982468,
+              "x": 40.764424304496956,
+              "y": 346.6045834127287,
+              "confidence": 0.92,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This manual reflects the operation of system software v3.20. Some differences in operation may be observed when comparing the information in this manual to later software versions.",
+          "value": "This manual reflects the operation of system software v3.20. Some differences in operation may be observed when comparing the information in this manual to later software versions.",
+          "bbox": [
+            {
+              "h": 29.66758336509145,
+              "w": 312.27440614281636,
+              "x": 40.62321890482089,
+              "y": 363.56202267530483,
+              "confidence": 0.97,
+              "end_index": 179,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 1,
+          "md": "# INFORMATION & SUPPORT",
+          "value": "INFORMATION & SUPPORT",
+          "bbox": [
+            {
+              "h": 8.269703934832359,
+              "w": 119.12311353729993,
+              "x": 40.93985961914063,
+              "y": 413.2263095464939,
+              "confidence": 0.91,
+              "end_index": 22,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "For information regarding the Aviation Limited Warranty, refer to Garmin’s website.",
+          "value": "For information regarding the Aviation Limited Warranty, refer to Garmin’s website.",
+          "bbox": [
+            {
+              "h": 25.091999999999985,
+              "w": 312.444,
+              "x": 40.788,
+              "y": 429.62399999999997,
+              "confidence": 0.77,
+              "end_index": 82,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 10.0,
+              "w": 312.18,
+              "x": 41.12,
+              "y": 428.85,
+              "confidence": 1.0,
+              "end_index": 82,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "For aviation product support, visit flyGarmin.com.",
+          "value": "For aviation product support, visit flyGarmin.com.",
+          "bbox": [
+            {
+              "h": 8.651511528201244,
+              "w": 184.17549146698744,
+              "x": 40.97001896555831,
+              "y": 445.925322027439,
+              "confidence": 0.79,
+              "end_index": 49,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "caption": "22 PAP logo",
+              "md": "![22 PAP logo](page_2_image_1_v2.jpg)",
+              "url": "page_2_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 27.0,
+                  "w": 21.0,
+                  "x": 39.0,
+                  "y": 568.0,
+                  "confidence": 1.0,
+                  "end_index": 36,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            }
+          ],
+          "md": "![22 PAP logo](page_2_image_1_v2.jpg)",
+          "bbox": [
+            {
+              "h": 27.0,
+              "w": 21.0,
+              "x": 39.0,
+              "y": 568.0,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+[pages skipped]
+    {
+      "page_number": 17,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 10.855290371034204,
+                  "w": 84.07341082317072,
+                  "x": 278.8240772675305,
+                  "y": 12.600537727169874,
+                  "confidence": 0.96,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 10.86,
+              "w": 84.07,
+              "x": 278.82,
+              "y": 12.6,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# 1 System at a Glance",
+          "value": "1 System at a Glance",
+          "bbox": [
+            {
+              "h": 27.58979861375763,
+              "w": 273.52725067883006,
+              "x": 35.86135521865473,
+              "y": 185.0159715605945,
+              "confidence": 0.92,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "OVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17",
+          "value": "OVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17",
+          "bbox": [
+            {
+              "h": 54.33451493426063,
+              "w": 315.3491886492473,
+              "x": 35.69055934999047,
+              "y": 224.1601600609756,
+              "confidence": 0.93,
+              "end_index": 57,
+              "label": "reference",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 12.647630488698077,
+                  "w": 84.18167438786203,
+                  "x": 32.57593184308308,
+                  "y": 11.08900494087033,
+                  "confidence": 0.9,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 12.65,
+              "w": 84.18,
+              "x": 32.58,
+              "y": 11.09,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# Overview",
+          "value": "Overview",
+          "bbox": [
+            {
+              "h": 28.08747499047256,
+              "w": 100.12374809451221,
+              "x": 35.98787002191311,
+              "y": 29.83706355397294,
+              "confidence": 0.95,
+              "end_index": 9,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "value": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "bbox": [
+            {
+              "h": 22.3306240472561,
+              "w": 302.48619203148826,
+              "x": 35.9921528141673,
+              "y": 59.13008681878811,
+              "confidence": 0.98,
+              "end_index": 138,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "*GNC 355 shown as typical.*",
+          "value": "GNC 355 shown as typical.",
+          "bbox": [
+            {
+              "h": 8.790585044302597,
+              "w": 80.34662698885289,
+              "x": 71.52567841320503,
+              "y": 98.36060749333079,
+              "confidence": 0.84,
+              "end_index": 26,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "GNC 355 navigator unit showing touchscreen interface and physical dimensions",
+          "md": "![GNC 355 navigator unit showing touchscreen interface and physical dimensions](page_18_image_1_v2.jpg)",
+          "url": "page_18_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 79.02344863519436,
+              "w": 299.81684522675306,
+              "x": 47.54221274771342,
+              "y": 117.02782649342606,
+              "confidence": 0.96,
+              "end_index": 102,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "6.25\"",
+          "value": "6.25\"",
+          "bbox": [
+            {
+              "h": 11.167753668064014,
+              "w": 28.574365472560984,
+              "x": 146.18608958174542,
+              "y": 195.0491805211509,
+              "confidence": 0.84,
+              "end_index": 4,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "value": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "bbox": [
+            {
+              "h": 21.93183427019816,
+              "w": 313.3912481242855,
+              "x": 35.89461244164444,
+              "y": 226.3999861852134,
+              "confidence": 0.98,
+              "end_index": 126,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "value": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "bbox": [
+            {
+              "h": 32.9131483422256,
+              "w": 322.48273181450077,
+              "x": 35.80214480516387,
+              "y": 252.44444252572407,
+              "confidence": 0.98,
+              "end_index": 225,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "value": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "bbox": [
+            {
+              "h": 21.923488948170725,
+              "w": 290.97507809522676,
+              "x": 35.90073745355373,
+              "y": 289.58325743140244,
+              "confidence": 0.97,
+              "end_index": 119,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "value": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "bbox": [
+            {
+              "h": 43.85113233612808,
+              "w": 296.7365006907393,
+              "x": 35.96568085461128,
+              "y": 315.5399421208079,
+              "confidence": 0.98,
+              "end_index": 240,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "value": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "bbox": [
+            {
+              "h": 21.89287728658539,
+              "w": 310.3301894173971,
+              "x": 35.90898765005717,
+              "y": 363.5257988757622,
+              "confidence": 0.98,
+              "end_index": 161,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "value": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 12.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 2,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 16,
+                  "label": "footer",
+                  "start_index": 4
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 18
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 10.904638009420257,
+                  "w": 84.2356204744665,
+                  "x": 278.79644102515243,
+                  "y": 12.606623617032678,
+                  "confidence": 0.93,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 10.9,
+              "w": 84.24,
+              "x": 278.8,
+              "y": 12.61,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# Unit Configurations",
+          "value": "Unit Configurations",
+          "bbox": [
+            {
+              "h": 18.517055589629383,
+              "w": 154.46590897722942,
+              "x": 36.489879299256856,
+              "y": 33.48893684201124,
+              "confidence": 0.98,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GPS 175",
+          "value": "GPS 175",
+          "bbox": [
+            {
+              "h": 6.6762075135766095,
+              "w": 25.931755907012203,
+              "x": 44.69169469321646,
+              "y": 64.78747719369282,
+              "confidence": 0.82,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GPS 175 unit showing GPS/MFD interface",
+          "md": "![Garmin GPS 175 unit showing GPS/MFD interface](page_19_image_3_v2.jpg)",
+          "url": "page_19_image_3_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.30791283584222,
+              "w": 126.97893355206746,
+              "x": 44.09417001119474,
+              "y": 78.31627369950456,
+              "confidence": 0.98,
+              "end_index": 71,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD",
+          "value": "GPS/MFD",
+          "bbox": [
+            {
+              "h": 7.364364043445129,
+              "w": 39.465296898818586,
+              "x": 87.1488388433689,
+              "y": 127.97054800638338,
+              "confidence": 0.86,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNC 355",
+          "value": "GNC 355",
+          "bbox": [
+            {
+              "h": 6.293056104706547,
+              "w": 27.471627524771346,
+              "x": 229.8113428925305,
+              "y": 64.9671430485423,
+              "confidence": 0.85,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GNC 355 unit showing GPS/MFD/COM interface",
+          "md": "![Garmin GNC 355 unit showing GPS/MFD/COM interface](page_19_image_2_v2.jpg)",
+          "url": "page_19_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.42613215748857,
+              "w": 127.53173208841466,
+              "x": 229.1039541253811,
+              "y": 78.30307242044589,
+              "confidence": 0.98,
+              "end_index": 75,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD/COM",
+          "value": "GPS/MFD/COM",
+          "bbox": [
+            {
+              "h": 7.4713955316311145,
+              "w": 63.71828077362803,
+              "x": 260.4451036108994,
+              "y": 127.92911293588033,
+              "confidence": 0.86,
+              "end_index": 10,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNX 375",
+          "value": "GNX 375",
+          "bbox": [
+            {
+              "h": 6.342517625762202,
+              "w": 27.701418635670752,
+              "x": 136.62654356421493,
+              "y": 155.36254608898628,
+              "confidence": 0.84,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GNX 375 unit showing GPS/MFD/XPDR interface",
+          "md": "![Garmin GNX 375 unit showing GPS/MFD/XPDR interface](page_19_image_1_v2.jpg)",
+          "url": "page_19_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.39788014481707,
+              "w": 127.0685538538491,
+              "x": 135.79132538586128,
+              "y": 168.93703232183688,
+              "confidence": 0.98,
+              "end_index": 76,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD/XPDR",
+          "value": "GPS/MFD/XPDR",
+          "bbox": [
+            {
+              "h": 7.550001905487798,
+              "w": 66.17800066692075,
+              "x": 166.54875357278962,
+              "y": 218.45471119950457,
+              "confidence": 0.84,
+              "end_index": 11,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## COMPARISON TABLE",
+          "value": "COMPARISON TABLE",
+          "bbox": [
+            {
+              "h": 8.927526676829274,
+              "w": 101.51488331864519,
+              "x": 35.798675537109375,
+              "y": 262.80884051067073,
+              "confidence": 0.96,
+              "end_index": 18,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"Unit\",\"GPS/MFD\",\"COM Radio\",\"Mode S XPDR\",\"Dual-link ADS-B In\",\"1090 ES ADS-B Out\"\n\"GPS 175\",\"•\",,,,\n\"GNC 355\",\"•\",\"•\",,,\n\"GNX 375\",\"•\",,\"•\",\"•\",\"•\"",
+          "html": "<table>\n  <thead>\n    <tr>\n        <th>Unit</th>\n        <th>GPS/MFD</th>\n        <th>COM Radio</th>\n        <th>Mode S XPDR</th>\n        <th>Dual-link ADS-B In</th>\n        <th>1090 ES ADS-B Out</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>GPS 175</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNC 355</td>\n        <td>•</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNX 375</td>\n        <td>•</td>\n        <td> </td>\n        <td>•</td>\n        <td>•</td>\n        <td>•</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Unit    | GPS/MFD | COM Radio | Mode S XPDR | Dual-link ADS-B In | 1090 ES ADS-B Out |\n| ------- | ------- | --------- | ----------- | ------------------ | ----------------- |\n| GPS 175 | •       |           |             |                    |                   |\n| GNC 355 | •       | •         |             |                    |                   |\n| GNX 375 | •       |           | •           | •                  | •                 |",
+          "rows": [
+            [
+              "Unit",
+              "GPS/MFD",
+              "COM Radio",
+              "Mode S XPDR",
+              "Dual-link ADS-B In",
+              "1090 ES ADS-B Out"
+            ],
+            [
+              "GPS 175",
+              "•",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GNC 355",
+              "•",
+              "•",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GNX 375",
+              "•",
+              "",
+              "•",
+              "•",
+              "•"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 72.70322468083079,
+              "w": 267.1534890077172,
+              "x": 64.35960312261814,
+              "y": 278.4944563405106,
+              "confidence": 0.99,
+              "end_index": 443,
+              "label": "table",
+              "start_index": 0
+            },
+            {
+              "h": 7.36,
+              "w": 39.47,
+              "x": 87.15,
+              "y": 127.97,
+              "confidence": 1.0,
+              "end_index": 18,
+              "label": "caption",
+              "start_index": 12
+            },
+            {
+              "h": 6.68,
+              "w": 25.93,
+              "x": 44.69,
+              "y": 64.79,
+              "confidence": 1.0,
+              "end_index": 186,
+              "label": "caption",
+              "start_index": 180
+            },
+            {
+              "h": 6.29,
+              "w": 27.47,
+              "x": 229.81,
+              "y": 64.97,
+              "confidence": 1.0,
+              "end_index": 275,
+              "label": "caption",
+              "start_index": 269
+            },
+            {
+              "h": 6.34,
+              "w": 27.7,
+              "x": 136.63,
+              "y": 155.36,
+              "confidence": 1.0,
+              "end_index": 364,
+              "label": "caption",
+              "start_index": 358
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": null,
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+[pages skipped]
+    {
+      "page_number": 17,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 10.855290371034204,
+                  "w": 84.07341082317072,
+                  "x": 278.8240772675305,
+                  "y": 12.600537727169874,
+                  "confidence": 0.96,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 10.86,
+              "w": 84.07,
+              "x": 278.82,
+              "y": 12.6,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# 1 System at a Glance",
+          "value": "1 System at a Glance",
+          "bbox": [
+            {
+              "h": 27.58979861375763,
+              "w": 273.52725067883006,
+              "x": 35.86135521865473,
+              "y": 185.0159715605945,
+              "confidence": 0.92,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "OVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17",
+          "value": "OVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17",
+          "bbox": [
+            {
+              "h": 54.33451493426063,
+              "w": 315.3491886492473,
+              "x": 35.69055934999047,
+              "y": 224.1601600609756,
+              "confidence": 0.93,
+              "end_index": 57,
+              "label": "reference",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 12.647630488698077,
+                  "w": 84.18167438786203,
+                  "x": 32.57593184308308,
+                  "y": 11.08900494087033,
+                  "confidence": 0.9,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 12.65,
+              "w": 84.18,
+              "x": 32.58,
+              "y": 11.09,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# Overview",
+          "value": "Overview",
+          "bbox": [
+            {
+              "h": 28.08747499047256,
+              "w": 100.12374809451221,
+              "x": 35.98787002191311,
+              "y": 29.83706355397294,
+              "confidence": 0.95,
+              "end_index": 9,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "value": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "bbox": [
+            {
+              "h": 22.3306240472561,
+              "w": 302.48619203148826,
+              "x": 35.9921528141673,
+              "y": 59.13008681878811,
+              "confidence": 0.98,
+              "end_index": 138,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "*GNC 355 shown as typical.*",
+          "value": "GNC 355 shown as typical.",
+          "bbox": [
+            {
+              "h": 8.790585044302597,
+              "w": 80.34662698885289,
+              "x": 71.52567841320503,
+              "y": 98.36060749333079,
+              "confidence": 0.84,
+              "end_index": 26,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "GNC 355 navigator unit showing touchscreen interface and physical dimensions",
+          "md": "![GNC 355 navigator unit showing touchscreen interface and physical dimensions](page_18_image_1_v2.jpg)",
+          "url": "page_18_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 79.02344863519436,
+              "w": 299.81684522675306,
+              "x": 47.54221274771342,
+              "y": 117.02782649342606,
+              "confidence": 0.96,
+              "end_index": 102,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "6.25\"",
+          "value": "6.25\"",
+          "bbox": [
+            {
+              "h": 11.167753668064014,
+              "w": 28.574365472560984,
+              "x": 146.18608958174542,
+              "y": 195.0491805211509,
+              "confidence": 0.84,
+              "end_index": 4,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "value": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "bbox": [
+            {
+              "h": 21.93183427019816,
+              "w": 313.3912481242855,
+              "x": 35.89461244164444,
+              "y": 226.3999861852134,
+              "confidence": 0.98,
+              "end_index": 126,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "value": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "bbox": [
+            {
+              "h": 32.9131483422256,
+              "w": 322.48273181450077,
+              "x": 35.80214480516387,
+              "y": 252.44444252572407,
+              "confidence": 0.98,
+              "end_index": 225,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "value": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "bbox": [
+            {
+              "h": 21.923488948170725,
+              "w": 290.97507809522676,
+              "x": 35.90073745355373,
+              "y": 289.58325743140244,
+              "confidence": 0.97,
+              "end_index": 119,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "value": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "bbox": [
+            {
+              "h": 43.85113233612808,
+              "w": 296.7365006907393,
+              "x": 35.96568085461128,
+              "y": 315.5399421208079,
+              "confidence": 0.98,
+              "end_index": 240,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "value": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "bbox": [
+            {
+              "h": 21.89287728658539,
+              "w": 310.3301894173971,
+              "x": 35.90898765005717,
+              "y": 363.5257988757622,
+              "confidence": 0.98,
+              "end_index": 161,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "value": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 12.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 2,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 16,
+                  "label": "footer",
+                  "start_index": 4
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 18
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 19,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 10.904638009420257,
+                  "w": 84.2356204744665,
+                  "x": 278.79644102515243,
+                  "y": 12.606623617032678,
+                  "confidence": 0.93,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 10.9,
+              "w": 84.24,
+              "x": 278.8,
+              "y": 12.61,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# Unit Configurations",
+          "value": "Unit Configurations",
+          "bbox": [
+            {
+              "h": 18.517055589629383,
+              "w": 154.46590897722942,
+              "x": 36.489879299256856,
+              "y": 33.48893684201124,
+              "confidence": 0.98,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GPS 175",
+          "value": "GPS 175",
+          "bbox": [
+            {
+              "h": 6.6762075135766095,
+              "w": 25.931755907012203,
+              "x": 44.69169469321646,
+              "y": 64.78747719369282,
+              "confidence": 0.82,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GPS 175 unit showing GPS/MFD interface",
+          "md": "![Garmin GPS 175 unit showing GPS/MFD interface](page_19_image_3_v2.jpg)",
+          "url": "page_19_image_3_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.30791283584222,
+              "w": 126.97893355206746,
+              "x": 44.09417001119474,
+              "y": 78.31627369950456,
+              "confidence": 0.98,
+              "end_index": 71,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD",
+          "value": "GPS/MFD",
+          "bbox": [
+            {
+              "h": 7.364364043445129,
+              "w": 39.465296898818586,
+              "x": 87.1488388433689,
+              "y": 127.97054800638338,
+              "confidence": 0.86,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNC 355",
+          "value": "GNC 355",
+          "bbox": [
+            {
+              "h": 6.293056104706547,
+              "w": 27.471627524771346,
+              "x": 229.8113428925305,
+              "y": 64.9671430485423,
+              "confidence": 0.85,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GNC 355 unit showing GPS/MFD/COM interface",
+          "md": "![Garmin GNC 355 unit showing GPS/MFD/COM interface](page_19_image_2_v2.jpg)",
+          "url": "page_19_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.42613215748857,
+              "w": 127.53173208841466,
+              "x": 229.1039541253811,
+              "y": 78.30307242044589,
+              "confidence": 0.98,
+              "end_index": 75,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD/COM",
+          "value": "GPS/MFD/COM",
+          "bbox": [
+            {
+              "h": 7.4713955316311145,
+              "w": 63.71828077362803,
+              "x": 260.4451036108994,
+              "y": 127.92911293588033,
+              "confidence": 0.86,
+              "end_index": 10,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNX 375",
+          "value": "GNX 375",
+          "bbox": [
+            {
+              "h": 6.342517625762202,
+              "w": 27.701418635670752,
+              "x": 136.62654356421493,
+              "y": 155.36254608898628,
+              "confidence": 0.84,
+              "end_index": 6,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "Garmin GNX 375 unit showing GPS/MFD/XPDR interface",
+          "md": "![Garmin GNX 375 unit showing GPS/MFD/XPDR interface](page_19_image_1_v2.jpg)",
+          "url": "page_19_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 42.39788014481707,
+              "w": 127.0685538538491,
+              "x": 135.79132538586128,
+              "y": 168.93703232183688,
+              "confidence": 0.98,
+              "end_index": 76,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "GPS/MFD/XPDR",
+          "value": "GPS/MFD/XPDR",
+          "bbox": [
+            {
+              "h": 7.550001905487798,
+              "w": 66.17800066692075,
+              "x": 166.54875357278962,
+              "y": 218.45471119950457,
+              "confidence": 0.84,
+              "end_index": 11,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## COMPARISON TABLE",
+          "value": "COMPARISON TABLE",
+          "bbox": [
+            {
+              "h": 8.927526676829274,
+              "w": 101.51488331864519,
+              "x": 35.798675537109375,
+              "y": 262.80884051067073,
+              "confidence": 0.96,
+              "end_index": 18,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"Unit\",\"GPS/MFD\",\"COM Radio\",\"Mode S XPDR\",\"Dual-link ADS-B In\",\"1090 ES ADS-B Out\"\n\"GPS 175\",\"•\",,,,\n\"GNC 355\",\"•\",\"•\",,,\n\"GNX 375\",\"•\",,\"•\",\"•\",\"•\"",
+          "html": "<table>\n  <thead>\n    <tr>\n        <th>Unit</th>\n        <th>GPS/MFD</th>\n        <th>COM Radio</th>\n        <th>Mode S XPDR</th>\n        <th>Dual-link ADS-B In</th>\n        <th>1090 ES ADS-B Out</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>GPS 175</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNC 355</td>\n        <td>•</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNX 375</td>\n        <td>•</td>\n        <td> </td>\n        <td>•</td>\n        <td>•</td>\n        <td>•</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Unit    | GPS/MFD | COM Radio | Mode S XPDR | Dual-link ADS-B In | 1090 ES ADS-B Out |\n| ------- | ------- | --------- | ----------- | ------------------ | ----------------- |\n| GPS 175 | •       |           |             |                    |                   |\n| GNC 355 | •       | •         |             |                    |                   |\n| GNX 375 | •       |           | •           | •                  | •                 |",
+          "rows": [
+            [
+              "Unit",
+              "GPS/MFD",
+              "COM Radio",
+              "Mode S XPDR",
+              "Dual-link ADS-B In",
+              "1090 ES ADS-B Out"
+            ],
+            [
+              "GPS 175",
+              "•",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GNC 355",
+              "•",
+              "•",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GNX 375",
+              "•",
+              "",
+              "•",
+              "•",
+              "•"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 72.70322468083079,
+              "w": 267.1534890077172,
+              "x": 64.35960312261814,
+              "y": 278.4944563405106,
+              "confidence": 0.99,
+              "end_index": 443,
+              "label": "table",
+              "start_index": 0
+            },
+            {
+              "h": 7.36,
+              "w": 39.47,
+              "x": 87.15,
+              "y": 127.97,
+              "confidence": 1.0,
+              "end_index": 18,
+              "label": "caption",
+              "start_index": 12
+            },
+            {
+              "h": 6.68,
+              "w": 25.93,
+              "x": 44.69,
+              "y": 64.79,
+              "confidence": 1.0,
+              "end_index": 186,
+              "label": "caption",
+              "start_index": 180
+            },
+            {
+              "h": 6.29,
+              "w": 27.47,
+              "x": 229.81,
+              "y": 64.97,
+              "confidence": 1.0,
+              "end_index": 275,
+              "label": "caption",
+              "start_index": 269
+            },
+            {
+              "h": 6.34,
+              "w": 27.7,
+              "x": 136.63,
+              "y": 155.36,
+              "confidence": 1.0,
+              "end_index": 364,
+              "label": "caption",
+              "start_index": 358
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": null,
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 1-3",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },

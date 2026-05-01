@@ -1,0 +1,210 @@
+
+{
+
+  "markdown_pages": [
+
+    {
+
+      "page": 1,
+
+      "md": "# GARMIN<sub>®</sub>\n\n# GPS 175\n# GNC 355\n# GNX 375\n\n## Pilot's Guide\n\n![Garmin aviation navigator unit showing the home screen with various icons like Map, Traffic, Terrain, Weather, and Flight Plan](page_1_image_1_v2.jpg)"
+
+    },
+
+[several pages skipped for demonstration purposes]
+
+    {
+
+      "page": 17,
+
+      "md": "# 1 System at a Glance\n\nOVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17"
+
+    },
+
+    {
+
+      "page": 18,
+
+      "md": "# Overview\n\nGPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.\n\n*GNC 355 shown as typical.*\n\n![GNC 355 navigator unit showing touchscreen interface and physical dimensions](page_18_image_1_v2.jpg)\n\n6.25\"\n\nGPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.\n\nGNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.\n\nBoth GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.\n\nGNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.\n\nEach unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device."
+
+    },
+
+    {
+
+      "page": 19,
+
+      "md": "# Unit Configurations\n\nGPS 175\n\n![Garmin GPS 175 unit showing GPS/MFD interface](page_19_image_3_v2.jpg)\n\nGPS/MFD\n\nGNC 355\n\n![Garmin GNC 355 unit showing GPS/MFD/COM interface](page_19_image_2_v2.jpg)\n\nGPS/MFD/COM\n\nGNX 375\n\n![Garmin GNX 375 unit showing GPS/MFD/XPDR interface](page_19_image_1_v2.jpg)\n\nGPS/MFD/XPDR\n\n## COMPARISON TABLE\n\n\n<table>\n  <thead>\n    <tr>\n        <th>Unit</th>\n        <th>GPS/MFD</th>\n        <th>COM Radio</th>\n        <th>Mode S XPDR</th>\n        <th>Dual-link ADS-B In</th>\n        <th>1090 ES ADS-B Out</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>GPS 175</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNC 355</td>\n        <td>•</td>\n        <td>•</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>GNX 375</td>\n        <td>•</td>\n        <td> </td>\n        <td>•</td>\n        <td>•</td>\n        <td>•</td>\n    </tr>\n  </tbody>\n</table>"
+
+    },
+[several pages skipped]
+    {
+      "page": 310,
+      "md": "# GARMIN®"
+    }
+  ],
+  "items_pages": [
+    {
+      "page_number": 1,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# GARMIN<sub>®</sub>",
+          "value": "GARMIN<sub>®</sub>",
+          "bbox": [
+            {
+              "h": 15.840000000000003,
+              "w": 92.63999999999999,
+              "x": 36.0,
+              "y": 111.11999999999999,
+              "confidence": 0.82,
+              "end_index": 19,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GPS 175",
+          "value": "GPS 175",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 90.63999999999999,
+              "x": 42.192,
+              "y": 181.658,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GNC 355",
+          "value": "GNC 355",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 95.91999999999999,
+              "x": 42.192,
+              "y": 215.09,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GNX 375",
+          "value": "GNX 375",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 97.12,
+              "x": 42.192,
+              "y": 248.522,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 2,
+          "md": "## Pilot's Guide",
+          "value": "Pilot's Guide",
+          "bbox": [
+            {
+              "h": 18.143422494283495,
+              "w": 95.44670609637006,
+              "x": 42.29980090629764,
+              "y": 283.0738880287729,
+              "confidence": 0.86,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "Garmin aviation navigator unit showing the home screen with various icons like Map, Traffic, Terrain, Weather, and Flight Plan",
+          "md": "![Garmin aviation navigator unit showing the home screen with various icons like Map, Traffic, Terrain, Weather, and Flight Plan](page_1_image_1_v2.jpg)",
+          "url": "page_1_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 96.43526152820124,
+              "w": 291.0384769793254,
+              "x": 52.63783947456174,
+              "y": 383.8889312595274,
+              "confidence": 0.97,
+              "end_index": 151,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# COPYRIGHT & TRADEMARKS",
+          "value": "COPYRIGHT & TRADEMARKS",
+          "bbox": [
+            {
+              "h": 8.614089682974472,
+              "w": 126.0793673780488,
+              "x": 40.731093392721036,
+              "y": 56.87737828696646,
+              "confidence": 0.91,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "© 2019-2023 Garmin International, Inc., or its subsidiaries. All rights reserved.",
+          "value": "© 2019-2023 Garmin International, Inc., or its subsidiaries. All rights reserved.",
+          "bbox": [
+            {
+              "h": 253.98,
+              "w": 313.236,
+              "x": 40.788,
+              "y": 72.828,
+              "confidence": 0.88,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 10.0,
+              "w": 278.99,
+              "x": 50.48,
+              "y": 72.85,
+              "confidence": 1.0,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 2
+            }
+          ],
+          "type": "text"
+        },
