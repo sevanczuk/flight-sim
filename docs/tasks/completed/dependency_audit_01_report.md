@@ -9,11 +9,13 @@ Purpose: Inventory of references to retired asset paths; classification; recomme
 ## Executive summary
 
 - Total references found: ~304 across ~95 distinct files
-- Patch-recommended (categories A, B-active, E-active): 28 lines in 17 files
-- Flag-for-decision (no active replacement, salvage-pending, or archive-candidate): 109 lines in 29 files
+- Patch-recommended (categories A, B-active, E-active): 28 lines in **13 files**
+- Flag-for-decision (no active replacement, salvage-pending, or archive-candidate): 109 lines in **33 files**
 - Leave-as-is (categories D, F, G): 167 lines in 49 files
-- Salvage assessment for `land-data-symbols.png`: **Defer** — two active candidates found (`images_screenshot/page_125.jpg`, `images_screenshot/page_125_chart_1_v2.jpg`); visual inspection required before committing to a replacement path. Interim recommendation: salvage-in-place to `assets/gnx375_reference/land-data-symbols.png`.
+- Salvage assessment for `land-data-symbols.png`: **Defer** — two active candidates found (`images_screenshot/page_125.jpg`, `images_layout/page_125_chart_1_v2.jpg`); visual inspection required before committing to a replacement path. Interim recommendation: salvage-in-place to `assets/gnx375_reference/land-data-symbols.png`.
 - Side-finding: `assets/retired/README.md` references "D-26-* (pending)" but `docs/decisions/D-26-cd-verify-against-ground-truth-source-documents.md` is on disk. README status is stale; CD should update.
+
+**File-count correction (post-compliance):** the executive summary originally claimed 17 patch files / 29 flag files. Compliance review (Purple Turn 22, 2026-05-02) verified the section tables contain 13 distinct patch files and 33 distinct flag files; numbers above corrected. Line counts (28 / 109 / 167) are unchanged.
 
 ## Methodology
 
@@ -151,8 +153,10 @@ Both copies are present and accessible.
 
 **Active extraction candidates for p. 125:**
 - `assets/gnx375_llama_extract/images_screenshot/page_125.jpg` — exists (full-page screenshot)
-- `assets/gnx375_llama_extract/images_screenshot/page_125_chart_1_v2.jpg` — exists (chart extract)
-- `assets/gnx375_llama_extract/images_layout/` — no `page_125*` files found
+- `assets/gnx375_llama_extract/images_layout/page_125_chart_1_v2.jpg` — exists (chart extract)
+- `assets/gnx375_llama_extract/images_screenshot/` contains no `page_125_chart_*` files
+
+**Subdirectory correction (post-compliance):** the original report placed `page_125_chart_1_v2.jpg` in `images_screenshot/`. Compliance review (Purple Turn 22, 2026-05-02) verified by direct `ls` that the file lives in `images_layout/`. Path label corrected; the salvage recommendation (defer + interim salvage-in-place) is unchanged.
 
 **V1 fragments referencing this image:**
 From Phase A inventory — four files in active-spec territory:
@@ -165,7 +169,35 @@ From Phase A inventory — four files in active-spec territory:
 
 Two active candidates exist. Without visual inspection, it is not determinable whether `page_125_chart_1_v2.jpg` (the more targeted extract) is a suitable equivalent for the manually curated symbols-legend PNG, or whether `page_125.jpg` (the full-page screenshot) would suffice. The curated image was specifically pulled because PyMuPDF missed the page — the manual crop may capture a region that neither automated extraction reproduced faithfully.
 
-**Interim recommendation:** Salvage-in-place — relocate `assets/retired/gnc355_reference/land-data-symbols.png` to `assets/gnx375_reference/land-data-symbols.png` (new directory) before final move-out, and patch the 6 A-category references to this new path. This preserves the known-good manual extract unconditionally. Steve or CD should visually compare with the two `images_screenshot/page_125*.jpg` candidates; if either is equivalent, the `gnx375_reference/` copy can be retired.
+**Interim recommendation:** Salvage-in-place — relocate `assets/retired/gnc355_reference/land-data-symbols.png` to `assets/gnx375_reference/land-data-symbols.png` (new directory) before final move-out, and patch the 6 A-category references to this new path. This preserves the known-good manual extract unconditionally. Steve or CD should visually compare with the `images_screenshot/page_125.jpg` and `images_layout/page_125_chart_1_v2.jpg` candidates; if either is equivalent, the `gnx375_reference/` copy can be retired.
+
+---
+
+## Compliance review notes (added Purple Turn 22, 2026-05-02)
+
+Compliance verification (`docs/tasks/dependency_audit_01_compliance.md`) returned `FAILURES FOUND` (6 PASS / 3 FAIL / 2 PARTIAL of 11 checks). Disposition: PASS WITH NOTES. The three FAILs and two PARTIALs are documented here.
+
+### N2 (FAIL): image path label corrected
+
+The original report cited `images_screenshot/page_125_chart_1_v2.jpg` as a salvage candidate. The file is actually in `images_layout/page_125_chart_1_v2.jpg`. Verified by direct `ls` in compliance review. Path label corrected in Salvage Assessment section above; salvage recommendation (defer + interim salvage-in-place) is unchanged. The wrong directory label has no other downstream consumers.
+
+### M2 (PARTIAL): file counts in executive summary corrected
+
+Original exec summary claimed 17 patch files and 29 flag files. Compliance recount of the section tables found 13 distinct patch files and 33 distinct flag files. Line counts (28 / 109 / 167) are correct. File-count discrepancy resulted from the original count tallying file appearances across subsections rather than deduplicated unique-file counts. Corrected numbers in exec summary above.
+
+### O1 (FAIL): sort ordering not corrected
+
+The report's tables are organized by file-type grouping rather than strict path-then-line ascending order. Compliance check found violations in all 3 sampled tables. The tables remain readable; sortability would only matter for downstream tool consumption, and no downstream tool consumes this report. Documented for posterity; tables not re-sorted.
+
+### E1 (PARTIAL): off-by-one on `.gitignore`
+
+The report cited `.gitignore:47` for the `assets/gnc355_pdf_extracted/` ignore rule. Line 47 is actually a comment; the rule itself is on line 48. Within the compliance prompt's ±2 allowance. Both lines should be updated together in any patch-execution turn that touches `.gitignore`.
+
+### M1 (FAIL): count drift, partly attributable to compliance-prompt design
+
+Compliance recount produced 539 raw matches and 429 after excluding the audit's own output files (vs the report's claim of ~304). Per the compliance report's own note, "the M1 check criterion is somewhat self-defeating when applied post-commit" because the audit's outputs (now committed and tracked) themselves contain extensive references to retired paths. A definitively comparable count would require running `git grep` against the audit's commit tree (`2cc421d`) rather than HEAD. The exact ground-truth count at audit-execution time is therefore not recoverable from this compliance round.
+
+**Mitigation captured in D-32** (forthcoming this turn): future compliance prompts that recount grep-based audits must specify a baseline git ref (the audit's commit) and explicitly exclude the audit's own output files. The audit's substantive content (patch list, flag list, salvage recommendation, side findings) is unaffected by this counting issue.
 
 ---
 
