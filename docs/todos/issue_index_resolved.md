@@ -19,6 +19,7 @@
 | ITM-09 | 2026-04-23 | Resolved by C2.2-D §7.9 authorship | Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs | Purple Turn 22 (C2.2-D compliance X23 PASS) |
 | ITM-12 | 2026-04-25 | Resolved by C2.2-G Coupling Summary discipline | Fragment F Coupling Summary line count under-budget (watchpoint for Fragment G) | Purple Turn 6 (C2.2-G compliance: 105 lines in prose-per-ref format, within 95–110 target; X2 + X3 + S13 + C2 all PASS) |
 | ITM-13 | 2026-05-02 | Closed by D-29 (commit policy simplification) | CC commit subject contains UTF-8 BOM (U+FEFF) — BOM-free pattern not followed | Purple Turn 11 (D-29 drops the file-based commit pattern; the BOM failure mode is unreachable under plain `git commit -m`) |
+| ITM-11 | 2026-05-02 | Closed by content-match verification (13/13 citations) | Page-number offset between new extraction and archived fragment citations — originally framed as Garmin-logical-vs-physical schism | Purple Turn 14 (4 anchor + 9 spot-check citations all resolve directly to physical pages in `assets/gnx375_llama_extract/pages/page_NNN.md` with zero offset; ITM-11's offset claim was a misdiagnosis) |
 
 ---
 
@@ -133,6 +134,65 @@ On C2.2 assembly (after C2.2-G archive), §7 will present §§7.1–7.9 numeric 
 - Fragment C `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` §4.7 open questions (lines 226, 232) — forward-refs now resolved
 - Fragment D `docs/specs/fragments/GNX375_Functional_Spec_V1_part_D.md` §7.9 (line 556) — resolution
 - Previous location: `issue_index.md` §ITM-09 (now removed from open index)
+
+---
+
+## ITM-11: Page-number offset between new extraction and archived fragment citations (RESOLVED)
+
+**Opened:** 2026-04-24T10:41:03-04:00 (Purple Turn 19)
+**Resolved:** 2026-05-02T10:41:21-04:00 (Purple Turn 14)
+**Resolution:** ITM-11's stated framing turned out to be a misdiagnosis. V1 fragment citations (`[p. 78]`, `[p. 125]`, etc.) cite **absolute physical pages of the combined Pilot's Guide PDF** (`Garmin GNC 375 - GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf`), and both the LlamaParse extraction (`assets/gnx375_llama_extract/pages/page_NNN.md`) and the PyMuPDF metadata extraction (`assets/gnx375_pymupdf_v1_0_1/`) use the same physical page numbering. **Zero offset between V1 citations and the new extraction.** ITM-11's original table claiming +2 / +4 offsets was wrong.
+
+### Verification (Purple Turn 14)
+
+13 citations sampled across all 7 fragments — 4 original anchor citations plus 9 spot-checks — verified against the LlamaParse body extraction by reading the cited physical page and matching its content to the V1 section header.
+
+**Original four anchor citations:**
+
+| V1 citation | Source fragment | Phys page | Garmin ppn | Content header |
+|---|---|---|---|---|
+| `[p. 78]` (XPDR Modes) | F §11.4 | 78 | 2-42 | "XPDR Modes" + mode table |
+| `[p. 80]` (VFR + IDENT) | F §11.6 | 80 | 2-44 | "VFR" key + "XPDR Key" with 18-sec IDENT |
+| `[p. 94]` (Unit Selections) | E §10.6 | 94 | 2-58 | "Unit Selections" + parameter table |
+| `[p. 125]` (Land Data Symbols) | B §4.2 | 125 | 3-15 | "LAND DATA SYMBOLS" + symbol table |
+
+**Spot-check citations (one or more per fragment):**
+
+| Fragment | Section | Citation | Content matches? |
+|---|---|---|---|
+| A | §1.1 Product description | `[p. 18]` | ✓ "Overview" — GPS 175 / GNC 355 / GNX 375 family description |
+| A | §2.3 Touchscreen gestures | `[p. 23]` | ✓ "Touchscreen / GESTURES" with TAP / SWIPE / FLICK / PINCH |
+| A | §3.1 Power-up sequence | `[p. 38]` | ✓ "Power Up" + "Instrument Panel Self-Test" |
+| C | §4.7 Procedures Pages | `[pp. 181–207]` | ✓ page 181 opens with "Procedures" + PROC icon |
+| D | §5.2 Create a Flight Plan | `[p. 152]` | ✓ "Create a Flight Plan" |
+| D | §6.3 Direct-to Activation | `[p. 161]` | ✓ "Direct To Activation" |
+| D | §7.1 Flight Procedure Basics | `[p. 182]` | ✓ "Flight Procedure Basics" |
+| G | §15.7 Altitude Source | `[p. 34]` | ✓ "ADC & AHRS" + Altitude Encoder GAE 12 |
+| G | §14.6 Crossfill Data | `[p. 97]` | ✓ "Crossfill" + Crossfill Data list |
+
+13/13 PASS. Coverage by fragment: A:3, B:1, C:1, D:3, E:1, F:2, G:2.
+
+### What ITM-11 got wrong
+
+1. **Wrong fragment locations.** ITM-11's third and fourth anchor citations were claimed for Fragment C; actually §10.6 is in Fragment E and "Land data symbols" is at Fragment B §4.2.
+2. **Wrong offset claim.** Claimed +2 / +4 between V1 citations and new-extraction physical pages; actual offset is zero.
+3. **Wrong premise.** ITM-11 framed the issue as "Garmin logical page" (used by V1 fragments per ITM-11's claim) vs "physical page" (used by the new extraction). Actual: V1 fragments cite physical pages, and so do both extractions. Garmin's section-prefixed identifiers ("2-42", "3-15") are an *additional* dimension that `page_number_map.json` exposes but that V1 citations never used.
+
+### What `page_number_map.json` (v2.0) is now useful for
+
+- **NOT** needed for V1 citation resolution — V1 cites physical pages directly, which match both extractions.
+- **Useful** as a bridge from Garmin's section-prefixed printed page identifiers (e.g., "2-42") to physical pages, if any future spec-authoring or downstream tool cites Garmin's printed-page convention.
+- **Useful** for the `spec-pdf-source-fidelity-reviewer` agent (D-22 §(2) item 1) only when it encounters Garmin-style citations — not for the V1 citation set.
+
+### Related
+
+- D-22 §(1) source-of-truth policy
+- D-28 (page 2 PAP 22 recycling code; relevant to extraction integrity but not to the offset question)
+- GNX375-PAGEMAP-PYMUPDF-01 task family — built the `page_number_map.json` v2.0 that ITM-11 anticipated would be needed for V1 citation resolution but turns out to be needed only for printed-page-identifier resolution
+- `assets/gnx375_llama_extract/pages/page_NNN.md` (body content extraction; the source of truth for V1 citation verification)
+- `assets/gnx375_pymupdf_v1_0_1/` (printed-page metadata; Garmin section-prefixed convention)
+- ITM-10 (Fragment C §4.10 vs. PDF p. 94 — the verification here also touches the same PDF page; ITM-10 remains a content-discrepancy watchpoint, not an offset issue)
+- Previous location: `issue_index.md` §ITM-11 (now removed from open index)
 
 ---
 

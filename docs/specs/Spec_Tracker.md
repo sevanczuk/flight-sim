@@ -38,7 +38,7 @@ Tracks every spec under `docs/specs/` through its lifecycle: drafting → review
 | F | §§11–13 | 606 / 540 | ✅ Archived | 36/1/1/0 across 38 (PASS WITH NOTES) |
 | G | §§14–15 + Appendix A | 443 / 300 | ✅ Archived | 49 PASS / 2 PASS WITH NOTES / 0 PARTIAL / 0 FAIL across 51 checks |
 
-**Active ITMs against this spec:** ITM-08 (terminology grep — resolved by F authoring discipline), ITM-10 (§4.10 vs PDF p. 94 watchpoint), ITM-11 (page-number offset; needs `scripts/build_page_number_map.py` before C3), ITM-14 (assembly script `--partial` continuity-skip gap; defer until needed). ITM-12 resolved Turn 6 by C2.2-G Coupling Summary discipline.
+**Active ITMs against this spec:** ITM-08 (terminology grep — resolved by F authoring discipline), ITM-10 (§4.10 vs PDF p. 94 watchpoint), ITM-14 (assembly script `--partial` continuity-skip gap; defer until needed). ITM-11 resolved Purple Turn 14 (2026-05-02) — 13/13 V1 citations verified to resolve directly to physical pages in `assets/gnx375_llama_extract/pages/page_NNN.md`; convention captured in D-30 (V1 cites physical PDF pages, no offset). ITM-12 resolved Turn 6 by C2.2-G Coupling Summary discipline.
 
 ---
 
