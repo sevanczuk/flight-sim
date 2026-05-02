@@ -21,6 +21,7 @@ Icon
 *.swp
 *.swo
 *.tmp
+tmp/
 
 # Python virtual environment
 .venv/
