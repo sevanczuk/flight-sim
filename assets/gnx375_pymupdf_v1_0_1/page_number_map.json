@@ -1,0 +1,1897 @@
+{
+  "schema_version": "2.0",
+  "physical_to_logical": {
+    "1": null,
+    "2": null,
+    "3": "i",
+    "4": "ii",
+    "5": "iii",
+    "6": "iv",
+    "7": "v",
+    "8": "vi",
+    "9": "vii",
+    "10": "viii",
+    "11": "ix",
+    "12": "x",
+    "13": "xi",
+    "14": "xii",
+    "15": "xiii",
+    "16": "xiv",
+    "17": "1-1",
+    "18": "1-2",
+    "19": "1-3",
+    "20": "1-4",
+    "21": "1-5",
+    "22": "1-6",
+    "23": "1-7",
+    "24": "1-8",
+    "25": "1-9",
+    "26": "1-10",
+    "27": "1-11",
+    "28": "1-12",
+    "29": "1-13",
+    "30": "1-14",
+    "31": "1-15",
+    "32": "1-16",
+    "33": "1-17",
+    "34": "1-18",
+    "35": "1-19",
+    "36": "1-20",
+    "37": "2-1",
+    "38": "2-2",
+    "39": "2-3",
+    "40": "2-4",
+    "41": "2-5",
+    "42": "2-6",
+    "43": "2-7",
+    "44": "2-8",
+    "45": "2-9",
+    "46": "2-10",
+    "47": "2-11",
+    "48": "2-12",
+    "49": "2-13",
+    "50": "2-14",
+    "51": "2-15",
+    "52": "2-16",
+    "53": "2-17",
+    "54": "2-18",
+    "55": "2-19",
+    "56": "2-20",
+    "57": "2-21",
+    "58": "2-22",
+    "59": "2-23",
+    "60": "2-24",
+    "61": "2-25",
+    "62": "2-26",
+    "63": "2-27",
+    "64": "2-28",
+    "65": "2-29",
+    "66": "2-30",
+    "67": "2-31",
+    "68": "2-32",
+    "69": "2-33",
+    "70": "2-34",
+    "71": "2-35",
+    "72": "2-36",
+    "73": "2-37",
+    "74": "2-38",
+    "75": "2-39",
+    "76": "2-40",
+    "77": "2-41",
+    "78": "2-42",
+    "79": "2-43",
+    "80": "2-44",
+    "81": "2-45",
+    "82": "2-46",
+    "83": "2-47",
+    "84": "2-48",
+    "85": "2-49",
+    "86": "2-50",
+    "87": "2-51",
+    "88": "2-52",
+    "89": "2-53",
+    "90": "2-54",
+    "91": "2-55",
+    "92": "2-56",
+    "93": "2-57",
+    "94": "2-58",
+    "95": "2-59",
+    "96": "2-60",
+    "97": "2-61",
+    "98": "2-62",
+    "99": "2-63",
+    "100": "2-64",
+    "101": "2-65",
+    "102": "2-66",
+    "103": "2-67",
+    "104": "2-68",
+    "105": "2-69",
+    "106": "2-70",
+    "107": "2-71",
+    "108": "2-72",
+    "109": "2-73",
+    "110": "2-74",
+    "111": "3-1",
+    "112": "3-2",
+    "113": "3-3",
+    "114": "3-4",
+    "115": "3-5",
+    "116": "3-6",
+    "117": "3-7",
+    "118": "3-8",
+    "119": "3-9",
+    "120": "3-10",
+    "121": "3-11",
+    "122": "3-12",
+    "123": "3-13",
+    "124": "3-14",
+    "125": "3-15",
+    "126": "3-16",
+    "127": "3-17",
+    "128": "3-18",
+    "129": "3-19",
+    "130": "3-20",
+    "131": "3-21",
+    "132": "3-22",
+    "133": "3-23",
+    "134": "3-24",
+    "135": "3-25",
+    "136": "3-26",
+    "137": "3-27",
+    "138": "3-28",
+    "139": "3-29",
+    "140": "3-30",
+    "141": "3-31",
+    "142": "3-32",
+    "143": "3-33",
+    "144": "3-34",
+    "145": "3-35",
+    "146": "3-36",
+    "147": "3-37",
+    "148": "3-38",
+    "149": "3-39",
+    "150": "3-40",
+    "151": "3-41",
+    "152": "3-42",
+    "153": "3-43",
+    "154": "3-44",
+    "155": "3-45",
+    "156": "3-46",
+    "157": "3-47",
+    "158": "3-48",
+    "159": "3-49",
+    "160": "3-50",
+    "161": "3-51",
+    "162": "3-52",
+    "163": "3-53",
+    "164": "3-54",
+    "165": "3-55",
+    "166": "3-56",
+    "167": "3-57",
+    "168": "3-58",
+    "169": "3-59",
+    "170": "3-60",
+    "171": "3-61",
+    "172": "3-62",
+    "173": "3-63",
+    "174": "3-64",
+    "175": "3-65",
+    "176": "3-66",
+    "177": "3-67",
+    "178": "3-68",
+    "179": "3-69",
+    "180": "3-70",
+    "181": "3-71",
+    "182": "3-72",
+    "183": "3-73",
+    "184": "3-74",
+    "185": "3-75",
+    "186": "3-76",
+    "187": "3-77",
+    "188": "3-78",
+    "189": "3-79",
+    "190": "3-80",
+    "191": "3-81",
+    "192": "3-82",
+    "193": "3-83",
+    "194": "3-84",
+    "195": "3-85",
+    "196": "3-86",
+    "197": "3-87",
+    "198": "3-88",
+    "199": "3-89",
+    "200": "3-90",
+    "201": "3-91",
+    "202": "3-92",
+    "203": "3-93",
+    "204": "3-94",
+    "205": "3-95",
+    "206": "3-96",
+    "207": "3-97",
+    "208": "3-98",
+    "209": "4-1",
+    "210": "4-2",
+    "211": "4-3",
+    "212": "4-4",
+    "213": "4-5",
+    "214": "4-6",
+    "215": "4-7",
+    "216": "4-8",
+    "217": "4-9",
+    "218": "4-10",
+    "219": "4-11",
+    "220": "4-12",
+    "221": "4-13",
+    "222": "4-14",
+    "223": "5-1",
+    "224": "5-2",
+    "225": "5-3",
+    "226": "5-4",
+    "227": "5-5",
+    "228": "5-6",
+    "229": "5-7",
+    "230": "5-8",
+    "231": "5-9",
+    "232": "5-10",
+    "233": "5-11",
+    "234": "5-12",
+    "235": "5-13",
+    "236": "5-14",
+    "237": "5-15",
+    "238": "5-16",
+    "239": "5-17",
+    "240": "5-18",
+    "241": "5-19",
+    "242": "5-20",
+    "243": "5-21",
+    "244": "5-22",
+    "245": "5-23",
+    "246": "5-24",
+    "247": "5-25",
+    "248": "5-26",
+    "249": "5-27",
+    "250": "5-28",
+    "251": "5-29",
+    "252": "5-30",
+    "253": "5-31",
+    "254": "5-32",
+    "255": "5-33",
+    "256": "5-34",
+    "257": "5-35",
+    "258": "5-36",
+    "259": "5-37",
+    "260": "5-38",
+    "261": "5-39",
+    "262": "5-40",
+    "263": "5-41",
+    "264": "5-42",
+    "265": "5-43",
+    "266": "5-44",
+    "267": "5-45",
+    "268": "5-46",
+    "269": "5-47",
+    "270": "5-48",
+    "271": "6-1",
+    "272": "6-2",
+    "273": "6-3",
+    "274": "6-4",
+    "275": "6-5",
+    "276": "6-6",
+    "277": "6-7",
+    "278": "6-8",
+    "279": "6-9",
+    "280": "6-10",
+    "281": "6-11",
+    "282": "6-12",
+    "283": "6-13",
+    "284": "6-14",
+    "285": "6-15",
+    "286": "6-16",
+    "287": "6-17",
+    "288": "6-18",
+    "289": "6-19",
+    "290": "6-20",
+    "291": "6-21",
+    "292": "6-22",
+    "293": "7-1",
+    "294": "7-2",
+    "295": "7-3",
+    "296": "7-4",
+    "297": "7-5",
+    "298": "7-6",
+    "299": "8-1",
+    "300": "8-2",
+    "301": "8-3",
+    "302": "8-4",
+    "303": "8-5",
+    "304": "8-6",
+    "305": "9-1",
+    "306": "9-2",
+    "307": "9-3",
+    "308": "9-4",
+    "309": null,
+    "310": null
+  },
+  "logical_to_physical": {
+    "i": 3,
+    "ii": 4,
+    "iii": 5,
+    "iv": 6,
+    "v": 7,
+    "vi": 8,
+    "vii": 9,
+    "viii": 10,
+    "ix": 11,
+    "x": 12,
+    "xi": 13,
+    "xii": 14,
+    "xiii": 15,
+    "xiv": 16,
+    "1-1": 17,
+    "1-2": 18,
+    "1-3": 19,
+    "1-4": 20,
+    "1-5": 21,
+    "1-6": 22,
+    "1-7": 23,
+    "1-8": 24,
+    "1-9": 25,
+    "1-10": 26,
+    "1-11": 27,
+    "1-12": 28,
+    "1-13": 29,
+    "1-14": 30,
+    "1-15": 31,
+    "1-16": 32,
+    "1-17": 33,
+    "1-18": 34,
+    "1-19": 35,
+    "1-20": 36,
+    "2-1": 37,
+    "2-2": 38,
+    "2-3": 39,
+    "2-4": 40,
+    "2-5": 41,
+    "2-6": 42,
+    "2-7": 43,
+    "2-8": 44,
+    "2-9": 45,
+    "2-10": 46,
+    "2-11": 47,
+    "2-12": 48,
+    "2-13": 49,
+    "2-14": 50,
+    "2-15": 51,
+    "2-16": 52,
+    "2-17": 53,
+    "2-18": 54,
+    "2-19": 55,
+    "2-20": 56,
+    "2-21": 57,
+    "2-22": 58,
+    "2-23": 59,
+    "2-24": 60,
+    "2-25": 61,
+    "2-26": 62,
+    "2-27": 63,
+    "2-28": 64,
+    "2-29": 65,
+    "2-30": 66,
+    "2-31": 67,
+    "2-32": 68,
+    "2-33": 69,
+    "2-34": 70,
+    "2-35": 71,
+    "2-36": 72,
+    "2-37": 73,
+    "2-38": 74,
+    "2-39": 75,
+    "2-40": 76,
+    "2-41": 77,
+    "2-42": 78,
+    "2-43": 79,
+    "2-44": 80,
+    "2-45": 81,
+    "2-46": 82,
+    "2-47": 83,
+    "2-48": 84,
+    "2-49": 85,
+    "2-50": 86,
+    "2-51": 87,
+    "2-52": 88,
+    "2-53": 89,
+    "2-54": 90,
+    "2-55": 91,
+    "2-56": 92,
+    "2-57": 93,
+    "2-58": 94,
+    "2-59": 95,
+    "2-60": 96,
+    "2-61": 97,
+    "2-62": 98,
+    "2-63": 99,
+    "2-64": 100,
+    "2-65": 101,
+    "2-66": 102,
+    "2-67": 103,
+    "2-68": 104,
+    "2-69": 105,
+    "2-70": 106,
+    "2-71": 107,
+    "2-72": 108,
+    "2-73": 109,
+    "2-74": 110,
+    "3-1": 111,
+    "3-2": 112,
+    "3-3": 113,
+    "3-4": 114,
+    "3-5": 115,
+    "3-6": 116,
+    "3-7": 117,
+    "3-8": 118,
+    "3-9": 119,
+    "3-10": 120,
+    "3-11": 121,
+    "3-12": 122,
+    "3-13": 123,
+    "3-14": 124,
+    "3-15": 125,
+    "3-16": 126,
+    "3-17": 127,
+    "3-18": 128,
+    "3-19": 129,
+    "3-20": 130,
+    "3-21": 131,
+    "3-22": 132,
+    "3-23": 133,
+    "3-24": 134,
+    "3-25": 135,
+    "3-26": 136,
+    "3-27": 137,
+    "3-28": 138,
+    "3-29": 139,
+    "3-30": 140,
+    "3-31": 141,
+    "3-32": 142,
+    "3-33": 143,
+    "3-34": 144,
+    "3-35": 145,
+    "3-36": 146,
+    "3-37": 147,
+    "3-38": 148,
+    "3-39": 149,
+    "3-40": 150,
+    "3-41": 151,
+    "3-42": 152,
+    "3-43": 153,
+    "3-44": 154,
+    "3-45": 155,
+    "3-46": 156,
+    "3-47": 157,
+    "3-48": 158,
+    "3-49": 159,
+    "3-50": 160,
+    "3-51": 161,
+    "3-52": 162,
+    "3-53": 163,
+    "3-54": 164,
+    "3-55": 165,
+    "3-56": 166,
+    "3-57": 167,
+    "3-58": 168,
+    "3-59": 169,
+    "3-60": 170,
+    "3-61": 171,
+    "3-62": 172,
+    "3-63": 173,
+    "3-64": 174,
+    "3-65": 175,
+    "3-66": 176,
+    "3-67": 177,
+    "3-68": 178,
+    "3-69": 179,
+    "3-70": 180,
+    "3-71": 181,
+    "3-72": 182,
+    "3-73": 183,
+    "3-74": 184,
+    "3-75": 185,
+    "3-76": 186,
+    "3-77": 187,
+    "3-78": 188,
+    "3-79": 189,
+    "3-80": 190,
+    "3-81": 191,
+    "3-82": 192,
+    "3-83": 193,
+    "3-84": 194,
+    "3-85": 195,
+    "3-86": 196,
+    "3-87": 197,
+    "3-88": 198,
+    "3-89": 199,
+    "3-90": 200,
+    "3-91": 201,
+    "3-92": 202,
+    "3-93": 203,
+    "3-94": 204,
+    "3-95": 205,
+    "3-96": 206,
+    "3-97": 207,
+    "3-98": 208,
+    "4-1": 209,
+    "4-2": 210,
+    "4-3": 211,
+    "4-4": 212,
+    "4-5": 213,
+    "4-6": 214,
+    "4-7": 215,
+    "4-8": 216,
+    "4-9": 217,
+    "4-10": 218,
+    "4-11": 219,
+    "4-12": 220,
+    "4-13": 221,
+    "4-14": 222,
+    "5-1": 223,
+    "5-2": 224,
+    "5-3": 225,
+    "5-4": 226,
+    "5-5": 227,
+    "5-6": 228,
+    "5-7": 229,
+    "5-8": 230,
+    "5-9": 231,
+    "5-10": 232,
+    "5-11": 233,
+    "5-12": 234,
+    "5-13": 235,
+    "5-14": 236,
+    "5-15": 237,
+    "5-16": 238,
+    "5-17": 239,
+    "5-18": 240,
+    "5-19": 241,
+    "5-20": 242,
+    "5-21": 243,
+    "5-22": 244,
+    "5-23": 245,
+    "5-24": 246,
+    "5-25": 247,
+    "5-26": 248,
+    "5-27": 249,
+    "5-28": 250,
+    "5-29": 251,
+    "5-30": 252,
+    "5-31": 253,
+    "5-32": 254,
+    "5-33": 255,
+    "5-34": 256,
+    "5-35": 257,
+    "5-36": 258,
+    "5-37": 259,
+    "5-38": 260,
+    "5-39": 261,
+    "5-40": 262,
+    "5-41": 263,
+    "5-42": 264,
+    "5-43": 265,
+    "5-44": 266,
+    "5-45": 267,
+    "5-46": 268,
+    "5-47": 269,
+    "5-48": 270,
+    "6-1": 271,
+    "6-2": 272,
+    "6-3": 273,
+    "6-4": 274,
+    "6-5": 275,
+    "6-6": 276,
+    "6-7": 277,
+    "6-8": 278,
+    "6-9": 279,
+    "6-10": 280,
+    "6-11": 281,
+    "6-12": 282,
+    "6-13": 283,
+    "6-14": 284,
+    "6-15": 285,
+    "6-16": 286,
+    "6-17": 287,
+    "6-18": 288,
+    "6-19": 289,
+    "6-20": 290,
+    "6-21": 291,
+    "6-22": 292,
+    "7-1": 293,
+    "7-2": 294,
+    "7-3": 295,
+    "7-4": 296,
+    "7-5": 297,
+    "7-6": 298,
+    "8-1": 299,
+    "8-2": 300,
+    "8-3": 301,
+    "8-4": 302,
+    "8-5": 303,
+    "8-6": 304,
+    "9-1": 305,
+    "9-2": 306,
+    "9-3": 307,
+    "9-4": 308
+  },
+  "unparseable_pages": [
+    1,
+    2,
+    309,
+    310
+  ],
+  "logical_duplicates": [],
+  "metadata": {
+    "schema_version": "2.0",
+    "extraction_dir": "assets/gnx375_pymupdf_v1_0_1/",
+    "extraction_tool": "pymupdf-extract V1.0.1",
+    "physical_page_count": 310,
+    "parsed_count": 306,
+    "unparseable_count": 4,
+    "generated": "2026-05-02T07:49:39-04:00",
+    "source_pdf_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+    "extracted_at": "2026-05-02T10:33:43.228641+00:00",
+    "footer_ratio": 0.07,
+    "header_ratio": 0.0,
+    "overrides_file": "assets/gnx375_pymupdf_v1_0_1/page_overrides.json",
+    "overrides_applied": [
+      {
+        "physical_page": 2,
+        "field": "printed_page_number",
+        "to": null,
+        "rationale": "PAP 22 paper recycling code, not a page identifier",
+        "decision_ref": "D-28"
+      }
+    ]
+  },
+  "extras": {
+    "1": {
+      "footer_text_raw": "",
+      "parse_warning": "Footer text is empty"
+    },
+    "2": {
+      "footer_text_raw": "22\nPAP",
+      "parse_warning": null,
+      "override_applied": true,
+      "override_rationale_ref": "D-28"
+    },
+    "3": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\ni",
+      "parse_warning": null
+    },
+    "4": {
+      "footer_text_raw": "ii\nPilot’s Guide\n190-02488-01 Rev. C\na d 65\n( eg o\nsout\no\nust a a a d\ne\nea a d)",
+      "parse_warning": null
+    },
+    "5": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\niii",
+      "parse_warning": null
+    },
+    "6": {
+      "footer_text_raw": "iv\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "7": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nv\nimply specific FAA authorization to fly the procedure.",
+      "parse_warning": null
+    },
+    "8": {
+      "footer_text_raw": "vi\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "9": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nvii",
+      "parse_warning": null
+    },
+    "10": {
+      "footer_text_raw": "viii\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "11": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nix\n Channel Spacing Option ........................................................................... 2-25",
+      "parse_warning": null
+    },
+    "12": {
+      "footer_text_raw": "x\nPilot’s Guide\n190-02488-01 Rev. C\n Message Types ......................................................................................... 2 60",
+      "parse_warning": null
+    },
+    "13": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nxi\n Leg Status Indications ............................................................................... 3 44",
+      "parse_warning": null
+    },
+    "14": {
+      "footer_text_raw": "xii\nPilot’s Guide\n190-02488-01 Rev. C\n DALT/TAS/Wind Page ..................................................................................... 4 9",
+      "parse_warning": null
+    },
+    "15": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nxiii\n Terrain Proximity .......................................................................................... 5 40",
+      "parse_warning": null
+    },
+    "16": {
+      "footer_text_raw": "xiv\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "17": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-1",
+      "parse_warning": null
+    },
+    "18": {
+      "footer_text_raw": "1-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "19": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-3",
+      "parse_warning": null
+    },
+    "20": {
+      "footer_text_raw": "1-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "21": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-5",
+      "parse_warning": null
+    },
+    "22": {
+      "footer_text_raw": "1-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "23": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-7",
+      "parse_warning": null
+    },
+    "24": {
+      "footer_text_raw": "1-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "25": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-9",
+      "parse_warning": null
+    },
+    "26": {
+      "footer_text_raw": "1-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "27": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-11",
+      "parse_warning": null
+    },
+    "28": {
+      "footer_text_raw": "1-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "29": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-13",
+      "parse_warning": null
+    },
+    "30": {
+      "footer_text_raw": "1-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "31": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-15",
+      "parse_warning": null
+    },
+    "32": {
+      "footer_text_raw": "1-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "33": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-17",
+      "parse_warning": null
+    },
+    "34": {
+      "footer_text_raw": "1-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "35": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-19",
+      "parse_warning": null
+    },
+    "36": {
+      "footer_text_raw": "1-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "37": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-1",
+      "parse_warning": null
+    },
+    "38": {
+      "footer_text_raw": "2-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "39": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-3",
+      "parse_warning": null
+    },
+    "40": {
+      "footer_text_raw": "2-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "41": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-5",
+      "parse_warning": null
+    },
+    "42": {
+      "footer_text_raw": "2-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "43": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-7",
+      "parse_warning": null
+    },
+    "44": {
+      "footer_text_raw": "2-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "45": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-9",
+      "parse_warning": null
+    },
+    "46": {
+      "footer_text_raw": "2-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "47": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-11",
+      "parse_warning": null
+    },
+    "48": {
+      "footer_text_raw": "2-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "49": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-13",
+      "parse_warning": null
+    },
+    "50": {
+      "footer_text_raw": "2-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "51": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-15",
+      "parse_warning": null
+    },
+    "52": {
+      "footer_text_raw": "2-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "53": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-17",
+      "parse_warning": null
+    },
+    "54": {
+      "footer_text_raw": "2-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "55": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-19",
+      "parse_warning": null
+    },
+    "56": {
+      "footer_text_raw": "2-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "57": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-21",
+      "parse_warning": null
+    },
+    "58": {
+      "footer_text_raw": "2-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "59": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-23",
+      "parse_warning": null
+    },
+    "60": {
+      "footer_text_raw": "2-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "61": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-25",
+      "parse_warning": null
+    },
+    "62": {
+      "footer_text_raw": "2-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "63": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-27",
+      "parse_warning": null
+    },
+    "64": {
+      "footer_text_raw": "2-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "65": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-29",
+      "parse_warning": null
+    },
+    "66": {
+      "footer_text_raw": "2-30\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "67": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-31",
+      "parse_warning": null
+    },
+    "68": {
+      "footer_text_raw": "2-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "69": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-33",
+      "parse_warning": null
+    },
+    "70": {
+      "footer_text_raw": "2-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "71": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-35",
+      "parse_warning": null
+    },
+    "72": {
+      "footer_text_raw": "2-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "73": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-37",
+      "parse_warning": null
+    },
+    "74": {
+      "footer_text_raw": "2-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "75": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-39",
+      "parse_warning": null
+    },
+    "76": {
+      "footer_text_raw": "2-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "77": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-41",
+      "parse_warning": null
+    },
+    "78": {
+      "footer_text_raw": "2-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "79": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-43",
+      "parse_warning": null
+    },
+    "80": {
+      "footer_text_raw": "2-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "81": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-45",
+      "parse_warning": null
+    },
+    "82": {
+      "footer_text_raw": "2-46\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "83": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-47",
+      "parse_warning": null
+    },
+    "84": {
+      "footer_text_raw": "2-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "85": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-49",
+      "parse_warning": null
+    },
+    "86": {
+      "footer_text_raw": "2-50\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "87": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-51",
+      "parse_warning": null
+    },
+    "88": {
+      "footer_text_raw": "2-52\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "89": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-53",
+      "parse_warning": null
+    },
+    "90": {
+      "footer_text_raw": "2-54\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "91": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-55",
+      "parse_warning": null
+    },
+    "92": {
+      "footer_text_raw": "2-56\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "93": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-57",
+      "parse_warning": null
+    },
+    "94": {
+      "footer_text_raw": "2-58\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "95": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-59",
+      "parse_warning": null
+    },
+    "96": {
+      "footer_text_raw": "2-60\nPilot’s Guide\n190-02488-01 Rev. C\nConfirming this request removes the selected message from the list.",
+      "parse_warning": null
+    },
+    "97": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-61",
+      "parse_warning": null
+    },
+    "98": {
+      "footer_text_raw": "2-62\nPilot’s Guide\n190-02488-01 Rev. C\nAdvisories.",
+      "parse_warning": null
+    },
+    "99": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-63",
+      "parse_warning": null
+    },
+    "100": {
+      "footer_text_raw": "2-64\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "101": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-65",
+      "parse_warning": null
+    },
+    "102": {
+      "footer_text_raw": "2-66\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "103": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-67",
+      "parse_warning": null
+    },
+    "104": {
+      "footer_text_raw": "2-68\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "105": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-69",
+      "parse_warning": null
+    },
+    "106": {
+      "footer_text_raw": "2-70\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "107": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-71",
+      "parse_warning": null
+    },
+    "108": {
+      "footer_text_raw": "2-72\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "109": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-73",
+      "parse_warning": null
+    },
+    "110": {
+      "footer_text_raw": "2-74\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "111": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-1",
+      "parse_warning": null
+    },
+    "112": {
+      "footer_text_raw": "3-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "113": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-3",
+      "parse_warning": null
+    },
+    "114": {
+      "footer_text_raw": "3-4\nPilot’s Guide\n190-02488-01 Rev. C\nSystem Units page selections do not affect the display of traffic on Map.",
+      "parse_warning": null
+    },
+    "115": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-5",
+      "parse_warning": null
+    },
+    "116": {
+      "footer_text_raw": "3-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "117": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-7",
+      "parse_warning": null
+    },
+    "118": {
+      "footer_text_raw": "3-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "119": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-9",
+      "parse_warning": null
+    },
+    "120": {
+      "footer_text_raw": "3-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "121": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-11",
+      "parse_warning": null
+    },
+    "122": {
+      "footer_text_raw": "3-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "123": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-13",
+      "parse_warning": null
+    },
+    "124": {
+      "footer_text_raw": "3-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "125": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-15",
+      "parse_warning": null
+    },
+    "126": {
+      "footer_text_raw": "3-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "127": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-17",
+      "parse_warning": null
+    },
+    "128": {
+      "footer_text_raw": "3-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "129": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-19",
+      "parse_warning": null
+    },
+    "130": {
+      "footer_text_raw": "3-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "131": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-21",
+      "parse_warning": null
+    },
+    "132": {
+      "footer_text_raw": "3-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "133": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-23",
+      "parse_warning": null
+    },
+    "134": {
+      "footer_text_raw": "3-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "135": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-25",
+      "parse_warning": null
+    },
+    "136": {
+      "footer_text_raw": "3-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "137": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-27",
+      "parse_warning": null
+    },
+    "138": {
+      "footer_text_raw": "3-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "139": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-29",
+      "parse_warning": null
+    },
+    "140": {
+      "footer_text_raw": "3-30\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "141": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-31",
+      "parse_warning": null
+    },
+    "142": {
+      "footer_text_raw": "3-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "143": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-33",
+      "parse_warning": null
+    },
+    "144": {
+      "footer_text_raw": "3-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "145": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-35",
+      "parse_warning": null
+    },
+    "146": {
+      "footer_text_raw": "3-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "147": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-37\nMap.",
+      "parse_warning": null
+    },
+    "148": {
+      "footer_text_raw": "3-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "149": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-39",
+      "parse_warning": null
+    },
+    "150": {
+      "footer_text_raw": "3-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "151": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-41",
+      "parse_warning": null
+    },
+    "152": {
+      "footer_text_raw": "3-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "153": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-43",
+      "parse_warning": null
+    },
+    "154": {
+      "footer_text_raw": "3-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "155": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-45",
+      "parse_warning": null
+    },
+    "156": {
+      "footer_text_raw": "3-46\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "157": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-47",
+      "parse_warning": null
+    },
+    "158": {
+      "footer_text_raw": "3-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "159": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-49",
+      "parse_warning": null
+    },
+    "160": {
+      "footer_text_raw": "3-50\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "161": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-51",
+      "parse_warning": null
+    },
+    "162": {
+      "footer_text_raw": "3-52\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "163": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-53",
+      "parse_warning": null
+    },
+    "164": {
+      "footer_text_raw": "3-54\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "165": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-55",
+      "parse_warning": null
+    },
+    "166": {
+      "footer_text_raw": "3-56\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "167": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-57",
+      "parse_warning": null
+    },
+    "168": {
+      "footer_text_raw": "3-58\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "169": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-59",
+      "parse_warning": null
+    },
+    "170": {
+      "footer_text_raw": "3-60\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "171": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-61",
+      "parse_warning": null
+    },
+    "172": {
+      "footer_text_raw": "3-62\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "173": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-63",
+      "parse_warning": null
+    },
+    "174": {
+      "footer_text_raw": "3-64\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "175": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-65",
+      "parse_warning": null
+    },
+    "176": {
+      "footer_text_raw": "3-66\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "177": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-67",
+      "parse_warning": null
+    },
+    "178": {
+      "footer_text_raw": "3-68\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "179": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-69",
+      "parse_warning": null
+    },
+    "180": {
+      "footer_text_raw": "3-70\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "181": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-71\nFor page specific controls, refer to the appropriate procedure description.",
+      "parse_warning": null
+    },
+    "182": {
+      "footer_text_raw": "3-72\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "183": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-73",
+      "parse_warning": null
+    },
+    "184": {
+      "footer_text_raw": "3-74\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "185": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-75",
+      "parse_warning": null
+    },
+    "186": {
+      "footer_text_raw": "3-76\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "187": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-77",
+      "parse_warning": null
+    },
+    "188": {
+      "footer_text_raw": "3-78\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "189": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-79",
+      "parse_warning": null
+    },
+    "190": {
+      "footer_text_raw": "3-80\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "191": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-81",
+      "parse_warning": null
+    },
+    "192": {
+      "footer_text_raw": "3-82\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "193": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-83",
+      "parse_warning": null
+    },
+    "194": {
+      "footer_text_raw": "3-84\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "195": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-85",
+      "parse_warning": null
+    },
+    "196": {
+      "footer_text_raw": "3-86\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "197": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-87",
+      "parse_warning": null
+    },
+    "198": {
+      "footer_text_raw": "3-88\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "199": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-89",
+      "parse_warning": null
+    },
+    "200": {
+      "footer_text_raw": "3-90\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "201": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-91",
+      "parse_warning": null
+    },
+    "202": {
+      "footer_text_raw": "3-92\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "203": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-93",
+      "parse_warning": null
+    },
+    "204": {
+      "footer_text_raw": "3-94\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "205": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-95",
+      "parse_warning": null
+    },
+    "206": {
+      "footer_text_raw": "3-96\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "207": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-97",
+      "parse_warning": null
+    },
+    "208": {
+      "footer_text_raw": "3-98\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "209": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-1",
+      "parse_warning": null
+    },
+    "210": {
+      "footer_text_raw": "4-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "211": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-3",
+      "parse_warning": null
+    },
+    "212": {
+      "footer_text_raw": "4-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "213": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-5",
+      "parse_warning": null
+    },
+    "214": {
+      "footer_text_raw": "4-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "215": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-7",
+      "parse_warning": null
+    },
+    "216": {
+      "footer_text_raw": "4-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "217": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-9",
+      "parse_warning": null
+    },
+    "218": {
+      "footer_text_raw": "4-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "219": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-11",
+      "parse_warning": null
+    },
+    "220": {
+      "footer_text_raw": "4-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "221": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-13",
+      "parse_warning": null
+    },
+    "222": {
+      "footer_text_raw": "4-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "223": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-1",
+      "parse_warning": null
+    },
+    "224": {
+      "footer_text_raw": "5-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "225": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-3",
+      "parse_warning": null
+    },
+    "226": {
+      "footer_text_raw": "5-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "227": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-5",
+      "parse_warning": null
+    },
+    "228": {
+      "footer_text_raw": "5-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "229": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-7",
+      "parse_warning": null
+    },
+    "230": {
+      "footer_text_raw": "5-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "231": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-9",
+      "parse_warning": null
+    },
+    "232": {
+      "footer_text_raw": "5-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "233": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-11",
+      "parse_warning": null
+    },
+    "234": {
+      "footer_text_raw": "5-12\nPilot’s Guide\n190-02488-01 Rev. C\n• White hash mark indicates regional boundary",
+      "parse_warning": null
+    },
+    "235": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-13",
+      "parse_warning": null
+    },
+    "236": {
+      "footer_text_raw": "5-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "237": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-15",
+      "parse_warning": null
+    },
+    "238": {
+      "footer_text_raw": "5-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "239": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-17",
+      "parse_warning": null
+    },
+    "240": {
+      "footer_text_raw": "5-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "241": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-19",
+      "parse_warning": null
+    },
+    "242": {
+      "footer_text_raw": "5-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "243": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-21",
+      "parse_warning": null
+    },
+    "244": {
+      "footer_text_raw": "5-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "245": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-23",
+      "parse_warning": null
+    },
+    "246": {
+      "footer_text_raw": "5-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "247": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-25",
+      "parse_warning": null
+    },
+    "248": {
+      "footer_text_raw": "5-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "249": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-27",
+      "parse_warning": null
+    },
+    "250": {
+      "footer_text_raw": "5-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "251": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-29",
+      "parse_warning": null
+    },
+    "252": {
+      "footer_text_raw": "5-30\nPilot’s Guide\n190-02488-01 Rev. C\nUnrestricted\nUNR\n9,900 ft to 9,900 ft",
+      "parse_warning": null
+    },
+    "253": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-31",
+      "parse_warning": null
+    },
+    "254": {
+      "footer_text_raw": "5-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "255": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-33",
+      "parse_warning": null
+    },
+    "256": {
+      "footer_text_raw": "5-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "257": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-35",
+      "parse_warning": null
+    },
+    "258": {
+      "footer_text_raw": "5-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "259": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-37",
+      "parse_warning": null
+    },
+    "260": {
+      "footer_text_raw": "5-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "261": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-39",
+      "parse_warning": null
+    },
+    "262": {
+      "footer_text_raw": "5-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "263": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-41",
+      "parse_warning": null
+    },
+    "264": {
+      "footer_text_raw": "5-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "265": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-43",
+      "parse_warning": null
+    },
+    "266": {
+      "footer_text_raw": "5-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "267": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-45",
+      "parse_warning": null
+    },
+    "268": {
+      "footer_text_raw": "5-46\nPilot’s Guide\n190-02488-01 Rev. C\nregional coverage",
+      "parse_warning": null
+    },
+    "269": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-47",
+      "parse_warning": null
+    },
+    "270": {
+      "footer_text_raw": "5-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "271": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-1",
+      "parse_warning": null
+    },
+    "272": {
+      "footer_text_raw": "6-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "273": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-3",
+      "parse_warning": null
+    },
+    "274": {
+      "footer_text_raw": "6-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "275": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-5\nfunction is off.\nExternal FPL Crossfill.",
+      "parse_warning": null
+    },
+    "276": {
+      "footer_text_raw": "6-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "277": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-7",
+      "parse_warning": null
+    },
+    "278": {
+      "footer_text_raw": "6-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "279": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-9",
+      "parse_warning": null
+    },
+    "280": {
+      "footer_text_raw": "6-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "281": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-11",
+      "parse_warning": null
+    },
+    "282": {
+      "footer_text_raw": "6-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "283": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-13",
+      "parse_warning": null
+    },
+    "284": {
+      "footer_text_raw": "6-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "285": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-15",
+      "parse_warning": null
+    },
+    "286": {
+      "footer_text_raw": "6-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "287": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-17",
+      "parse_warning": null
+    },
+    "288": {
+      "footer_text_raw": "6-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "289": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-19",
+      "parse_warning": null
+    },
+    "290": {
+      "footer_text_raw": "6-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "291": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-21",
+      "parse_warning": null
+    },
+    "292": {
+      "footer_text_raw": "6-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "293": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-1",
+      "parse_warning": null
+    },
+    "294": {
+      "footer_text_raw": "7-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "295": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-3",
+      "parse_warning": null
+    },
+    "296": {
+      "footer_text_raw": "7-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "297": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-5",
+      "parse_warning": null
+    },
+    "298": {
+      "footer_text_raw": "7-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "299": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-1",
+      "parse_warning": null
+    },
+    "300": {
+      "footer_text_raw": "8-2\nPilot’s Guide\n190-02488-01 Rev. C\nGFC\nGarmin Flight Controller",
+      "parse_warning": null
+    },
+    "301": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-3",
+      "parse_warning": null
+    },
+    "302": {
+      "footer_text_raw": "8-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "303": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-5",
+      "parse_warning": null
+    },
+    "304": {
+      "footer_text_raw": "8-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "305": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n9-1",
+      "parse_warning": null
+    },
+    "306": {
+      "footer_text_raw": "9-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "307": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n9-3",
+      "parse_warning": null
+    },
+    "308": {
+      "footer_text_raw": "9-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "parse_warning": null
+    },
+    "309": {
+      "footer_text_raw": "",
+      "parse_warning": "Footer text is empty"
+    },
+    "310": {
+      "footer_text_raw": "",
+      "parse_warning": "Footer text is empty"
+    }
+  }
+}
