@@ -41,6 +41,7 @@ The pre-pivot curated reference asset directory, originally established as the l
 
 - `docs/decisions/D-12-*` (or successor) — GNX 375 pivot rationale.
 - `docs/decisions/D-25-*` — CD's verify-before-asserting convention; the discovery that the old extraction was defective came from violating this convention multiple times.
-- `docs/decisions/D-26-*` (pending) — CD must verify against ground-truth source documents (PDF, schema, API), not derived artifacts.
-- `docs/todos/issue_index.md` § ITM-11 — the page-number offset issue; partially superseded by the new-extraction rebuild but verification still pending.
-- `docs/tasks/dependency_audit_*` (forthcoming) — the audit producing the reference patch list, the work-dependency report, and the salvage recommendations.
+- `docs/decisions/D-26-cd-verify-against-ground-truth-source-documents.md` — generalized verify-against-ground-truth discipline (created 2026-04-30).
+- `docs/decisions/D-30-v1-fragment-citations-use-physical-pdf-page-numbers.md` — V1 fragment citations use absolute physical PDF page numbers; closed ITM-11.
+- `docs/todos/issue_index_resolved.md` §ITM-11 — the page-number offset issue, closed 2026-05-02 by 13/13 content-match verification.
+- `docs/tasks/dependency_audit_01_*` — the audit producing the reference patch list, the work-dependency report, and the salvage recommendations (executed 2026-05-02).
