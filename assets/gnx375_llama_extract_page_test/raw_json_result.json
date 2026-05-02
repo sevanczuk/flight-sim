@@ -1,0 +1,2491 @@
+{
+  "markdown_pages": [
+    {
+      "page": 1,
+      "md": "# GARMIN®\n\n# GPS 175\n# GNC 355\n# GNX 375\n\n## Pilot's Guide\n\n![Garmin aviation navigator unit showing the home screen with icons for Map, Traffic, Terrain, Weather, Nearest, Flight Plan, PROC, Waypoint Info, Utilities, and System.](page_1_image_1_v2.jpg)"
+    },
+    {
+      "page": 2,
+      "md": "# COPYRIGHT & TR[A](https://www.garmin.com/en-US/legal/aviation-limited-warranty)DEMARKS\n\n© 2019-2023 Garmin International, Inc., or its subsidiaries. All rights reserved.\n\nExcept as expressly provided herein, no part o[f](https://support.garmin.com/en-US/aviation/) this manual may be reproduced, copied, transmitted, disseminated, downloaded or stored in any storage medium, for any purpose without the express prior written consent of Garmin. Garmin hereby grants permission to download a single copy of this manual and of any revision to this manual onto a hard drive or other electronic storage medium to be viewed and to print one copy of this manual or of any revision hereto, provided that such electronic or printed copy of this manual or revision must contain the complete text of this copyright notice and provided further that any unauthorized commercial distribution of this manual or any revision hereto is strictly prohibited.\n\nGarmin®, flyGarmin.com®, GDL®, GNC®, and SafeTaxi® are registered trademarks of Garmin International or its subsidiaries. Connext™, Garmin Pilot™, Garmin Txi™, GDU™, GNS™, GNX™, GPS™, GTN™, GTX™, G3X Touch™, and Smart Airspace™ are trademarks of Garmin International or its subsidiaries. These trademarks may not be used without the express permission of Garmin.\n\nThe Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Garmin is under license. Other trademarks and trade names are those of their respective owners.\n\n© 2023 SD® is a registered trademark of SD-3C, LLC. All rights reserved.\n\nThe term Wi-Fi® is a registered trademark of Wi-Fi Alliance®.\n\nAll other marks and logos are property of their respective owners. All rights reserved.\n\n## SOFTWARE VERSION\n\nThis manual reflects the operation of system software v3.20. Some differences in operation may be observed when comparing the information in this manual to later software versions.\n\n## INFORMATION & SUPPORT\n\nFor information regarding the Aviation Limited Warranty, refer to Garmin’s website.\n\nFor aviation product support, visit flyGarmin.com."
+    },
+    {
+      "page": 8,
+      "md": "# About This Guide\n\n## Record of Revision\n\n\n<table>\n  <thead>\n    <tr>\n        <th>REVISION</th>\n        <th>DATE</th>\n        <th>CHANGE DESCRIPTION</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>1</td>\n        <td>06.05.19</td>\n        <td>Experimental Release.</td>\n    </tr>\n    <tr>\n        <td>A</td>\n        <td>07.03.19</td>\n        <td>Production Release.</td>\n    </tr>\n    <tr>\n        <td>B</td>\n        <td>02.10.20</td>\n        <td>Updates for software v3.10.</td>\n    </tr>\n    <tr>\n        <td>C</td>\n        <td>01.24.23</td>\n        <td>Updates for software v3.20.</td>\n    </tr>\n  </tbody>\n</table>\n\n\n## Available for Download\n\n**Electronic Pilot’s Guide**\n\nA version of this guide saved in Adobe Acrobat. Available for viewing on your computer or portable device.\n\n**Upgrade Supplement**\n\nDetails document changes for software enhancements.\n\nGo to garmin.com/manuals."
+    },
+    {
+      "page": 17,
+      "md": "# 1 System at a Glance\n\n**OVERVIEW** 1-2\n**PILOT INTERFACE** 1-5\n**COMPATIBLE EQUIPMENT** 1-17"
+    },
+    {
+      "page": 18,
+      "md": "# Overview\n\nGPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.\n\n*GNC 355 shown as typical.*\n\n![GNC 355 navigator unit showing touchscreen interface with various icons like Map, Traffic, Terrain, and COM frequencies.](page_18_image_1_v2.jpg)\n\n6.25\"\n\nGPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.\n\nGNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.\n\nBoth GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.\n\nGNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.\n\nEach unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device."
+    },
+    {
+      "page": 80,
+      "md": "# Get Started\n\n## VFR\n\n![VFR key and squawk code display](page_80_image_1_v2.jpg)\n\nTapping this key once sets the squawk code to the preprogrammed VFR code.\n\nThis code is factory set to 1200, but may be changed during configuration.\n\n## XPDR Key\n\n![XPDR Key interface showing Active Transponder, Transponder Mode (On), and Active Squawk Code](page_80_image_2_v2.jpg)\n\nTapping the **XPDR** key activates the IDENT function for 18 seconds. This signal distinguishes the transponder from others on the air traffic controller’s screen.\n\nTapping this key when another page is active immediately opens the control panel."
+    },
+    {
+      "page": 125,
+      "md": "# LAND DATA SYMBOLS\n\n\n<table>\n  <thead>\n    <tr>\n        <th>Symbol</th>\n        <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Railroad symbol\"></td>\n        <td>Railroad</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"River/Lake symbol\"></td>\n        <td>River/Lake</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"State/Province Border symbol\"></td>\n        <td>State/Province Border</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Local Road symbol\"></td>\n        <td>Local Road</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Local Highway symbol\"></td>\n        <td>Local Highway</td>\n    </tr>\n  </tbody>\n</table>\n<table>\n  <thead>\n    <tr>\n        <th>Symbol</th>\n        <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"National Highway symbol\"></td>\n        <td>National Highway</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Freeway symbol\"></td>\n        <td>Freeway</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Small City symbol\"></td>\n        <td>Small City</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Medium City symbol\"></td>\n        <td>Medium City</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Large City symbol\"></td>\n        <td>Large City</td>\n    </tr>\n  </tbody>\n</table>"
+    },
+    {
+      "page": 293,
+      "md": "# 7 Qualification\n\nGLOVE QUALIFICATION 7-2\n\n![NOTE icon](page_293_image_1_v2.jpg) **NOTE**\n\n> The procedures described in this section are not authorized for completion during flight. All tasks must be performed while the aircraft is on the ground."
+    },
+    {
+      "page": 300,
+      "md": "# C\n\n\n<table>\n  <tbody>\n    <tr>\n        <td>CDI</td>\n        <td>Course Deviation Indicator</td>\n    </tr>\n    <tr>\n        <td>CDU</td>\n        <td>Control and Display Unit</td>\n    </tr>\n    <tr>\n        <td>CRS</td>\n        <td>Course</td>\n    </tr>\n    <tr>\n        <td>CTAF</td>\n        <td>Common Traffic Advisory Frequency</td>\n    </tr>\n    <tr>\n        <td>CWA</td>\n        <td>Central Weather Advisory</td>\n    </tr>\n  </tbody>\n</table>\n\n\n# D\n\n\n<table>\n  <tbody>\n    <tr>\n        <td>DG</td>\n        <td>Directional Gyro</td>\n    </tr>\n    <tr>\n        <td>DME</td>\n        <td>Distance Measuring Equipment</td>\n    </tr>\n  </tbody>\n</table>\n\n\n# E\n\n\n<table>\n  <tbody>\n    <tr>\n        <td>EDR</td>\n        <td>Excessive Descent Rate</td>\n    </tr>\n    <tr>\n        <td>EFC</td>\n        <td>Expected Further Clearance</td>\n    </tr>\n    <tr>\n        <td>ENR</td>\n        <td>En Route</td>\n    </tr>\n    <tr>\n        <td>ESP</td>\n        <td>Electronic Stability and Protection</td>\n    </tr>\n  </tbody>\n</table>\n\n\n# F\n\n\n<table>\n  <tbody>\n    <tr>\n        <td>FAF</td>\n        <td>Final Approach Fix</td>\n    </tr>\n    <tr>\n        <td>FDC</td>\n        <td>Flight Data Center</td>\n    </tr>\n    <tr>\n        <td>FIS-B</td>\n        <td>Flight Information Services Broadcast</td>\n    </tr>\n    <tr>\n        <td>FLTA</td>\n        <td>Forward Looking Terrain Avoidance</td>\n    </tr>\n    <tr>\n        <td>FMS</td>\n        <td>Flight Management System</td>\n    </tr>\n    <tr>\n        <td>FPL</td>\n        <td>Flight Plan</td>\n    </tr>\n    <tr>\n        <td>FPM</td>\n        <td>Feet Per Minute</td>\n    </tr>\n    <tr>\n        <td>FSS</td>\n        <td>Flight Service Station</td>\n    </tr>\n  </tbody>\n</table>\n\n\n# G\n\n\n<table>\n  <tbody>\n    <tr>\n        <td>GCS</td>\n        <td>Ground Clutter Suppression</td>\n    </tr>\n    <tr>\n        <td>GDC</td>\n        <td>Garmin Air Data Computer</td>\n    </tr>\n    <tr>\n        <td>GDL</td>\n        <td>Garmin Data Link</td>\n    </tr>\n    <tr>\n        <td>GDU</td>\n        <td>Garmin Display Unit</td>\n    </tr>\n    <tr>\n        <td>GFC</td>\n        <td>Garmin Flight Controller</td>\n    </tr>\n  </tbody>\n</table>"
+    },
+    {
+      "page": 308,
+      "md": "INTENTIONALLY LEFT BLANK"
+    },
+    {
+      "page": 310,
+      "md": "# GARMIN<sub>®</sub>"
+    }
+  ],
+  "items_pages": [
+    {
+      "page_number": 1,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# GARMIN®",
+          "value": "GARMIN®",
+          "bbox": [
+            {
+              "h": 15.840000000000003,
+              "w": 92.63999999999999,
+              "x": 36.0,
+              "y": 111.11999999999999,
+              "confidence": 0.82,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GPS 175",
+          "value": "GPS 175",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 90.63999999999999,
+              "x": 42.192,
+              "y": 181.658,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GNC 355",
+          "value": "GNC 355",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 95.91999999999999,
+              "x": 42.192,
+              "y": 215.09,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 1,
+          "md": "# GNX 375",
+          "value": "GNX 375",
+          "bbox": [
+            {
+              "h": 28.0,
+              "w": 97.12,
+              "x": 42.192,
+              "y": 248.522,
+              "confidence": 0.65,
+              "end_index": 8,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 2,
+          "md": "## Pilot's Guide",
+          "value": "Pilot's Guide",
+          "bbox": [
+            {
+              "h": 18.143422494283495,
+              "w": 95.44670609637006,
+              "x": 42.29980090629764,
+              "y": 283.0738880287729,
+              "confidence": 0.86,
+              "end_index": 15,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "Garmin aviation navigator unit showing the home screen with icons for Map, Traffic, Terrain, Weather, Nearest, Flight Plan, PROC, Waypoint Info, Utilities, and System.",
+          "md": "![Garmin aviation navigator unit showing the home screen with icons for Map, Traffic, Terrain, Weather, Nearest, Flight Plan, PROC, Waypoint Info, Utilities, and System.](page_1_image_1_v2.jpg)",
+          "url": "page_1_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 96.43526152820124,
+              "w": 291.0384769793254,
+              "x": 52.63783947456174,
+              "y": 383.8889312595274,
+              "confidence": 0.97,
+              "end_index": 192,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# COPYRIGHT & TR[A](https://www.garmin.com/en-US/legal/aviation-limited-warranty)DEMARKS",
+          "value": "COPYRIGHT & TRADEMARKS",
+          "bbox": [
+            {
+              "h": 24.70678139291158,
+              "w": 312.18463256835935,
+              "x": 40.86977863590892,
+              "y": 429.81458674733227,
+              "confidence": 0.57,
+              "end_index": 87,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "[A](https://www.garmin.com/en-US/legal/aviation-limited-warranty)",
+          "text": "A",
+          "url": "https://www.garmin.com/en-US/legal/aviation-limited-warranty",
+          "bbox": [
+            {
+              "h": 25.092000000000002,
+              "w": 312.444,
+              "x": 40.788,
+              "y": 429.62399999999997,
+              "confidence": 0.45,
+              "end_index": 64,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "link"
+        },
+        {
+          "md": "© 2019-2023 Garmin International, Inc., or its subsidiaries. All rights reserved.",
+          "value": "© 2019-2023 Garmin International, Inc., or its subsidiaries. All rights reserved.",
+          "bbox": [
+            {
+              "h": 223.507,
+              "w": 281.192,
+              "x": 50.477,
+              "y": 72.849,
+              "confidence": 0.88,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 10.0,
+              "w": 278.99,
+              "x": 50.48,
+              "y": 72.85,
+              "confidence": 1.0,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 2
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Except as expressly provided herein, no part o",
+          "value": "Except as expressly provided herein, no part o",
+          "bbox": [
+            {
+              "h": 253.88755460413486,
+              "w": 312.79216713509913,
+              "x": 41.13823277915396,
+              "y": 72.90271978610899,
+              "confidence": 0.45,
+              "end_index": 45,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "[f](https://support.garmin.com/en-US/aviation/)",
+          "text": "f",
+          "url": "https://support.garmin.com/en-US/aviation/",
+          "bbox": null,
+          "type": "link"
+        },
+        {
+          "md": " this manual may be reproduced, copied, transmitted, disseminated, downloaded or stored in any storage medium, for any purpose without the express prior written consent of Garmin. Garmin hereby grants permission to download a single copy of this manual and of any revision to this manual onto a hard drive or other electronic storage medium to be viewed and to print one copy of this manual or of any revision hereto, provided that such electronic or printed copy of this manual or revision must contain the complete text of this copyright notice and provided further that any unauthorized commercial distribution of this manual or any revision hereto is strictly prohibited.",
+          "value": " this manual may be reproduced, copied, transmitted, disseminated, downloaded or stored in any storage medium, for any purpose without the express prior written consent of Garmin. Garmin hereby grants permission to download a single copy of this manual and of any revision to this manual onto a hard drive or other electronic storage medium to be viewed and to print one copy of this manual or of any revision hereto, provided that such electronic or printed copy of this manual or revision must contain the complete text of this copyright notice and provided further that any unauthorized commercial distribution of this manual or any revision hereto is strictly prohibited.",
+          "bbox": [
+            {
+              "h": 95.274760682641,
+              "w": 312.1837571455793,
+              "x": 41.12499237804878,
+              "y": 89.48913842177971,
+              "confidence": 0.91,
+              "end_index": 674,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 13.0,
+              "w": 55.0,
+              "x": 40.99,
+              "y": 54.49,
+              "confidence": 1.0,
+              "end_index": 540,
+              "label": "paragraph_title",
+              "start_index": 530
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Garmin®, flyGarmin.com®, GDL®, GNC®, and SafeTaxi® are registered trademarks of Garmin International or its subsidiaries. Connext™, Garmin Pilot™, Garmin Txi™, GDU™, GNS™, GNX™, GPS™, GTN™, GTX™, G3X Touch™, and Smart Airspace™ are trademarks of Garmin International or its subsidiaries. These trademarks may not be used without the express permission of Garmin.",
+          "value": "Garmin®, flyGarmin.com®, GDL®, GNC®, and SafeTaxi® are registered trademarks of Garmin International or its subsidiaries. Connext™, Garmin Pilot™, Garmin Txi™, GDU™, GNS™, GNX™, GPS™, GTN™, GTX™, G3X Touch™, and Smart Airspace™ are trademarks of Garmin International or its subsidiaries. These trademarks may not be used without the express permission of Garmin.",
+          "bbox": [
+            {
+              "h": 53.855999999999995,
+              "w": 311.2560000000001,
+              "x": 41.184,
+              "y": 189.72,
+              "confidence": 0.88,
+              "end_index": 361,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 20.75,
+              "w": 306.95,
+              "x": 41.76,
+              "y": 222.61,
+              "confidence": 1.0,
+              "end_index": 361,
+              "label": "text",
+              "start_index": 212
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Garmin is under license. Other trademarks and trade names are those of their respective owners.",
+          "value": "The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Garmin is under license. Other trademarks and trade names are those of their respective owners.",
+          "bbox": [
+            {
+              "h": 31.094596989329276,
+              "w": 311.9930770948456,
+              "x": 41.01396106254764,
+              "y": 249.49524580792684,
+              "confidence": 0.9,
+              "end_index": 213,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 13.0,
+              "w": 62.0,
+              "x": 105.07,
+              "y": 54.49,
+              "confidence": 1.0,
+              "end_index": 59,
+              "label": "paragraph_title",
+              "start_index": 50
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "© 2023 SD® is a registered trademark of SD-3C, LLC. All rights reserved.",
+          "value": "© 2023 SD® is a registered trademark of SD-3C, LLC. All rights reserved.",
+          "bbox": [
+            {
+              "h": 9.642217868711905,
+              "w": 270.47963870164824,
+              "x": 40.88533581245237,
+              "y": 286.56265172446643,
+              "confidence": 0.86,
+              "end_index": 71,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The term Wi-Fi® is a registered trademark of Wi-Fi Alliance®.",
+          "value": "The term Wi-Fi® is a registered trademark of Wi-Fi Alliance®.",
+          "bbox": [
+            {
+              "h": 10.473306259527435,
+              "w": 226.29932944693218,
+              "x": 40.6947382931593,
+              "y": 301.5621836890244,
+              "confidence": 0.85,
+              "end_index": 60,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "All other marks and logos are property of their respective owners. All rights reserved.",
+          "value": "All other marks and logos are property of their respective owners. All rights reserved.",
+          "bbox": [
+            {
+              "h": 9.0737702458079,
+              "w": 314.35595223775726,
+              "x": 40.61330628930069,
+              "y": 318.73576314786584,
+              "confidence": 0.87,
+              "end_index": 86,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## SOFTWARE VERSION",
+          "value": "SOFTWARE VERSION",
+          "bbox": [
+            {
+              "h": 8.360846512957306,
+              "w": 91.61738578982468,
+              "x": 40.764424304496956,
+              "y": 346.6045834127287,
+              "confidence": 0.92,
+              "end_index": 18,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "This manual reflects the operation of system software v3.20. Some differences in operation may be observed when comparing the information in this manual to later software versions.",
+          "value": "This manual reflects the operation of system software v3.20. Some differences in operation may be observed when comparing the information in this manual to later software versions.",
+          "bbox": [
+            {
+              "h": 29.66758336509145,
+              "w": 312.27440614281636,
+              "x": 40.62321890482089,
+              "y": 363.56202267530483,
+              "confidence": 0.97,
+              "end_index": 179,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## INFORMATION & SUPPORT",
+          "value": "INFORMATION & SUPPORT",
+          "bbox": [
+            {
+              "h": 8.269703934832359,
+              "w": 119.12311353729993,
+              "x": 40.93985961914063,
+              "y": 413.2263095464939,
+              "confidence": 0.91,
+              "end_index": 23,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "For information regarding the Aviation Limited Warranty, refer to Garmin’s website.",
+          "value": "For information regarding the Aviation Limited Warranty, refer to Garmin’s website.",
+          "bbox": [
+            {
+              "h": 10.0,
+              "w": 96.99799999999999,
+              "x": 256.301,
+              "y": 428.848,
+              "confidence": 0.77,
+              "end_index": 82,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "For aviation product support, visit flyGarmin.com.",
+          "value": "For aviation product support, visit flyGarmin.com.",
+          "bbox": [
+            {
+              "h": 8.651511528201244,
+              "w": 184.17549146698744,
+              "x": 40.97001896555831,
+              "y": 445.925322027439,
+              "confidence": 0.79,
+              "end_index": 49,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "caption": "Logo with number 22 and text PAP",
+              "md": "![Logo with number 22 and text PAP](page_2_image_1_v2.jpg)",
+              "url": "page_2_image_1_v2.jpg",
+              "bbox": [
+                {
+                  "h": 27.0,
+                  "w": 21.0,
+                  "x": 39.0,
+                  "y": 568.0,
+                  "confidence": 1.0,
+                  "end_index": 57,
+                  "label": "image",
+                  "start_index": 0
+                }
+              ],
+              "type": "image"
+            }
+          ],
+          "md": "![Logo with number 22 and text PAP](page_2_image_1_v2.jpg)",
+          "bbox": [
+            {
+              "h": 27.0,
+              "w": 21.0,
+              "x": 39.0,
+              "y": 568.0,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# About This Guide",
+          "value": "About This Guide",
+          "bbox": [
+            {
+              "h": 11.696850273318407,
+              "w": 76.09971233088795,
+              "x": 32.2684668564215,
+              "y": 11.401484181473894,
+              "confidence": 0.83,
+              "end_index": 17,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 2,
+          "md": "## Record of Revision",
+          "value": "Record of Revision",
+          "bbox": [
+            {
+              "h": 10.248522368640435,
+              "w": 89.80206254168255,
+              "x": 36.015173190977514,
+              "y": 33.84346270305355,
+              "confidence": 0.95,
+              "end_index": 20,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"REVISION\",\"DATE\",\"CHANGE DESCRIPTION\"\n\"1\",\"06.05.19\",\"Experimental Release.\"\n\"A\",\"07.03.19\",\"Production Release.\"\n\"B\",\"02.10.20\",\"Updates for software v3.10.\"\n\"C\",\"01.24.23\",\"Updates for software v3.20.\"",
+          "html": "<table>\n  <thead>\n    <tr>\n        <th>REVISION</th>\n        <th>DATE</th>\n        <th>CHANGE DESCRIPTION</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>1</td>\n        <td>06.05.19</td>\n        <td>Experimental Release.</td>\n    </tr>\n    <tr>\n        <td>A</td>\n        <td>07.03.19</td>\n        <td>Production Release.</td>\n    </tr>\n    <tr>\n        <td>B</td>\n        <td>02.10.20</td>\n        <td>Updates for software v3.10.</td>\n    </tr>\n    <tr>\n        <td>C</td>\n        <td>01.24.23</td>\n        <td>Updates for software v3.20.</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| REVISION | DATE     | CHANGE DESCRIPTION          |\n| -------- | -------- | --------------------------- |\n| 1        | 06.05.19 | Experimental Release.       |\n| A        | 07.03.19 | Production Release.         |\n| B        | 02.10.20 | Updates for software v3.10. |\n| C        | 01.24.23 | Updates for software v3.20. |",
+          "rows": [
+            [
+              "REVISION",
+              "DATE",
+              "CHANGE DESCRIPTION"
+            ],
+            [
+              "1",
+              "06.05.19",
+              "Experimental Release."
+            ],
+            [
+              "A",
+              "07.03.19",
+              "Production Release."
+            ],
+            [
+              "B",
+              "02.10.20",
+              "Updates for software v3.10."
+            ],
+            [
+              "C",
+              "01.24.23",
+              "Updates for software v3.20."
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 97.47595780535441,
+              "w": 314.6156433105469,
+              "x": 40.61526346346228,
+              "y": 54.72771079458841,
+              "confidence": 0.99,
+              "end_index": 322,
+              "label": "table",
+              "start_index": 0
+            },
+            {
+              "h": 9.12,
+              "w": 6.75,
+              "x": 31.74,
+              "y": 590.16,
+              "confidence": 1.0,
+              "end_index": 5,
+              "label": "footer",
+              "start_index": 4
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": null,
+          "type": "table"
+        },
+        {
+          "level": 2,
+          "md": "## Available for Download",
+          "value": "Available for Download",
+          "bbox": [
+            {
+              "h": 12.742268125952732,
+              "w": 114.86607698766197,
+              "x": 35.539833359136814,
+              "y": 174.52264017244664,
+              "confidence": 0.95,
+              "end_index": 24,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "**Electronic Pilot’s Guide**",
+          "value": "Electronic Pilot’s Guide",
+          "bbox": [
+            {
+              "h": 11.067372927782007,
+              "w": 91.44460032393292,
+              "x": 35.926171875,
+              "y": 191.70048339843748,
+              "confidence": 0.94,
+              "end_index": 27,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "A version of this guide saved in Adobe Acrobat. Available for viewing on your computer or portable device.",
+          "value": "A version of this guide saved in Adobe Acrobat. Available for viewing on your computer or portable device.",
+          "bbox": [
+            {
+              "h": 21.39450850323934,
+              "w": 297.6149358684261,
+              "x": 35.957881633479424,
+              "y": 207.45643316501523,
+              "confidence": 0.98,
+              "end_index": 105,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "**Upgrade Supplement**",
+          "value": "Upgrade Supplement",
+          "bbox": [
+            {
+              "h": 10.492474990472564,
+              "w": 84.38404442763911,
+              "x": 35.9460766899295,
+              "y": 233.15683629477894,
+              "confidence": 0.96,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Details document changes for software enhancements.",
+          "value": "Details document changes for software enhancements.",
+          "bbox": [
+            {
+              "h": 10.21673316025157,
+              "w": 210.80771823790016,
+              "x": 36.05513904106326,
+              "y": 248.64954399294967,
+              "confidence": 0.97,
+              "end_index": 50,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Go to garmin.com/manuals.",
+          "value": "Go to garmin.com/manuals.",
+          "bbox": [
+            {
+              "h": 9.991919659870454,
+              "w": 106.85422244188263,
+              "x": 36.104699171112806,
+              "y": 269.48686559165395,
+              "confidence": 0.96,
+              "end_index": 24,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "vi\nPilot’s Guide\n190-02488-01 Rev. C",
+              "value": "vi\nPilot’s Guide\n190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 9.11957841082316,
+                  "w": 6.753730528296489,
+                  "x": 31.73596515934642,
+                  "y": 590.1611304306402,
+                  "confidence": 0.78,
+                  "end_index": 1,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 8.82905916539632,
+                  "w": 46.83172315644053,
+                  "x": 153.4152306831174,
+                  "y": 590.071044683689,
+                  "confidence": 0.85,
+                  "end_index": 15,
+                  "label": "footer",
+                  "start_index": 3
+                },
+                {
+                  "h": 9.2142194645579,
+                  "w": 76.34754835175308,
+                  "x": 285.30708698551825,
+                  "y": 590.045644293064,
+                  "confidence": 0.87,
+                  "end_index": 35,
+                  "label": "footer",
+                  "start_index": 17
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "vi\nPilot’s Guide\n190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 9.24,
+              "w": 329.92,
+              "x": 31.74,
+              "y": 590.05,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 17,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 10.855290371034204,
+                  "w": 84.07341082317072,
+                  "x": 278.8240772675305,
+                  "y": 12.600537727169874,
+                  "confidence": 0.96,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 10.86,
+              "w": 84.07,
+              "x": 278.82,
+              "y": 12.6,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# 1 System at a Glance",
+          "value": "1 System at a Glance",
+          "bbox": [
+            {
+              "h": 27.58979861375763,
+              "w": 273.52725067883006,
+              "x": 35.86135521865473,
+              "y": 185.0159715605945,
+              "confidence": 0.92,
+              "end_index": 21,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "**OVERVIEW** 1-2\n**PILOT INTERFACE** 1-5\n**COMPATIBLE EQUIPMENT** 1-17",
+          "value": "OVERVIEW 1-2\nPILOT INTERFACE 1-5\nCOMPATIBLE EQUIPMENT 1-17",
+          "bbox": [
+            {
+              "h": 54.33451493426063,
+              "w": 315.3491886492473,
+              "x": 35.69055934999047,
+              "y": 224.1601600609756,
+              "confidence": 0.93,
+              "end_index": 69,
+              "label": "reference",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 1-1",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 18,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "System at a Glance",
+              "value": "System at a Glance",
+              "bbox": [
+                {
+                  "h": 12.647630488698077,
+                  "w": 84.18167438786203,
+                  "x": 32.57593184308308,
+                  "y": 11.08900494087033,
+                  "confidence": 0.9,
+                  "end_index": 17,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "System at a Glance",
+          "bbox": [
+            {
+              "h": 12.65,
+              "w": 84.18,
+              "x": 32.58,
+              "y": 11.09,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# Overview",
+          "value": "Overview",
+          "bbox": [
+            {
+              "h": 28.08747499047256,
+              "w": 100.12374809451221,
+              "x": 35.98787002191311,
+              "y": 29.83706355397294,
+              "confidence": 0.95,
+              "end_index": 9,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "value": "GPS 175, GNC 355/355A, and GNX 375 are the first 2” by 6.25” panel mount navigators to employ full color capacitive touchscreen technology.",
+          "bbox": [
+            {
+              "h": 22.3306240472561,
+              "w": 302.48619203148826,
+              "x": 35.9921528141673,
+              "y": 59.13008681878811,
+              "confidence": 0.98,
+              "end_index": 138,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "*GNC 355 shown as typical.*",
+          "value": "GNC 355 shown as typical.",
+          "bbox": [
+            {
+              "h": 8.790585044302597,
+              "w": 80.34662698885289,
+              "x": 71.52567841320503,
+              "y": 98.36060749333079,
+              "confidence": 0.84,
+              "end_index": 26,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "GNC 355 navigator unit showing touchscreen interface with various icons like Map, Traffic, Terrain, and COM frequencies.",
+          "md": "![GNC 355 navigator unit showing touchscreen interface with various icons like Map, Traffic, Terrain, and COM frequencies.](page_18_image_1_v2.jpg)",
+          "url": "page_18_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 79.02344863519436,
+              "w": 299.81684522675306,
+              "x": 47.54221274771342,
+              "y": 117.02782649342606,
+              "confidence": 0.96,
+              "end_index": 146,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "6.25\"",
+          "value": "6.25\"",
+          "bbox": [
+            {
+              "h": 11.167753668064014,
+              "w": 28.574365472560984,
+              "x": 146.18608958174542,
+              "y": 195.0491805211509,
+              "confidence": 0.84,
+              "end_index": 4,
+              "label": "caption",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "value": "GPS 175 is a TSO-C146e compliant GPS/WAAS navigator with en route, terminal, and precision/non-precision approach capabilities.",
+          "bbox": [
+            {
+              "h": 21.93183427019816,
+              "w": 313.3912481242855,
+              "x": 35.89461244164444,
+              "y": 226.3999861852134,
+              "confidence": 0.98,
+              "end_index": 126,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "value": "GNC 355/355A combines the functionality of GPS 175 with a TSO-C169a compliant VHF radio communications transceiver. GNC 355 supports 25 kHz channel spacing, while GNC 355A provides tuning for both 25 kHz and 8.33 khz channels.",
+          "bbox": [
+            {
+              "h": 32.9131483422256,
+              "w": 322.48273181450077,
+              "x": 35.80214480516387,
+              "y": 252.44444252572407,
+              "confidence": 0.98,
+              "end_index": 225,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "value": "Both GPS 175 and GNC 355 can receive ADS-B In weather and traffic when interfaced to either GNX 375, GTX 345, or GDL 88.",
+          "bbox": [
+            {
+              "h": 21.923488948170725,
+              "w": 290.97507809522676,
+              "x": 35.90073745355373,
+              "y": 289.58325743140244,
+              "confidence": 0.97,
+              "end_index": 119,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "value": "GNX 375 combines the functionality of GPS 175 with a TSO-C112e (Level 2els, Class 1) compliant mode S transponder that meets ADS-B Out requirements. A dual-link ADS-B In receiver provides the display of traffic and subscription-free weather.",
+          "bbox": [
+            {
+              "h": 43.85113233612808,
+              "w": 296.7365006907393,
+              "x": 35.96568085461128,
+              "y": 315.5399421208079,
+              "confidence": 0.98,
+              "end_index": 240,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "value": "Each unit is compatible with Bluetooth wireless technology, providing flight plan, traffic, weather, and position data to an available portable electronic device.",
+          "bbox": [
+            {
+              "h": 21.89287728658539,
+              "w": 310.3301894173971,
+              "x": 35.90898765005717,
+              "y": 363.5257988757622,
+              "confidence": 0.98,
+              "end_index": 161,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "value": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 12.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 2,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 16,
+                  "label": "footer",
+                  "start_index": 4
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 18
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "1-2 Pilot’s Guide 190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 80,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# Get Started",
+          "value": "Get Started",
+          "bbox": [
+            {
+              "h": 13.092050773806687,
+              "w": 50.30450174471227,
+              "x": 33.005039330459226,
+              "y": 10.81460920380383,
+              "confidence": 0.83,
+              "end_index": 12,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "level": 2,
+          "md": "## VFR",
+          "value": "VFR",
+          "bbox": [
+            {
+              "h": 18.0,
+              "w": 24.0,
+              "x": 36.064,
+              "y": 31.097,
+              "confidence": 0.82,
+              "end_index": 5,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "VFR key and squawk code display",
+          "md": "![VFR key and squawk code display](page_80_image_1_v2.jpg)",
+          "url": "page_80_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 63.434291426495804,
+              "w": 56.57579178972943,
+              "x": 38.84629340939405,
+              "y": 58.38707528463223,
+              "confidence": 0.95,
+              "end_index": 57,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "Tapping this key once sets the squawk code to the preprogrammed VFR code.",
+          "value": "Tapping this key once sets the squawk code to the preprogrammed VFR code.",
+          "bbox": [
+            {
+              "h": 23.03025995021913,
+              "w": 195.84944288300306,
+              "x": 111.78503977705792,
+              "y": 60.41791304425495,
+              "confidence": 0.95,
+              "end_index": 72,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "This code is factory set to 1200, but may be changed during configuration.",
+          "value": "This code is factory set to 1200, but may be changed during configuration.",
+          "bbox": [
+            {
+              "h": 22.413494188262188,
+              "w": 232.36807259908537,
+              "x": 111.97521579649391,
+              "y": 86.6863857064596,
+              "confidence": 0.94,
+              "end_index": 73,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "level": 2,
+          "md": "## XPDR Key",
+          "value": "XPDR Key",
+          "bbox": [
+            {
+              "h": 17.00678234565549,
+              "w": 61.58373770364901,
+              "x": 35.884590766720656,
+              "y": 144.81092499523626,
+              "confidence": 0.76,
+              "end_index": 10,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": "XPDR Key interface showing Active Transponder, Transponder Mode (On), and Active Squawk Code",
+          "md": "![XPDR Key interface showing Active Transponder, Transponder Mode (On), and Active Squawk Code](page_80_image_2_v2.jpg)",
+          "url": "page_80_image_2_v2.jpg",
+          "bbox": [
+            {
+              "h": 108.88010456364329,
+              "w": 161.96890413609947,
+              "x": 35.32131368497523,
+              "y": 144.60733922446644,
+              "confidence": 0.89,
+              "end_index": 118,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": "Tapping the **XPDR** key activates the IDENT function for 18 seconds. This signal distinguishes the transponder from others on the air traffic controller’s screen.",
+          "value": "Tapping the XPDR key activates the IDENT function for 18 seconds. This signal distinguishes the transponder from others on the air traffic controller’s screen.",
+          "bbox": [
+            {
+              "h": 56.419387742949674,
+              "w": 133.34899604611283,
+              "x": 224.97580221036586,
+              "y": 162.82027570026676,
+              "confidence": 0.87,
+              "end_index": 162,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "Tapping this key when another page is active immediately opens the control panel.",
+          "value": "Tapping this key when another page is active immediately opens the control panel.",
+          "bbox": [
+            {
+              "h": 34.03298851943595,
+              "w": 127.90076552972559,
+              "x": 225.09827886814026,
+              "y": 222.19948313643292,
+              "confidence": 0.88,
+              "end_index": 80,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "2-44\nPilot’s Guide\n190-02488-01 Rev. C",
+              "value": "2-44\nPilot’s Guide\n190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 16.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.8,
+                  "end_index": 3,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.86,
+                  "end_index": 17,
+                  "label": "footer",
+                  "start_index": 5
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.88,
+                  "end_index": 37,
+                  "label": "footer",
+                  "start_index": 19
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "2-44\nPilot’s Guide\n190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 125,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "Navigation",
+              "value": "Navigation",
+              "bbox": [
+                {
+                  "h": 13.0,
+                  "w": 48.0,
+                  "x": 314.637,
+                  "y": 10.744,
+                  "confidence": 1.0,
+                  "end_index": 9,
+                  "label": "text",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "Navigation",
+          "bbox": [
+            {
+              "h": 13.0,
+              "w": 48.0,
+              "x": 314.64,
+              "y": 10.74,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# LAND DATA SYMBOLS",
+          "value": "LAND DATA SYMBOLS",
+          "bbox": [
+            {
+              "h": 165.316,
+              "w": 147.159,
+              "x": 35.999,
+              "y": 32.145,
+              "confidence": 0.64,
+              "end_index": 18,
+              "label": "chart",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"Symbol\",\"Description\"\n\"Railroad symbol\",\"Railroad\"\n\"River/Lake symbol\",\"River/Lake\"\n\"State/Province Border symbol\",\"State/Province Border\"\n\"Local Road symbol\",\"Local Road\"\n\"Local Highway symbol\",\"Local Highway\"",
+          "html": "<table>\n  <thead>\n    <tr>\n        <th>Symbol</th>\n        <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Railroad symbol\" /></td>\n        <td>Railroad</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"River/Lake symbol\" /></td>\n        <td>River/Lake</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"State/Province Border symbol\" /></td>\n        <td>State/Province Border</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Local Road symbol\" /></td>\n        <td>Local Road</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Local Highway symbol\" /></td>\n        <td>Local Highway</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Symbol                                                                      | Description           |\n| --------------------------------------------------------------------------- | --------------------- |\n| ![Railroad symbol](page_125_layout_ocr_pswb_31_26_336_185.png)              | Railroad              |\n| ![River/Lake symbol](page_125_layout_ocr_pswb_31_26_336_185.png)            | River/Lake            |\n| ![State/Province Border symbol](page_125_layout_ocr_pswb_31_26_336_185.png) | State/Province Border |\n| ![Local Road symbol](page_125_layout_ocr_pswb_31_26_336_185.png)            | Local Road            |\n| ![Local Highway symbol](page_125_layout_ocr_pswb_31_26_336_185.png)         | Local Highway         |",
+          "rows": [
+            [
+              "Symbol",
+              "Description"
+            ],
+            [
+              "Railroad symbol",
+              "Railroad"
+            ],
+            [
+              "River/Lake symbol",
+              "River/Lake"
+            ],
+            [
+              "State/Province Border symbol",
+              "State/Province Border"
+            ],
+            [
+              "Local Road symbol",
+              "Local Road"
+            ],
+            [
+              "Local Highway symbol",
+              "Local Highway"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 174.79141921624904,
+              "w": 325.7705780773628,
+              "x": 36.36264529344512,
+              "y": 31.202960904749425,
+              "confidence": 0.77,
+              "end_index": 726,
+              "label": "chart",
+              "start_index": 0
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 271,
+              "label": "image",
+              "start_index": 210
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 377,
+              "label": "image",
+              "start_index": 314
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 492,
+              "label": "image",
+              "start_index": 418
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 585,
+              "label": "image",
+              "start_index": 522
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 692,
+              "label": "image",
+              "start_index": 626
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "layout detected [footer, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "csv": "\"Symbol\",\"Description\"\n\"National Highway symbol\",\"National Highway\"\n\"Freeway symbol\",\"Freeway\"\n\"Small City symbol\",\"Small City\"\n\"Medium City symbol\",\"Medium City\"\n\"Large City symbol\",\"Large City\"",
+          "html": "<table>\n  <thead>\n    <tr>\n        <th>Symbol</th>\n        <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"National Highway symbol\" /></td>\n        <td>National Highway</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Freeway symbol\" /></td>\n        <td>Freeway</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Small City symbol\" /></td>\n        <td>Small City</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Medium City symbol\" /></td>\n        <td>Medium City</td>\n    </tr>\n    <tr>\n        <td><img src=\"page_125_layout_ocr_pswb_31_26_336_185.png\" alt=\"Large City symbol\" /></td>\n        <td>Large City</td>\n    </tr>\n  </tbody>\n</table>",
+          "md": "| Symbol                                                                 | Description      |\n| ---------------------------------------------------------------------- | ---------------- |\n| ![National Highway symbol](page_125_layout_ocr_pswb_31_26_336_185.png) | National Highway |\n| ![Freeway symbol](page_125_layout_ocr_pswb_31_26_336_185.png)          | Freeway          |\n| ![Small City symbol](page_125_layout_ocr_pswb_31_26_336_185.png)       | Small City       |\n| ![Medium City symbol](page_125_layout_ocr_pswb_31_26_336_185.png)      | Medium City      |\n| ![Large City symbol](page_125_layout_ocr_pswb_31_26_336_185.png)       | Large City       |",
+          "rows": [
+            [
+              "Symbol",
+              "Description"
+            ],
+            [
+              "National Highway symbol",
+              "National Highway"
+            ],
+            [
+              "Freeway symbol",
+              "Freeway"
+            ],
+            [
+              "Small City symbol",
+              "Small City"
+            ],
+            [
+              "Medium City symbol",
+              "Medium City"
+            ],
+            [
+              "Large City symbol",
+              "Large City"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 174.79141921624904,
+              "w": 325.7705780773628,
+              "x": 36.36264529344512,
+              "y": 31.202960904749425,
+              "confidence": 0.77,
+              "end_index": 656,
+              "label": "chart",
+              "start_index": 0
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 259,
+              "label": "image",
+              "start_index": 190
+            },
+            {
+              "h": 13.0,
+              "w": 48.0,
+              "x": 314.637,
+              "y": 10.744,
+              "confidence": 0.6,
+              "end_index": 268,
+              "label": "text",
+              "start_index": 264
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 344,
+              "label": "image",
+              "start_index": 284
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 441,
+              "label": "image",
+              "start_index": 378
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 536,
+              "label": "image",
+              "start_index": 472
+            },
+            {
+              "h": 184.79141921624904,
+              "w": 335.7705780773628,
+              "x": 31.36264529344512,
+              "y": 26.202960904749425,
+              "confidence": 1.0,
+              "end_index": 629,
+              "label": "image",
+              "start_index": 566
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "layout detected [footer, chart] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 3-15",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 3-15",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 16.26800000000003,
+                  "x": 345.28,
+                  "y": 589.076,
+                  "confidence": 0.96,
+                  "end_index": 37,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 3-15",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.31,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 293,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "Qualification",
+              "value": "Qualification",
+              "bbox": [
+                {
+                  "h": 10.39023682384956,
+                  "w": 57.471499618902435,
+                  "x": 305.2999040110518,
+                  "y": 12.42816491848085,
+                  "confidence": 0.94,
+                  "end_index": 12,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "Qualification",
+          "bbox": [
+            {
+              "h": 10.39,
+              "w": 57.47,
+              "x": 305.3,
+              "y": 12.43,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# 7 Qualification",
+          "value": "7 Qualification",
+          "bbox": [
+            {
+              "h": 26.669790634527462,
+              "w": 199.1301295433975,
+              "x": 36.38356996117569,
+              "y": 184.2869402629573,
+              "confidence": 0.96,
+              "end_index": 16,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "md": "GLOVE QUALIFICATION 7-2",
+          "value": "GLOVE QUALIFICATION 7-2",
+          "bbox": [
+            {
+              "h": 14.0,
+              "w": 114.0,
+              "x": 35.99,
+              "y": 221.98,
+              "confidence": 1.0,
+              "end_index": 18,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "caption": "NOTE icon",
+          "md": "![NOTE icon](page_293_image_1_v2.jpg)",
+          "url": "page_293_image_1_v2.jpg",
+          "bbox": [
+            {
+              "h": 23.902022675304924,
+              "w": 62.36852622427592,
+              "x": 36.255890875095275,
+              "y": 446.12007050304874,
+              "confidence": 0.87,
+              "end_index": 36,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "image"
+        },
+        {
+          "md": " **NOTE**",
+          "value": " NOTE",
+          "bbox": [
+            {
+              "h": 26.591999999999985,
+              "w": 33.0,
+              "x": 65.52,
+              "y": 450.206,
+              "confidence": 0.91,
+              "end_index": 8,
+              "label": "image",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "md": "The procedures described in this section are not authorized for completion during flight. All tasks must be performed while the aircraft is on the ground.",
+          "value": "The procedures described in this section are not authorized for completion during flight. All tasks must be performed while the aircraft is on the ground.",
+          "bbox": [
+            {
+              "h": 18.67209317835368,
+              "w": 279.2854751810213,
+              "x": 67.48324718940549,
+              "y": 468.10164872332314,
+              "confidence": 0.96,
+              "end_index": 153,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C Pilot’s Guide 7-1",
+              "value": "190-02488-01 Rev. C Pilot’s Guide 7-1",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 75.559,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.718999999999994,
+                  "x": 192.586,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 32,
+                  "label": "footer",
+                  "start_index": 20
+                },
+                {
+                  "h": 11.0,
+                  "w": 12.267000000000053,
+                  "x": 349.828,
+                  "y": 589.076,
+                  "confidence": 0.97,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 34
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C Pilot’s Guide 7-1",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.85,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 300,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "items": [
+            {
+              "md": "Glossary",
+              "value": "Glossary",
+              "bbox": [
+                {
+                  "h": 11.679084576862612,
+                  "w": 37.74457531440549,
+                  "x": 32.96720750762196,
+                  "y": 11.923832099728468,
+                  "confidence": 0.82,
+                  "end_index": 7,
+                  "label": "header",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "Glossary",
+          "bbox": [
+            {
+              "h": 11.68,
+              "w": 37.74,
+              "x": 32.97,
+              "y": 11.92,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "header"
+        },
+        {
+          "level": 1,
+          "md": "# C",
+          "value": "C",
+          "bbox": [
+            {
+              "h": 12.87935097298971,
+              "w": 8.740604218273626,
+              "x": 41.82152826076601,
+              "y": 39.391450552591465,
+              "confidence": 0.79,
+              "end_index": 2,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"CDI\",\"Course Deviation Indicator\"\n\"CDU\",\"Control and Display Unit\"\n\"CRS\",\"Course\"\n\"CTAF\",\"Common Traffic Advisory Frequency\"\n\"CWA\",\"Central Weather Advisory\"",
+          "html": "<table>\n    <tr>\n        <td>CDI</td>\n        <td>Course Deviation Indicator</td>\n    </tr>\n    <tr>\n        <td>CDU</td>\n        <td>Control and Display Unit</td>\n    </tr>\n    <tr>\n        <td>CRS</td>\n        <td>Course</td>\n    </tr>\n    <tr>\n        <td>CTAF</td>\n        <td>Common Traffic Advisory Frequency</td>\n    </tr>\n    <tr>\n        <td>CWA</td>\n        <td>Central Weather Advisory</td>\n    </tr>\n</table>",
+          "md": "| CDI  | Course Deviation Indicator        |\n| ---- | --------------------------------- |\n| CDU  | Control and Display Unit          |\n| CRS  | Course                            |\n| CTAF | Common Traffic Advisory Frequency |\n| CWA  | Central Weather Advisory          |",
+          "rows": [
+            [
+              "CDI",
+              "Course Deviation Indicator"
+            ],
+            [
+              "CDU",
+              "Control and Display Unit"
+            ],
+            [
+              "CRS",
+              "Course"
+            ],
+            [
+              "CTAF",
+              "Common Traffic Advisory Frequency"
+            ],
+            [
+              "CWA",
+              "Central Weather Advisory"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 85.31000887242759,
+              "w": 192.5427676614901,
+              "x": 41.17872624094894,
+              "y": 59.482029820884144,
+              "confidence": 0.81,
+              "end_index": 268,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "5 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 1,
+          "md": "# D",
+          "value": "D",
+          "bbox": [
+            {
+              "h": 11.691203970560228,
+              "w": 8.99829095607851,
+              "x": 42.14375458508003,
+              "y": 151.9539831245236,
+              "confidence": 0.76,
+              "end_index": 2,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"DG\",\"Directional Gyro\"\n\"DME\",\"Distance Measuring Equipment\"",
+          "html": "<table>\n    <tr>\n        <td>DG</td>\n        <td>Directional Gyro</td>\n    </tr>\n    <tr>\n        <td>DME</td>\n        <td>Distance Measuring Equipment</td>\n    </tr>\n</table>",
+          "md": "| DG  | Directional Gyro             |\n| --- | ---------------------------- |\n| DME | Distance Measuring Equipment |",
+          "rows": [
+            [
+              "DG",
+              "Directional Gyro"
+            ],
+            [
+              "DME",
+              "Distance Measuring Equipment"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 28.152,
+              "w": 171.864,
+              "x": 41.976,
+              "y": 173.808,
+              "confidence": 1.0,
+              "end_index": 115,
+              "label": "text",
+              "start_index": 0
+            },
+            {
+              "h": 28.0,
+              "w": 119.41,
+              "x": 94.45,
+              "y": 173.79,
+              "confidence": 1.0,
+              "end_index": 113,
+              "label": "text",
+              "start_index": 86
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "5 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 1,
+          "md": "# E",
+          "value": "E",
+          "bbox": [
+            {
+              "h": 11.97271281916921,
+              "w": 6.693078762147491,
+              "x": 42.36095965129573,
+              "y": 209.89893399866614,
+              "confidence": 0.76,
+              "end_index": 2,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"EDR\",\"Excessive Descent Rate\"\n\"EFC\",\"Expected Further Clearance\"\n\"ENR\",\"En Route\"\n\"ESP\",\"Electronic Stability and Protection\"",
+          "html": "<table>\n    <tr>\n        <td>EDR</td>\n        <td>Excessive Descent Rate</td>\n    </tr>\n    <tr>\n        <td>EFC</td>\n        <td>Expected Further Clearance</td>\n    </tr>\n    <tr>\n        <td>ENR</td>\n        <td>En Route</td>\n    </tr>\n    <tr>\n        <td>ESP</td>\n        <td>Electronic Stability and Protection</td>\n    </tr>\n</table>",
+          "md": "| EDR | Excessive Descent Rate              |\n| --- | ----------------------------------- |\n| EFC | Expected Further Clearance          |\n| ENR | En Route                            |\n| ESP | Electronic Stability and Protection |",
+          "rows": [
+            [
+              "EDR",
+              "Excessive Descent Rate"
+            ],
+            [
+              "EFC",
+              "Expected Further Clearance"
+            ],
+            [
+              "ENR",
+              "En Route"
+            ],
+            [
+              "ESP",
+              "Electronic Stability and Protection"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 64.47409941882624,
+              "w": 181.3070464045827,
+              "x": 41.63088947575267,
+              "y": 232.06910191977894,
+              "confidence": 0.78,
+              "end_index": 228,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "col 1 'Excessive Descent Rate' expects numeric, got 'Expected Further Clearance' in row 1",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "5 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 1,
+          "md": "# F",
+          "value": "F",
+          "bbox": [
+            {
+              "h": 11.088673542301786,
+              "w": 6.3233614889005345,
+              "x": 42.22263990448742,
+              "y": 304.2002893959604,
+              "confidence": 0.75,
+              "end_index": 2,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"FAF\",\"Final Approach Fix\"\n\"FDC\",\"Flight Data Center\"\n\"FIS-B\",\"Flight Information Services Broadcast\"\n\"FLTA\",\"Forward Looking Terrain Avoidance\"\n\"FMS\",\"Flight Management System\"\n\"FPL\",\"Flight Plan\"\n\"FPM\",\"Feet Per Minute\"\n\"FSS\",\"Flight Service Station\"",
+          "html": "<table>\n    <tr>\n        <td>FAF</td>\n        <td>Final Approach Fix</td>\n    </tr>\n    <tr>\n        <td>FDC</td>\n        <td>Flight Data Center</td>\n    </tr>\n    <tr>\n        <td>FIS-B</td>\n        <td>Flight Information Services Broadcast</td>\n    </tr>\n    <tr>\n        <td>FLTA</td>\n        <td>Forward Looking Terrain Avoidance</td>\n    </tr>\n    <tr>\n        <td>FMS</td>\n        <td>Flight Management System</td>\n    </tr>\n    <tr>\n        <td>FPL</td>\n        <td>Flight Plan</td>\n    </tr>\n    <tr>\n        <td>FPM</td>\n        <td>Feet Per Minute</td>\n    </tr>\n    <tr>\n        <td>FSS</td>\n        <td>Flight Service Station</td>\n    </tr>\n</table>",
+          "md": "| FAF   | Final Approach Fix                    |\n| ----- | ------------------------------------- |\n| FDC   | Flight Data Center                    |\n| FIS-B | Flight Information Services Broadcast |\n| FLTA  | Forward Looking Terrain Avoidance     |\n| FMS   | Flight Management System              |\n| FPL   | Flight Plan                           |\n| FPM   | Feet Per Minute                       |\n| FSS   | Flight Service Station                |",
+          "rows": [
+            [
+              "FAF",
+              "Final Approach Fix"
+            ],
+            [
+              "FDC",
+              "Flight Data Center"
+            ],
+            [
+              "FIS-B",
+              "Flight Information Services Broadcast"
+            ],
+            [
+              "FLTA",
+              "Forward Looking Terrain Avoidance"
+            ],
+            [
+              "FMS",
+              "Flight Management System"
+            ],
+            [
+              "FPL",
+              "Flight Plan"
+            ],
+            [
+              "FPM",
+              "Feet Per Minute"
+            ],
+            [
+              "FSS",
+              "Flight Service Station"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 137.01779725609757,
+              "w": 195.1212650354897,
+              "x": 41.44749282464749,
+              "y": 326.1641930259146,
+              "confidence": 0.77,
+              "end_index": 448,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "5 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "level": 1,
+          "md": "# G",
+          "value": "G",
+          "bbox": [
+            {
+              "h": 11.452223466082359,
+              "w": 9.277471239043445,
+              "x": 41.88773616139482,
+              "y": 470.440780535442,
+              "confidence": 0.75,
+              "end_index": 2,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "csv": "\"GCS\",\"Ground Clutter Suppression\"\n\"GDC\",\"Garmin Air Data Computer\"\n\"GDL\",\"Garmin Data Link\"\n\"GDU\",\"Garmin Display Unit\"\n\"GFC\",\"Garmin Flight Controller\"",
+          "html": "<table>\n    <tr>\n        <td>GCS</td>\n        <td>Ground Clutter Suppression</td>\n    </tr>\n    <tr>\n        <td>GDC</td>\n        <td>Garmin Air Data Computer</td>\n    </tr>\n    <tr>\n        <td>GDL</td>\n        <td>Garmin Data Link</td>\n    </tr>\n    <tr>\n        <td>GDU</td>\n        <td>Garmin Display Unit</td>\n    </tr>\n    <tr>\n        <td>GFC</td>\n        <td>Garmin Flight Controller</td>\n    </tr>\n</table>",
+          "md": "| GCS | Ground Clutter Suppression |\n| --- | -------------------------- |\n| GDC | Garmin Air Data Computer   |\n| GDL | Garmin Data Link           |\n| GDU | Garmin Display Unit        |\n| GFC | Garmin Flight Controller   |",
+          "rows": [
+            [
+              "GCS",
+              "Ground Clutter Suppression"
+            ],
+            [
+              "GDC",
+              "Garmin Air Data Computer"
+            ],
+            [
+              "GDL",
+              "Garmin Data Link"
+            ],
+            [
+              "GDU",
+              "Garmin Display Unit"
+            ],
+            [
+              "GFC",
+              "Garmin Flight Controller"
+            ]
+          ],
+          "bbox": [
+            {
+              "h": 83.17731445312499,
+              "w": 159.86127515839368,
+              "x": 40.95896564762767,
+              "y": 491.61647032202745,
+              "confidence": 0.82,
+              "end_index": 220,
+              "label": "table",
+              "start_index": 0
+            }
+          ],
+          "merged_from_pages": null,
+          "merged_into_page": null,
+          "parse_concerns": [
+            {
+              "details": "5 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "items": [
+            {
+              "md": "8-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "value": "8-2 Pilot’s Guide 190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 12.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 2,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 16,
+                  "label": "footer",
+                  "start_index": 4
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 18
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "8-2 Pilot’s Guide 190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 308,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "md": "INTENTIONALLY LEFT BLANK",
+          "value": "INTENTIONALLY LEFT BLANK",
+          "bbox": [
+            {
+              "h": 9.59752119855184,
+              "w": 103.80061809260671,
+              "x": 146.10642316120428,
+              "y": 291.2136199504573,
+              "confidence": 0.87,
+              "end_index": 23,
+              "label": "text",
+              "start_index": 0
+            }
+          ],
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "md": "9-4 Pilot’s Guide 190-02488-01 Rev. C",
+              "value": "9-4 Pilot’s Guide 190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 11.0,
+                  "w": 12.268,
+                  "x": 32.242,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 2,
+                  "label": "footer",
+                  "start_index": 0
+                },
+                {
+                  "h": 11.0,
+                  "w": 46.71799999999999,
+                  "x": 156.589,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 16,
+                  "label": "footer",
+                  "start_index": 4
+                },
+                {
+                  "h": 11.0,
+                  "w": 75.56,
+                  "x": 285.823,
+                  "y": 589.076,
+                  "confidence": 0.94,
+                  "end_index": 36,
+                  "label": "footer",
+                  "start_index": 18
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "9-4 Pilot’s Guide 190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 11.0,
+              "w": 329.14,
+              "x": 32.24,
+              "y": 589.08,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    },
+    {
+      "page_number": 310,
+      "page_width": 396.0,
+      "page_height": 612.0,
+      "items": [
+        {
+          "level": 1,
+          "md": "# GARMIN<sub>®</sub>",
+          "value": "GARMIN<sub>®</sub>",
+          "bbox": [
+            {
+              "h": 20.399999999999977,
+              "w": 115.68,
+              "x": 137.27999999999997,
+              "y": 242.88,
+              "confidence": 0.75,
+              "end_index": 19,
+              "label": "paragraph_title",
+              "start_index": 0
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "items": [
+            {
+              "md": "190-02488-01 Rev. C",
+              "value": "190-02488-01 Rev. C",
+              "bbox": [
+                {
+                  "h": 12.95008122141764,
+                  "w": 95.39634717987805,
+                  "x": 150.17652010289635,
+                  "y": 550.8939486471037,
+                  "confidence": 0.82,
+                  "end_index": 18,
+                  "label": "footer",
+                  "start_index": 0
+                }
+              ],
+              "type": "text"
+            }
+          ],
+          "md": "190-02488-01 Rev. C",
+          "bbox": [
+            {
+              "h": 12.95,
+              "w": 95.4,
+              "x": 150.18,
+              "y": 550.89,
+              "confidence": null,
+              "end_index": null,
+              "label": null,
+              "start_index": null
+            }
+          ],
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

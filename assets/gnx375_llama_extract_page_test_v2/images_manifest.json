@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "images": [
+    {
+      "filename": "page_1.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_1.jpg"
+    },
+    {
+      "filename": "page_2.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_2.jpg"
+    },
+    {
+      "filename": "page_8.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_8.jpg"
+    },
+    {
+      "filename": "page_17.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_17.jpg"
+    },
+    {
+      "filename": "page_18.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_18.jpg"
+    },
+    {
+      "filename": "page_80.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_80.jpg"
+    },
+    {
+      "filename": "page_125.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_125.jpg"
+    },
+    {
+      "filename": "page_293.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_293.jpg"
+    },
+    {
+      "filename": "page_300.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_300.jpg"
+    },
+    {
+      "filename": "page_308.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_308.jpg"
+    },
+    {
+      "filename": "page_310.jpg",
+      "category": "screenshot",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_screenshot\\page_310.jpg"
+    },
+    {
+      "filename": "page_1_image_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_1_image_1_v2.jpg"
+    },
+    {
+      "filename": "page_2_image_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_2_image_1_v2.jpg"
+    },
+    {
+      "filename": "page_8_table_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_8_table_1_v2.jpg"
+    },
+    {
+      "filename": "page_18_image_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_18_image_1_v2.jpg"
+    },
+    {
+      "filename": "page_80_image_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_80_image_1_v2.jpg"
+    },
+    {
+      "filename": "page_80_image_2_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_80_image_2_v2.jpg"
+    },
+    {
+      "filename": "page_125_chart_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_125_chart_1_v2.jpg"
+    },
+    {
+      "filename": "page_293_image_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_293_image_1_v2.jpg"
+    },
+    {
+      "filename": "page_300_table_1_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_300_table_1_v2.jpg"
+    },
+    {
+      "filename": "page_300_table_2_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_300_table_2_v2.jpg"
+    },
+    {
+      "filename": "page_300_table_3_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_300_table_3_v2.jpg"
+    },
+    {
+      "filename": "page_300_table_4_v2.jpg",
+      "category": "layout",
+      "page": null,
+      "local_path": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_llama_extract_page_test_v2\\images_layout\\page_300_table_4_v2.jpg"
+    }
+  ]
+}

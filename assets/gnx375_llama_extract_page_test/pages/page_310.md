@@ -1,0 +1,1 @@
+# GARMIN<sub>®</sub>

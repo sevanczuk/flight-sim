@@ -1,0 +1,1559 @@
+{
+  "extracted_at": "2026-05-02T10:33:43.228641+00:00",
+  "source_pdf": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+  "page_count": 310,
+  "footer_ratio": 0.07,
+  "header_ratio": 0.0,
+  "pages": {
+    "1": {
+      "footer_text_raw": "",
+      "printed_page_number": null,
+      "parse_warning": "Footer text is empty"
+    },
+    "2": {
+      "footer_text_raw": "22\nPAP",
+      "printed_page_number": null,
+      "parse_warning": null
+    },
+    "3": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\ni",
+      "printed_page_number": "i",
+      "parse_warning": null
+    },
+    "4": {
+      "footer_text_raw": "ii\nPilot’s Guide\n190-02488-01 Rev. C\na d 65\n( eg o\nsout\no\nust a a a d\ne\nea a d)",
+      "printed_page_number": "ii",
+      "parse_warning": null
+    },
+    "5": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\niii",
+      "printed_page_number": "iii",
+      "parse_warning": null
+    },
+    "6": {
+      "footer_text_raw": "iv\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "iv",
+      "parse_warning": null
+    },
+    "7": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nv\nimply specific FAA authorization to fly the procedure.",
+      "printed_page_number": "v",
+      "parse_warning": null
+    },
+    "8": {
+      "footer_text_raw": "vi\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "vi",
+      "parse_warning": null
+    },
+    "9": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nvii",
+      "printed_page_number": "vii",
+      "parse_warning": null
+    },
+    "10": {
+      "footer_text_raw": "viii\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "viii",
+      "parse_warning": null
+    },
+    "11": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nix\n Channel Spacing Option ........................................................................... 2-25",
+      "printed_page_number": "ix",
+      "parse_warning": null
+    },
+    "12": {
+      "footer_text_raw": "x\nPilot’s Guide\n190-02488-01 Rev. C\n Message Types ......................................................................................... 2 60",
+      "printed_page_number": "x",
+      "parse_warning": null
+    },
+    "13": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nxi\n Leg Status Indications ............................................................................... 3 44",
+      "printed_page_number": "xi",
+      "parse_warning": null
+    },
+    "14": {
+      "footer_text_raw": "xii\nPilot’s Guide\n190-02488-01 Rev. C\n DALT/TAS/Wind Page ..................................................................................... 4 9",
+      "printed_page_number": "xii",
+      "parse_warning": null
+    },
+    "15": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\nxiii\n Terrain Proximity .......................................................................................... 5 40",
+      "printed_page_number": "xiii",
+      "parse_warning": null
+    },
+    "16": {
+      "footer_text_raw": "xiv\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "xiv",
+      "parse_warning": null
+    },
+    "17": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-1",
+      "printed_page_number": "1-1",
+      "parse_warning": null
+    },
+    "18": {
+      "footer_text_raw": "1-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-2",
+      "parse_warning": null
+    },
+    "19": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-3",
+      "printed_page_number": "1-3",
+      "parse_warning": null
+    },
+    "20": {
+      "footer_text_raw": "1-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-4",
+      "parse_warning": null
+    },
+    "21": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-5",
+      "printed_page_number": "1-5",
+      "parse_warning": null
+    },
+    "22": {
+      "footer_text_raw": "1-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-6",
+      "parse_warning": null
+    },
+    "23": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-7",
+      "printed_page_number": "1-7",
+      "parse_warning": null
+    },
+    "24": {
+      "footer_text_raw": "1-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-8",
+      "parse_warning": null
+    },
+    "25": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-9",
+      "printed_page_number": "1-9",
+      "parse_warning": null
+    },
+    "26": {
+      "footer_text_raw": "1-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-10",
+      "parse_warning": null
+    },
+    "27": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-11",
+      "printed_page_number": "1-11",
+      "parse_warning": null
+    },
+    "28": {
+      "footer_text_raw": "1-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-12",
+      "parse_warning": null
+    },
+    "29": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-13",
+      "printed_page_number": "1-13",
+      "parse_warning": null
+    },
+    "30": {
+      "footer_text_raw": "1-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-14",
+      "parse_warning": null
+    },
+    "31": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-15",
+      "printed_page_number": "1-15",
+      "parse_warning": null
+    },
+    "32": {
+      "footer_text_raw": "1-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-16",
+      "parse_warning": null
+    },
+    "33": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-17",
+      "printed_page_number": "1-17",
+      "parse_warning": null
+    },
+    "34": {
+      "footer_text_raw": "1-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-18",
+      "parse_warning": null
+    },
+    "35": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n1-19",
+      "printed_page_number": "1-19",
+      "parse_warning": null
+    },
+    "36": {
+      "footer_text_raw": "1-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "1-20",
+      "parse_warning": null
+    },
+    "37": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-1",
+      "printed_page_number": "2-1",
+      "parse_warning": null
+    },
+    "38": {
+      "footer_text_raw": "2-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-2",
+      "parse_warning": null
+    },
+    "39": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-3",
+      "printed_page_number": "2-3",
+      "parse_warning": null
+    },
+    "40": {
+      "footer_text_raw": "2-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-4",
+      "parse_warning": null
+    },
+    "41": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-5",
+      "printed_page_number": "2-5",
+      "parse_warning": null
+    },
+    "42": {
+      "footer_text_raw": "2-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-6",
+      "parse_warning": null
+    },
+    "43": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-7",
+      "printed_page_number": "2-7",
+      "parse_warning": null
+    },
+    "44": {
+      "footer_text_raw": "2-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-8",
+      "parse_warning": null
+    },
+    "45": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-9",
+      "printed_page_number": "2-9",
+      "parse_warning": null
+    },
+    "46": {
+      "footer_text_raw": "2-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-10",
+      "parse_warning": null
+    },
+    "47": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-11",
+      "printed_page_number": "2-11",
+      "parse_warning": null
+    },
+    "48": {
+      "footer_text_raw": "2-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-12",
+      "parse_warning": null
+    },
+    "49": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-13",
+      "printed_page_number": "2-13",
+      "parse_warning": null
+    },
+    "50": {
+      "footer_text_raw": "2-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-14",
+      "parse_warning": null
+    },
+    "51": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-15",
+      "printed_page_number": "2-15",
+      "parse_warning": null
+    },
+    "52": {
+      "footer_text_raw": "2-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-16",
+      "parse_warning": null
+    },
+    "53": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-17",
+      "printed_page_number": "2-17",
+      "parse_warning": null
+    },
+    "54": {
+      "footer_text_raw": "2-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-18",
+      "parse_warning": null
+    },
+    "55": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-19",
+      "printed_page_number": "2-19",
+      "parse_warning": null
+    },
+    "56": {
+      "footer_text_raw": "2-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-20",
+      "parse_warning": null
+    },
+    "57": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-21",
+      "printed_page_number": "2-21",
+      "parse_warning": null
+    },
+    "58": {
+      "footer_text_raw": "2-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-22",
+      "parse_warning": null
+    },
+    "59": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-23",
+      "printed_page_number": "2-23",
+      "parse_warning": null
+    },
+    "60": {
+      "footer_text_raw": "2-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-24",
+      "parse_warning": null
+    },
+    "61": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-25",
+      "printed_page_number": "2-25",
+      "parse_warning": null
+    },
+    "62": {
+      "footer_text_raw": "2-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-26",
+      "parse_warning": null
+    },
+    "63": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-27",
+      "printed_page_number": "2-27",
+      "parse_warning": null
+    },
+    "64": {
+      "footer_text_raw": "2-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-28",
+      "parse_warning": null
+    },
+    "65": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-29",
+      "printed_page_number": "2-29",
+      "parse_warning": null
+    },
+    "66": {
+      "footer_text_raw": "2-30\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-30",
+      "parse_warning": null
+    },
+    "67": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-31",
+      "printed_page_number": "2-31",
+      "parse_warning": null
+    },
+    "68": {
+      "footer_text_raw": "2-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-32",
+      "parse_warning": null
+    },
+    "69": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-33",
+      "printed_page_number": "2-33",
+      "parse_warning": null
+    },
+    "70": {
+      "footer_text_raw": "2-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-34",
+      "parse_warning": null
+    },
+    "71": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-35",
+      "printed_page_number": "2-35",
+      "parse_warning": null
+    },
+    "72": {
+      "footer_text_raw": "2-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-36",
+      "parse_warning": null
+    },
+    "73": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-37",
+      "printed_page_number": "2-37",
+      "parse_warning": null
+    },
+    "74": {
+      "footer_text_raw": "2-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-38",
+      "parse_warning": null
+    },
+    "75": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-39",
+      "printed_page_number": "2-39",
+      "parse_warning": null
+    },
+    "76": {
+      "footer_text_raw": "2-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-40",
+      "parse_warning": null
+    },
+    "77": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-41",
+      "printed_page_number": "2-41",
+      "parse_warning": null
+    },
+    "78": {
+      "footer_text_raw": "2-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-42",
+      "parse_warning": null
+    },
+    "79": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-43",
+      "printed_page_number": "2-43",
+      "parse_warning": null
+    },
+    "80": {
+      "footer_text_raw": "2-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-44",
+      "parse_warning": null
+    },
+    "81": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-45",
+      "printed_page_number": "2-45",
+      "parse_warning": null
+    },
+    "82": {
+      "footer_text_raw": "2-46\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-46",
+      "parse_warning": null
+    },
+    "83": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-47",
+      "printed_page_number": "2-47",
+      "parse_warning": null
+    },
+    "84": {
+      "footer_text_raw": "2-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-48",
+      "parse_warning": null
+    },
+    "85": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-49",
+      "printed_page_number": "2-49",
+      "parse_warning": null
+    },
+    "86": {
+      "footer_text_raw": "2-50\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-50",
+      "parse_warning": null
+    },
+    "87": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-51",
+      "printed_page_number": "2-51",
+      "parse_warning": null
+    },
+    "88": {
+      "footer_text_raw": "2-52\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-52",
+      "parse_warning": null
+    },
+    "89": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-53",
+      "printed_page_number": "2-53",
+      "parse_warning": null
+    },
+    "90": {
+      "footer_text_raw": "2-54\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-54",
+      "parse_warning": null
+    },
+    "91": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-55",
+      "printed_page_number": "2-55",
+      "parse_warning": null
+    },
+    "92": {
+      "footer_text_raw": "2-56\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-56",
+      "parse_warning": null
+    },
+    "93": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-57",
+      "printed_page_number": "2-57",
+      "parse_warning": null
+    },
+    "94": {
+      "footer_text_raw": "2-58\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-58",
+      "parse_warning": null
+    },
+    "95": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-59",
+      "printed_page_number": "2-59",
+      "parse_warning": null
+    },
+    "96": {
+      "footer_text_raw": "2-60\nPilot’s Guide\n190-02488-01 Rev. C\nConfirming this request removes the selected message from the list.",
+      "printed_page_number": "2-60",
+      "parse_warning": null
+    },
+    "97": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-61",
+      "printed_page_number": "2-61",
+      "parse_warning": null
+    },
+    "98": {
+      "footer_text_raw": "2-62\nPilot’s Guide\n190-02488-01 Rev. C\nAdvisories.",
+      "printed_page_number": "2-62",
+      "parse_warning": null
+    },
+    "99": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-63",
+      "printed_page_number": "2-63",
+      "parse_warning": null
+    },
+    "100": {
+      "footer_text_raw": "2-64\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-64",
+      "parse_warning": null
+    },
+    "101": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-65",
+      "printed_page_number": "2-65",
+      "parse_warning": null
+    },
+    "102": {
+      "footer_text_raw": "2-66\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-66",
+      "parse_warning": null
+    },
+    "103": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-67",
+      "printed_page_number": "2-67",
+      "parse_warning": null
+    },
+    "104": {
+      "footer_text_raw": "2-68\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-68",
+      "parse_warning": null
+    },
+    "105": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-69",
+      "printed_page_number": "2-69",
+      "parse_warning": null
+    },
+    "106": {
+      "footer_text_raw": "2-70\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-70",
+      "parse_warning": null
+    },
+    "107": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-71",
+      "printed_page_number": "2-71",
+      "parse_warning": null
+    },
+    "108": {
+      "footer_text_raw": "2-72\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-72",
+      "parse_warning": null
+    },
+    "109": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n2-73",
+      "printed_page_number": "2-73",
+      "parse_warning": null
+    },
+    "110": {
+      "footer_text_raw": "2-74\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "2-74",
+      "parse_warning": null
+    },
+    "111": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-1",
+      "printed_page_number": "3-1",
+      "parse_warning": null
+    },
+    "112": {
+      "footer_text_raw": "3-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-2",
+      "parse_warning": null
+    },
+    "113": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-3",
+      "printed_page_number": "3-3",
+      "parse_warning": null
+    },
+    "114": {
+      "footer_text_raw": "3-4\nPilot’s Guide\n190-02488-01 Rev. C\nSystem Units page selections do not affect the display of traffic on Map.",
+      "printed_page_number": "3-4",
+      "parse_warning": null
+    },
+    "115": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-5",
+      "printed_page_number": "3-5",
+      "parse_warning": null
+    },
+    "116": {
+      "footer_text_raw": "3-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-6",
+      "parse_warning": null
+    },
+    "117": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-7",
+      "printed_page_number": "3-7",
+      "parse_warning": null
+    },
+    "118": {
+      "footer_text_raw": "3-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-8",
+      "parse_warning": null
+    },
+    "119": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-9",
+      "printed_page_number": "3-9",
+      "parse_warning": null
+    },
+    "120": {
+      "footer_text_raw": "3-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-10",
+      "parse_warning": null
+    },
+    "121": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-11",
+      "printed_page_number": "3-11",
+      "parse_warning": null
+    },
+    "122": {
+      "footer_text_raw": "3-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-12",
+      "parse_warning": null
+    },
+    "123": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-13",
+      "printed_page_number": "3-13",
+      "parse_warning": null
+    },
+    "124": {
+      "footer_text_raw": "3-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-14",
+      "parse_warning": null
+    },
+    "125": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-15",
+      "printed_page_number": "3-15",
+      "parse_warning": null
+    },
+    "126": {
+      "footer_text_raw": "3-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-16",
+      "parse_warning": null
+    },
+    "127": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-17",
+      "printed_page_number": "3-17",
+      "parse_warning": null
+    },
+    "128": {
+      "footer_text_raw": "3-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-18",
+      "parse_warning": null
+    },
+    "129": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-19",
+      "printed_page_number": "3-19",
+      "parse_warning": null
+    },
+    "130": {
+      "footer_text_raw": "3-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-20",
+      "parse_warning": null
+    },
+    "131": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-21",
+      "printed_page_number": "3-21",
+      "parse_warning": null
+    },
+    "132": {
+      "footer_text_raw": "3-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-22",
+      "parse_warning": null
+    },
+    "133": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-23",
+      "printed_page_number": "3-23",
+      "parse_warning": null
+    },
+    "134": {
+      "footer_text_raw": "3-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-24",
+      "parse_warning": null
+    },
+    "135": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-25",
+      "printed_page_number": "3-25",
+      "parse_warning": null
+    },
+    "136": {
+      "footer_text_raw": "3-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-26",
+      "parse_warning": null
+    },
+    "137": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-27",
+      "printed_page_number": "3-27",
+      "parse_warning": null
+    },
+    "138": {
+      "footer_text_raw": "3-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-28",
+      "parse_warning": null
+    },
+    "139": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-29",
+      "printed_page_number": "3-29",
+      "parse_warning": null
+    },
+    "140": {
+      "footer_text_raw": "3-30\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-30",
+      "parse_warning": null
+    },
+    "141": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-31",
+      "printed_page_number": "3-31",
+      "parse_warning": null
+    },
+    "142": {
+      "footer_text_raw": "3-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-32",
+      "parse_warning": null
+    },
+    "143": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-33",
+      "printed_page_number": "3-33",
+      "parse_warning": null
+    },
+    "144": {
+      "footer_text_raw": "3-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-34",
+      "parse_warning": null
+    },
+    "145": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-35",
+      "printed_page_number": "3-35",
+      "parse_warning": null
+    },
+    "146": {
+      "footer_text_raw": "3-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-36",
+      "parse_warning": null
+    },
+    "147": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-37\nMap.",
+      "printed_page_number": "3-37",
+      "parse_warning": null
+    },
+    "148": {
+      "footer_text_raw": "3-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-38",
+      "parse_warning": null
+    },
+    "149": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-39",
+      "printed_page_number": "3-39",
+      "parse_warning": null
+    },
+    "150": {
+      "footer_text_raw": "3-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-40",
+      "parse_warning": null
+    },
+    "151": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-41",
+      "printed_page_number": "3-41",
+      "parse_warning": null
+    },
+    "152": {
+      "footer_text_raw": "3-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-42",
+      "parse_warning": null
+    },
+    "153": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-43",
+      "printed_page_number": "3-43",
+      "parse_warning": null
+    },
+    "154": {
+      "footer_text_raw": "3-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-44",
+      "parse_warning": null
+    },
+    "155": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-45",
+      "printed_page_number": "3-45",
+      "parse_warning": null
+    },
+    "156": {
+      "footer_text_raw": "3-46\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-46",
+      "parse_warning": null
+    },
+    "157": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-47",
+      "printed_page_number": "3-47",
+      "parse_warning": null
+    },
+    "158": {
+      "footer_text_raw": "3-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-48",
+      "parse_warning": null
+    },
+    "159": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-49",
+      "printed_page_number": "3-49",
+      "parse_warning": null
+    },
+    "160": {
+      "footer_text_raw": "3-50\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-50",
+      "parse_warning": null
+    },
+    "161": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-51",
+      "printed_page_number": "3-51",
+      "parse_warning": null
+    },
+    "162": {
+      "footer_text_raw": "3-52\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-52",
+      "parse_warning": null
+    },
+    "163": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-53",
+      "printed_page_number": "3-53",
+      "parse_warning": null
+    },
+    "164": {
+      "footer_text_raw": "3-54\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-54",
+      "parse_warning": null
+    },
+    "165": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-55",
+      "printed_page_number": "3-55",
+      "parse_warning": null
+    },
+    "166": {
+      "footer_text_raw": "3-56\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-56",
+      "parse_warning": null
+    },
+    "167": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-57",
+      "printed_page_number": "3-57",
+      "parse_warning": null
+    },
+    "168": {
+      "footer_text_raw": "3-58\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-58",
+      "parse_warning": null
+    },
+    "169": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-59",
+      "printed_page_number": "3-59",
+      "parse_warning": null
+    },
+    "170": {
+      "footer_text_raw": "3-60\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-60",
+      "parse_warning": null
+    },
+    "171": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-61",
+      "printed_page_number": "3-61",
+      "parse_warning": null
+    },
+    "172": {
+      "footer_text_raw": "3-62\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-62",
+      "parse_warning": null
+    },
+    "173": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-63",
+      "printed_page_number": "3-63",
+      "parse_warning": null
+    },
+    "174": {
+      "footer_text_raw": "3-64\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-64",
+      "parse_warning": null
+    },
+    "175": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-65",
+      "printed_page_number": "3-65",
+      "parse_warning": null
+    },
+    "176": {
+      "footer_text_raw": "3-66\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-66",
+      "parse_warning": null
+    },
+    "177": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-67",
+      "printed_page_number": "3-67",
+      "parse_warning": null
+    },
+    "178": {
+      "footer_text_raw": "3-68\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-68",
+      "parse_warning": null
+    },
+    "179": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-69",
+      "printed_page_number": "3-69",
+      "parse_warning": null
+    },
+    "180": {
+      "footer_text_raw": "3-70\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-70",
+      "parse_warning": null
+    },
+    "181": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-71\nFor page specific controls, refer to the appropriate procedure description.",
+      "printed_page_number": "3-71",
+      "parse_warning": null
+    },
+    "182": {
+      "footer_text_raw": "3-72\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-72",
+      "parse_warning": null
+    },
+    "183": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-73",
+      "printed_page_number": "3-73",
+      "parse_warning": null
+    },
+    "184": {
+      "footer_text_raw": "3-74\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-74",
+      "parse_warning": null
+    },
+    "185": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-75",
+      "printed_page_number": "3-75",
+      "parse_warning": null
+    },
+    "186": {
+      "footer_text_raw": "3-76\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-76",
+      "parse_warning": null
+    },
+    "187": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-77",
+      "printed_page_number": "3-77",
+      "parse_warning": null
+    },
+    "188": {
+      "footer_text_raw": "3-78\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-78",
+      "parse_warning": null
+    },
+    "189": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-79",
+      "printed_page_number": "3-79",
+      "parse_warning": null
+    },
+    "190": {
+      "footer_text_raw": "3-80\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-80",
+      "parse_warning": null
+    },
+    "191": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-81",
+      "printed_page_number": "3-81",
+      "parse_warning": null
+    },
+    "192": {
+      "footer_text_raw": "3-82\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-82",
+      "parse_warning": null
+    },
+    "193": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-83",
+      "printed_page_number": "3-83",
+      "parse_warning": null
+    },
+    "194": {
+      "footer_text_raw": "3-84\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-84",
+      "parse_warning": null
+    },
+    "195": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-85",
+      "printed_page_number": "3-85",
+      "parse_warning": null
+    },
+    "196": {
+      "footer_text_raw": "3-86\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-86",
+      "parse_warning": null
+    },
+    "197": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-87",
+      "printed_page_number": "3-87",
+      "parse_warning": null
+    },
+    "198": {
+      "footer_text_raw": "3-88\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-88",
+      "parse_warning": null
+    },
+    "199": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-89",
+      "printed_page_number": "3-89",
+      "parse_warning": null
+    },
+    "200": {
+      "footer_text_raw": "3-90\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-90",
+      "parse_warning": null
+    },
+    "201": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-91",
+      "printed_page_number": "3-91",
+      "parse_warning": null
+    },
+    "202": {
+      "footer_text_raw": "3-92\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-92",
+      "parse_warning": null
+    },
+    "203": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-93",
+      "printed_page_number": "3-93",
+      "parse_warning": null
+    },
+    "204": {
+      "footer_text_raw": "3-94\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-94",
+      "parse_warning": null
+    },
+    "205": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-95",
+      "printed_page_number": "3-95",
+      "parse_warning": null
+    },
+    "206": {
+      "footer_text_raw": "3-96\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-96",
+      "parse_warning": null
+    },
+    "207": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n3-97",
+      "printed_page_number": "3-97",
+      "parse_warning": null
+    },
+    "208": {
+      "footer_text_raw": "3-98\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "3-98",
+      "parse_warning": null
+    },
+    "209": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-1",
+      "printed_page_number": "4-1",
+      "parse_warning": null
+    },
+    "210": {
+      "footer_text_raw": "4-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-2",
+      "parse_warning": null
+    },
+    "211": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-3",
+      "printed_page_number": "4-3",
+      "parse_warning": null
+    },
+    "212": {
+      "footer_text_raw": "4-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-4",
+      "parse_warning": null
+    },
+    "213": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-5",
+      "printed_page_number": "4-5",
+      "parse_warning": null
+    },
+    "214": {
+      "footer_text_raw": "4-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-6",
+      "parse_warning": null
+    },
+    "215": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-7",
+      "printed_page_number": "4-7",
+      "parse_warning": null
+    },
+    "216": {
+      "footer_text_raw": "4-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-8",
+      "parse_warning": null
+    },
+    "217": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-9",
+      "printed_page_number": "4-9",
+      "parse_warning": null
+    },
+    "218": {
+      "footer_text_raw": "4-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-10",
+      "parse_warning": null
+    },
+    "219": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-11",
+      "printed_page_number": "4-11",
+      "parse_warning": null
+    },
+    "220": {
+      "footer_text_raw": "4-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-12",
+      "parse_warning": null
+    },
+    "221": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n4-13",
+      "printed_page_number": "4-13",
+      "parse_warning": null
+    },
+    "222": {
+      "footer_text_raw": "4-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "4-14",
+      "parse_warning": null
+    },
+    "223": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-1",
+      "printed_page_number": "5-1",
+      "parse_warning": null
+    },
+    "224": {
+      "footer_text_raw": "5-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-2",
+      "parse_warning": null
+    },
+    "225": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-3",
+      "printed_page_number": "5-3",
+      "parse_warning": null
+    },
+    "226": {
+      "footer_text_raw": "5-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-4",
+      "parse_warning": null
+    },
+    "227": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-5",
+      "printed_page_number": "5-5",
+      "parse_warning": null
+    },
+    "228": {
+      "footer_text_raw": "5-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-6",
+      "parse_warning": null
+    },
+    "229": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-7",
+      "printed_page_number": "5-7",
+      "parse_warning": null
+    },
+    "230": {
+      "footer_text_raw": "5-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-8",
+      "parse_warning": null
+    },
+    "231": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-9",
+      "printed_page_number": "5-9",
+      "parse_warning": null
+    },
+    "232": {
+      "footer_text_raw": "5-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-10",
+      "parse_warning": null
+    },
+    "233": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-11",
+      "printed_page_number": "5-11",
+      "parse_warning": null
+    },
+    "234": {
+      "footer_text_raw": "5-12\nPilot’s Guide\n190-02488-01 Rev. C\n• White hash mark indicates regional boundary",
+      "printed_page_number": "5-12",
+      "parse_warning": null
+    },
+    "235": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-13",
+      "printed_page_number": "5-13",
+      "parse_warning": null
+    },
+    "236": {
+      "footer_text_raw": "5-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-14",
+      "parse_warning": null
+    },
+    "237": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-15",
+      "printed_page_number": "5-15",
+      "parse_warning": null
+    },
+    "238": {
+      "footer_text_raw": "5-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-16",
+      "parse_warning": null
+    },
+    "239": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-17",
+      "printed_page_number": "5-17",
+      "parse_warning": null
+    },
+    "240": {
+      "footer_text_raw": "5-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-18",
+      "parse_warning": null
+    },
+    "241": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-19",
+      "printed_page_number": "5-19",
+      "parse_warning": null
+    },
+    "242": {
+      "footer_text_raw": "5-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-20",
+      "parse_warning": null
+    },
+    "243": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-21",
+      "printed_page_number": "5-21",
+      "parse_warning": null
+    },
+    "244": {
+      "footer_text_raw": "5-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-22",
+      "parse_warning": null
+    },
+    "245": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-23",
+      "printed_page_number": "5-23",
+      "parse_warning": null
+    },
+    "246": {
+      "footer_text_raw": "5-24\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-24",
+      "parse_warning": null
+    },
+    "247": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-25",
+      "printed_page_number": "5-25",
+      "parse_warning": null
+    },
+    "248": {
+      "footer_text_raw": "5-26\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-26",
+      "parse_warning": null
+    },
+    "249": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-27",
+      "printed_page_number": "5-27",
+      "parse_warning": null
+    },
+    "250": {
+      "footer_text_raw": "5-28\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-28",
+      "parse_warning": null
+    },
+    "251": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-29",
+      "printed_page_number": "5-29",
+      "parse_warning": null
+    },
+    "252": {
+      "footer_text_raw": "5-30\nPilot’s Guide\n190-02488-01 Rev. C\nUnrestricted\nUNR\n9,900 ft to 9,900 ft",
+      "printed_page_number": "5-30",
+      "parse_warning": null
+    },
+    "253": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-31",
+      "printed_page_number": "5-31",
+      "parse_warning": null
+    },
+    "254": {
+      "footer_text_raw": "5-32\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-32",
+      "parse_warning": null
+    },
+    "255": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-33",
+      "printed_page_number": "5-33",
+      "parse_warning": null
+    },
+    "256": {
+      "footer_text_raw": "5-34\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-34",
+      "parse_warning": null
+    },
+    "257": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-35",
+      "printed_page_number": "5-35",
+      "parse_warning": null
+    },
+    "258": {
+      "footer_text_raw": "5-36\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-36",
+      "parse_warning": null
+    },
+    "259": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-37",
+      "printed_page_number": "5-37",
+      "parse_warning": null
+    },
+    "260": {
+      "footer_text_raw": "5-38\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-38",
+      "parse_warning": null
+    },
+    "261": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-39",
+      "printed_page_number": "5-39",
+      "parse_warning": null
+    },
+    "262": {
+      "footer_text_raw": "5-40\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-40",
+      "parse_warning": null
+    },
+    "263": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-41",
+      "printed_page_number": "5-41",
+      "parse_warning": null
+    },
+    "264": {
+      "footer_text_raw": "5-42\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-42",
+      "parse_warning": null
+    },
+    "265": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-43",
+      "printed_page_number": "5-43",
+      "parse_warning": null
+    },
+    "266": {
+      "footer_text_raw": "5-44\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-44",
+      "parse_warning": null
+    },
+    "267": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-45",
+      "printed_page_number": "5-45",
+      "parse_warning": null
+    },
+    "268": {
+      "footer_text_raw": "5-46\nPilot’s Guide\n190-02488-01 Rev. C\nregional coverage",
+      "printed_page_number": "5-46",
+      "parse_warning": null
+    },
+    "269": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n5-47",
+      "printed_page_number": "5-47",
+      "parse_warning": null
+    },
+    "270": {
+      "footer_text_raw": "5-48\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "5-48",
+      "parse_warning": null
+    },
+    "271": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-1",
+      "printed_page_number": "6-1",
+      "parse_warning": null
+    },
+    "272": {
+      "footer_text_raw": "6-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-2",
+      "parse_warning": null
+    },
+    "273": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-3",
+      "printed_page_number": "6-3",
+      "parse_warning": null
+    },
+    "274": {
+      "footer_text_raw": "6-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-4",
+      "parse_warning": null
+    },
+    "275": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-5\nfunction is off.\nExternal FPL Crossfill.",
+      "printed_page_number": "6-5",
+      "parse_warning": null
+    },
+    "276": {
+      "footer_text_raw": "6-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-6",
+      "parse_warning": null
+    },
+    "277": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-7",
+      "printed_page_number": "6-7",
+      "parse_warning": null
+    },
+    "278": {
+      "footer_text_raw": "6-8\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-8",
+      "parse_warning": null
+    },
+    "279": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-9",
+      "printed_page_number": "6-9",
+      "parse_warning": null
+    },
+    "280": {
+      "footer_text_raw": "6-10\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-10",
+      "parse_warning": null
+    },
+    "281": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-11",
+      "printed_page_number": "6-11",
+      "parse_warning": null
+    },
+    "282": {
+      "footer_text_raw": "6-12\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-12",
+      "parse_warning": null
+    },
+    "283": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-13",
+      "printed_page_number": "6-13",
+      "parse_warning": null
+    },
+    "284": {
+      "footer_text_raw": "6-14\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-14",
+      "parse_warning": null
+    },
+    "285": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-15",
+      "printed_page_number": "6-15",
+      "parse_warning": null
+    },
+    "286": {
+      "footer_text_raw": "6-16\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-16",
+      "parse_warning": null
+    },
+    "287": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-17",
+      "printed_page_number": "6-17",
+      "parse_warning": null
+    },
+    "288": {
+      "footer_text_raw": "6-18\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-18",
+      "parse_warning": null
+    },
+    "289": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-19",
+      "printed_page_number": "6-19",
+      "parse_warning": null
+    },
+    "290": {
+      "footer_text_raw": "6-20\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-20",
+      "parse_warning": null
+    },
+    "291": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n6-21",
+      "printed_page_number": "6-21",
+      "parse_warning": null
+    },
+    "292": {
+      "footer_text_raw": "6-22\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "6-22",
+      "parse_warning": null
+    },
+    "293": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-1",
+      "printed_page_number": "7-1",
+      "parse_warning": null
+    },
+    "294": {
+      "footer_text_raw": "7-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "7-2",
+      "parse_warning": null
+    },
+    "295": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-3",
+      "printed_page_number": "7-3",
+      "parse_warning": null
+    },
+    "296": {
+      "footer_text_raw": "7-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "7-4",
+      "parse_warning": null
+    },
+    "297": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n7-5",
+      "printed_page_number": "7-5",
+      "parse_warning": null
+    },
+    "298": {
+      "footer_text_raw": "7-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "7-6",
+      "parse_warning": null
+    },
+    "299": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-1",
+      "printed_page_number": "8-1",
+      "parse_warning": null
+    },
+    "300": {
+      "footer_text_raw": "8-2\nPilot’s Guide\n190-02488-01 Rev. C\nGFC\nGarmin Flight Controller",
+      "printed_page_number": "8-2",
+      "parse_warning": null
+    },
+    "301": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-3",
+      "printed_page_number": "8-3",
+      "parse_warning": null
+    },
+    "302": {
+      "footer_text_raw": "8-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "8-4",
+      "parse_warning": null
+    },
+    "303": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n8-5",
+      "printed_page_number": "8-5",
+      "parse_warning": null
+    },
+    "304": {
+      "footer_text_raw": "8-6\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "8-6",
+      "parse_warning": null
+    },
+    "305": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n9-1",
+      "printed_page_number": "9-1",
+      "parse_warning": null
+    },
+    "306": {
+      "footer_text_raw": "9-2\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "9-2",
+      "parse_warning": null
+    },
+    "307": {
+      "footer_text_raw": "190-02488-01 Rev. C\nPilot’s Guide\n9-3",
+      "printed_page_number": "9-3",
+      "parse_warning": null
+    },
+    "308": {
+      "footer_text_raw": "9-4\nPilot’s Guide\n190-02488-01 Rev. C",
+      "printed_page_number": "9-4",
+      "parse_warning": null
+    },
+    "309": {
+      "footer_text_raw": "",
+      "printed_page_number": null,
+      "parse_warning": "Footer text is empty"
+    },
+    "310": {
+      "footer_text_raw": "",
+      "printed_page_number": null,
+      "parse_warning": "Footer text is empty"
+    }
+  }
+}

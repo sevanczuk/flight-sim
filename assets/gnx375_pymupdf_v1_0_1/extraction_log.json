@@ -1,0 +1,24 @@
+{
+  "tool": "pymupdf-extract",
+  "version": "1.0.1",
+  "extracted_at": "2026-05-02T10:33:43.228641+00:00",
+  "elapsed_seconds": 0.221,
+  "source_pdf": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+  "pdf_page_count": 310,
+  "pages_processed": 310,
+  "settings": {
+    "footer_ratio": 0.07,
+    "header_ratio": 0.0,
+    "pages_spec": null,
+    "max_pages": null
+  },
+  "output_paths": {
+    "final_dir": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_pymupdf_v1_0_1",
+    "page_metadata_json": "C:\\Users\\artroom\\projects\\flight-sim-project\\flight-sim\\assets\\gnx375_pymupdf_v1_0_1\\page_metadata.json",
+    "verification_report_json": null
+  },
+  "verification": {
+    "enabled": false,
+    "overall_verdict": null
+  }
+}

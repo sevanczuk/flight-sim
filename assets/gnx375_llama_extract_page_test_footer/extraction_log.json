@@ -1,0 +1,51 @@
+{
+  "task_id": "c1bef6c9-609c-4809-8473-22df41174a40",
+  "input_path": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+  "output_dir": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/gnx375_llama_extract_page_test_footer",
+  "tier": "agentic",
+  "version": "latest",
+  "images_requested": [
+    "screenshot",
+    "embedded",
+    "layout"
+  ],
+  "formats_requested": [
+    "markdown",
+    "items"
+  ],
+  "page_ranges": "1,2,8,17,18,80,125,293,300,308,310",
+  "system_prompt_append_used": "Extract all tables, figures, and embedded text with high accuracy. Preserve page numbers, section headers, and cross-references. For figures that are images without OCR text, note the figure content d",
+  "credential_source": "C:\\PhotoData\\config\\api_keys.json[llamaparse]",
+  "sdk_name": "llama-cloud",
+  "sdk_version": "2.4.1",
+  "completed_at": "2026-05-01T21:10:02.661054+00:00",
+  "elapsed_seconds": 30.09,
+  "elapsed_human": "30.1s",
+  "llamaparse_job_id": "pjb-16556z9hlrckvx96is24gnjnr6c3",
+  "failed_pages": [],
+  "page_count_returned": 11,
+  "images_retrieved": {
+    "embedded": 0,
+    "screenshot": 11,
+    "layout": 12
+  },
+  "cost_estimate_credits": 110.0,
+  "result_validation": {
+    "page_count_gt_zero": true,
+    "elapsed_plausible": false,
+    "no_error_sentinel": true
+  },
+  "usage": {
+    "pre_parse_credits_used": 4740,
+    "post_parse_credits_used": 4850,
+    "actual_credits_consumed": 110,
+    "dollars_incremental": 0.0,
+    "query_source": "live_api"
+  },
+  "error": null,
+  "error_class": null,
+  "v3_3_options": {},
+  "wrote_page_metadata": true,
+  "final_dir_name_used": "gnx375_llama_extract_page_test_footer",
+  "final_dir_resolved": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/gnx375_llama_extract_page_test_footer"
+}

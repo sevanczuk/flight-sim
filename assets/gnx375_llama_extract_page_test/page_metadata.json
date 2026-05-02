@@ -1,0 +1,40 @@
+{
+  "extracted_at": "2026-05-01T20:38:50.520750+00:00",
+  "source_pdf": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+  "page_count": 11,
+  "pages": {
+    "1": {
+      "printed_page_number": null
+    },
+    "2": {
+      "printed_page_number": null
+    },
+    "8": {
+      "printed_page_number": "vi"
+    },
+    "17": {
+      "printed_page_number": "1"
+    },
+    "18": {
+      "printed_page_number": "1"
+    },
+    "80": {
+      "printed_page_number": "2"
+    },
+    "125": {
+      "printed_page_number": "3"
+    },
+    "293": {
+      "printed_page_number": "7"
+    },
+    "300": {
+      "printed_page_number": "8"
+    },
+    "308": {
+      "printed_page_number": "9"
+    },
+    "310": {
+      "printed_page_number": null
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "be0a6f37-e188-4de7-8a56-d587015fee5f",
+  "input_path": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/Garmin GNC 375 -  GPS 175 GNC 355 GNX 375 Pilot's Guide 190-02488-01_c.pdf",
+  "output_dir": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/gnx375_llama_extract_page_test_v2",
+  "tier": "agentic",
+  "version": "latest",
+  "images_requested": [
+    "screenshot",
+    "embedded",
+    "layout"
+  ],
+  "formats_requested": [
+    "markdown",
+    "items"
+  ],
+  "page_ranges": "1,2,8,17,18,80,125,293,300,308,310",
+  "system_prompt_append_used": "The footer of each page contains a document part number, the manual title, and a printed page number. The printed page number uses formats like i, vi, 1-1, 2-42, 7-15, A-1 -- a chapter or appendix ide",
+  "credential_source": "C:\\PhotoData\\config\\api_keys.json[llamaparse]",
+  "sdk_name": "llama-cloud",
+  "sdk_version": "2.4.1",
+  "completed_at": "2026-05-01T20:50:11.025172+00:00",
+  "elapsed_seconds": 29.59,
+  "elapsed_human": "29.6s",
+  "llamaparse_job_id": "pjb-v6o1bwovxwhbhk1yp3xs80cot196",
+  "failed_pages": [],
+  "page_count_returned": 11,
+  "images_retrieved": {
+    "embedded": 0,
+    "screenshot": 11,
+    "layout": 12
+  },
+  "cost_estimate_credits": 110.0,
+  "result_validation": {
+    "page_count_gt_zero": true,
+    "elapsed_plausible": false,
+    "no_error_sentinel": true
+  },
+  "usage": {
+    "pre_parse_credits_used": 4630,
+    "post_parse_credits_used": 4740,
+    "actual_credits_consumed": 110,
+    "dollars_incremental": 0.0,
+    "query_source": "live_api"
+  },
+  "error": null,
+  "error_class": null,
+  "v3_3_options": {},
+  "wrote_page_metadata": true,
+  "final_dir_name_used": "gnx375_llama_extract_page_test_v2",
+  "final_dir_resolved": "C:/Users/artroom/projects/flight-sim-project/flight-sim/assets/gnx375_llama_extract_page_test_v2"
+}
