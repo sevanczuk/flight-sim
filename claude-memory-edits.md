@@ -2,7 +2,7 @@
 
 **Canonical source:** `docs/templates/memory_bootstrap.md` (initial 22 slots); `docs/decisions/D-04-*.md`, `docs/decisions/D-05-*.md` (slots 23–25)
 **Generated:** 2026-04-19T00:00:00-04:00 (initial draft)
-**Last synced:** 2026-04-21T12:00:00-04:00 (Purple Turn 26 — slot #6 updated to include Task_flow_plan_with_current_status.md as fourth CD-maintained status doc; live memory synced same-turn)
+**Last synced:** 2026-05-02T09:34:07-04:00 (Purple Turn 12 — D-29 supersedes D-04: slot 23 replaced with D-29 simple commit policy; slot 24 replaced with D-29 mechanics; live memory sync flag created)
 **Purpose:** Exact flat mirror of the 30-slot Claude.ai memory system. Git-tracked backup and bootstrap source. Contains exactly what is in Claude.ai memory — no more.
 
 ---
@@ -51,8 +51,8 @@
 
 22. ntfy channel: 1668651d-48ae-4104-b09e-f742b559e205
 
-23. D-04 commit trailer policy: all commits include trailers. Mandatory: Task-Id, Authored-By-Instance (cc, cd-green, cd-yellow, cd-purple, cd, steve). Conditional: Refs, Fixes, Supersedes, Decision. CC+CD commits also include Co-Authored-By: Claude Code or Claude Desktop <noreply@anthropic.com>. CC does not push. CD does not push. Only Steve pushes.
+23. D-29 commit policy (supersedes D-04, 2026-05-02): plain `git commit -m "{TASK-ID}: {description} [AI commit]" -m "{optional body}" -m "Refs: D-XX"`. The `[AI commit]` subject tag identifies AI-authored commits. Optional `Refs:` / `Fixes:` / `Supersedes:` lines as final paragraph. No structured trailers, no Co-Authored-By, no file-based commit messages. CC and CD both commit. Only Steve pushes.
 
-24. CD commit mechanics: CD drafts command, Steve executes. Full mechanics (git -F <file> pattern, BOM-free write, Join-Path $PWD for absolute path) in claude-conventions.md §Git Commit Trailers §CD commit execution mechanics.
+24. CD commit mechanics (D-29): CD emits two PowerShell blocks per commit — a `git add` line and a `git commit -m "..." -m "..."` line. Steve copy-pastes and runs. No heredoc, no commit-message file, no BOM concerns. CC writes its own commits the same way via direct shell access.
 
 25. D-05 "assess" shorthand: when Steve says "assess" (or "review") and references a review-artifact file, trigger the protocol matching the filename. *_completion.md → check completions. *_compliance.md → check compliance. *_validation.md → check validation. *_review.md → spec review triage. The literal trigger phrase without a filename means process ALL unprocessed files of that type.
