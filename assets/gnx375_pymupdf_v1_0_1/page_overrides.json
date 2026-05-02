@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "comment": "Project-level overrides applied during page_metadata.json -> page_number_map.json transform. See D-28.",
+  "overrides": {
+    "2": {
+      "printed_page_number": null,
+      "rationale": "PAP 22 paper recycling code, not a page identifier",
+      "decision_ref": "D-28"
+    }
+  }
+}
