@@ -18,6 +18,7 @@
 | ITM-07 | 2026-04-21 | Adopted in D-18 | GNX 375 outline: §4 length estimates inconsistent (nav-aids ~800, §4 header ~740, sub-section sum ~1,090) | Purple Turn 30 (CD — D-18 adopts sub-section sum) |
 | ITM-09 | 2026-04-23 | Resolved by C2.2-D §7.9 authorship | Outline §7 lacks named §7.9 sub-section referenced by Fragment C forward-refs | Purple Turn 22 (C2.2-D compliance X23 PASS) |
 | ITM-12 | 2026-04-25 | Resolved by C2.2-G Coupling Summary discipline | Fragment F Coupling Summary line count under-budget (watchpoint for Fragment G) | Purple Turn 6 (C2.2-G compliance: 105 lines in prose-per-ref format, within 95–110 target; X2 + X3 + S13 + C2 all PASS) |
+| ITM-13 | 2026-05-02 | Closed by D-29 (commit policy simplification) | CC commit subject contains UTF-8 BOM (U+FEFF) — BOM-free pattern not followed | Purple Turn 11 (D-29 drops the file-based commit pattern; the BOM failure mode is unreachable under plain `git commit -m`) |
 
 ---
 
@@ -132,3 +133,26 @@ On C2.2 assembly (after C2.2-G archive), §7 will present §§7.1–7.9 numeric 
 - Fragment C `docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` §4.7 open questions (lines 226, 232) — forward-refs now resolved
 - Fragment D `docs/specs/fragments/GNX375_Functional_Spec_V1_part_D.md` §7.9 (line 556) — resolution
 - Previous location: `issue_index.md` §ITM-09 (now removed from open index)
+
+---
+
+## ITM-13: CC commit subject contains UTF-8 BOM — BOM-free pattern not followed (RESOLVED)
+
+**Opened:** 2026-04-30T09:53:25-04:00 (Purple Turn 14)
+**Resolved:** 2026-05-02T08:14:04-04:00 (Purple Turn 11)
+**Resolution:** Closed by D-29. The BOM root cause was PowerShell's `Out-File -Encoding utf8` writing the commit message file before `git commit -F`. D-29 supersedes D-04 and replaces the file-based commit pattern with plain `git commit -m "..."`. With no message file involved, the BOM failure mode is unreachable. The historical BOM-bearing commit (`7ae84a9`) stays as-is per the original ITM-13 Option 1 (no history rewrite).
+
+### Verification
+
+- D-29 written at `docs/decisions/D-29-supersede-d04-with-simple-commit-policy.md`
+- D-04 marked SUPERSEDED with header pointer to D-29
+- `claude-conventions.md` §Git Commit Trailers replaced with §Git Commits per D-29
+- The replacement drops the "CD commit execution mechanics" subsection that contained the `[System.IO.File]::WriteAllText` pattern
+- All future CD and CC commits use plain `git commit -m "..."` — no message file involved, no BOM possible
+
+### Related
+
+- D-04 (commit trailer policy — superseded by D-29)
+- D-29 (simple commit policy — closes this ITM)
+- Commit `7ae84a9` (the historical BOM-bearing commit; preserved as-is)
+- Previous location: `issue_index.md` §ITM-13 (now removed from open index)

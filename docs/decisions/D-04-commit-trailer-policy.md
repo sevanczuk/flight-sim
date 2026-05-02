@@ -1,8 +1,13 @@
 # D-04: Git commit trailer policy
 
+**Status:** SUPERSEDED by D-29 (2026-05-02). The structured trailer block, the `Authored-By-Instance` attribution model, and the BOM-free heredoc / `git commit -F` mechanics are dropped in favor of a simple `git commit -m` format with a `[AI commit]` subject tag. See `docs/decisions/D-29-supersede-d04-with-simple-commit-policy.md` for the replacement convention. Existing commits with D-04 trailers stay as-is; no history rewrite. This file is preserved as an audit-trail record of the prior convention.
+
+---
+
 **Created:** 2026-04-20T08:19:17-04:00  
 **Amended:** 2026-04-20T09:10:00-04:00 (Purple Turn 37 — executing-mechanics clarifications: `-F` + file pattern, BOM-free writes, CD-drafts / Steve-executes)  
 **Amended:** 2026-04-20T18:52:56-04:00 (Purple Turn 4 — see D-09: CD writes message file directly via Filesystem MCP; PowerShell here-string demoted to fallback)  
+**Superseded:** 2026-05-02T08:14:04-04:00 (Purple Turn 11 — see D-29)  
 **Source:** Purple Turns 25–27 (original), 29, 31–32 (mechanics lessons), 37 (amendment), 4-of-new-session (D-09 amendment)  
 **Decision type:** convention / workflow
 

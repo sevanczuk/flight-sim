@@ -20,7 +20,6 @@
 | FE-01 | Low | Future enhancement | AMAPI parser: preserve `<a>` links inside Arguments-table cells | Purple Turn 52 | Parser currently strips `<a>` in argument description cells (~20-30 cells across corpus). Fix: same markdown-link preservation logic already used for Description text. See details below. |
 | ITM-08 | Low | Cleanup / docs | Fragment C Coupling Summary — over-claims 4 glossary terms absent from Fragment A Appendix B | Purple Turn 14 (C2.2-C compliance X17) | Coupling Summary lists TSO-C151c, EPU, HFOM/VFOM, HDOP as Appendix B backward-refs; these terms are not in Appendix B. Coupling Summary is coordination metadata (stripped on assembly per D-18); zero downstream impact. Tracking to detect recurrence. Fragment D's authoring-phase grep-verify prevented recurrence (confirmed Purple Turn 22 C2.2-D compliance F11 PASS). See details below. |
 | ITM-10 | Low | Cleanup / docs | Fragment C §4.10 Unit Selections vs. PDF p. 94 discrepancy — watchpoint | Purple Turn 3 post-session-reset, 2026-04-23 (C2.2-E compliance S6 + N2) | Fragment C §4.10 lists 7 unit-selection types (distance/speed, altitude, VSI, nav angle, wind, pressure, temperature); omits Fuel and Magnetic Variation (present on PDF p. 94). Pre-existing condition in archived Fragment C, not a Fragment E issue. Low severity; carry as watchpoint for any future Fragment C review or for the C3 full-spec `/spec-review` pass. See details below. |
-| ITM-13 | Low | Process / convention | CC commit subject contains UTF-8 BOM (U+FEFF) — `claude-conventions.md` BOM-free pattern not followed | Purple Turn 12, 2026-04-30 (C2.2-ASSEMBLE-COMPLIANCE P1 FAIL) | CC's commit `7ae84a9` for C2.2-ASSEMBLE has `0xEF 0xBB 0xBF` prefixed to the subject line. All required trailers present and correct; only the BOM is the deviation. Convention specified at `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics requires `[System.IO.File]::WriteAllText` (BOM-free) rather than `Out-File -Encoding utf8` (BOM-emitting). CC needs to internalize the BOM-free pattern for future commits. See details below. |
 | ITM-14 | Low | Feature gap | `assemble_gnx375_spec.py` `--partial` mode does not skip section-numbering continuity for missing-fragment ranges | Purple Turn 12, 2026-04-30 (C2.2-ASSEMBLE-COMPLIANCE S7 PARTIAL) | The C2.2-ASSEMBLE prompt specified three behaviors for `--partial`: (a) placeholder block insertion, (b) skip continuity check for missing-fragment section ranges, (c) warning print + non-failing exit. CC implemented (a) and (c); (b) was missed. Practical impact: zero today (all 7 fragments archived); only matters for hypothetical mid-authoring partial assemblies. Fix is ~20 lines: derive a missing-fragment coverage map and exclude those sections from `verify_section_numbering`. Defer until partial-assembly workflow is actually needed. See details below. |
 
 ## ITM-02: AMAPI patterns — add Tier 2 columns to function_usage_matrix
@@ -327,51 +326,6 @@ Recommendation: continue citing Garmin logical pages in prose (consistency with 
 - `assets/gnc355_pdf_extracted/llamaparse_agentic_v1/` (new extraction)
 - `assets/gnc355_pdf_extracted/text_by_page.json` (original extraction with logical page numbering)
 - ITM-10 (Fragment C §4.10 vs. PDF p. 94 — the new extraction provides cleaner evidence that may partially resolve ITM-10 at C3 review time)
-
----
-
-## ITM-13: CC commit subject contains UTF-8 BOM — BOM-free pattern not followed
-
-**Opened:** 2026-04-30T09:53:25-04:00 (Purple Turn 14 — carrying forward C2.2-ASSEMBLE-COMPLIANCE P1 finding from Turn 12)
-**Severity:** Low (process/convention; cosmetic git history defect)
-**Status:** Open
-**Related:** `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics; D-04; commit `7ae84a9`; `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §P1
-
-### Summary
-
-CC's commit `7ae84a9` for C2.2-ASSEMBLE has the three-byte UTF-8 BOM (`0xEF 0xBB 0xBF`, U+FEFF) prefixed to the subject line. The compliance check P1 detected this via `git log -1 --format="%s" | xxd`. All required commit trailers (Task-Id, Authored-By-Instance, Refs, Co-Authored-By) are present and correctly formatted; only the BOM is the deviation.
-
-### Root cause
-
-PowerShell 5.x's `Out-File -Encoding utf8` writes UTF-8 **with** BOM by default. When CC writes a commit message file via this path and runs `git commit -F <file>`, git takes the leading three bytes as part of the commit subject. The convention at `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics specifies the BOM-free pattern:
-
-```powershell
-[System.IO.File]::WriteAllText(".git\COMMIT_EDITMSG_cd", $msg)
-```
-
-`[System.IO.File]::WriteAllText` writes UTF-8 without BOM by default — this is the canonical pattern. CC apparently used a BOM-emitting writer instead.
-
-### Practical impact
-
-Minimal. The BOM is invisible in `git log --oneline` and most everyday git tooling. It surfaces in `git log --format=fuller` viewer output and in any tool that does byte-level subject matching (e.g., regex matching against subject line for automation). Functionally git accepts the commit and applies it normally.
-
-### Resolution path
-
-**Option 1 — leave the commit as-is, fix going forward (RECOMMENDED).** The existing commit is already pushed-eligible; rewriting history with `git commit --amend` to strip the BOM has its own cost (force-push, history mismatch with already-fetched copies). Going forward, CC must use `[System.IO.File]::WriteAllText` per the documented pattern. Track via this ITM until the next CC commit demonstrates compliance.
-
-**Option 2 — amend.** `git commit --amend -F .git\COMMIT_EDITMSG_clean` with a BOM-free file would replace the subject. Force-push required. Disproportionate for an invisible-character fix.
-
-### Required follow-up
-
-1. Verify the next CC task's commit is BOM-free at the subject. Report PASS/FAIL in the next compliance review's P1 check.
-2. If a second BOM occurrence appears, escalate — CC's PowerShell convention is materially drifting and the task prompt template may need a reminder paragraph about the BOM-free writer.
-3. If two consecutive next-CC commits are BOM-free, close ITM-13 as resolved.
-
-### Related
-
-- D-04 commit trailer policy
-- `claude-conventions.md` §Git Commit Trailers §CD commit execution mechanics (canonical BOM-free pattern reference)
-- `docs/tasks/completed/c22_assemble_gnx375_compliance.md` §P1 (the finding that opened this ITM)
 
 ---
 

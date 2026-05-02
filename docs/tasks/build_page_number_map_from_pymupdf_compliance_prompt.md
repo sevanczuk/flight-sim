@@ -179,17 +179,9 @@ S1. <PASS|FAIL|PARTIAL> — <evidence>
    ```
    (The `page_number_map.json` is included because D1's re-run will have changed `metadata.generated`. That's the only intended change. If anything else differs, D1 should have reported FAIL.)
 
-   Commit message (D-04 trailer format):
+   Commit message (D-29 simple format):
    ```
-   GNX375-PAGEMAP-PYMUPDF-01-COMPLIANCE: verification report
-
-   Verifies the GNX375-PAGEMAP-PYMUPDF-01 implementation against the
-   prompt requirements and D-28. <N>/17 checks passed.
-
-   Task-Id: GNX375-PAGEMAP-PYMUPDF-01-COMPLIANCE
-   Authored-By-Instance: cc
-   Refs: GNX375-PAGEMAP-PYMUPDF-01, D-28
-   Co-Authored-By: Claude Code <noreply@anthropic.com>
+   git commit -m "GNX375-PAGEMAP-PYMUPDF-01-COMPLIANCE: verification report [AI commit]" -m "Verifies the GNX375-PAGEMAP-PYMUPDF-01 implementation against the prompt requirements and D-28. <N>/17 checks passed." -m "Refs: GNX375-PAGEMAP-PYMUPDF-01, D-28"
    ```
 
 3. Send completion notification:

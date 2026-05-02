@@ -142,7 +142,7 @@ TBD
 
 - Python code always in `.py` files — never inline `python -c` commands
 - CC commits with descriptive message referencing task ID and issue numbers. **CC does NOT push** — operator pushes manually.
-- **Commit message format (D-04):** all commits include structured trailers. Mandatory: `Task-Id:`, `Authored-By-Instance:` (values: `cc`, `cd-green`, `cd-yellow`, `cd-purple`, `cd`, `steve`). Conditional: `Refs:`, `Fixes:`, `Supersedes:`, `Decision:`. CC and CD commits also include `Co-Authored-By: Claude Code <noreply@anthropic.com>` or `Co-Authored-By: Claude Desktop <noreply@anthropic.com>` respectively. Full spec: `docs/decisions/D-04-commit-trailer-policy.md`.
+- **Commit message format (D-29):** simple `git commit -m` format. Subject pattern: `{TASK-ID}: {description} [AI commit]` (TASK-ID prefix when applicable; `[AI commit]` tag on CC- and CD-authored commits). Optional body in another `-m` paragraph. Optional `Refs:` / `Fixes:` / `Supersedes:` lines as a final paragraph when applicable. No structured trailers, no file-based commit messages, no BOM mechanics. Full spec: `docs/decisions/D-29-supersede-d04-with-simple-commit-policy.md`. (D-04, the prior trailer policy, is superseded.)
 - CD commits its own direct file writes (decision records, plan updates, refresh flags) at natural turn seams. **CD does NOT push.** Only the operator pushes.
 - After git commit, CC sends a push notification (notifies operator's device via ntfy):
 
@@ -200,9 +200,9 @@ All files created under `docs/` include a provenance header block:
 - Does NOT apply to `src/`, `tests/`, `config/`, `scripts/` — use `git blame` for those.
 
 ### Git
-- CC commits with task ID + issue refs in message. **CC does NOT push.**
-- CD commits its own direct file writes at natural turn seams (per D-04). **CD does NOT push.**
-- All commits use the D-04 trailer format. See `docs/decisions/D-04-commit-trailer-policy.md` for the full spec and examples.
+- CC commits with task ID in subject + `[AI commit]` tag. **CC does NOT push.**
+- CD commits its own direct file writes at natural turn seams (per D-29). **CD does NOT push.**
+- All commits use the D-29 simple format. See `docs/decisions/D-29-supersede-d04-with-simple-commit-policy.md` for the full spec and examples. (D-04 is superseded; existing commits with D-04 trailers stay as-is.)
 - After git commit, CC sends push notification via ntfy (see Conventions above for command). Applies to ALL CC-executed prompts (task, compliance, inline, housekeeping). Use TASK-ID, tab slug, or `"completed"` as message body.
 
 ## spec-review Hybrid Mode

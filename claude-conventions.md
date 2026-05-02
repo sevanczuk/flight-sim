@@ -243,113 +243,68 @@ When recommending tasks or batches for parallel CC execution, **explicitly list 
 
 ---
 
-## Git Commit Trailers (per D-04)
+## Git Commits (per D-29)
 
-All commits use a structured trailer block at the end of the commit message. Trailers are searchable via `git log --grep` and machine-parseable by tools.
+All commits use a simple `git commit -m "..."` format. No structured trailers, no file-based commit messages, no PowerShell BOM mechanics. (D-04, the prior trailer policy, is superseded by D-29 on 2026-05-02.)
 
 ### Commit message format
 
-```
-{TASK-ID or verb-led description}: {brief description}
+**Subject:**
+- `{TASK-ID}: {brief description} [AI commit]` for AI-authored task commits
+- `{TASK-ID}-COMPLIANCE: verification report [AI commit]` for compliance reports
+- `D-{n}: {brief description} [AI commit]` for AI-authored decision commits
+- `{Verb-led description}` for Steve's manual commits (no `[AI commit]` tag)
 
-{optional body}
+**Body** (optional, free-form prose): include when context is useful — what changed and why, briefly.
 
-Task-Id: {TASK-ID | MANUAL | D-{n}}
-Authored-By-Instance: {cc | cd-green | cd-yellow | cd-purple | cd | steve}
-{optional: Decision: D-{n}}
-{optional: Refs: {spec, decision, plan}, comma-separated}
-{optional: Fixes: {ITM-{n} or similar}}
-{optional: Supersedes: {commit short-sha}}
-{optional: Co-Authored-By: Claude Code <noreply@anthropic.com> OR Claude Desktop <noreply@anthropic.com>}
-```
-
-### Trailer order
-
-1. `Task-Id:`
-2. `Authored-By-Instance:`
-3. `Decision:` (if applicable)
-4. `Refs:` (if applicable)
-5. `Fixes:` (if applicable)
-6. `Supersedes:` (if applicable)
-7. `Co-Authored-By:` (if applicable)
+**Optional reference lines** (final paragraph, when applicable):
+- `Refs: D-XX, OTHER-TASK-ID, spec-name` — references to decisions, prior tasks, or specs
+- `Fixes: ITM-XX` — closes a tracked issue
+- `Supersedes: <commit-sha>` — replaces a prior commit's intent
 
 ### Examples
 
 **CC task commit:**
-```
-SAMPLES-RENAME-01: copy instrument samples with safe names and generate manifest
 
-Task-Id: SAMPLES-RENAME-01
-Authored-By-Instance: cc
-Refs: D-02, GNC355_Prep_Implementation_Plan_V1
-Co-Authored-By: Claude Code <noreply@anthropic.com>
+```
+GNX375-PAGEMAP-PYMUPDF-01: build page_number_map.json from PyMuPDF metadata [AI commit]
+
+Mechanical transform from page_metadata.json to page_number_map.json (schema v2.0). 8/8 built-in sanity checks pass; 310 total / 306 parsed / 4 unparseable.
+
+Refs: D-28
 ```
 
 **CD decision commit:**
-```
-D-04: add commit trailer policy
 
-Task-Id: D-04-AUTHORING
-Authored-By-Instance: cd-purple
-Decision: D-04
-Co-Authored-By: Claude Desktop <noreply@anthropic.com>
+```
+D-29: supersede D-04 with simple commit policy [AI commit]
+
+Refs: D-04, ITM-13
 ```
 
 **Steve manual commit:**
+
 ```
 Remove stale refresh flag
-
-Task-Id: MANUAL
-Authored-By-Instance: steve
 ```
 
-### Rejected trailers (do not add)
+### Mechanics
 
-- `Signed-off-by:` — DCO sign-off. Not operating under a DCO.
-- `Reviewed-by:` — Gerrit-style code review. Not our workflow.
-- `Tested-by:` — CC always tests before commit; redundant.
+CD emits two PowerShell blocks per commit: a `git add` line and a `git commit -m` line. Steve copy-pastes and runs.
 
-### CD commit scope
-
-CD commits its own direct file writes at natural turn seams:
-- End of a substantive turn where files were written
-- On explicit Steve request ("commit that")
-- Before authoring a task prompt that will cite the files just written
-
-CD commits use `Authored-By-Instance: cd-{color}` where color matches the active CD instance. Standard CD sessions (no color) use `cd`. **CD does NOT push.**
-
-### CD commit execution mechanics
-
-CD has no direct git tool. CD-authored commits follow a two-actor pattern: **CD drafts the command; Steve executes it**. CD must emit two code blocks per commit request: a `git add` line and a commit-via-file block.
-
-**Canonical pattern (BOM-free, PowerShell-safe):**
-
-````powershell
-# Step 1: stage files
+```powershell
 git add <file1> <file2> ...
 
-# Step 2: write commit message (BOM-free) and commit
-$msg = @"
-{SUBJECT LINE}
+git commit -m "{subject line} [AI commit]" -m "{optional body}" -m "Refs: D-XX"
+```
 
-Task-Id: {TASK-ID}
-Authored-By-Instance: cd-{color}
-Decision: D-{n}                       # if applicable
-Refs: {spec, decision, plan}          # if applicable
-Co-Authored-By: Claude Desktop <noreply@anthropic.com>
-"@
-[System.IO.File]::WriteAllText(".git/COMMIT_EDITMSG_cd", $msg)
-git commit -F .git/COMMIT_EDITMSG_cd
-Remove-Item .git/COMMIT_EDITMSG_cd
-````
+PowerShell renders each `-m` argument as a paragraph separated by a blank line. Plain `git commit -m` avoids the empty-`-m` failure mode that drove D-04's heredoc requirement — every `-m` carries real content. No file-based commit messages means no BOM concerns.
 
-**Why `[System.IO.File]::WriteAllText` and not `Out-File`:** PowerShell 5.x's `Out-File -Encoding utf8` writes UTF-8 **with BOM**. The BOM (U+FEFF) leaks into the commit subject as a leading invisible character, visible when viewing with `git log --format=fuller`. `[System.IO.File]::WriteAllText` writes BOM-free UTF-8 by default.
+CC has direct shell access and writes its own commits the same way.
 
-**Why `-F <file>` and not multiple `-m`:** PowerShell drops empty-string `-m ""` arguments. Chains like `git commit -m "{subject}" -m "" -m "{trailer}"` are unreliable — the empty line intended to separate subject from trailer disappears, and git may interpret trailer text as a pathspec. The `-F <file>` path has predictable newline semantics.
+**Steve is the only actor who performs `git push`.**
 
-**CC commit mechanics** are the same but CC writes the file directly via its shell. Multi-`-m` is discouraged for CC too.
-
-Full decision record: `docs/decisions/D-04-commit-trailer-policy.md`.
+Full decision record: `docs/decisions/D-29-supersede-d04-with-simple-commit-policy.md`. The superseded prior policy is at `docs/decisions/D-04-commit-trailer-policy.md` for audit-trail reference; existing commits with D-04 trailers stay as-is.
 
 ---
 
