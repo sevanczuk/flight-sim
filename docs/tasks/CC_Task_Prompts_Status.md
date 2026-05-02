@@ -3,6 +3,7 @@ Created: 2026-04-25T09:33:26-04:00
 Source: Purple Turn 2 — reconstituted from briefing + 0828 checkpoint + Task_flow_plan_with_current_status.md + completed/ inventory after discovering file did not exist on disk
 Purpose: Running status of all CC task prompts (per CLAUDE.md Key Data Sources)
 Update cadence: CD updates this file when a CC task prompt changes lifecycle state — drafted, launched, completion received, compliance verified, archived. Updated in the same CD turn as the state-change event.
+**Last updated:** 2026-05-02T10:50:56-04:00 (Purple Turn 15 — GNX375-PAGEMAP-PYMUPDF-01 task family archived; build_page_number_map.py pending entry retired; DEPENDENCY-AUDIT-01 added to drafting-in-progress)
 Scope confirmation needed: This is a first-pass reconstitution. The columns and granularity may not match what the briefing/CLAUDE.md originally envisioned. Steve to validate or redirect.
 Lifecycle states: drafted → launched → completion-received → compliance-prompt-drafted → compliance-launched → compliance-received → reviewed → archived
 Related docs: `docs/tasks/Task_flow_plan_with_current_status.md` (task-level flow); `docs/specs/Spec_Tracker.md` (spec lifecycle); `docs/todos/priority_task_list.md` (priority ranking).
@@ -23,11 +24,14 @@ Related docs: `docs/tasks/Task_flow_plan_with_current_status.md` (task-level flo
 | Task | Trigger | Notes |
 |------|---------|-------|
 | `verify_gnx375_manifest.py` authoring | After C2.2-ASSEMBLE | Per D-22 §6 |
-| `build_page_number_map.py` authoring | Before C3 spec review | Resolves ITM-11 (physical-vs-logical page offset) |
-| Image extraction Approach A | Idle window before C3 | Briefing at `docs/tasks/image_extraction_briefing.md`; queued; ~15–20 min CC wall-clock |
-| Image extraction Approach B | Conditional on Approach A effectiveness report | LlamaParse re-parse with `images_to_save=["embedded"]`; cache window expires ~2026-04-26T10:31 ET |
 | 3 domain-specific Sonnet agents | Before C3 review | `.claude/agents/spec-pdf-source-fidelity-reviewer.md`, `spec-cross-fragment-coupling-reviewer.md`, `spec-sibling-unit-consistency-reviewer.md`; per D-22 §2 |
 | Review Priority Guide prepend | After C2.2-ASSEMBLE | Per D-22 §5 |
+| DEPENDENCY-AUDIT-01 | After ITM-11 closure (now satisfied) | Inventory references to retired paths (`assets/retired/gnc355_pdf_extracted/`, `assets/retired/gnc355_reference/`, pre-pivot paths) across `docs/`, `scripts/`, `src/`, `tests/`, `config/`, project-instruction files, and `docs/tasks/completed/`. Drafting in progress Purple Turn 15. |
+
+**Retired pending entries** (formerly listed; no longer applicable):
+- `build_page_number_map.py` authoring — superseded by GNX375-PAGEMAP-PYMUPDF-01 (archived 2026-05-02). The PyMuPDF-based extraction tool replaced the LlamaParse-based footer-parsing approach this entry anticipated. ITM-11 closed by D-30.
+- Image extraction Approach A — retired with the GNC 355 PDF extraction pivot to GNX 375 PyMuPDF; the briefing flagged but no archive disposition has been written. If this task is revived, draft fresh.
+- Image extraction Approach B — cache window expired 2026-04-26; retired alongside Approach A.
 
 ## Pending — V2 amendment (Supplemental AFM integration)
 
@@ -75,6 +79,7 @@ Gated on GNX 375 Functional Spec V1 implementation-ready. Tracked here to keep o
 
 | c22_g (Fragment G) | prompt + completion + compliance | PASS WITH NOTES — 49/2/0/0 across 51; ITM-12 resolved; **7-fragment decomposition complete; spec body assembly-ready** |
 | c22_assemble_gnx375 | prompt + completion + compliance prompt + compliance | PASS WITH NOTES — 39/3/2/1 across 45; CD reclassified P1 FAIL (BOM in commit subject) as PASS WITH NOTES → ITM-13; S7 PARTIAL (`--partial` continuity-skip not implemented) → ITM-14; both deferred. Outputs: `scripts/assemble_gnx375_spec.py` (555 lines), `docs/specs/GNX375_Functional_Spec_V1_aggregate.md` (4433 lines). Two retained Fragment B/C preambles in aggregate; Appendix B/C placement preserved per Turn 7 decision. |
+| build_page_number_map_from_pymupdf (GNX375-PAGEMAP-PYMUPDF-01) | prompt + completion + compliance prompt + compliance | ALL PASS — 17/17 across 7 categories (S/L/A/N/D/G/C); zero issues. Outputs: `scripts/build_page_number_map_from_pymupdf.py` (~370 lines), `assets/gnx375_pymupdf_v1_0_1/page_number_map.json` (schema v2.0; 310 / 306 parsed / 4 unparseable). Built atop pymupdf-extract V1.0.1 metadata + `page_overrides.json` (D-28 PAP 22 entry on page 2). |
 
 ### Cross-cutting / housekeeping
 

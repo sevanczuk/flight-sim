@@ -3,6 +3,7 @@ Created: 2026-04-25T09:33:26-04:00
 Source: Purple Turn 2 — reconstituted from briefing + 0828 checkpoint + Task_flow_plan_with_current_status.md after discovering file did not exist on disk
 Purpose: Spec lifecycle, review rounds, dispositions, CC task links (per CLAUDE.md Key Data Sources)
 Update cadence: CD updates this file when a spec changes state — version bump, review round completed, disposition decided, CC task linked. Updated in the same CD turn as the state-change event.
+**Last updated:** 2026-05-02T10:50:56-04:00 (Purple Turn 15 — ITM-11 closed by D-30 verification; ITM-13 closed by D-29; Active-ITMs line trimmed accordingly)
 Scope confirmation needed: This is a first-pass reconstitution. The columns and granularity may not match what the briefing/CLAUDE.md originally envisioned. Steve to validate or redirect.
 Related docs: `docs/tasks/Task_flow_plan_with_current_status.md` (task-level flow); `docs/tasks/CC_Task_Prompts_Status.md` (CC prompt lifecycle); `docs/todos/priority_task_list.md` (priority ranking).
 ---
