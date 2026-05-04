@@ -460,7 +460,7 @@ not an active flag.
 | p. 1 | Sparse | Cover page — image-only logo; no functional content gap |
 | p. 36 | Sparse | Intentionally blank — no gap |
 | p. 110 | Sparse | Intentionally blank — no gap |
-| **p. 125** | **Sparse** | **Land data symbols — image-only; text labels extracted but symbols absent. Supplement: `assets/gnc355_reference/land-data-symbols.png`. See §4.2 (C2.2-B).** |
+| **p. 125** | **Sparse** | **Land data symbols — image-only; text labels extracted but symbols absent. See §4.2 (C2.2-B).** |
 | p. 208 | Sparse | Intentionally blank — no gap |
 | p. 222 | Sparse | Intentionally blank — no gap |
 | p. 270 | Sparse | Intentionally blank — no gap |
@@ -500,7 +500,7 @@ content only — not applicable to GNX 375 §11.
 6. TSAA aural alert delivery (§11, §4.9): `sound_play` vs. external audio panel — spec-body
    design decision.
 
-**Significant content gap:** p. 125 land data symbols — supplement available (see C.1).
+**Significant content gap:** p. 125 land data symbols (see C.1).
 
 **Resolved gap (not active):** GNC 375 / GNX 375 disambiguation — resolved per D-12; GNX 375
 is the correct designation.
@@ -511,7 +511,7 @@ is the correct designation.
 
 | Category | Count |
 |---------|-------|
-| Significant content gaps | 1 (land data symbols — supplement available) |
+| Significant content gaps | 1 (land data symbols) |
 | Design decision gaps | 4 |
 | Open research questions | 6 |
 | Blank / filler pages (no functional gap) | 10 of 13 flagged pages |

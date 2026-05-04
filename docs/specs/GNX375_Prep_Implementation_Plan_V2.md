@@ -156,7 +156,7 @@ Delivered: `docs/knowledge/stream_b_readiness_review.md` (CD-authored). Three no
 Restructured from V1 per D-11 (outline-first) and D-12 (pivot to GNX 375 with Option 5 harvest approach). C1 is complete; C2 is the active work.
 
 ### C1. PDF extraction [DONE]
-Delivered: `assets/gnc355_pdf_extracted/text_by_page.json` (310 pages; 297 clean, 12 sparse-but-intentional, 1 empty), `assets/gnc355_pdf_extracted/extraction_report.md`, curated supplement `assets/gnc355_reference/land-data-symbols.png` (page 125 was image-only; hand-curated). Note: directory name retains `gnc355` prefix since the Pilot's Guide (190-02488-01_c) covers all three units (GPS 175, GNC 355, GNX 375) — the content is not 355-specific. Archived at `docs/tasks/completed/gnc355_pdf_extract_*`.
+Delivered: `assets/gnc355_pdf_extracted/text_by_page.json` (310 pages; 297 clean, 12 sparse-but-intentional, 1 empty), `assets/gnc355_pdf_extracted/extraction_report.md`. Note: directory name retains `gnc355` prefix since the Pilot's Guide (190-02488-01_c) covers all three units (GPS 175, GNC 355, GNX 375) — the content is not 355-specific. Archived at `docs/tasks/completed/gnc355_pdf_extract_*`.
 
 ### C2. Functional spec authoring [ACTIVE; pivoted per D-12]
 

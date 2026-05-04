@@ -244,12 +244,11 @@ Aviation waypoint and facility symbols displayed on the map:
 | Fly-over Waypoint | Fly-over waypoint symbol (system software v3.20 and later) |
 | User Waypoint | User-created point symbol |
 
-#### Land data symbols [p. 125 — sparse; see supplement]
+#### Land data symbols [p. 125 — sparse]
 
 Land data symbols are depicted on the map basemap at appropriate map detail levels.
 Pilot's Guide p. 125 is sparse (image-only; text labels extracted but symbol graphics absent).
-The authoritative source for the enumerated land symbol list is the supplement at
-`assets/gnc355_reference/land-data-symbols.png`. Symbols include:
+Symbols include:
 
 - Railroad
 - National highway
@@ -259,8 +258,6 @@ The authoritative source for the enumerated land symbol list is the supplement a
 - River and lake boundaries
 - State and province borders
 - Small, medium, and large city symbols
-
-Implementation must reference the supplement image for accurate symbol representation.
 
 #### Map interactions [pp. 126–132]
 

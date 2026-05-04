@@ -324,12 +324,12 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--pages-dir",
-        default="assets/gnc355_pdf_extracted/llamaparse_agentic_v1/pages",
+        default="assets/gnx375_llama_extract/pages",
         help="Directory containing page_NNN.md files",
     )
     ap.add_argument(
         "--output",
-        default="assets/gnc355_pdf_extracted/llamaparse_agentic_v1/page_number_map.json",
+        default="assets/gnx375_pymupdf_v1_0_1/page_number_map.json",
         help="JSON output path",
     )
     ap.add_argument("--check", action="store_true", help="Verify in memory; do NOT write JSON output")
@@ -357,7 +357,7 @@ def main() -> None:
     map_data: dict = {
         "metadata": {
             "source_pdf": "190-02488-01_Pilots_Guide_Rev_C.pdf",
-            "extraction_dir": "assets/gnc355_pdf_extracted/llamaparse_agentic_v1",
+            "extraction_dir": "assets/gnx375_llama_extract",
             "physical_page_count": parsed + len(unparseable),
             "parsed_count": parsed,
             "unparseable_count": len(unparseable),

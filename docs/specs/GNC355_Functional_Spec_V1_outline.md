@@ -240,11 +240,10 @@ Each task reads only the sections it owns, pulling from this outline as the auth
   - Towered/non-serviced, towered/serviced airport
   - Soft surface airports (non-serviced, serviced)
   - Heliport, intersection, NDB, VOR, VRP
-- Land data symbols [p. 125 — sparse, see supplement]
+- Land data symbols [p. 125 — sparse]
   - Railroad, national highway, freeway, local highway, local road
   - River/lake, state/province border
   - Small/medium/large city symbols
-  - NOTE: p. 125 is sparse; refer to `assets/gnc355_reference/land-data-symbols.png`
 - Map interactions [pp. 126–132]
   - Basic: zoom (pinch/stretch, inner knob on Map), pan (swipe/drag)
   - Object selection: tap on map → map pointer + info banner
@@ -1303,8 +1302,6 @@ Each task reads only the sections it owns, pulling from this outline as the auth
   - p. 36 (sparse): "INTENTIONALLY LEFT BLANK" — blank page after Section 1; no content gap
   - p. 110 (sparse): "INTENTIONALLY LEFT BLANK" — blank page after Section 2; no content gap
   - **p. 125 (sparse): Land data symbols page — symbols are image-only; text labels extracted but visual symbols absent**
-    - Supplement: `assets/gnc355_reference/land-data-symbols.png` provides the visual; `README.md` in same directory
-    - Impact on spec: §4.2 (Map page) land data symbols section should reference supplement
   - p. 208 (sparse): "INTENTIONALLY LEFT BLANK" — blank page after Section 3; no content gap
   - p. 222 (sparse): "INTENTIONALLY LEFT BLANK" — blank page after Section 4; no content gap
   - p. 270 (sparse): "INTENTIONALLY LEFT BLANK" — blank page after Section 5; no content gap

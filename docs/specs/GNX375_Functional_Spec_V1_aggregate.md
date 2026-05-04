@@ -3,7 +3,7 @@
 <!-- Assembled from seven part files via scripts/assemble_gnx375_spec.py.
      Source manifest: docs/specs/GNX375_Functional_Spec_V1.md
      Fragments: GNX375_Functional_Spec_V1_part_{A..G}.md
-     Generated: 2026-04-30T08:30:25-04:00 -->
+     Generated: 2026-05-04T07:36:16-04:00 -->
 
 ---
 
@@ -454,7 +454,7 @@ not an active flag.
 | p. 1 | Sparse | Cover page — image-only logo; no functional content gap |
 | p. 36 | Sparse | Intentionally blank — no gap |
 | p. 110 | Sparse | Intentionally blank — no gap |
-| **p. 125** | **Sparse** | **Land data symbols — image-only; text labels extracted but symbols absent. Supplement: `assets/gnc355_reference/land-data-symbols.png`. See §4.2 (C2.2-B).** |
+| **p. 125** | **Sparse** | **Land data symbols — image-only; text labels extracted but symbols absent. See §4.2 (C2.2-B).** |
 | p. 208 | Sparse | Intentionally blank — no gap |
 | p. 222 | Sparse | Intentionally blank — no gap |
 | p. 270 | Sparse | Intentionally blank — no gap |
@@ -494,7 +494,7 @@ content only — not applicable to GNX 375 §11.
 6. TSAA aural alert delivery (§11, §4.9): `sound_play` vs. external audio panel — spec-body
    design decision.
 
-**Significant content gap:** p. 125 land data symbols — supplement available (see C.1).
+**Significant content gap:** p. 125 land data symbols (see C.1).
 
 **Resolved gap (not active):** GNC 375 / GNX 375 disambiguation — resolved per D-12; GNX 375
 is the correct designation.
@@ -505,7 +505,7 @@ is the correct designation.
 
 | Category | Count |
 |---------|-------|
-| Significant content gaps | 1 (land data symbols — supplement available) |
+| Significant content gaps | 1 (land data symbols) |
 | Design decision gaps | 4 |
 | Open research questions | 6 |
 | Blank / filler pages (no functional gap) | 10 of 13 flagged pages |
@@ -750,12 +750,11 @@ Aviation waypoint and facility symbols displayed on the map:
 | Fly-over Waypoint | Fly-over waypoint symbol (system software v3.20 and later) |
 | User Waypoint | User-created point symbol |
 
-#### Land data symbols [p. 125 — sparse; see supplement]
+#### Land data symbols [p. 125 — sparse]
 
 Land data symbols are depicted on the map basemap at appropriate map detail levels.
 Pilot's Guide p. 125 is sparse (image-only; text labels extracted but symbol graphics absent).
-The authoritative source for the enumerated land symbol list is the supplement at
-`assets/gnc355_reference/land-data-symbols.png`. Symbols include:
+Symbols include:
 
 - Railroad
 - National highway
@@ -765,8 +764,6 @@ The authoritative source for the enumerated land symbol list is the supplement a
 - River and lake boundaries
 - State and province borders
 - Small, medium, and large city symbols
-
-Implementation must reference the supplement image for accurate symbol representation.
 
 #### Map interactions [pp. 126–132]
 
