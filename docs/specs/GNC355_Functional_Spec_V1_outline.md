@@ -1318,7 +1318,7 @@ Each task reads only the sections it owns, pulling from this outline as the auth
   - Home page icon layout: image-based page in Pilot's Guide; pixel layout requires device reference
   - GNC 375 / GNX 375 disambiguation: D-02 §9 references "GNC 375" but PDF covers GNX 375
 - C.3 Summary
-  - Significant content gaps: 1 (land data symbols — supplement available)
+  - Significant content gaps: 1 (land data symbols)
   - Design decision gaps: 3 (map rendering, scrollable lists, external I/O names)
   - Blank/filler pages with no content: 10 of 13 flagged pages are intentionally blank
   - OCR-applied pages: 0 (Tesseract was not available during extraction)

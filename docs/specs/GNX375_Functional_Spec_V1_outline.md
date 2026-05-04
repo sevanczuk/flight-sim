@@ -1467,7 +1467,7 @@ Cross-reference to §13 Messages for full advisory formatting and message system
   - TSAA aural alert delivery mechanism (§4.9, §11): `sound_play` vs. external audio panel — OPEN QUESTION 6
   - ~~GNC 375/GNX 375 disambiguation~~ — resolved per D-12; dropped
 - C.3 Summary
-  - Significant content gaps: 1 (land data symbols — supplement available)
+  - Significant content gaps: 1 (land data symbols)
   - Design decision gaps: 4 (map rendering, scrollable lists, external I/O names, CDI/VDI output datarefs)
   - Open research questions: 6 (see items 1–6 above and flagged in respective sections)
   - Blank/filler pages with no content: 10 of 13 flagged pages are intentionally blank
