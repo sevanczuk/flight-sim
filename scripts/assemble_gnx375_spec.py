@@ -6,6 +6,7 @@ Run from project root:
   python scripts/assemble_gnx375_spec.py [--verbose] [--check] [--partial]
                                           [--manifest <path>] [--fragments-dir <path>]
                                           [--output <path>]
+                                          [--review-priority-guide <path>]
 """
 
 import argparse
@@ -442,6 +443,16 @@ def main() -> None:
     ap.add_argument("--partial", action="store_true", help="Allow assembly with missing fragments")
     ap.add_argument("--check", action="store_true", help="Verify in memory; do not write output")
     ap.add_argument("--verbose", action="store_true", help="Print per-fragment strip statistics")
+    ap.add_argument(
+        "--review-priority-guide",
+        metavar="PATH",
+        type=str,
+        default=None,
+        help="Path to a markdown file to prepend to the assembled aggregate. "
+             "If supplied, the file's content is inserted between the H1 metadata block "
+             "(H1 title + HTML assembly comment) and the '---' separator. "
+             "If absent, no priority guide is prepended (default).",
+    )
     args = ap.parse_args()
 
     manifest_path = Path(args.manifest)
@@ -526,6 +537,10 @@ def main() -> None:
     # Assemble
     provenance = build_provenance(args.manifest, args.output)
     assembled: list[str] = list(provenance)
+    if args.review_priority_guide:
+        guide_text = Path(args.review_priority_guide).read_text(encoding="utf-8").rstrip()
+        assembled.extend(guide_text.splitlines())
+        assembled.append("")
     for i, body in enumerate(all_bodies):
         assembled.extend(body)
         if i < len(all_bodies) - 1:
