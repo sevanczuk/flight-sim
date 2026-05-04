@@ -1,47 +1,36 @@
-# Retired Assets
+# Retired Assets — Moved Out
 
 **Created:** 2026-04-30T12:00:01-04:00
-**Source:** CD Purple Turn 32 — recording the retirement of two `gnc355_*` directories per the D-12 GNX 375 pivot and the Turn 30 discovery that the older PDF extraction is defective.
-**Tracked:** Yes. Contents in this directory remain in git for audit and reference until the dependency-audit cleanup is complete; after that, the directory will be moved out of the project entirely.
+**Last updated:** 2026-05-04T08:52:27-04:00 — converted to forwarding pointer after move-out (AUDIT-RETIRED-MOVE-01)
+**Source:** Originally CD Purple Turn 32, 2026-04-30 — recorded retirement of two `gnc355_*` directories per the D-12 GNX 375 pivot and the discovery that the older PDF extraction is defective.
 
-## Purpose
+## What this directory used to contain
 
-This directory houses former-`assets/`-resident material that has been removed from active use but is preserved temporarily for two reasons:
+`gnc355_pdf_extracted/` and `gnc355_reference/` — the pre-pivot PDF extraction outputs, related image catalogs, and Steve's manually curated p. 125 land-data-symbols PNG. All material related to the superseded GNC 355 (pre-pivot) workflow.
 
-1. **Audit trail.** Some completed work (V1 spec fragments, prior task reports, the ITM-11 page-map effort) was authored against content that lived under these paths. Until a dependency audit confirms what consumed retired data and what — if anything — needs reconciliation, the retired material must remain readable in-place.
-2. **Salvage window.** Some items in retired directories may be unique and non-regenerable; the audit will determine whether any survive the move-out as relocated assets in `assets/`.
+## Where the contents are now
 
-## What's here
+Both subdirectories were moved to `C:\Users\artroom\projects\flight-sim-project\archive\` (a non-tracked sibling of this project) on 2026-05-04 as the final step of the dependency-audit cleanup chapter (DEPENDENCY-AUDIT-01 → AUDIT-CLEANUP-01 → AUDIT-PATCH-01 → AUDIT-RETIRED-MOVE-01).
 
-### `gnc355_pdf_extracted/`
+- `archive/gnc355_pdf_extracted/` — the defective LlamaParse extraction, PyMuPDF-era image and JSON outputs, and historical extraction report
+- `archive/gnc355_reference/` — the original curated reference directory (note: `land-data-symbols.png` was deleted entirely during AUDIT-CLEANUP-01 per Steve's directive — not preserved in archive)
 
-The pre-pivot PDF extraction, including:
+## Active replacements
 
-- `llamaparse_agentic_v1/` — the original LlamaParse run using `llama_parse 0.6.94` with `parse_page_with_agent`. Produced 330 pages of markdown plus `page_number_map.json`. **Defective:** the source PDF has 310 pages (Steve confirmed via Adobe Acrobat, 2026-04-30); this extraction inflated the count by 20 phantom pages whose locations within the document are not mapped. Any physical-page-number-based references to this extraction are unreliable.
-- `images/` — PyMuPDF-era binary image extracts (`page_NNNN_img_NN.bin`, ~400 files covering pages 1–272). Pre-LlamaParse era; superseded by `gnx375_llama_extract/images_layout/` and `images_screenshot/`.
-- `text_by_page.json` — PyMuPDF-era full-text-by-page JSON. Pre-LlamaParse era; superseded by `gnx375_llama_extract/full_markdown.md`.
-- `extraction_report.md` — historical PyMuPDF extraction audit report.
-- `land-data-symbols.png` — Steve's manual pull from p. 125 of the source PDF, originally placed here when PyMuPDF missed image-only pages. Its retained-asset twin lives at `gnc355_reference/land-data-symbols.png` (the curated copy referenced by the V1 spec).
-- `llamaparse_agentic_v1_with_images/` — partial cache-test scaffolding (`CACHE_TEST_RESULT.md`, mostly-empty subdirectories). Not authoritative; preserved only for completeness.
+- Pre-pivot PDF extraction → `assets/gnx375_llama_extract/` (LlamaParse markdown body) + `assets/gnx375_pymupdf_v1_0_1/` (PyMuPDF metadata + page_number_map v2.0)
+- `land-data-symbols.png` → no replacement; references removed from active V1 spec content per AUDIT-CLEANUP-01
 
-### `gnc355_reference/`
+## Why this README is preserved
 
-The pre-pivot curated reference asset directory, originally established as the long-term-stable home for non-regenerable PDF-derived assets. Contains:
+This file remains as a forwarding pointer. References in `docs/tasks/completed/`, `docs/decisions/`, and `project-status/` describe historical work that touched paths under `assets/retired/`; readers following those references should land here and learn where the contents went.
 
-- `land-data-symbols.png` — Garmin's land-data-symbols legend, manually extracted from PDF p. 125 by Steve during the eyeball task. **Possibly cited by the V1 spec** at `assets/gnc355_reference/land-data-symbols.png`. The dependency audit will confirm whether the equivalent image is present in `gnx375_llama_extract/images_layout/` or `images_screenshot/`, and either retire this asset alongside the rest or relocate it to a renamed `assets/gnx375_reference/` (or equivalent) before final move-out.
-- `README.md` — the original directory's provenance and purpose record. Read it for the historical context of why the directory existed.
-
-## Policy
-
-- **No active work should reference paths under `assets/retired/`.** All in-repo references are being patched out as part of the dependency audit (see `docs/tasks/dependency_audit_*`).
-- **Do not modify retired material.** It is read-only for audit purposes. Bug fixes, regeneration, or supersession happen in the active assets (`assets/gnx375_llama_extract/` and any future `assets/gnx375_reference/`), not here.
-- **The directory is temporary.** Once the dependency audit completes, every retired item will be either (a) confirmed redundant and the directory moved out of the project entirely, or (b) salvaged into a renamed active location with the rest moved out.
+Steve may delete this README and the `assets/retired/` directory at any time once it stops adding navigational value. No active work depends on it.
 
 ## Related
 
-- `docs/decisions/D-12-*` (or successor) — GNX 375 pivot rationale.
-- `docs/decisions/D-25-*` — CD's verify-before-asserting convention; the discovery that the old extraction was defective came from violating this convention multiple times.
-- `docs/decisions/D-26-cd-verify-against-ground-truth-source-documents.md` — generalized verify-against-ground-truth discipline (created 2026-04-30).
-- `docs/decisions/D-30-v1-fragment-citations-use-physical-pdf-page-numbers.md` — V1 fragment citations use absolute physical PDF page numbers; closed ITM-11.
-- `docs/todos/issue_index_resolved.md` §ITM-11 — the page-number offset issue, closed 2026-05-02 by 13/13 content-match verification.
-- `docs/tasks/dependency_audit_01_*` — the audit producing the reference patch list, the work-dependency report, and the salvage recommendations (executed 2026-05-02).
+- `docs/decisions/D-12-*` — GNX 375 pivot rationale
+- `docs/decisions/D-26-cd-verify-against-ground-truth-source-documents.md` — verify-against-ground-truth discipline; the defective-extraction discovery surfaced this principle
+- `docs/decisions/D-30-v1-fragment-citations-use-physical-pdf-page-numbers.md` — V1 fragment citations use absolute physical PDF page numbers; closed ITM-11
+- `docs/todos/issue_index_resolved.md` §ITM-11 — page-number offset misdiagnosis, closed 2026-05-02
+- `docs/tasks/completed/dependency_audit_01_*` — audit that produced the patch + flag lists
+- `docs/tasks/completed/audit_cleanup_01_*` — bookkeeping cleanup that archived completed task records, retired compliance scripts, fixed Side Finding #4, and deleted `land-data-symbols.png`
