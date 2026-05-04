@@ -280,7 +280,7 @@ Selection happens AFTER B1 produces the manifest, because the manifest's type/au
 ### C1. PDF extraction
 
 **Task type:** code
-**Deliverable:** `scripts/pdf_extract.py`; raw extracted text at `assets/gnc355_pdf_extracted/text_by_page.json`; extracted images at `assets/gnc355_pdf_extracted/images/`; extraction report.
+**Deliverable:** `scripts/pdf_extract.py`; raw extracted text at `assets/gnc355_pdf_extracted/text_by_page.json`; extracted images at `assets/gnc355_pdf_extracted/images/`; extraction report. [Retired; output now at `assets/retired/gnc355_pdf_extracted/`; superseded by `assets/gnx375_llama_extract/`.]
 
 **Scope:**
 - Primary: pdfplumber text extraction, page by page
@@ -292,7 +292,7 @@ Selection happens AFTER B1 produces the manifest, because the manifest's type/au
 
 **Safety:**
 - Read-only operation on the PDF; never modifies the source
-- Output directory at `assets/gnc355_pdf_extracted/` — new, does not exist yet
+- Output directory at `assets/gnc355_pdf_extracted/` — new, does not exist yet [retired; output now at `assets/retired/gnc355_pdf_extracted/`]
 
 **Estimated duration:** 30–60 min script development + minutes to run.
 

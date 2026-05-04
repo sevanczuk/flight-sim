@@ -459,7 +459,7 @@ The harvest supports a focused CC task prompt. Suggested emphasis:
 ### Explicit scope directives
 
 - Primary unit: **GNX 375**. GPS 175 and GNC 355/355A are comparison units in Appendix A only.
-- Pilot's Guide coverage: all pp. 1–310 of `assets/gnc355_pdf_extracted/text_by_page.json` are in scope, with special attention to **pp. 75–85 (XPDR)** which were out of scope for the 355 outline.
+- Pilot's Guide coverage: all pp. 1–310 of `assets/gnx375_llama_extract/full_markdown.md` are in scope (originally `assets/gnc355_pdf_extracted/text_by_page.json`, now retired), with special attention to **pp. 75–85 (XPDR)** which were out of scope for the 355 outline.
 - **Full procedural fidelity target:** §7 Procedures MUST include XPDR + ADS-B interaction content supporting LPV approach flying in the sim.
 - **ADS-B as primary, not external:** §4.9, §10.12, §13.11 must frame ADS-B In/Out as built-in features, not external-hardware-dependent.
 
@@ -467,7 +467,7 @@ The harvest supports a focused CC task prompt. Suggested emphasis:
 
 - **This harvest map** (`docs/knowledge/355_to_375_outline_harvest_map.md`) — primary categorization guide.
 - **Shelved 355 outline** (`docs/specs/GNC355_Functional_Spec_V1_outline.md`) — reference for [FULL] sections. CC copies structure, page refs, and sub-bullet content verbatim where indicated.
-- **PDF content** via `assets/gnc355_pdf_extracted/text_by_page.json` — fresh read for [NEW] content (XPDR pp. 75–85, ADS-B cross-cutting content).
+- **PDF content** via `assets/gnx375_llama_extract/full_markdown.md` (originally `assets/gnc355_pdf_extracted/text_by_page.json`, now retired) — fresh read for [NEW] content (XPDR pp. 75–85, ADS-B cross-cutting content).
 - **AMAPI knowledge** (`docs/knowledge/amapi_by_use_case.md`, `docs/knowledge/amapi_patterns.md`) — cross-refs carry over; XPDR + ADS-B subscription/dispatch patterns follow same idioms as COM.
 
 ### Section-by-section directive hints

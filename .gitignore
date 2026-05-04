@@ -44,7 +44,9 @@ assets/air_manager_api/crawl.sqlite3.bak
 # AMAPI parser JSON output — regenerable from HTML mirror + scripts/amapi_parser.py (D-06 pattern)
 assets/air_manager_api/parsed/
 
-# GNC 355 PDF extraction output — regenerable from source PDF + scripts/gnc355_pdf_extract.py (D-06)
+# GNC 355 PDF extraction output — superseded by `assets/gnx375_llama_extract/` (active extraction);
+# original output retired to `assets/retired/gnc355_pdf_extracted/`. Rule retained because
+# `scripts/gnc355_pdf_extract.py` may still regenerate to this path if invoked (D-06).
 assets/gnc355_pdf_extracted/
 
 # Claude.ai project refresh flags

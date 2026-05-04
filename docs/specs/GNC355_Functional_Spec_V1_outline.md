@@ -6,7 +6,7 @@ Source: docs/tasks/c2_1_outline_prompt.md
 # GNC 355 Functional Spec V1 — Detailed Outline
 
 **Purpose:** Structural blueprint for C2.2 spec body authoring. See D-11 for the outline-first approach rationale.
-**Source content:** `assets/gnc355_pdf_extracted/text_by_page.json` (310 pages)
+**Source content:** `assets/gnc355_pdf_extracted/text_by_page.json` (310 pages) [retired; now at `assets/retired/gnc355_pdf_extracted/`; superseded by `assets/gnx375_llama_extract/`]
 **Estimated total spec length:** ~2,800 lines
 **Format recommendation for C2.2:** Piecewise + manifest (one task per logical section group)
 

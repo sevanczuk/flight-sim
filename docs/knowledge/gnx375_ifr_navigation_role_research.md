@@ -2,7 +2,7 @@
 
 **Created:** 2026-04-21T11:21:43-04:00
 **Source:** Purple Turn 20 — research task in response to Steve's correction that the GNX 375 does not have its own CDI capability beyond limited on-screen rendering
-**Method:** Direct read of `assets/gnc355_pdf_extracted/text_by_page.json` — pages systematically searched for CDI, HSI, VDI, glidepath, glideslope, roll steering, external navigator, course/vertical deviation, autopilot, and specific approach-phase terms. Key pages read in full.
+**Method:** Direct read of `assets/gnc355_pdf_extracted/text_by_page.json` (old extraction; now at `assets/retired/`; replaced by `assets/gnx375_llama_extract/`) — pages systematically searched for CDI, HSI, VDI, glidepath, glideslope, roll steering, external navigator, course/vertical deviation, autopilot, and specific approach-phase terms. Key pages read in full.
 **Purpose:** Authoritative reference for what the GNX 375 itself does vs. what external instruments do during IFR operations. Input to correcting the Turn 19 harvest map procedural-fidelity items 11–25.
 
 ---

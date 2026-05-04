@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_pdf": "190-02488-01_Pilots_Guide_Rev_C.pdf",
-    "extraction_dir": "assets/gnc355_pdf_extracted/llamaparse_agentic_v1",
+    "extraction_dir": "assets/gnx375_llama_extract",
     "physical_page_count": 310,
     "parsed_count": 0,
     "unparseable_count": 310,

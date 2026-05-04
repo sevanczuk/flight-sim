@@ -270,7 +270,7 @@ None of this is blocking for Fragment F or Fragment G drafting.
 - Fragment C §4.10 (`docs/specs/fragments/GNX375_Functional_Spec_V1_part_C.md` line 568)
 - Fragment E §10.6 (`docs/specs/fragments/GNX375_Functional_Spec_V1_part_E.md` lines 488–511)
 - D-18 (Coupling Summary stripped-on-assembly convention — not directly relevant but contextual)
-- PDF source at `assets/gnc355_pdf_extracted/text_by_page.json` page 94 entry
+- PDF source: `assets/gnx375_llama_extract/pages/page_094.md` (originally `assets/gnc355_pdf_extracted/text_by_page.json` page 94 entry; old extraction now at `assets/retired/`)
 
 ---
 

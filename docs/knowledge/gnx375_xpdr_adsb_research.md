@@ -2,7 +2,7 @@
 
 **Created:** 2026-04-21T11:33:00-04:00
 **Source:** Purple Turn 21 — research task executing option (a) from Turn 20, authoritative deep-dive of Pilot's Guide XPDR content (pp. 75–85) and related ADS-B material before drafting the C2.1-375 task prompt
-**Method:** Python against `assets/gnc355_pdf_extracted/text_by_page.json`. All 310 pages keyword-scanned for 30+ XPDR/ADS-B terms; pp. 18, 19, 20, 34, 37, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 102, 225, 244, 248, 282, 283, 284, 288, 289, 290 read in full.
+**Method:** Python against `assets/gnc355_pdf_extracted/text_by_page.json` (old extraction; now at `assets/retired/`; replaced by `assets/gnx375_llama_extract/`). All 310 pages keyword-scanned for 30+ XPDR/ADS-B terms; pp. 18, 19, 20, 34, 37, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 102, 225, 244, 248, 282, 283, 284, 288, 289, 290 read in full.
 **Purpose:** Authoritative reference for drafting the new §11 (XPDR + ADS-B Operation) section of the GNX 375 outline. Corrects the assumptions in the Turn 18 harvest map's preliminary §11 structure.
 
 ---

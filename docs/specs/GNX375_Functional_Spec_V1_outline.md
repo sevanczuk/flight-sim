@@ -6,7 +6,7 @@ Source: docs/tasks/c2_1_375_outline_prompt.md
 # GNX 375 Functional Spec V1 — Detailed Outline
 
 **Purpose:** Structural blueprint for C2.2 spec body authoring. See D-11 for the outline-first approach rationale. Primary instrument pivot from GNC 355 per D-12; scope expanded for XPDR + ADS-B + full procedural fidelity per D-12 Q3c.
-**Source content:** `assets/gnc355_pdf_extracted/text_by_page.json` (310 pages; Pilot's Guide 190-02488-01 Rev. C covers GPS 175, GNC 355/355A, and GNX 375)
+**Source content:** `assets/gnx375_llama_extract/full_markdown.md` (Pilot's Guide 190-02488-01 Rev. C covers GPS 175, GNC 355/355A, and GNX 375; previously `assets/gnc355_pdf_extracted/text_by_page.json`, now at `assets/retired/gnc355_pdf_extracted/`)
 **Harvest basis:** `docs/knowledge/355_to_375_outline_harvest_map.md` (Turn 18 categorization + Turn 20/21 research corrections)
 **Research references:** `docs/knowledge/gnx375_ifr_navigation_role_research.md` (display architecture), `docs/knowledge/gnx375_xpdr_adsb_research.md` (XPDR + ADS-B scope)
 **Estimated total spec length:** ~2,860 lines
